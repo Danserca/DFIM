@@ -1,5 +1,5 @@
 ---
-title: "Desplazamiento Forzado Interno EN mÉXICO"
+title: "Desplazamiento Forzado Interno en México"
 output: html_document
 ---
 
