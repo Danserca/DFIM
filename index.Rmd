@@ -61,7 +61,7 @@ Las y los estudiantes:
 *Resultado:* 
 
 
-Disfruta este curso
+# Disfruta este curso
 
 
 </div>
