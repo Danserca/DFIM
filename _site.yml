@@ -4,10 +4,10 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    - text: "Leccion 1"
-      href: Leccion_1.html
-    - text: "Clases"
-      href: Clases.html
+    # - text: "Leccion 1"
+    #   href: Leccion_1.html
+    # - text: "Clases"
+    #   href: Clases.html
     # - text: "Links"
     #   href: Links.html
     # - text: "Primera unidad"
