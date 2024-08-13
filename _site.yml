@@ -1,0 +1,15 @@
+name: "Desplazamiento Forzado Interno en México"
+navbar:
+  title: "Integración de fuentes"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Leccion 1"
+      href: Leccion_1.html
+    - text: "Clases"
+      href: Clases.html
+    # - text: "Links"
+    #   href: Links.html
+    # - text: "Primera unidad"
+    #   href: Journal2.html
+output_dir: "docs"

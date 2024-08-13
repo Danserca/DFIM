@@ -1,0 +1,70 @@
+---
+title: "Desplazamiento Forzado Interno"
+output: html_document
+---
+
+<style type="text/css">
+
+h1.title {
+  color: #0077C8; /* Azul claro - cambia a cualquier color que desees */
+}
+
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+.custom-color {
+  color: #4CAF50; 
+}
+
+.navbar {
+  background-color:  #0077C8; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #333333; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
+}
+
+</style>
+
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-6" style="color:#0077C8;">
+
+# **Consulta de fuentes y lectura numérica del mundo**
+
+Este es el sitio web del curso CFLNM 0032, impartido por la Dra. Daniela Serrano Campos y Rodrigo Nieves, de agosto a diciembre de 2024. *Este sitio web se encuentra actualmente en desarrollo.*
+
+## Descripción del curso
+
+La "revolución de los datos" está transformando nuestra comprensión del mundo y la educación sobre el mundo social debe adaptarse a esta realidad. Este curso aborda los conceptos fundamentales y las habilidades prácticas necesarias para consultar, citar, analizar y presentar fuentes y datos, incorporando las herramientas y prácticas que esta revolución trae consigo. Los planes, programas y métodos de enseñanza deben evolucionar para reflejar la importancia de los datos en la sociedad actual y preparar a las y los estudiantes para un futuro cada vez más digital.
+
+## Objetivos de aprendizaje/resultados
+Las y los estudiantes:
+
+1. Conocerán los fundamentos de la metodología de la investigación en ciencias sociales.  
+*Resultado:* Las y los estudiantes crearán un protocolo de un proyecto de investigación. 
+
+2. Se familiarizarán y adquirirán las competencias básicas para consultar, gestionar y citar fuentes.  
+*Resultado:* Crearán un documento de PDF con RMarkdown,
+
+3. Comprenderán y reflexionarán críticamente sobre las prácticas de uso de datos en la sociedad.  
+*Resultado:* Lo demostrarán en las discusiones y reflexiones sobre las lecturas en el salón de clases.
+
+
+Disfruta este curso
+
+
+</div>
+<div class="col-sm-6">
+
+<!-- ### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io) -->
+
+<!-- <a href = "https://crumplab.github.io"> -->
+![](images/logo.png)
+</a>
+</div>
