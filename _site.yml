@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "Inicio DEL CURSO"
       href: index.html
-    # - text: "Leccion 1"
-    #   href: Leccion_1.html
+    # - text: "modelos de area"
+    #   href: area-level-models.html
     # - text: "Clases"
     #   href: Clases.html
     # - text: "Links"
