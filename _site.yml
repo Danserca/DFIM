@@ -2,7 +2,7 @@ name: "Desplazamiento Forzado Interno en México"
 navbar:
   title: "Integración de fuentes"
   left:
-    - text: "Inicio DEL CURSO"
+    - text: "Inicio"
       href: index.html
     # - text: "modelos de area"
     #   href: area-level-models.html
