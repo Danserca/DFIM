@@ -1,6 +1,6 @@
 name: "Desplazamiento Forzado Interno en México"
 navbar:
-  title: "Presentación de resultados y metodología"
+  title: "DFIM"
   left:
     - text: "Inicio"
       href: index.html

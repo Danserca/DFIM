@@ -6,7 +6,7 @@ output: html_document
 <style type="text/css">
 
 h1.title {
-  color: ##fdfefe; /* Azul claro - cambia a cualquier color que desees */
+  color: #fdfefe; /* Azul claro - cambia a cualquier color que desees */
 }
 
 .title {
@@ -22,13 +22,18 @@ h1.title {
 }
 
 .navbar {
-  background-color:  #0077C8; /* Cambia este valor para ajustar el color del cintillo */
-  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+  background-color: #0077C8; 
+    border-color: #0077C8;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fdfefe; /* Establece el color del texto en blanco */
-  font-weight: bold; /* Establece el texto en negrita */
+  color: #0077C8  !important;
+    font-weight: bold  !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0077C8; /* Color al pasar el ratón por encima */
 }
 
 
@@ -41,12 +46,17 @@ h1.title {
 <div class="row-sm-3">
 
 ![](imagenes/rotulo2.png)
+
+
 </a>
 </div>
 
-<p style="text-align:left; font-size: 12px; color: grey;">
+<p style="text-align:right; font-size: 12px; color: grey;">
 Fuente: INEGI
 </p>
+
+
+
 
 # **Bienvenida**
 
