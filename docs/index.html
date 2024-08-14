@@ -245,6 +245,9 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Inicio</a>
 </li>
+<li>
+  <a href="modulo1.html">Módulo 1</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -266,35 +269,7 @@ México</h1>
 
 <style type="text/css">
   
-  /* Estilo para los enlaces del menú */
-  a.mainmenu {
-    color: #ffffff !important; /* Color blanco para el texto del menú */
-      padding: 10px 20px; /* Opcional: añade espacio alrededor del texto para un mejor espaciado */
-  }
-
-a.mainmenu:hover {
-  background-color: #005f99; /* Color de fondo al pasar el ratón, ajusta si lo deseas */
-}
-
-/* Estilo para el navbar */
-  .navbar {
-    background-color: #0077C8; /* Color de fondo del navbar */
-      border-color: #0077C8; /* Color del borde, opcional */
-      padding: 10px 0; /* Añade espacio alrededor de los elementos del navbar */
-      display: flex;
-    justify-content: space-around; /* Distribuye los elementos a lo largo del navbar */
-  }
-
-.navbar ul {
-  list-style: none; /* Elimina los puntos de lista */
-    margin: 0;
-  padding: 0;
-  display: flex; /* Asegura que los elementos se alineen horizontalmente */
-}
-
-.navbar li {
-  margin: 0 10px; /* Espaciado entre los elementos del menú */
-}
+  
 h1.title {
   color: black; /* Color del título, ajusta según tus necesidades */
 }
@@ -329,6 +304,14 @@ h1.title {
   h5.date {
     color: #0077C8; /* Puedes cambiar este color */
   }
+  
+.navbar {
+  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+}
+.navbar-default .navbar-nav > li > a {
+  color: #333333; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
+}
 
 </style>
 <div style="color:#gray;">
@@ -341,7 +324,7 @@ h1.title {
 <p><img src="imagenes/rotulo2.png" /></p>
 </a>
 </div>
-<p style="text-align:right; font-size: 12px; color: grey;">
+<p style="text-align:right; font-size: 12px; color: #0077C8;">
 Fuente: INEGI
 </p>
 <div id="bienvenida" class="section level1">

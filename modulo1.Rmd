@@ -1,0 +1,99 @@
+---
+title: "Modulo 1"
+subtitle: "Definición del DFI"
+# author: "Dra. Daniela Serrano Campos"
+# date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    theme: spacelab
+    #code_folding: hide
+---
+<style type="text/css">
+
+
+.navbar {
+  background-color: #CD8C95; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #8B5F65; /* Opcional: cambia también el color del borde si es necesario */
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #8B5F65; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
+}
+
+#TOC {
+  color: #8B5F65; 
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #8B5F65;
+    background-color: #EEDFCC;
+    border-color: #8B5F65;
+}
+
+/* Cambia el color del título */
+h1.title {
+  color: #8B5F65; /* Azul claro - puedes cambiar este color */
+}
+
+/* Cambia el color del subtítulo */
+h4.subtitle {
+  color: #8B5F65; /* Azul acero - puedes cambiar este color */
+}
+
+/* Opcional: Cambia el color del autor */
+h5.author {
+  color: #8B5F65; /* Azul pizarra medio - puedes cambiar este color */
+}
+
+/* Opcional: Cambia el color de la fecha */
+h5.date {
+  color: #8B5F65; /* Verde oscuro - puedes cambiar este color */
+}
+
+</style>
+
+<div style="color:#8B5F65;">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+
+# Bienvenida al módulo
+
+Este módulo sirve como introducción al curso de e-learning de seis partes sobre las Recomendaciones Internacionales sobre Estadísticas de Refugiados (IRRS), las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS) y las Recomendaciones Internacionales sobre Estadísticas de Apatridia (IROSS).
+
+Después de completar este módulo, podrás:
+
+- Comprender la importancia de las estadísticas nacionales sobre refugiados, desplazados internos y apatridia.
+- Describir las aplicaciones de política y programación de las estadísticas sobre desplazamiento forzado y apatridia, así como los desafíos recurrentes de datos.
+- Definir estadísticas oficiales y datos operativos en contextos de desplazamiento forzado y apatridia.
+- Comprender el papel del Grupo de Expertos en Estadísticas de Refugiados, Desplazados Internos y Apátridas (EGRISS) y su contribución a la recopilación de datos sobre desplazamiento forzado y apatridia.
+- Definir poblaciones de refugiados, desplazados internos y apátridas.
+- Resumir las fuentes de datos y la coordinación en contextos de refugiados, desplazados internos y apatridia.
+
+Te tomará aproximadamente 1 hora y 15 minutos completar este módulo.
+
+Para comenzar, haz clic en el botón de Iniciar Módulo en la parte superior o selecciona una lección a continuación.
+
+Dentro del módulo, puedes navegar seleccionando una lección del menú a la izquierda o usando los enlaces de Lección Anterior/Siguiente Lección arriba y abajo de cada lección.
+
+# Importancia de las estadísticas de calidad de DFI
+
+El desplazamiento forzado es un fenómeno global que ha experimentado un aumento en los últimos años. La apatridia sigue siendo un problema importante en muchos contextos. Ambos problemas persisten y plantean importantes desafíos humanitarios y de desarrollo que deben abordarse.
+
+Se estima que a fines de 2022, 108,4 millones de personas fueron desplazadas por la fuerza en todo el mundo.
+
+Las personas desplazadas por la fuerza enfrentan numerosos desafíos sociales y económicos, incluida la pérdida de bienes y medios de vida, y necesitan ayuda para reconstruir sus vidas. Aunque son distintos, el desplazamiento forzado y la apatridia pueden cruzarse en ciertas situaciones, lo que a menudo crea vulnerabilidades más agudas. La mayoría de las personas desplazadas por la fuerza se encuentran en países de ingresos medianos bajos y, por lo tanto, se necesita urgentemente cooperación internacional para ayudar a los países de acogida y las comunidades de acogida afectadas.
+
+El desarrollo de políticas destinadas a mejorar las condiciones socioeconómicas de los refugiados, desplazados internos, apátridas y las comunidades/regiones de acogida afectadas por su presencia requiere estadísticas confiables, comparables y oportunas sobre estas poblaciones.
+
+Los datos también son necesarios para mejorar el uso de los recursos y las capacidades a fin de atender mejor las necesidades de estas poblaciones vulnerables. Las estadísticas producidas a nivel nacional son las más eficaces para fundamentar la respuesta nacional.
+
+# Definición
+
