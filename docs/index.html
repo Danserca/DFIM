@@ -266,29 +266,47 @@ México</h1>
 
 <style type="text/css">
 
+/* Estilo para los enlaces del menú */
+a.mainmenu {
+    color: #ffffff !important; /* Color blanco para el texto del menú */
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+    background-color: transparent !important; /* Asegura que no haya fondo detrás del texto */
+    padding: 10px 20px; /* Opcional: añade espacio alrededor del texto para un mejor espaciado */
+}
 
+a.mainmenu:hover {
+    background-color: #005f99; /* Color de fondo al pasar el ratón, ajusta si lo deseas */
+}
+
+/* Estilo para el navbar */
 .navbar {
-  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
-  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+  background-color: #0077C8; /* Color de fondo del navbar */
+  border-color: #0077C8; /* Color del borde, opcional */
+  padding: 10px 0; /* Añade espacio alrededor de los elementos del navbar */
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos a lo largo del navbar */
 }
 
-.navbar-nav > li > a {
-  color: red; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
+.navbar ul {
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Asegura que los elementos se alineen horizontalmente */
 }
 
+.navbar li {
+    margin: 0 10px; /* Espaciado entre los elementos del menú */
+}
 
+/* Resto del código */
 h1.title {
-    color: black; /* Azul claro - cambia a cualquier color que desees */
+    color: black; /* Color del título, ajusta según tus necesidades */
 }
 
 .title {
   display: none;
 }
 
-
-TOC {
-  color: #0077C8; 
-}
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     z-index: 2;
@@ -299,22 +317,22 @@ TOC {
 
 /* Cambia el color del título */
 h1.title {
-  color: #0077C8; /* Azul claro - puedes cambiar este color */
+  color: #0077C8; /* Puedes cambiar este color */
 }
 
 /* Cambia el color del subtítulo */
 h4.subtitle {
-  color: #0077C8; /* Azul acero - puedes cambiar este color */
+  color: #0077C8; /* Puedes cambiar este color */
 }
 
 /* Opcional: Cambia el color del autor */
 h5.author {
-  color: #0077C8; /* Azul pizarra medio - puedes cambiar este color */
+  color: #0077C8; /* Puedes cambiar este color */
 }
 
 /* Opcional: Cambia el color de la fecha */
 h5.date {
-  color: #0077C8; /* Verde oscuro - puedes cambiar este color */
+  color: #0077C8; /* Puedes cambiar este color */
 }
 
 </style>
@@ -323,7 +341,7 @@ h5.date {
 
 
 <div class="row" style="padding-top: 30px;">
-<div class="col-sm-12" style="color:red;">
+<div class="col-sm-12" style="color: #0077C8;">
 
 </div>
 <div class="row-sm-3">
