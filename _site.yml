@@ -4,12 +4,5 @@ navbar:
   left:
     - text: "Inicio"
       href: index.html
-    # - text: "modelos de area"
-    #   href: area-level-models.html
-    # - text: "Clases"
-    #   href: Clases.html
-    # - text: "Links"
-    #   href: Links.html
-    # - text: "Primera unidad"
-    #   href: Journal2.html
 output_dir: "docs"
+

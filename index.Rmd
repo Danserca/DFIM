@@ -2,45 +2,67 @@
 title: "Taller sobre la Metodología y Resultados del Proyecto de Medición del Desplazamiento Forzado Interno (DFI) en México"
 output: html_document
 ---
-
 <style type="text/css">
 
+
+.navbar {
+  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: red; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
+}
+
+
 h1.title {
-  color: #fdfefe; /* Azul claro - cambia a cualquier color que desees */
+    color: black; /* Azul claro - cambia a cualquier color que desees */
 }
 
 .title {
   display: none;
 }
 
-#getting-started img {
-  margin-right: 10px;
+
+TOC {
+  color: #0077C8; 
 }
 
-.custom-color {
-  color: #fdfefe; 
-}
-
-.navbar {
-  background-color: #0077C8; 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #0077C8;
+    background-color: #EEDFCC;
     border-color: #0077C8;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: #0077C8  !important;
-    font-weight: bold  !important;
+/* Cambia el color del título */
+h1.title {
+  color: #0077C8; /* Azul claro - puedes cambiar este color */
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #0077C8; /* Color al pasar el ratón por encima */
+/* Cambia el color del subtítulo */
+h4.subtitle {
+  color: #0077C8; /* Azul acero - puedes cambiar este color */
 }
 
+/* Opcional: Cambia el color del autor */
+h5.author {
+  color: #0077C8; /* Azul pizarra medio - puedes cambiar este color */
+}
+
+/* Opcional: Cambia el color de la fecha */
+h5.date {
+  color: #0077C8; /* Verde oscuro - puedes cambiar este color */
+}
 
 </style>
 
+<div style="color:#0077C8;">
+
+
+
 <div class="row" style="padding-top: 30px;">
-<div class="col-sm-12" style="color:#0077C8;">
+<div class="col-sm-12" style="color:red;">
 
 </div>
 <div class="row-sm-3">
@@ -54,8 +76,6 @@ h1.title {
 <p style="text-align:right; font-size: 12px; color: grey;">
 Fuente: INEGI
 </p>
-
-
 
 
 # **Bienvenida**
