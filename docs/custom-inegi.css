@@ -1,0 +1,35 @@
+/* General Settings */
+body {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Ajustes para títulos principales */
+h1 {
+    font-size: 2.5em; /* Ajustar si es necesario */
+    color: #0077C8;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em; /* Ajustar si es necesario */
+    color: #0077C8;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #0077C8;
+}
+
+/* Ajustes para secciones con fondo inverso */
+.inverse {
+    background-color: #0077C8 !important;
+    color: #ffffff !important;
+}
+
+.inverse h1, .inverse h2, .inverse h3, .inverse p, .inverse li, .inverse a {
+    color: #ffffff !important;
+}
+

@@ -72,7 +72,7 @@ El curso se basa principalmente en los trabajos del [Grupo de expertos sobre est
 
 # Objetivo general:
 
-El objetivo de este taller es fortalecer las capacidades del INEGI para responder a la demanda de estadísticas sobre Desplazamiento Forzado en el país. Para lograrlo, se busca una comprensión profunda de la metodología y resultados del Proyecto de Investigación 18, [Programa Anual de Investigación del Instituto Nacional de Estadística y Geografía (PAI 2023)](https://sc.inegi.org.mx/repositorioNormateca/Od_16Dic22.pdf), sobre la Medición del Desplazamiento Forzado Interno (DFI) en México.
+El objetivo de este taller es fortalecer las capacidades del INEGI para responder a la demanda de estadísticas sobre Desplazamiento Forzado en el país. Para lograrlo, se busca una comprensión profunda de la metodología y resultados del Proyecto de Investigación 18, [Programa Anual de Investigación 2023 (PAI 2023) del Instituto Nacional de Estadística y Geografía (INEGI) ](https://sc.inegi.org.mx/repositorioNormateca/Od_16Dic22.pdf), sobre la Medición del Desplazamiento Forzado Interno (DFI) en México.
 
 ### Objetivos específicos:
 

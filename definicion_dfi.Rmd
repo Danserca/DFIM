@@ -1,0 +1,109 @@
+---
+title: "Definición del Desplazamiento Forzado Interno"
+subtitle: "¿Quiénes son?"
+author: "Daniela Serrano Campos,<br>*investigadora I*"
+institute: "DGAI"
+date: "10/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - rladies
+      - rladies-fonts
+      - custom-inegi.css #CSS personalizado
+      # - inegi_fonts.css
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+remotes::install_github("mitchelloharawild/icons")
+devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+
+---
+name: hola
+class: middle, center, inverse
+
+
+# ¿Quiénes son las personas en situación de Desplazamiento Forzado Interno?  
+
+## EGRISS (2020)
+
+
+???
+Se presenta un resumen de los elementos de definición. 
+
+---
+class: middle
+
+.left-column[
+# PDFI 
+]
+.right-column[
+### Personas o grupos en situación de desplazamiento interno son quienes:  
+
+1. Han sido **forzadas u obligadas** a huir o abandonar su hogar o lugar habitual de residencia.  
+2. Que este desplazamiento tuvo lugar como resultado o para evitar los efectos de:  
+**2.1. los conflictos armados**  
+**2.2. violencia generalizada**  
+**2.3. violaciones de derechos humanos**  
+2.4. desastres naturales o causados por la acción humana  
+3. Sin cruzar frontera internacionalmente reconocida alguna.
+  
+Para fines estadísticos las PDFI se distinguen de las personas **migrantes por cuestiones económicas y refugiadas** 
+
+.footnote[
+----
+         Principios Rectores sobre Desplazamiento Forzado Interno (1998/2004).
+]
+]
+
+---
+name: adios
+class: middle, inverse
+
+.pull-left[
+# **¡Gracias!**
+<br/>
+## Gracias a R-Ladies Xalapa  
+
+### Por promover la diversidad de género en la comunidad de R
+
+]
+
+
+
+???
+¡Gracias por tu atención! 
+

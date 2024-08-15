@@ -2,7 +2,7 @@
   background-color: #0077C8 !important; /* Cambia este valor para ajustar el color del cintillo */
   border-color: #0077C8 !important; /* Opcional: cambia también el color del borde si es necesario */
   background-image: none !important; /* Elimina cualquier imagen de fondo */
-   height: 50px;
+   height: 65px;
 }
 
 .navbar-default .navbar-nav > li > a {
