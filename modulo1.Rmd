@@ -14,23 +14,26 @@ output:
     #code_folding: hide
 ---
 <style type="text/css">
+.navbar {
+  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
+    border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+}
 
 TOC {
-  color: #8B5F65; 
+  color: #0077C8; 
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     z-index: 2;
-    color: #8B5F65;
-    background-color: #EEDFCC;
-    border-color: #8B5F65;
+    color: #003057;
+    background-color: #0077C8;
+    border-color: #0077C8;
 }
-
 
 
 </style>
 
-<div style="color:#8B5F65;">
+<div style="color: #003057;">
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)

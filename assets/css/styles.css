@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
+    border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #0077C8 !important;  /* Cambia este valor al color deseado */
+  font-weight: bold !important; /* Hace que las letras estén en negritas */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0077C8; /* Cambia este valor al color deseado cuando el mouse está encima */
+  font-weight: bold; /* Mantiene las letras en negritas al hacer hover o focus */
+}
+
+.navbar-default .navbar-brand {
+  color: #0077C8; /* Cambia este valor al color del texto del logotipo de la navbar */
+  font-weight: bold; /* Hace que el texto del logotipo esté en negritas */
+}
