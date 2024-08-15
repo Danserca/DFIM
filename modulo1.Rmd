@@ -15,17 +15,7 @@ output:
 ---
 <style type="text/css">
 
-
-.navbar {
-  background-color: #CD8C95; /* Cambia este valor para ajustar el color del cintillo */
-  border-color: #8B5F65; /* Opcional: cambia también el color del borde si es necesario */
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #8B5F65; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
-}
-
-#TOC {
+TOC {
   color: #8B5F65; 
 }
 
@@ -36,25 +26,7 @@ output:
     border-color: #8B5F65;
 }
 
-/* Cambia el color del título */
-h1.title {
-  color: #8B5F65; /* Azul claro - puedes cambiar este color */
-}
 
-/* Cambia el color del subtítulo */
-h4.subtitle {
-  color: #8B5F65; /* Azul acero - puedes cambiar este color */
-}
-
-/* Opcional: Cambia el color del autor */
-h5.author {
-  color: #8B5F65; /* Azul pizarra medio - puedes cambiar este color */
-}
-
-/* Opcional: Cambia el color de la fecha */
-h5.date {
-  color: #8B5F65; /* Verde oscuro - puedes cambiar este color */
-}
 
 </style>
 

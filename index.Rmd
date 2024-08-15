@@ -1,55 +1,19 @@
 ---
 title: "Taller sobre la Metodología y Resultados del Proyecto de Medición del Desplazamiento Forzado Interno (DFI) en México"
-output: html_document
+output:
+  html_document:
+    theme: spacelab
+    css: "styles.css"
 ---
 <style type="text/css">
-  
-  
-h1.title {
-  color: black; /* Color del título, ajusta según tus necesidades */
-}
+  h1.title {
+    color: black; /* Color del título, ajusta según tus necesidades */
+  }
 
 .title {
   display: none;
 }
-
-
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-  z-index: 2;
-  color: #0077C8;
-    border-color: #0077C8;
-}
-
-/* Cambia el color del título */
-  h1.title {
-    color: #0077C8; /* Puedes cambiar este color */
-  }
-
-/* Cambia el color del subtítulo */
-  h4.subtitle {
-    color: #0077C8; /* Puedes cambiar este color */
-  }
-
-/* Opcional: Cambia el color del autor */
-  h5.author {
-    color: #0077C8; /* Puedes cambiar este color */
-  }
-
-/* Opcional: Cambia el color de la fecha */
-  h5.date {
-    color: #0077C8; /* Puedes cambiar este color */
-  }
-  
-.navbar {
-  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
-  border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
-}
-.navbar-default .navbar-nav > li > a {
-  color: #333333; /* Cambia este valor para ajustar el color del texto en las etiquetas de las secciones */
-}
-
 </style>
-  
   <div style="color:#gray;">
   
   <div class="row" style="padding-top: 30px;">
