@@ -20,3 +20,23 @@
   color: #FFFFFF; /* Cambia este valor al color del texto del logotipo de la navbar */
   font-weight: bold; /* Hace que el texto del logotipo esté en negritas */
 }
+
+/* Fondo del navbar cuando está en el estado colapsado */
+.navbar-collapse {
+  background-color: #0077C8; /* Color de fondo del menú desplegable */
+}
+
+/* Estilos adicionales para los enlaces del menú desplegable */
+.navbar-nav > li > a {
+  color: #ffffff; /* Color del texto en el menú desplegable */
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+/* Opcional: Cambiar color de fondo cuando el enlace está en hover o activo */
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a {
+  background-color: #005a9c; /* Color de fondo en hover/activo */
+  color: #ffffff; /* Color del texto en hover/activo */
+}

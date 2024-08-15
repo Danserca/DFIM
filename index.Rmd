@@ -64,15 +64,15 @@ Equipo de la DGAI
 
 La elaboración de estadísticas comparables sobre desplazados internos es fundamental para la planificación, formulación de políticas y el debate público en las áreas del desarrollo sostenible, la paz y la seguridad. El desarrollo de la capacidad para producir estadísticas oficiales sobre desplazados internos puede mejorar la rendición de cuentas de la respuesta de los gobiernos y también puede impulsar un seguimiento y una evaluación más eficaces de las políticas y los programas asociados.
 
-El curso se basa principalmente en los trabajos del EGRISS.
+A pesar de la importancia de contar con datos confiables y de calidad sobre desplazados internos para la toma de decisiones basada en evidencia, a menudo se dispone de información limitada sobre cuántos son, dónde están, así como sobre su composición demográfica en términos de edad, género y diversidad. Además, en algunos contextos, se sabe poco sobre sus condiciones de vida y socioeconómicas en comparación con las poblaciones no desplazadas u otras.
 
-Desafíos recurrentes de los datos 
-A pesar de la importancia de contar con datos confiables y de calidad sobre desplazados internos para la toma de decisiones basada en evidencia, a menudo se dispone de información limitada sobre cuántos son, dónde están, así como sobre su composición demográfica en términos de edad, género y diversidad. Además, en algunos contextos, se sabe poco sobre sus condiciones de vida y socioeconómicas en comparación con las poblaciones no desplazadas u otras. 
+El curso se basa principalmente en los trabajos del [Grupo de expertos sobre estadísticas de refugiados, desplazados internos y apatridia (EGRISS)](https://egrisstats.org/).
+
 
 
 # Objetivo general:
 
-El objetivo de este taller es fortalecer las capacidades del INEGI para responder a la demanda de estadísticas sobre Desplazamiento Forzado en el país. Para lograrlo, se busca una comprensión profunda de la metodología y resultados del Proyecto de Investigación 18, PAI 2023, sobre la Medición del Desplazamiento Forzado Interno (DFI) en México.
+El objetivo de este taller es fortalecer las capacidades del INEGI para responder a la demanda de estadísticas sobre Desplazamiento Forzado en el país. Para lograrlo, se busca una comprensión profunda de la metodología y resultados del Proyecto de Investigación 18, [Programa Anual de Investigación del Instituto Nacional de Estadística y Geografía (PAI 2023)](https://sc.inegi.org.mx/repositorioNormateca/Od_16Dic22.pdf), sobre la Medición del Desplazamiento Forzado Interno (DFI) en México.
 
 ### Objetivos específicos:
 
