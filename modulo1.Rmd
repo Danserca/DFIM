@@ -1,6 +1,6 @@
 ---
-title: "Modulo 1"
-subtitle: "Definición del DFI"
+title: "Módulo 1"
+subtitle: "Definición de Desplazamiento Forzado Interno"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -11,13 +11,15 @@ output:
     number_sections: false
     toc_depth: 1
     theme: spacelab
+    css: "assets/css/styles.css"
     #code_folding: hide
 ---
 <style type="text/css">
 .navbar {
-  background-color: #0077C8; /* Cambia este valor para ajustar el color del cintillo */
-    border-color: #0077C8; /* Opcional: cambia también el color del borde si es necesario */
+  background-color: #0077C8 !important; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #0077C8 !important; /* Opcional: cambia también el color del borde si es necesario */
 }
+
 
 TOC {
   color: #0077C8; 
@@ -38,6 +40,8 @@ TOC {
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
+<hr style="border: 3px solid#0077C8;" />
+
 
 # Bienvenida al módulo
 

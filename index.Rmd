@@ -9,7 +9,7 @@ output:
 
 .navbar {
   background-color: #0077C8; 
-    border-color: #0077C8; 
+  border-color: #0077C8; 
 }
 
   h1.title {
