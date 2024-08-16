@@ -91,7 +91,7 @@ Para fines estadísticos las PDFI se distinguen de las personas **migrantes por 
 ---
 class: center
 
-## Iniciativas internacionales para los desplazados internos
+## Iniciativas internacionales sobre las personas en situación de desplazamiento interno
 
 .pull-left[
 .left[
@@ -121,13 +121,97 @@ class: center
 ] 
 ---
 name: adios
-class: center, middle, inverse
+class: center, inverse
+<br><br>
+<br><br>
+## Ahora ya conoces:  
+.left[
+✔️ los elementos que definen a las personas en situación de DFI  
+✔️ la necesidad de contar con estadísticas oficiales sobre esta población 
+]
 
-### Ahora ya conoces:  
-⭐la definición de desplazados intern
-\u2713 estadísticas oficiales sobre estos grupos de población. En la siguiente lección se describirán las aplicaciones de las estadísticas sobre desplazamiento forzado y apatridia en materia de políticas y programación, y los desafíos que se enfrentan al producir datos sobre refugiados, desplazados internos y apátridas.
+## ¿Qué sigue?
+.left[
+➡️ se describirán las aplicaciones de las estadísticas sobre desplazamiento forzado en materia de políticas y programación y   
+➡️ los desafíos que se enfrentan al producir datos sobre desplazados internos 
+]
+---
+class: center, inverse
+
+# Utilidad de producir estadísticas oficiales sobre DFI 
+.pull-left[
+## Para
+.left[
+## 1. Planear
+## 2. Diseñar política pública  
+## 3. Debate público
+]
+]
+
+.pull-right[
+## En áreas
+.left[
+## 1. Desarrollo sostenible
+## 2. Paz
+## 3. Seguridad
+]
+]
+---
+
+class: center, inverse
+
+# Desafíos recurrentes
+.pull-left[
+## Desafío
+.left[
+### 1. Inconsistencias y variación 
+### 2. Confiabilidad y precisión 
+### 3. Exclusión
+### 4. Coordinación 
+]
+]
+
+.pull-right[
+## En / De
+.left[
+### 1. Definiciones
+### 2. Fuentes de datos
+### 3. Muestra
+### 4. Preguntas de identificación 
+]
+]
+
+---
+class: center
+.center[
+#Principios Fundamentales de las Estadísticas Oficiales de las Naciones Unidas
+]
 
 
-???
-¡Gracias por tu atención! 
+![](imagenes/Principios-estadisticas.png)
+
+---
+class: center
+.center[
+## EGRISS
+]
+
+.pull-left[
+  .left[
+    ![](imagenes/EGRISS.png)
+  ]
+  .pull-right[
+  .right[
+    ![](imagenes/mandatos.png)
+  ]
+]
+]
+---
+
+
+
+
+
+
+
 
