@@ -23,8 +23,8 @@ output:
 ---
 
 ```{r setup, include = FALSE}
-remotes::install_github("mitchelloharawild/icons")
-devtools::install_github("hadley/emo")
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
 library(knitr)                              # paquete que trae funciones utiles para R Markdown
 library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
 library(datos)                              # paquete que viene con datos populares traducidos al español :)
@@ -85,23 +85,47 @@ Para fines estadísticos las PDFI se distinguen de las personas **migrantes por 
 
 .footnote[
 ----
-         Principios Rectores sobre Desplazamiento Forzado Interno (1998/2004).
+  Principios Rectores sobre Desplazamiento Forzado Interno (1998/2004).
 ]
 ]
-
 ---
-name: adios
-class: middle, inverse
+class: center
+
+## Iniciativas internacionales para los desplazados internos
 
 .pull-left[
-# **¡Gracias!**
-<br/>
-## Gracias a R-Ladies Xalapa  
+.left[
 
-### Por promover la diversidad de género en la comunidad de R
+## Iniciativas
+
+1. Cumbre Humanitaria Mundial (2016)   
+2. Grupo de Alto Nivel del Secretario General de las Naciones Unidas sobre Desplazamiento Interno (2021)  
+3. Resolución A/C.3/76/L.26/Rev.1(2021) de la Asamblea General  
+4. Marco de Sendai para la Reducción del Riesgo de Desastres 2015-2030
 
 ]
+]
 
+.pull-right[
+.left[
+## Recomendaciones
+
+1. Recopilación y análisis de datos:  
+1.1. Establecer sistemas para recopilar, analizar y gestionar datos.
+1.2. Aumento de la cobertura, calidad y disponibilidad. 
+1.3. Datos desglosados. 
+2. Uso de datos   
+2.1. Emplear los datos para diseñar políticas, planes operativos y respuestas más eficaces. 
+
+]
+] 
+---
+name: adios
+class: center, middle, inverse
+
+### Ahora ya conoces:  
+⭐la definición de desplazados intern
+\u2713 estadísticas oficiales sobre estos grupos de población. En la siguiente lección se describirán las aplicaciones de las estadísticas sobre desplazamiento forzado y apatridia en materia de políticas y programación, y los desafíos que se enfrentan al producir datos sobre refugiados, desplazados internos y apátridas.
 
 
 ???

@@ -74,7 +74,7 @@ Los datos también son necesarios para mejorar el uso de los recursos y las capa
 
 # ¿Quiénes son las personas desplazadas internas?
 
-Mira la presentación la continuación para obtener más información.
+Mira la presentación a continuación para obtener más información.
 
 <iframe src="definicion_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
