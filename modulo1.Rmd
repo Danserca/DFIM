@@ -78,9 +78,9 @@ Mira la presentación a continuación para obtener más información.
 
 <iframe src="definicion_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
-[Haz el siguiente ejercicio](https://danielasercampos.shinyapps.io/quiz_prueba/)
+<!-- [Haz el siguiente ejercicio](https://danielasercampos.shinyapps.io/quiz_prueba/) -->
+
 
 
 <iframe src="https://danielasercampos.shinyapps.io/quiz_prueba/" style="width: 800px; height: 600px; border: none;"></iframe>
-
 

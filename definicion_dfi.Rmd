@@ -111,7 +111,7 @@ class: center
 ## Recomendaciones
 
 1. Recopilación y análisis de datos:  
-1.1. Establecer sistemas para recopilar, analizar y gestionar datos.
+1.1. Establecer sistemas para recopilar, analizar y gestionar datos.  
 1.2. Aumento de la cobertura, calidad y disponibilidad. 
 1.3. Datos desglosados. 
 2. Uso de datos   
@@ -119,6 +119,13 @@ class: center
 
 ]
 ] 
+---
+class: middle, center, inverse
+
+### El **Pacto Mundial de Refugiados (GCR)** pide “normas armonizadas o interoperables para la recopilación, el análisis y el intercambio de datos” mediante el uso de las **Recomendaciones internacionales sobre estadísticas de refugiados**.
+
+###También destaca la importancia de fortalecer los sistemas nacionales de recopilación de datos y alienta a los Estados a buscar el apoyo necesario para **incluir a las PDFI** en sus procesos nacionales de producción de datos y estadísticas.
+
 ---
 name: adios
 class: center, inverse
@@ -140,7 +147,9 @@ class: center, inverse
 
 # Utilidad de producir estadísticas oficiales sobre DFI 
 .pull-left[
+.left[
 ## Para
+]
 .left[
 ## 1. Planear
 ## 2. Diseñar política pública  
@@ -149,7 +158,9 @@ class: center, inverse
 ]
 
 .pull-right[
+.left[
 ## En áreas
+]
 .left[
 ## 1. Desarrollo sostenible
 ## 2. Paz
@@ -194,18 +205,24 @@ class: center
 class: center
 .center[
 ## EGRISS
+#### Objetivo: desarrollar, promover y apoyar la implementación de recomendaciones internacionales sobre cómo recopilar, compilar y difundir estadísticas sobre refugiados, desplazados internos y apátridas.
 ]
 
-.pull-left[
-  .left[
-    ![](imagenes/EGRISS.png)
-  ]
-  .pull-right[
-  .right[
-    ![](imagenes/mandatos.png)
-  ]
-]
-]
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="imagenes/EGRISS.png" style="width: 80%; margin-right: -30px;">
+  <img src="imagenes/mandatos.png" style="width: 53%; margin-left: -80px;">
+</div>
+---
+
+class: left
+
+#Definiciones estadísticas (operacionalización)
+
+Las definiciones estadísticas deben describir claramente su población objetivo de manera que se distingan de otras poblaciones. 
+
+**Un elemento clave es especificar cuidadosamente cómo encaja un concepto en un campo semántico mayor compuesto de referentes y conceptos próximos**
+
+Las **Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente (IRIS)** presentan marcos estadísticos que estandarizan terminologías y clasificaciones.
 ---
 
 
