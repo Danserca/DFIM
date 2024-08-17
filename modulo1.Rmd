@@ -78,7 +78,9 @@ Mira la presentación a continuación para obtener más información.
 
 <iframe src="definicion_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
-[Iniciar el Quiz Interactivo](http://127.0.0.1:6017/ejercicios_dfi.Rmd)
+[Haz el siguiente ejercicio](https://danielasercampos.shinyapps.io/quiz_prueba/)
 
+
+<iframe src="https://danielasercampos.shinyapps.io/quiz_prueba/" style="width: 800px; height: 600px; border: none;"></iframe>
 
 
