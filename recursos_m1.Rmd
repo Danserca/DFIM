@@ -1,0 +1,54 @@
+---
+title: "Recursos sobre Desplazamiento Forzado"
+output:
+  pdf_document:
+    toc: true
+    number_sections: false
+    toc_depth: 2  # Puedes ajustar este valor según tus necesidades
+---
+## Introducción a las Recomendaciones Internacionales sobre Estadísticas de Refugiados, Desplazados Internos y Apatridia
+
+### Recursos
+Existen varios recursos mencionados en este módulo que puedes utilizar para familiarizarte con las estadísticas sobre desplazamiento forzado y apatridia. Aquí tienes algunos de ellos:
+
+1. Los siguientes enlaces proporcionan más información sobre las tendencias globales de desplazamiento forzado y apatridia al final de 2022:
+   - [UNHCR (2023) Global Trends Report 2022](https://www.unhcr.org/global-trends-report-2022)
+   - [UNICEF (2022) Child Displacement](https://data.unicef.org/topic/child-migration-and-displacement/displacement/)
+   - [IDMC (2023) Global Report on Internal Displacement 2023](https://www.internal-displacement.org/global-report/grid2023/)
+
+2. Los siguientes enlaces proporcionan marcos legales internacionales y regionales relevantes sobre desplazamiento forzado y apatridia:
+   - [Convención sobre el Estatuto de los Refugiados](https://www.un.org/en/genocideprevention/documents/atrocity-crimes/Doc.23_convention%20refugees.pdf)
+   - [Protocolo de 1967 sobre el Estatuto de los Refugiados](https://www.ohchr.org/sites/default/files/Documents/ProfessionalInterest/protocolrefugees.pdf)
+   - [Convención que regula los aspectos específicos de los problemas de los refugiados en África](https://au.int/sites/default/files/treaties/36400-treaty-0005_-_oau_convention_governing_the_specific_aspects_of_refugee_problems_in_africa_e.pdf)
+   - [Declaración de Cartagena sobre Refugiados](https://www.unhcr.org/about-us/background/45dc19084/cartagena-declaration-refugees-adopted-colloquium-international-protection.html)
+   - [Directiva 2011/05/EU del Parlamento Europeo y del Consejo](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:174:0088:0110:en:PDF)
+   - [Principios Rectores de los Desplazamientos Internos (1998/2004)](https://www.unhcr.org/43ce1cff2.pdf)
+   - [Convención sobre el Estatuto de los Apátridas](https://www.refworld.org/docid/3ae6b3840.html)
+   - [Convención para la Reducción de la Apatridia](https://legal.un.org/ilc/texts/instruments/english/conventions/6_1_1961.pdf)
+
+3. Los siguientes enlaces proporcionan acceso a marcos de políticas clave y compromisos internacionales relevantes para el desplazamiento forzado y la apatridia:
+   - [La Agenda 2030 para el Desarrollo Sostenible](https://sustainabledevelopment.un.org/content/documents/21252030%20Agenda%20for%20Sustainable%20Development%20web.pdf)
+   - [Marco Integral de Respuesta a los Refugiados (CRRF)](https://www.unhcr.org/comprehensive-refugee-response-framework-crrf.html)
+   - [Pacto Mundial sobre Refugiados (GCR)](https://www.unhcr.org/5c658aed4.pdf)
+   - [Panel de Alto Nivel del Secretario General de las Naciones Unidas sobre Desplazamiento Interno](https://www.un.org/internal-displacement-panel/#:~:text=The%20High%2DLevel%20Panel%20on%20Internal%20Displacement%20was%20established%20by,the%20global%20internal%20displacement%20crisis.)
+   - [Resolución A/C.3/76/L.26/Rev.1 sobre la Protección y Asistencia a las Personas Desplazadas Internamente](https://documents-dds-ny.un.org/doc/UNDOC/LTD/N21/329/81/PDF/N2132981.pdf?OpenElement)
+   - [Marco de Sendai para la Reducción del Riesgo de Desastres 2015-2030](https://www.preventionweb.net/files/43291_sendaiframeworkfordrren.pdf)
+   - [Agenda de Acción del Secretario General sobre Desplazamiento Interno](https://www.un.org/en/content/action-agenda-on-internal-displacement/)
+   - [Conclusión sobre Identificación, Prevención y Reducción de la Apatridia y Protección de las Personas Apátridas No. 106 (LVII) - 2006](https://www.refworld.org/docid/453497302.html)
+   - [Plan de Acción Global para Acabar con la Apatridia: 2014-2024](https://www.unhcr.org/media/global-action-plan-end-statelessness-2014-2024)
+
+4. Los Principios Fundamentales de las Estadísticas Oficiales de las Naciones Unidas (UNFPOS) están disponibles en el siguiente enlace:
+   - [Principios Fundamentales de las Estadísticas Oficiales de las Naciones Unidas (UNFPOS)](https://unstats.un.org/unsd/dnss/gp/fundprinciples.aspx)
+
+5. La metodología desarrollada por EGRISS sobre estadísticas de refugiados, desplazados internos y apatridia (IRRS, IRIS e IROSS), así como otros documentos relacionados, se pueden encontrar en los siguientes enlaces:
+   - [Recomendaciones Internacionales sobre Estadísticas de Refugiados (IRRS)](https://egrisstats.org/recommendations/international-recommendations-on-refugee-statistics-irrs/)
+     - Las traducciones al árabe, francés, ruso y español de las IRRS están disponibles [aquí](https://egrisstats.org/recommendations/international-recommendations-on-refugee-statistics-irrs/)
+   - [Informe Técnico sobre Estadísticas de Personas Desplazadas Internamente](https://egrisstats.org/wp-content/uploads/2.F-Technical-Report-on-IDP-Stats.pdf)
+   - [Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS)](https://egrisstats.org/recommendations/international-recommendations-on-idp-statistics-iris/)
+     - Las traducciones al árabe, francés, ruso y español de las IRIS están disponibles [aquí](https://egrisstats.org/recommendations/international-recommendations-on-idp-statistics-iris/)
+   - [Recomendaciones Internacionales sobre Estadísticas de Apatridia (IROSS)](https://egrisstats.org/recommendations/international-recommendations-on-statelessness-statistics-iross/)
+   - [Manual de Compiladores de EGRISS](https://egrisstats.org/activities/compilers-manual/)
+
+6. Las recomendaciones sobre estadísticas de migración internacional están disponibles en los siguientes enlaces:
+   - [Recomendaciones sobre Estadísticas de Migración Internacional](https://unstats.un.org/unsd/publication/seriesm/seriesm_58rev1e.pdf)
+   - [Informe Final sobre Marcos Conceptuales y Conceptos y Definiciones sobre Migración Internacional](https://unstats.un.org/unsd/demographic-social/migration-expert-group/task-forces/TF2-ConceptualFramework-Final.pdf)

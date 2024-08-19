@@ -6,5 +6,8 @@ navbar:
       href: index.html
     - text: "Módulo 1"
       href: modulo1.html
+    - text: "Módulo 2"
+      href: modulo2.html  
+
 output_dir: "docs"
 

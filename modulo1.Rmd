@@ -112,3 +112,16 @@ Las ONE desempeñan un papel crucial en la coordinación para garantizar que se 
 
 <iframe src="https://danielasercampos.shinyapps.io/ones_coord/" style="width: 800px; height: 800px; border: none;"></iframe>
 <br><br>
+
+# Lección 6. Recursos
+
+##[Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m1.pdf)
+
+
+# ¿Qué sigue?
+
+➡️ Módulo 2. Estadísticas sobre DFI: stock, flujo y caracterización. 
+
+<br><br>
+<br><br>
+**Gracias por realizar este módulo. Esperamos que haya disfrutado de su lectura y que le haya ayudado a comprender mejor la necesidad de contar con estadísticas oficiales sobre desplazamiento forzado.**
