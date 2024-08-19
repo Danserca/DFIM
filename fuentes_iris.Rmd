@@ -1,0 +1,88 @@
+---
+title: "El papel de las Oficinas Nacionales de Estadística (ONE) en la coordinación"
+# subtitle: "¿Quiénes son?"
+# author: "Daniela Serrano Campos,<br>*investigadora I*"
+# institute: "DGAI"
+# date: "10/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - rladies
+      - rladies-fonts
+      - custom-inegi.css #CSS personalizado
+      # - inegi_fonts.css
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+---
+class: center, inverse
+
+## El papel de las Oficinas Nacionales de Estadística (ONE) en la coordinación
+
+.pull-left[
+.left[
+
+## General 
+
+1. Los sistemas estadísticos nacionales difieren en cuanto al nivel de centralización. En muchos países, las unidades estadísticas de los ministerios competentes recopilan, analizan y difunden datos pertinentes a su área de responsabilidad.  
+2. Las ONE tienen un papel clave en la coordinación del sistema estadístico nacional al garantizar que se apliquen los estándares internacionales vigentes, asegurando así la calidad.   
+3. La comparabilidad internacional depende de la calidad de las estadísticas.
+
+
+]
+]
+
+.pull-right[
+.left[
+## DFI
+
+1. Las estadísticas sobre PDFI no siempre están integradas en los sistemas estadísticos nacionales ni en los mecanismos de coordinación asociados. 
+2. Para abordar este desafío común, se alienta a las **ONE a coordinar las actividades de los socios nacionales e internacionales pertinentes para garantizar que se apliquen las normas internacionales para las estadísticas de PDFI y que se produzcan resultados a través del sistema nacional.** 
+
+]
+] 
+---
+
+
+
+
+
+
+
+
