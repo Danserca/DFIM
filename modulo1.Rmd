@@ -105,7 +105,7 @@ Cada fuente de datos tiene sus propias ventajas y limitaciones. Las IRIS contemp
 
 Las ONE desempeñan un papel crucial en la coordinación para garantizar que se apliquen los estándares de datos y se mantenga la calidad.
 
-<iframe src="fuentes_iriS.html" style="width: 800px; height: 600px; border: none;"></iframe>
+<iframe src="fuentes_iris.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
 
 <hr class="cintillo"/>
