@@ -52,6 +52,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
+
 # Lección 2. Marco estadístico
 
 El marco estadístico para el DFI se define en las Recomendaciones internacionales sobre estadísticas de desplazados internos (IRIS por sus siglas en inglés).
@@ -82,38 +83,153 @@ Es decir, que se integraron.
 
 ### 2. Criterios de inclusión como PDFI
 
-2.1. **Ha residido habitualmente en el lugar donde ocurrió un evento causante, en el momento del evento.**
 
-2.2. **Ha sido desplazado por la fuerza, incluyendo movimientos preventivos, por:**  
-- Conflicto armado  
-- Violencia generalizada  
-- Violaciones de derechos humanos   
-- Desastres naturales o provocados por el hombre  
-- Otros desplazamientos o desalojos forzados  
- 
-2.3. **Ha estado físicamente viviendo fuera de la vivienda en la que vivía en el momento del evento causante.**
+<iframe src="calificacion_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
-2.4. **Se encuentra dentro de las fronteras internacionalmente reconocidas del país donde fue desplazado (incluso si temporalmente fue al extranjero por un período de menos de 12 meses después del evento causante).**
-
-5. **Las vulnerabilidades relacionadas con el desplazamiento (según el Marco IASC para Soluciones Duraderas para Personas Desplazadas Internamente) no han sido evaluadas o, tras la evaluación, se establece que no han sido superadas.**
-
-### 3. Residencia habitual y habitual
-
-3.1. Lugar de residencia habitual  
-El lugar de residencia habitual es el lugar donde residía la persona en el momento de su desplazamiento inicial (es decir, su lugar de residencia habitual antes del desplazamiento).  
-
-Aunque una persona se desplace varias veces, su lugar de residencia habitual es estático y se remonta al lugar de residencia en el momento del evento original que causó el desplazamiento.  
-
-3.2. Lugar de residencia usual (un concepto estadístico estándar)  
-Se refiere al lugar donde reside la persona en el momento de la recopilación de datos.
-
-Un desplazado interno puede ser desplazado en múltiples ocasiones y puede haber tenido varios lugares de residencia usual durante un período de tiempo determinado. 
 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
 
+# Lección 3. Población total y flujo de PDFI  
+
+4.1. Población total de PDFI  
+
+El stock de población indica el tamaño de los miembros de la población en un momento específico.
+
+4.2. Flujo  
+
+Un flujo es una medida del cambio en la población a lo largo de un período de tiempo definido.
+
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+
+# Lección 4. Definición de soluciones duraderas
+
+Existen dos enfoques estadísticos para medir el progreso hacia soluciones duraderas para los desplazados internos, inspirados en la definición de soluciones duraderas del Marco del IASC y los criterios asociados, a saber:  
+1. La medida del progreso hacia las soluciones duraderas.  
+2. La medida compuesta, diseñada para especificar si se han superado las vulnerabilidades clave relacionadas con el desplazamiento y, por lo tanto, si los desplazados internos deben ser retirados del inventario nacional.  
+
+De acuerdo con el Marco sobre soluciones duraderas para los desplazados internos del Comité Permanente entre Organismos (IASC), el desplazamiento termina cuando los desplazados internos han conseguido una solución duradera, es decir, cual tienen acceso  a los derechos humanos en ocho áreas definidas:  
+
+#### 1. Seguridad, Protección y Libertad de Movimiento
+
+##### 1.1 Víctimas de la Violencia
+
+##### 1.2 Libertad de Movimiento
+
+##### 1.3 Mecanismos de Protección
+
+##### 1.4 Reducción del Riesgo de Desastres
+
+
+#### 2. Estándar de Vida Adecuado
+
+##### 2.1 Seguridad Alimentaria
+
+##### 2.2 Refugio y Vivienda
+
+##### 2.3 Servicios Médicos
+
+##### 2.4 Educación  
+
+
+#### 3. Acceso a Medios de Vida
+
+##### 3.1 Empleo y Medios de Vida
+
+##### 3.2 Seguridad Económica  
+
+
+#### 4. Restauración de Vivienda, Tierra y Propiedad  
+
+##### 4.1 Restitución de Propiedad y Compensación  
+
+
+#### 5. Acceso a Documentación  
+
+##### 5.1 Documentación  
+
+
+#### 6. Reunificación Familiar
+
+##### 6.1 Reunificación Voluntaria
+
+##### 6.2 Servicios de Reunificación y Búsqueda    
+
+
+#### 7. Participación en Asuntos Públicos
+
+##### 7.1 Asuntos Públicos
+
+##### 7.2 Derecho al Voto
+
+##### 7.3 Derecho a Participar en el Servicio Público
+
+
+#### 8. Acceso a Recursos Efectivos y Justicia
+
+##### 8.1 Recursos y Justicia
+
+**"Las soluciones duraderas para el desplazamiento interno son complejas y difíciles de medir. Por lo tanto, es esencial un conjunto común de recomendaciones para los países y las organizaciones internacionales con este fin." (SIAP 2024)** 
 
 
 
+¿Qué es la medida de progreso de las soluciones duraderas?
 
+IRIS propone una medida de progreso para monitorear la situación de desplazamiento en un país a lo largo del tiempo e identificar los avances logrados hacia soluciones duraderas. Propone un análisis comparativo de los desplazados internos con la población general o un subconjunto de la población general que vive en la misma área geográfica, en relación con los ocho criterios descritos en el marco de soluciones duraderas del IASC (SIAP 2024).
+
+
+# Lección 5. Variables y tabulados  
+
+El IRIS describe una lista recomendada de variables clasificatorias básicas, estadísticas y tabulaciones que deben producir las autoridades estadísticas nacionales:
+
+#### Detalles Demográficos  
+
+- Edad o fecha de nacimiento (jefe de hogar/individuo)
+- Sexo (jefe de hogar/individuo)    
+- Lugar de nacimiento  
+- Tamaño del hogar  
+- Si uno o ambos padres son/fueron desplazados internos (IDPs)  
+  
+#### Detalles del Desplazamiento  
+
+##### Fecha del primer desplazamiento  
+##### Fecha del desplazamiento más reciente  
+##### Motivo principal del desplazamiento forzado inicial  
+- Conflicto armado  
+- Violencia generalizada  
+- Violaciones de derechos humanos  
+- Desastres naturales o provocados por el hombre  
+- Otros desalojos o desplazamientos forzados  
+
+##### Motivo principal del desplazamiento forzado más reciente  
+- Conflicto armado  
+- Violencia generalizada  
+- Violaciones de derechos humanos  
+- Desastres naturales o provocados por el hombre  
+- Otros desalojos o desplazamientos forzados  
+
+##### Número de desplazamientos forzados
+
+
+#### Detalles de la Ubicación
+- Distrito/área administrativa del lugar de residencia habitual    
+- Distrito/área administrativa del lugar de residencia actual habitual (es decir, desplazados internos en lugares de desplazamiento, desplazados internos en lugares de retorno y desplazados internos en otros lugares de asentamiento)  
+- Tipo de habitación (campamento/asentamiento/propia vivienda/alojamiento alquilado/acogido por amigos/parientes)  
+
+Además de las variables básicas de clasificación, el IRIS describe las estadísticas básicas asociadas con el stock, la entrada, la salida y el progreso de los diferentes grupos de población incluidos en el marco estadístico de desplazamiento interno. La lista es intencionalmente básica para mantener su relevancia y viabilidad a nivel global, sin embargo, se invita a los países a producir estadísticas adicionales según las necesidades de datos en su propio contexto nacional.
+
+En resumen, se recomienda que los siguientes grupos de variables y estadísticas se utilicen como base para la recopilación y compilación de estadísticas de personas desplazadas internamente (IDP).
+
+Una lista de todas las variables está disponible en [IRIS](https://egrisstats.org/wp-content/uploads/IRIS_SPANISH-VERSION.pdf) (se abre en una nueva pestaña), Capítulo 5.
+
+
+# ¿Qué sigue?
+
+➡️ Módulo 3. Fuentes de datos, análisis y difusión. 
+
+<br><br>
+<br><br>
+**Has llegado al final de este módulo. Esperamos que lo hayas disfrutado y te haya ayudado a comprender mejor los marcos legal y de políticas y estadístico que rodean a las personas desplazadas internamente.**

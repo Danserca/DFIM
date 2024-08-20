@@ -1,0 +1,94 @@
+---
+title: "calificacion_dfi"
+# subtitle: "¿Quiénes son?"
+# author: "Daniela Serrano Campos,<br>*investigadora I*"
+# institute: "DGAI"
+# date: "10/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - rladies
+      - rladies-fonts
+      - custom-inegi.css #CSS personalizado
+      # - inegi_fonts.css
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+
+class: middle, center, inverse
+
+
+# Criterios de calificación para que una persona sea incluida en el flujo de entrada del stock de desplazados internos
+
+
+### Hay cuatro condiciones de calificación necesarias para que una persona sea incluida en el flujo de entrada del stock de desplazados internos.
+
+### *Haz clic en Iniciar para ver los criterios de calificación. Haga clic en las flechas derecha/izquierda para navegar por la interactividad.*
+
+
+???
+Se presenta un resumen de los elementos de definición. 
+
+---
+class: middle
+
+La persona ha sido forzada u obligada a moverse de su lugar de residencia habitual por un evento causante. Esto podría incluir:
+
+- Conflicto armado
+- Violencia generalizada
+- Violaciones de derechos humanos
+- Desastres naturales o provocados por el hombre, o
+- Otros desalojos o desplazamientos forzados
+
+
+---
+class: middle, inverse 
+
+### La persona ha residido habitualmente en el lugar donde, y en el momento cuando, ocurrió un evento causante.
+
+#### La intención de permanecer en el lugar donde se encuentran en el momento de la recolección de datos es el factor importante para determinar la residencia habitual en términos estadísticos, y esto dependerá de las respuestas subjetivas de los encuestados.
+
+---
+class: middle
+
+### La persona ha estado viviendo físicamente fuera de la vivienda en la que residía en el momento del evento causante.
+
+#### El criterio geográfico del concepto de desplazamiento incluye a aquellos que han sido desplazados y que permanecen en la misma área administrativa.
+---
+class: middle
+
+La persona se encuentra actualmente dentro de las fronteras reconocidas internacionalmente del país.
+
+Estadísticamente, esto significa que el país de residencia habitual del desplazado interno (IDP) sigue siendo el país en cuestión (el país de residencia habitual).
+
+---
+class: middle, inverse, center
+
+Solo las personas que cumplan con los cuatro criterios serán incluidas en el flujo de entrada del stock de desplazados internos (IDP).
+
