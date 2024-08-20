@@ -66,6 +66,7 @@ Para comenzar, haz clic en el botón de Iniciar Módulo en la parte superior o s
 <!-- Dentro del módulo, puedes navegar seleccionando una lección del menú a la izquierda o usando los enlaces de Lección Anterior/Siguiente Lección arriba y abajo de cada lección. -->
 <br><br>
 
+<hr style="border: 3px solid#0077C8;" />
 # Lección 2. Importancia de las estadísticas de calidad de Desplazamiento Forzado Interno
 
 El desplazamiento forzado es un fenómeno persistente que plantea desafíos humanitarios importantes. 
@@ -77,6 +78,7 @@ El desarrollo de políticas destinadas a mejorar las condiciones socioeconómica
 Los datos también son necesarios para mejorar el uso de los recursos y las capacidades a fin de atender mejor las necesidades de estas poblaciones vulnerables. Las estadísticas producidas a nivel nacional son las más eficaces para fundamentar la respuesta nacional.
 <br><br>
 
+<hr style="border: 3px solid#0077C8;" />
 # Lección 3. ¿Quiénes son las personas desplazadas internas?
 
 Mira la presentación a continuación para obtener más información.
@@ -87,6 +89,8 @@ Mira la presentación a continuación para obtener más información.
 
 <iframe src="https://danielasercampos.shinyapps.io/quiz_prueba/" style="width: 800px; height: 800px; border: none;"></iframe>
 <br><br>
+
+<hr style="border: 3px solid#0077C8;" />
 
 # Lección 4. Principales fuentes de datos 
 
@@ -100,7 +104,7 @@ Cada fuente de datos tiene sus propias ventajas y limitaciones. Las IRIS contemp
 ✔️ Ahora ya conoces las principales fuentes de datos para elaborar estadísticas oficiales y cómo utilizarlas. En la siguiente lección se expondrá la necesidad de coordinación nacional e internacional en materia de estadísticas sobre refugiados, desplazados internos y apatridia.
 
 <br><br>
-
+<hr style="border: 3px solid#0077C8;" />
 # Lección 5. El papel de las Oficinas Nacionales de Estadística (ONE) en la coordinación 
 
 Las ONE desempeñan un papel crucial en la coordinación para garantizar que se apliquen los estándares de datos y se mantenga la calidad.
@@ -113,11 +117,12 @@ Las ONE desempeñan un papel crucial en la coordinación para garantizar que se 
 <iframe src="https://danielasercampos.shinyapps.io/ones_coord/" style="width: 800px; height: 800px; border: none;"></iframe>
 <br><br>
 
+<hr style="border: 3px solid#0077C8;" />
 # Lección 6. Recursos
 
 ##[Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m1.pdf)
 
-
+<hr style="border: 3px solid#0077C8;" />
 # ¿Qué sigue?
 
 ➡️ Módulo 2. Estadísticas sobre DFI: stock, flujo y caracterización. 

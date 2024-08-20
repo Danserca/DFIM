@@ -50,4 +50,70 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 <iframe src="marco_legal_pol_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+# Lección 2. Marco estadístico
+
+El marco estadístico para el DFI se define en las Recomendaciones internacionales sobre estadísticas de desplazados internos (IRIS por sus siglas en inglés).
+
+### 1. Este marco incluye **cuatro** categorías de personas:
+1.1.  PDFI  
+1.2. Personas relacionadas con PDFI   
+1.3. Otras personas integrantes de la familia de las PDFI  
+1.4. Personas que han superado las principales vulnerabilidades asociadas al DFI
+
+1.1. PDFI  
+1.1.1. Personas que permanecen en el lugar a donde se desplazaron  
+1.1.2. Personas que regresaron a su lugar *habitual* de residencia  
+1.1.3. Personas que se han establecido en algún otro lugar del país
+
+1.2. Personas relacionadas con PDFI   
+Se refiere a las personas nacidas después del desplazamiento 
+
+1.3. Otras personas integrantes de la familia de las PDFI  
+Familiares que no fueron desplazadas pero son familiares de PDFI
+
+1.4. Personas que han superado las principales vulnerabilidades asociadas al DFI    
+1.4.1. Integraron localmente  
+1.4.2. Regresaron y se integraron  
+1.4.3. Se establecieron en otro lugar y se reintegraron   
+
+Es decir, que se integraron. 
+
+### 2. Criterios de inclusión como PDFI
+
+2.1. **Ha residido habitualmente en el lugar donde ocurrió un evento causante, en el momento del evento.**
+
+2.2. **Ha sido desplazado por la fuerza, incluyendo movimientos preventivos, por:**  
+- Conflicto armado  
+- Violencia generalizada  
+- Violaciones de derechos humanos   
+- Desastres naturales o provocados por el hombre  
+- Otros desplazamientos o desalojos forzados  
+ 
+2.3. **Ha estado físicamente viviendo fuera de la vivienda en la que vivía en el momento del evento causante.**
+
+2.4. **Se encuentra dentro de las fronteras internacionalmente reconocidas del país donde fue desplazado (incluso si temporalmente fue al extranjero por un período de menos de 12 meses después del evento causante).**
+
+5. **Las vulnerabilidades relacionadas con el desplazamiento (según el Marco IASC para Soluciones Duraderas para Personas Desplazadas Internamente) no han sido evaluadas o, tras la evaluación, se establece que no han sido superadas.**
+
+### 3. Residencia habitual y habitual
+
+3.1. Lugar de residencia habitual  
+El lugar de residencia habitual es el lugar donde residía la persona en el momento de su desplazamiento inicial (es decir, su lugar de residencia habitual antes del desplazamiento).  
+
+Aunque una persona se desplace varias veces, su lugar de residencia habitual es estático y se remonta al lugar de residencia en el momento del evento original que causó el desplazamiento.  
+
+3.2. Lugar de residencia usual (un concepto estadístico estándar)  
+Se refiere al lugar donde reside la persona en el momento de la recopilación de datos.
+
+Un desplazado interno puede ser desplazado en múltiples ocasiones y puede haber tenido varios lugares de residencia usual durante un período de tiempo determinado. 
+
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+
+
+
+
 

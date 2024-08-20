@@ -52,7 +52,7 @@ class: middle, inverse, center
 ## En las Américas 
 
 1. Afecta a un gran número de personas en las Américas, especialmente debido a los **conflictos armados, los desastres y la violencia generalizada.**     
-2. Los países del norte de América Central y **México** se han visto particularmente afectados por la violencia criminal, principalmente relacionada con el tráfico de drogas y la actividad de las pandillas.   
+2. Los países del norte de América Central y **México** se han visto particularmente afectados por la **violencia criminal**, principalmente relacionada con el *tráfico de drogas y la actividad de las pandillas*.   
 3. La Organización de los Estados Americanos (OEA) ha reconocido la magnitud del problema al adoptar en 2009 la Resolución de la Asamblea General AG/RES 2417.   
 4. Bajo el paraguas de la OEA, la Comisión Interamericana de Derechos Humanos (CIDH) y la Corte Interamericana de Derechos Humanos (Corte IDH) han desempeñado un papel esencial en el monitoreo, la promoción y la protección de los derechos de las personas desplazadas internamente. 
 
