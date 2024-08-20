@@ -9,6 +9,8 @@ navbar:
     - text: "Módulo 2"
       href: modulo2.html  
     - text: "Módulo 3"
-      href: modulo3.html  
+      href: modulo3.html
+    - text: "Módulo 4"
+      href: modulo4.html        
 output_dir: "docs"
 
