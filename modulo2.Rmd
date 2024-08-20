@@ -213,7 +213,6 @@ El IRIS describe una lista recomendada de variables clasificatorias básicas, es
 
 ##### Número de desplazamientos forzados
 
-
 #### Detalles de la Ubicación
 - Distrito/área administrativa del lugar de residencia habitual    
 - Distrito/área administrativa del lugar de residencia actual habitual (es decir, desplazados internos en lugares de desplazamiento, desplazados internos en lugares de retorno y desplazados internos en otros lugares de asentamiento)  
@@ -225,7 +224,13 @@ En resumen, se recomienda que los siguientes grupos de variables y estadísticas
 
 Una lista de todas las variables está disponible en [IRIS](https://egrisstats.org/wp-content/uploads/IRIS_SPANISH-VERSION.pdf) (se abre en una nueva pestaña), Capítulo 5.
 
+# Lección 6. Recursos
 
+[Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m2.pdf)
+
+<br><br>
+
+<hr style="border: 3px solid#0077C8;" />
 # ¿Qué sigue?
 
 ➡️ Módulo 3. Fuentes de datos, análisis y difusión. 
