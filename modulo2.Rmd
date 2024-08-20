@@ -48,7 +48,6 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 # Lección 1. Marco legal y político
 
-Este módulo sirve como introducción al curso de e-learning de seis partes sobre las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS).
-Después de completar este módulo, podrás:
+<iframe src="marco_legal_pol_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
 
