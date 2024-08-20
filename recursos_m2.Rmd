@@ -28,4 +28,3 @@ Hay una serie de recursos que se han mencionado en este módulo y que puedes uti
 3. Los siguientes enlaces proporcionan más información sobre el marco de IASC para medir el éxito hacia soluciones duraderas:
    - [IASC](https://www.iasc.org)
    - [Biblioteca de Indicadores de Soluciones Duraderas](https://www.solutionsindicators.org)
-   - [Guía de Análisis de Soluciones Duraderas](https://www.un.org/durable-solutions-guidelines)
