@@ -1,0 +1,32 @@
+---
+title: "recursos_m2"
+output:
+  pdf_document:
+    toc: true
+    number_sections: false
+    toc_depth: 2
+---
+
+# 
+IDP Statistics: Measuring Stocks, Flows and Characteristics
+
+## Recursos
+
+Hay una serie de recursos que se han mencionado en este módulo y que puedes utilizar para familiarizarte con las estadísticas de desplazados internos (IDP). Aquí tienes algunos de ellos:
+
+1. Los siguientes enlaces proporcionan más información sobre el marco legal y de políticas:
+   - [Base de Datos Global sobre Leyes y Políticas de Desplazados Internos (IDP)](https://www.globaldatabaseonidplawsandpolicies.org)
+   - [Principios Rectores de las Naciones Unidas sobre el Desplazamiento Interno](https://www.un.org/internal-displacement/guiding-principles)
+   - [Marco IASC](https://www.iasc.org/framework)
+   - [Convención de Kampala sobre Desplazados Internos](https://www.au.int/kampala-convention)
+   - [Protocolo de los Grandes Lagos sobre la Protección y Asistencia a los Desplazados Internos](https://www.icglr.org/protocol-idps)
+   - [Resolución de la Asamblea General AG/RES 2417](https://www.un.org/general-assembly/resolution-2417)
+   - [Directrices para la formulación de políticas públicas sobre desplazamiento interno](https://www.unhcr.org/policies-public-internal-displacement)
+
+2. Las **Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS)** desarrolladas por EGRISS se pueden encontrar en el siguiente enlace:
+   - [Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS)](https://www.unhcr.org/iris)
+
+3. Los siguientes enlaces proporcionan más información sobre el marco de IASC para medir el éxito hacia soluciones duraderas:
+   - [IASC](https://www.iasc.org)
+   - [Biblioteca de Indicadores de Soluciones Duraderas](https://www.solutionsindicators.org)
+   - [Guía de Análisis de Soluciones Duraderas](https://www.un.org/durable-solutions-guidelines)
