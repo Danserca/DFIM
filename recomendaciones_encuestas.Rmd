@@ -1,0 +1,78 @@
+---
+title: "Definición del Desplazamiento Forzado Interno"
+subtitle: "¿Quiénes son?"
+author: "Daniela Serrano Campos,<br>*investigadora I*"
+institute: "DGAI"
+date: "10/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - rladies
+      - rladies-fonts
+      - custom-inegi.css #CSS personalizado
+      # - inegi_fonts.css
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+class: center, inverse
+
+## Ventajas del uso de encuestas por muestreo
+
+.left[
+
+### Ventajas
+
+1. Las encuestas por muestreo permiten recopilar datos amplios, incluyendo indicadores demográficos y socioeconómicos.
+2. Son flexibles y pueden diseñarse para satisfacer necesidades de información específicas.
+3. Si se realizan regularmente, permiten capturar cambios en los datos a lo largo del tiempo.
+4. Recopilan datos principalmente a nivel de hogar y directamente de los encuestados.
+5. Ayudan a estimar la migración y analizar patrones de movimiento.
+6. A veces, también capturan información sobre poblaciones indocumentadas.
+7. Facilitan la comparación entre subconjuntos de la población, ayudando a medir el progreso hacia la integración social y soluciones duraderas.
+
+]
+
+---
+
+class: center
+
+## Limitaciones del uso de encuestas por muestreo
+.left[
+### Limitaciones
+
+1. Las encuestas pueden ser difíciles de diseñar si la población es difícil de localizar.
+2. Las encuestas pueden ser costosas, especialmente si se requieren entrevistas cara a cara.
+3. Carecen de datos regulares si no se realizan con frecuencia.
+4. Pocos países realizan encuestas dedicadas al desplazamiento forzado o la apatridia. Agregar módulos a encuestas generales puede resultar en errores de muestreo elevados para refugiados, desplazados internos y personas apátridas.
+5. Ciertos grupos pueden estar subrepresentados en una encuesta por muestreo, dificultando obtener una muestra representativa a nivel nacional.
+6. Los encuestados pueden experimentar sesgos de percepción y las encuestas en sí pueden tener sesgos de género. En muchos contextos, las preguntas pueden ser sensibles.
+7. Puede haber confusión con respecto al proceso de asilo y resistencia política a la publicación de resultados.
+
+
+]
+

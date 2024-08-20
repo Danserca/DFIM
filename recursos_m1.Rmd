@@ -6,7 +6,7 @@ output:
     number_sections: false
     toc_depth: 2  # Puedes ajustar este valor según tus necesidades
 ---
-## Introducción a las Recomendaciones Internacionales sobre Estadísticas de Refugiados, Desplazados Internos y Apatridia
+## Introducción a las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos 
 
 ### Recursos
 Existen varios recursos mencionados en este módulo que puedes utilizar para familiarizarte con las estadísticas sobre desplazamiento forzado y apatridia. Aquí tienes algunos de ellos:

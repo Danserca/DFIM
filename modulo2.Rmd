@@ -93,11 +93,11 @@ Es decir, que se integraron.
 
 # Lección 3. Población total y flujo de PDFI  
 
-4.1. Población total de PDFI  
+3.1. Población total de PDFI  
 
 El stock de población indica el tamaño de los miembros de la población en un momento específico.
 
-4.2. Flujo  
+3.2. Flujo  
 
 Un flujo es una medida del cambio en la población a lo largo de un período de tiempo definido.
 

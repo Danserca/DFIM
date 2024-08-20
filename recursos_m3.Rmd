@@ -1,0 +1,42 @@
+---
+title: "Fuentes de Datos, Análisis y Difusión"
+output:
+  pdf_document:
+    toc: true
+    number_sections: false
+    toc_depth: 2  # Puedes ajustar este valor según tus necesidades
+---
+## Fuentes de Datos, Análisis y Difusión
+
+Hay una serie de recursos que puedes utilizar para familiarizarte con la orientación adicional sobre el uso de diferentes fuentes de datos y el manejo de datos sobre refugiados, desplazados internos (IDP) y apatridia para el análisis, difusión y archivado. Aquí tienes algunos de ellos.
+
+1. Los siguientes enlaces proporcionan más información sobre las recomendaciones para el uso de fuentes de datos:
+   - [Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRRS)](https://egrisstats.org/recommendations/international-recommendations-on-idp-statistics-iris/)
+   - [Recomendaciones Internacionales sobre Estadísticas de Refugiados (IRIS)](https://egrisstats.org/recommendations/international-recommendations-on-refugee-statistics-irrs/)
+   - [Recomendaciones Internacionales sobre Estadísticas de Apatridia (IROSS)](https://egrisstats.org/recommendations/international-recommendations-on-statelessness-statistics-iross/)
+   - [Principios y Recomendaciones para los Censos de Población y Vivienda](https://unstats.un.org/unsd/demographic-social/Standards-and-Methods/files/Principles_and_Recommendations/Population-and-Housing-Censuses/Series_M67rev3-E.pdf)
+   - [Recomendaciones de la Conferencia de Estadísticos Europeos para los Censos de Población y Vivienda de 2020](https://www.unece.org/fileadmin/DAM/stats/publications/2015/ECECES41_EN.pdf)
+   - [Datos Generados por Ciudadanos y Gobiernos, Christopher Wilson y Zara Rahman](http://civicus.org/images/citizen-generated%20data%20and%20governments.pdf)
+   - [Asociación Global para el Desarrollo Sostenible, Selección y Participación con Datos Generados por Ciudadanos](https://www.data4sdgs.org/resources/choosing-and-engaging-citizen-generated-data-guide)
+   - [Datos Generados por Ciudadanos a Nivel Global, Paris21](https://paris21.org/sites/default/files/2021-02/CGD_FINAL_reduced.pdf)
+   - [Kit de Herramientas de Datos Generados por Ciudadanos, Oficina de Estadísticas de Uganda](https://africa.unwomen.org/en/digital-library/publications/2021/12/citizen-generated-data-toolkit)
+   - [Guías Metodológicas sobre la Recolección y Uso de Datos Generados por Ciudadanos para Informar sobre el ODS 5 y los Indicadores de Género en Otros ODS, ONU Mujeres](https://data.unwomen.org/sites/default/files/documents/Publications/CGD-Methodological-guidelines_March-2020.pdf)
+   - [Manual del Compilador de EGRISS](https://egrisstats.org/activities/compilers-manual/)
+
+2. El siguiente enlace proporciona más información sobre la confidencialidad de los datos:
+   - [Principios Fundamentales de las Naciones Unidas para las Actividades Estadísticas Oficiales](https://unstats.un.org/unsd/dnss/gp/fundprinciples.aspx)
+   - [Guías y Buenas Prácticas de la ONU para la Gestión de la Confidencialidad Estadística y los Microdatos](https://www.unece.org/fileadmin/DAM/stats/publications/Managing.statistical.confidentiality.and.microdata.access.pdf)
+   - [Manual de Protección de Datos de la OIM](https://publications.iom.int/fr/books/iom-data-protection-manual)
+   - [Política de Protección de Datos de ACNUR](https://data2.unhcr.org/en/documents/details/44570)
+   - [Guía Operativa del IASC sobre la Responsabilidad de los Datos en la Acción Humanitaria](https://interagencystandingcommittee.org/operational-response/iasc-operational-guidance-data-responsibility-humanitarian-action)
+
+3. Más información sobre los estándares internacionales de metadatos se puede encontrar en los siguientes enlaces:
+   - [Iniciativa de Documentación de Datos (DDI)](https://ddialliance.org/)
+   - [Iniciativa de Metadatos de Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+   - [Kit de Herramientas para la Gestión de Microdatos de IHSN](http://www.ihsn.org/documentation)
+   - [Software de gestión Nesstar Publisher del Centro Noruego para Datos de Investigación](http://www.ihsn.org/software/ddi-metadata-editor)
+
+4. Los siguientes enlaces proporcionan más información sobre los marcos de aseguramiento de la calidad:
+   - [Marco de Evaluación de la Calidad de los Datos del Fondo Monetario Internacional (DQAF)](https://dsbb.imf.org/content/pdfs/dqrs_Genframework.pdf)
+   - [Marco de Aseguramiento de la Calidad del Sistema Estadístico Europeo](https://ec.europa.eu/eurostat/documents/64157/4392716/ESS-QAF-V1-2final.pdf/bbf5970c-1adf-46c8-afc3-58ce177a0646)
+   - [Manual de la ONU para los Marcos Nacionales de Aseguramiento de la Calidad de las Estadísticas Oficiales](https://unstats.un.org/unsd/methodology/dataquality/references/1902216-UNNQAFManual-WEB.pdf)
