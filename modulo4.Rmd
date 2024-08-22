@@ -47,41 +47,45 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 
 # 1. Siglas y acrónimos
-Siglas y Acrónimos
-ACNUR. Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.
-AIC. Criterio de Información de Akaike.
-BIC. Criterio de Información Bayesiano.
-CCI. Corte Penal Internacional.
-CEAVE. Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.
-CENSO 2020. Censo de Población y Vivienda 2020.
-CMDPDH. Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.
-CV. Coeficientes de Variación.
-DFI. Desplazamiento Forzado Interno/Desplazada Forzada Interna.
-DP2. Índice de intensidad migratoria.
-ECADEFI-CHIH. Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.
-EGRISS. Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.
-ENADID. Encuesta Nacional de la Dinámica Demográfica.
-ENOE. Encuesta Nacional de Ocupación y Empleo.
-ENVIPE. Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.
-HFSSSD. Encuesta de Alta Frecuencia de Sudán del Sur.
-ICTY. Tribunal Penal Internacional para la ex Yugoslavia.
-IDMC. Centro de Monitoreo de Desplazamiento Interno.
-INE. Instituto Nacional de Estadística.
+Siglas y Acrónimos  
+ACNUR. Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.  
+AIC. Criterio de Información de Akaike.  
+BIC. Criterio de Información Bayesiano.  
+CCI. Corte Penal Internacional.  
+CEAVE. Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.  
+CENSO 2020. Censo de Población y Vivienda 2020.  
+CMDPDH. Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.  
+CV. Coeficientes de Variación.  
+DFI. Desplazamiento Forzado Interno/Desplazada Forzada Interna.  
+DP2. Índice de intensidad migratoria.  
+ECADEFI-CHIH. Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.  
+EGRISS. Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.  
+ENADID. Encuesta Nacional de la Dinámica Demográfica.  
+ENOE. Encuesta Nacional de Ocupación y Empleo.  
+ENVIPE. Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.  
+HFSSSD. Encuesta de Alta Frecuencia de Sudán del Sur.  
+ICTY. Tribunal Penal Internacional para la ex Yugoslavia.  
+IDMC. Centro de Monitoreo de Desplazamiento Interno.  
+INE. Instituto Nacional de Estadística.  
 INEGI/Instituto. Instituto Nacional de Estadística y Geografía.
-IRIS. Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.
-IRRS. Recomendaciones Internacionales sobre Estadísticas de Refugiados.
-JIPS. Joint IDP Profiling Service.
-ONE. Oficinas nacionales de estadística.
-PRINCIPIOS RECTORES. Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.
-SNIEG. Sistema Nacional de Información Estadística y Geográfica.
-SNIGSPIJ. Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.
+IRIS. Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.  
+IRRS. Recomendaciones Internacionales sobre Estadísticas de Refugiados.  
+JIPS. Joint IDP Profiling Service.  
+ONE. Oficinas nacionales de estadística.  
+PRINCIPIOS RECTORES. Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.  
+SNIEG. Sistema Nacional de Información Estadística y Geográfica.  
+SNIGSPIJ. Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.  
 
 # Integración y reconciliación  
 
 El EGRISS reconoce la complejidad de encontrar una única fuente de datos que proporcione una imagen completa y precisa de la población en situación DFI. Ante este desafío, el EGRISS (2023) propone la integración de diversas fuentes de información como estrategia fundamental para mejorar la cobertura, disponibilidad, frecuencia, oportunidad, calidad y precisión de las estadísticas sobre DFI.  
-La integración de diferentes fuentes permite aprovechar las fortalezas de cada una y compensar sus posibles limitaciones individuales. Esto facilita la obtención de una visión más amplia y confiable de la situación del DFI, incluyendo a grupos poblacionales específicos que podrían quedar excluidos de una sola fuente. Además, estas técnicas racionalizan las tareas de las Oficinas Nacionales de Estadística (ONE) al enriquecer la información recopilada para producir estadísticas sin aumentar costos ni la carga de respuesta de los informantes (Naciones Unidas, 2020). 
-La integración de fuentes puede ofrecer una imagen más completa del fenómeno, sobre todo en casos donde una encuesta tiene cobertura amplia pero información limitada sobre variables de DFI, y otra tiene cobertura limitada pero información más detallada sobre estas variables. La integración de datos es especialmente útil cuando ninguna de las fuentes cubre por completo ni de manera precisa a una población determinada, cuando hay diferentes estimaciones para el mismo fenómeno, como es el caso de las estadísticas sobre DFI en México, donde ninguna cifra ni estimación coincide, sino que, por el contrario, difieren considerablemente con se aprecia en la Tabla 3. Existen aproximaciones nacionales y por entidad federativa, en el marco y fuera del marco del del Sistema Nacional de Información Estadística y Geográfica (SNIEG).
-El SNIEG aborda el tema del DFI desde,  al menos, dos de sus subsistemas, desde el Subsistema Nacional de Información de Gobierno, Seguridad Pública e Impartición de Justicia y desde el Subsistema de Información Nacional de Información Demográfica. En el marco del primer subsistema, la ENVIPE proporciona información sobre las personas que se cambian de vivienda o lugar de residencia para protegerse de la delincuencia. En el marco del segundo, la Encuesta Nacional de la Dinámica Demográfica (ENADID) y el Censo 2020 permiten aproximarse al DFI.
+La integración de diferentes fuentes permite aprovechar las fortalezas de cada una y compensar sus posibles limitaciones individuales. Esto facilita la obtención de una visión más amplia y confiable de la situación del DFI, incluyendo a grupos poblacionales específicos que podrían quedar excluidos de una sola fuente. Además, estas técnicas racionalizan las tareas de las Oficinas Nacionales de Estadística (ONE) al enriquecer la información recopilada para producir estadísticas sin aumentar costos ni la carga de respuesta de los informantes (Naciones Unidas, 2020).  
+
+La integración de fuentes puede ofrecer una imagen más completa del fenómeno, sobre todo en casos donde una encuesta tiene cobertura amplia pero información limitada sobre variables de DFI, y otra tiene cobertura limitada pero información más detallada sobre estas variables. La integración de datos es especialmente útil cuando ninguna de las fuentes cubre por completo ni de manera precisa a una población determinada, cuando hay diferentes estimaciones para el mismo fenómeno, como es el caso de las estadísticas sobre DFI en México, donde ninguna cifra ni estimación coincide, sino que, por el contrario, difieren considerablemente con se aprecia en la Tabla 3. Existen aproximaciones nacionales y por entidad federativa, en el marco y fuera del marco del del Sistema Nacional de Información Estadística y Geográfica (SNIEG).  
+
+
+El SNIEG aborda el tema del DFI desde,  al menos, dos de sus subsistemas, desde el Subsistema Nacional de Información de Gobierno, Seguridad Pública e Impartición de Justicia y desde el Subsistema de Información Nacional de Información Demográfica. En el marco del primer subsistema, la ENVIPE proporciona información sobre las personas que se cambian de vivienda o lugar de residencia para protegerse de la delincuencia. En el marco del segundo, la Encuesta Nacional de la Dinámica Demográfica (ENADID) y el Censo 2020 permiten aproximarse al DFI.  
+
 Esas fuentes tienen como objetivo recopilar información sobre temas similares, como la migración por inseguridad pública, delictiva o violencia, pero difieren en metodología de muestreo, diseño de cuestionario, periodo de referencia y población objetivo. 
 
 
@@ -91,16 +95,74 @@ Los métodos de estimación multifuente abordan desafíos específicos asociados
 Las técnicas de integración se dividen en dos grandes tipos: de consolidación y vinculación. Las técnicas de consolidación consisten en crear un conjunto unificado de datos, de esta manera se consigue un mayor número de observaciones. Las técnicas de vinculación, en cambio, se refieren a los procedimientos mediante los que dos o más conjuntos de datos se unen a partir de una variable de identificación única, llave o clave, de esta manera se consiguen más atributos de las observaciones. En ambos casos las variables deben ser seleccionadas, transformadas y cargadas (proceso ETL, por sus siglas en inglés). A lo largo de este proceso es necesario verificar la coherencia y armonización de los conjuntos de datos (Naciones Unidas 2020, l. 808).  
 Es de esperarse que entre fuentes haya diferencias en las definiciones de variables, de ahí que a partir de los valores observados disponibles es necesario estimar los valores para las variables objetivo de acuerdo con la definición deseada, a este paso se le denomina alineación de mediciones. Una vez realizadas la consolidación y vinculación, es posible implementar diversos métodos de estimación, a nivel micro y agregado. Cuando se trata de datos de encuesta se calculan las ponderaciones mediante regresión para todas las observaciones del nuevo conjunto de datos obtenido a partir de la integración (Naciones Unidas 2020). Las ponderaciones originales de cada una de las encuestas se ajustan calibrándolas, es decir, la ponderación de regresión se calibra sobre estos valores conocidos o estimados previamente.
 
-# Metodología
+</div>
+  <div class="row-sm-3">
+  
+  ![](imagenes/integración_diagrama_ONU_2020.png)
+
+
+
+</a>
+  </div>
+  
+
+# Metodología  
+
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
 Por otra parte, se analizaron las macro determinantes de la emigración. Para esto, se consideraron las emigraciones por razón de inseguridad delictiva y violencia y por razones distintas a esta, tales como las emigraciones por razones de trabajo, escuela o familia. Se utilizaron datos agregados a nivel municipal del Censo 2020 y de las estadísticas vitales. Se hicieron los cálculos para cada municipio y se establecieron las variables auxiliares. Se estimaron modelos de regresión.
 
-## Calibración del ponderador en integración de la ENVIPE 2018 y ENADID 2018  
+## Calibración del ponderador en integración de la ENVIPE 2018 y ENADID 2018   
+
 Para estimar el número de personas en situación de DFI atribuido a la violencia se emplearon métodos de integración de datos, se calibraron los ponderadores, de esta manera, se ajustaron los pesos muestrales para que las estimaciones del nuevo conjunto de datos integrado reflejen adecuadamente a la población conocida. Esta técnica se informa de las características conocidas de la población y de muestreos de base. Las primeras se obtuvieron del Censo 2020; para los segundos se consultaron y siguieron los marcos conceptuales y diseños muestrales de los programas estadísticos utilizados (INEGI 2019c; 2020; 2019a; 2018b; 2019b) La disposición de una mayor información puede contribuir a mejorar la precisión de los estimadores, reduciendo el error muestral y los coeficientes de variación.  
 
 ### Datos  
 Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus similitudes en periodos de levantamiento de información y diseño muestral. Con estos datos se llevó a cabo un proceso de preparación, transformación y creación de variables de interés para ambas encuestas.
 En el caso de la ENADID 2018 se unieron las tablas que componen su base de datos, a partir de las llaves primarias. La base de datos de esta encuesta se estructura en 4 tablas. Solo se unieron las tablas con las variables de interés. En este caso se unieron la Tabla de hogares (THogar) y la tabla de datos sociodemográficos de (TSDem). La primera tabla THogar concentra información relativa a los hogares dentro de las viviendas seleccionadas para la aplicación de la encuesta, específicamente en esta tabla se incluyen la contabilización del número de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se incluye un ponderador FAV_VIV y variables de estratificación. La tabla THogar incluye dos variables de identificación única a nivel registro: Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene las variables de identificación upm, viv_sel, hogar, n_ren que sirven para relacionar todas las tablas de la encuesta, así como variables de identificación geográfica: la Entidad federativa (ent) y Tamaño de localidad (tam_loc). Además, contiene variables de interés como: Sexo, Edad, Entidad de residencia en 2017, Causa de migración reciente. 
+
+
+```{r, echo=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+
+# Crear la tabla de datos
+tabla_datos <- data.frame(
+  Características = c("Objetivo general", "Periodo de referencia", "Selección de la muestra", 
+                      "Unidades de observación", "Población objeto de estudio", "Periodo de levantamiento", 
+                      "Cobertura geográfica"),
+  ENVIPE_2018 = c("Estimar el número de víctimas y número de delitos ocurridos, cifra negra, costos de delitos, percepción de inseguridad…", 
+                  "Enero – diciembre para victimización.", 
+                  "Probabilístico: trietápico, estratificado y por conglomerados.", 
+                  "Las viviendas seleccionadas, los hogares, los residentes del hogar y la persona seleccionada en el hogar.",
+                  "Población de 18 años y más", 
+                  "Marzo - abril 2018", 
+                  "A nivel Nacional, Nacional urbano, Nacional rural, Entidad Federativa y 34 Áreas Metropolitanas de interés"),
+  ENADID_2018 = c("Proporcionar información estadística … de la dinámica demográfica: fecundidad, mortalidad y migración (interna e internacional).", 
+                  "Cinco años antes (agosto 2013).", 
+                  "Probabilístico, bietápico y por conglomerado estratificado.", 
+                  "Vivienda particular habitada, residente habitual, Hogar, migrante internacional, Mujer de 15 a 54 años.", 
+                  "Residente habitual del hogar, residentes habituales y migrantes internacionales.", 
+                  "3 de agosto al 5 de octubre de 2018.", 
+                  "Nacional (urbano de 2 500 habitantes y más, rural hasta 2 499 habitantes), entidad federativa y tamaños de localidad."),
+  Censo_2020 = c("Producir información sobre la dimensión, estructura y distribución espacial de la población", 
+                 "Cinco años antes (marzo 2015).", 
+                 "-", 
+                 "-", 
+                 "Residentes habituales del territorio nacional, las viviendas particulares, y migrantes internacionales.", 
+                 "2 al 27 de marzo de 2020", 
+                 "Nacional, entidad federativa, municipio o demarcación territorial, localidad, AGEB, manzana urbana."),
+  IDMC = c("Proveer la Base de Datos Global sobre Desplazamientos Internos.", 
+           "-", 
+           "-", 
+           "Hogares, Personas", 
+           "DFI", 
+           "-", 
+           "Mundial")
+)
+
+# Crear la tabla
+kable(tabla_datos, align = "c", caption = "Comparación de Características de Fuentes de Datos") %>%
+  kable_styling(full_width = TRUE, bootstrap_options = c("striped", "hover", "condensed"))
+```
 
 Una vez que se unieron ambas tablas, se obtuvo un conjunto de datos a nivel individual de 385,978 observaciones. A partir de este conjunto se creó la variable emi_int_viol para identificar a las personas que experimentaron un cambio de residencia entre la fecha del levantamiento de la información y agosto de 2017 (un año atrás) y atribuyeron el cambio a situaciones de inseguridad pública o violencia. Con fines de validación, se estimó la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2013 según causa de la migración. A partir del método de cálculo utilizado se llegó al mismo resultado que el INEGI publica en los Tabulados. No se pudo validar directamente la cifra de interés, es decir, la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2017 según causa de la migración ya que no es parte de la información que se publica en los Tabulados.     Para fines de calibración, adicionalmente, se creó la variable edad_quin para clasificar a los individuos en grupos quinquenales de edad, tomando como base la variable continua de edad. Para poder unir esta base a la de la ENVIPE, se renombraron las variables de manera que coincidieran. Asimismo, se seleccionaron solo las variables iniciales de interés. 
 La base de datos de la ENVIPE 2021 se integra por 6 tablas, de las cuales solo se necesitaron dos, Tabla de residentes del hogar (TSDem) y Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1). La primera contiene las características sociodemográficas de los integrantes del hogar y sirvió para conocer el número de integrantes de cada hogar. La Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1) contiene información relacionada con la percepción sobre seguridad pública en el ámbito geográfico del informante, las conductas antisociales en su entorno inmediato y los cambios de hábitos por temor a ser víctima de la delincuencia en 2017. A partir de esta Tabla se identificaron los hogares que habían cambiado de vivienda o residencia por temor a la delincuencia entre 2017 y la fecha del levantamiento de la ENVIPE. 
@@ -143,36 +205,524 @@ w_i=\frac{\sigma^2}{\sigma^2+\frac{\mu}{P_i}}
 donde P_i es la población del municipio i. En el enfoque bayesiano empírico, la media \mu y la varianza \sigma^2 previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
  
 
-Figura 3. Tasa suavizada promedio de homicidios , 2015-219
+Figura 3. Tasa suavizada promedio de homicidios, 2015-2019
 
 
-# Problem 1
+# Estimación del Desplazamiento Forzado Interno en México
+En este taller, aprenderemos a realizar una estimación del desplazamiento forzado interno (DFI) en México, utilizando datos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos enfocaremos en la calibración de ponderadores y la creación de diseños muestrales.
 
-Do simple math with numbers, addition, subtraction, multiplication, division
+## 1. Entorno de trabajo y librerías
+Primero, cargaremos las librerías necesarias para el análisis:
 
-```{r, echo=FALSE}
-1+2
-2*5
-5/3
-(1+6+4)/5
+```{r, eval=FALSE}
+library(class)
+library(pscl)
+library(MASS)
+library(lmtest)
+library(sandwich)
+library(tseries)
+library(raster)
+library(sf)
+library(rgdal)
+library(ggplot2)
+library(caret)
+library(hot.deck)
+library(broom)
+library(beepr)
+library(foreign)
+library(readr)
+library(dplyr)
+library(janitor)
+library(survey)
+library(openxlsx)
+
+#---------------------- 0. Entorno de trabajo y librerías -----
+rm(list=ls()); graphics.off(); options(scipen = 999)
+paquetes=c("tidyverse", "date", "data.table", "questionr", "readxl", "writexl", "openxlsx", "foreign", "survey", "PracTools", "haven","knitr","kableExtra")
+for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
+```
+### 2. Cargar y preparar datos de ENADID
+En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 
+Leemos y preparamos los datos de ENADID. Esto incluye la limpieza de variables y la creación de nuevas variables necesarias para el análisis.
+
+```{r, eval=FALSE}
+# Cargar ENADID para integración
+# Leer datos y asignarlos a objeto
+enadid_thogar <- read_csv("data/conjunto_de_datos_thogar_enadid_2018/conjunto_de_datos/conjunto_de_datos_thogar_enadid_2018.csv")
+enadid_tsdem <- read_csv("data/TSDem.csv")
+
+
+# Unir conjunto de datos 
+enadid <- enadid_tsdem %>% left_join(enadid_thogar) %>% clean_names()
 
 ```
 
-# Problem 2
 
-Put numbers into variables, do simple math on the variables
+```{r, eval=FALSE}
+# Renombrar y crear variables 
+enadid <- enadid %>% 
+  rename(cve_ent=ent)
+enadid$p3_19ac <- ifelse(enadid$p3_19ac == "99", NA, enadid$p3_19ac)
+enadid$p3_12ac <- ifelse(enadid$p3_12ac == "99", NA, enadid$p3_12ac)
+enadid$edad <- ifelse(enadid$edad == "999", NA, enadid$edad)
+enadid$edad <- as.numeric(enadid$edad)
+enadid$misma_res_5A <- ifelse(enadid$cve_ent == enadid$p3_19ac, 1, 0)
+enadid$misma_res <- ifelse(enadid$cve_ent == enadid$p3_12ac, 1, 0)
 
-```{r, include=FALSE}
-a<-1
-b<-2
-a+b
+# Se considera emigrante por inseguridad y violencia
+enadid$emi_int_viol_5A <- ifelse(enadid$p3_20 == 8 & enadid$misma_res_5A == 0, 1, 0)
+enadid$emi_int_viol <- ifelse(enadid$p3_13== 8 & enadid$misma_res == 0, 1, 0)
 
-d<-c(1,2,3)
-e<-c(5,6,7)
-d+e
-d*e
-d/e
+
+# Conversión a tipo numérico las variables de tipo factor y homologacion de nombre con ENVIPE
+enadid$fac_ele <- as.numeric(as.character(enadid$fac_viv))
+```
+
+```{r, eval=FALSE}
+# Crear la variable de factor edad_quin con los niveles especificados
+
+# Crear los cortes para definir los niveles de la variable edad_quin
+cortes <- c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 130)
+
+# Crear la variable factor edad_quin
+enadid$edad_quin <- cut(as.numeric(enadid$edad), breaks = cortes, labels = c("pob_00_04", "pob_05_09", 
+                                                                             "pob_10_14", "pob_15_19", "pob_20_24", 
+                                                                             "pob_25_29", "pob_30_34", "pob_35_39", 
+                                                                             "pob_40_44", "pob_45_49", "pob_50_54", 
+                                                                             "pob_55_59", "pob_60_64", "pob_65_mm"), include.lowest = TRUE)
+
+
+enadid_int <- enadid %>% dplyr::select(edad, edad_quin, sexo, upm, upm_dis, est_dis, fac_ele, cve_ent, emi_int_viol)
+
+
+# Conversión a tipo numérico las variables de tipo factor
+enadid_int$sexo <- as.factor(as.numeric(enadid_int$sexo))
+
+```
+### 3. Preparar datos de ENVIPE
+De manera similar, preparamos los datos de ENVIPE.
+```{r, eval=FALSE}
+# Preparar ENVIPE
+# Tablas que se usarán para los cálculos de Prevalencia Delictiva, Incidencia Delictiva y Cifra Negra
+tsd <- read.dbf("data/TSDem.dbf") # Tabla del Sociodemográfico
+tpv1<- read.dbf("data/TPer_Vic1.dbf") %>% 
+  dplyr::select("ID_VIV", "ID_HOG", "ID_PER", "UPM", "VIV_SEL", "HOGAR", "RESUL_H", "R_SEL", "SEXO", "EDAD", "AREAM", "CVE_ENT", "NOM_ENT", "CVE_MUN", "FAC_ELE", "FAC_HOG", 
+                "DOMINIO", "ESTRATO", "EST_DIS", "UPM_DIS", "CVE_ENT", "AP4_11_10") # Tabla Principal de Victimización 1
+
+```
+
+```{r, eval=FALSE}
+# Conversión a tipo numérico las variables de tipo factor
+tpv1$FAC_ELE <- as.numeric(as.character(tpv1$FAC_ELE))
+tpv1$FAC_HOG <- as.numeric(as.character(tpv1$FAC_HOG))
+tsd$FAC_HOG <- as.numeric(as.character(tsd$FAC_HOG))
+
+
+# Construcción de la variable de Entidad, se substrae los dos primeros dígitos de la variable UPM
+tpv1$ENT <- substr(tpv1$UPM,1,2)
+```
+
+```{r, eval=FALSE}
+#Crear llaves
+
+# Unir bases
+# Pegar 
+int_hog <- tsd %>% 
+  group_by(ID_HOG) %>% 
+  summarise(integrantes=n())
+
+envipe <- tpv1 %>% 
+  left_join(int_hog) %>% 
+  dplyr::select(-ends_with(".y")) %>% 
+  clean_names()
+```
+
+
+```{r, eval=FALSE}
+# Construcción de las variables
+# envipe$emi_int_viol <- ifelse(envipe$ap4_11_10%in%"1",1,0)
+envipe$emi_int_viol <- case_when(envipe$ap4_11_10=="1"~1, TRUE ~ 0)
+
+# Crear los cortes para definir los niveles de la variable edad_quin
+cortes <- c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 130)
+
+# Crear la variable factor edad_quin
+envipe$edad_quin <- cut(as.numeric(envipe$edad), breaks = cortes, labels = c("pob_00_04", "pob_05_09", 
+                                                                             "pob_10_14", "pob_15_19", "pob_20_24", 
+                                                                             "pob_25_29", "pob_30_34", "pob_35_39", 
+                                                                             "pob_40_44", "pob_45_49", "pob_50_54", 
+                                                                             "pob_55_59", "pob_60_64", "pob_65_mm"), include.lowest = TRUE)
+
+# Se genera un factor a partir del factor de expansion de hogar multiplicado por el número de habitantes promedio en 2017/ TAMAÑO DEL HOGAR (VER https://www.inegi.org.mx/contenidos/programas/enh/2017/doc/enh2017_resultados.pdf)
+envipe <- envipe %>% 
+  mutate(fac_ele=as.numeric(fac_hog)*integrantes)
+# Seleccionar variables para integrar
+
+envipe_int <- envipe %>% dplyr::select(edad, edad_quin, edad, sexo, upm, upm_dis, est_dis, fac_ele, cve_ent, emi_int_viol)
+
+# Conversión a tipo numérico las variables de tipo factor
+envipe_int$upm <- as.character(as.factor(envipe_int$upm))
+envipe_int$upm_dis <- as.character(as.factor(envipe_int$upm_dis))
+envipe_int$est_dis <- as.character(as.factor(envipe_int$est_dis))
+envipe_int$cve_ent <- as.character(as.factor(envipe_int$cve_ent))
+```
+### 4. Unir bases de datos
+Unimos las bases de datos de ENADID y ENVIPE para la estimación conjunta.
+```{r, eval=FALSE}
+## Unir bases
+integrar <- rbind(enadid_int, envipe_int) 
+```
+
+```{r, eval=FALSE}
+# 6. Calibración del ponderador
+# Leer y unir bases de población
+poblacion_municipal <- bind_rows(
+  read_csv("data/data_t5_conapo/base_municipios_final_datos_01.csv", locale = locale(encoding = "latin1")),
+  read_csv("data/data_t5_conapo/base_municipios_final_datos_02.csv", locale = locale(encoding = "latin1"))
+) %>% clean_names()
+
+# Arreglar claves de los municipios
+poblacion_municipal <- poblacion_municipal %>% 
+  mutate(entidad = ifelse(nchar(clave_ent) == 1,
+                          paste0("0", clave_ent), clave_ent),
+         clave_2 = ifelse(nchar(clave) == 4,
+                          paste0("0", clave), clave))
+
+
+# Filtrar por año y grupo de edad
+poblacion_municipal$year <- poblacion_municipal$ano
+pob_por_gpos_edad <- poblacion_municipal %>%
+  filter(year == 2017)
+
+# Calcular sumas por grupos
+grupos <- pob_por_gpos_edad %>%
+  group_by(edad_quin) %>%
+  summarise(poblacion = sum(pob))
+
+sexo <- pob_por_gpos_edad %>%
+  group_by(sexo) %>%
+  summarise(poblacion = sum(pob))
+
+cve_ent <- pob_por_gpos_edad %>%
+  group_by(entidad) %>%
+  summarise(poblacion = sum(pob))
+
+total <- pob_por_gpos_edad %>%
+  summarise(poblacion = sum(pob))
+edad_quin <- grupos[[2]]
+sexo <- sexo[[2]]
+cve_ent <- cve_ent[[2]]
+N <-  total[[1]]
+```
+
+```{r, eval=FALSE}
+# Paso 2: Crear el diseño muestral
+diseño <- svydesign(
+  ids = ~upm,
+  strata = ~est_dis,
+  weights = ~fac_ele,
+  data = integrar,
+  nest = TRUE
+)
+#options(survey.lonely.psu = "adjust")
+
+calibracion <- calibrate(design = diseño,
+                         formula = ~as.factor(edad_quin) + as.factor(sexo),
+                         calfun = "raking",
+                         population = c("(Intercept)" = N, edad_quin[-1], sexo[-1]))
+
+
+integrar$fac_nuevo=weights(calibracion)
+```
+
+```{r, eval=FALSE}
+# Paso 3: Crear el NUEVO diseño muestral
+diseño2 <- svydesign(
+  ids = ~upm,
+  strata = ~est_dis,
+  weights = ~fac_nuevo,
+  data = integrar,
+  nest = TRUE
+)
+#options(survey.lonely.psu = "adjust")
+```
+
+
+```{r, eval=FALSE}
+# Cálculo del número de personas DFI por violencia
+# Nacional
+n_dfi_viol <- svytotal(~emi_int_viol, diseño2, na.rm = TRUE) 
+# Entidad federativa
+e_dfi_viol <- svyby(~emi_int_viol, by=~cve_ent, diseño2, 
+                    svytotal, na.rm = TRUE) 
+
+# Estimaciones, Error estándar, Coeficiente de variación, Intervalos de confianza
+# Nacional
+est_n_dfi_viol <- n_dfi_viol[[1]]
+se_n_dfi_viol<- SE(n_dfi_viol)
+cv_n_dfi_viol <- cv(n_dfi_viol)*100
+li_n_dfi_viol <- confint(n_dfi_viol,level=0.90)[1,1]
+ls_n_dfi_viol <- confint(n_dfi_viol,level=0.90)[1,2]
+# Entidad federativa
+est_e_dfi_viol<- e_dfi_viol[[2]]
+se_e_dfi_viol <- SE(e_dfi_viol)
+cv_e_dfi_viol <- cv(e_dfi_viol)*100
+li_e_dfi_viol <- confint(e_dfi_viol,level=0.90)[,1]
+ls_e_dfi_viol <- confint(e_dfi_viol,level=0.90)[,2]
+
+
+# Formato #
+Entidades<-c("Estados Unidos Mexicanos", "Aguascalientes", "Baja California", "Baja California Sur", 
+             "Campeche", "Coahuila de Zaragoza", "Colima", "Chiapas", "Chihuahua", "Ciudad de México", 
+             "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Estado de México", 
+             "Michoacán de Ocampo", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", 
+             "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", 
+             "Veracruz de Ignacio de la Llave", "Yucatán", "Zacatecas") 
+
+
+est_dfi_viol <- data.frame(Entidades, est_dfi_viol = round(as.numeric(c(est_n_dfi_viol, est_e_dfi_viol)), 0))
+se_dfi_viol <- data.frame(Entidades, se_dfi_viol = round(as.numeric(c(se_n_dfi_viol, se_e_dfi_viol)), 0))
+cv_dfi_viol <- data.frame(Entidades, cv_dfi_viol = round(as.numeric(c(cv_n_dfi_viol, cv_e_dfi_viol)), 2))
+lim_dfi_viol <- data.frame(Entidades, 
+                           linf_dfi_viol = as.integer(c(li_n_dfi_viol, li_e_dfi_viol)),
+                           lsup_dfi_viol = as.integer(c(ls_n_dfi_viol, ls_e_dfi_viol)))
+
+# Elimina los nombres de fila
+row.names(est_dfi_viol) <- row.names(se_dfi_viol) <- row.names(cv_dfi_viol) <- 
+  row.names(lim_dfi_viol) <- NULL
+
+# Exportar salida a un archivo de Excel #
+# Lista de estimaciones
+list_of_datasets <- list("Estimaciones" = est_dfi_viol, 
+                         "Error Estandar" = se_dfi_viol, 
+                         "Coef Variacion" = cv_dfi_viol, 
+                         "Int Confianza" = lim_dfi_viol)
 
 ```
 
 
+
+```{r, eval=FALSE}
+write.xlsx(list_of_datasets, 
+           file = paste0("DFI_viol_envipe_enadid_FAC_HOG_", format(Sys.Date(), "%y%m%d"), ".xlsx"))
+
+#################################################################################################################################################
+
+## B. MÉTODO DE CÁLCULO USANDO FAC_ELE == fac_ele
+
+# rm(list=ls()); graphics.off(); options(scipen = 999)
+# paquetes=c("tidyverse", "date", "data.table", "questionr", "readxl", "writexl", "openxlsx", "foreign", "survey", "PracTools", "haven","knitr","kableExtra")
+# for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
+
+# Cargar ENADID para integración
+# Leer datos y asignarlos a objeto
+enadid_thogar <- read_csv("data/conjunto_de_datos_thogar_enadid_2018/conjunto_de_datos/conjunto_de_datos_thogar_enadid_2018.csv")
+enadid_tsdem <- read_csv("data/TSDem.csv")
+
+
+# Unir conjunto de datos 
+enadid <- enadid_tsdem %>% left_join(enadid_thogar) %>% clean_names()
+
+# Renombrar y crear variables 
+enadid <- enadid %>% 
+  rename(cve_ent=ent)
+enadid$p3_19ac <- ifelse(enadid$p3_19ac == "99", NA, enadid$p3_19ac)
+enadid$p3_12ac <- ifelse(enadid$p3_12ac == "99", NA, enadid$p3_12ac)
+enadid$edad <- ifelse(enadid$edad == "999", NA, enadid$edad)
+enadid$edad <- as.numeric(enadid$edad)
+enadid$misma_res_5A <- ifelse(enadid$cve_ent == enadid$p3_19ac, 1, 0)
+enadid$misma_res <- ifelse(enadid$cve_ent == enadid$p3_12ac, 1, 0)
+
+# Se considera emigrante por inseguridad y violencia
+enadid$emi_int_viol_5A <- ifelse(enadid$p3_20 == 8 & enadid$misma_res_5A == 0, 1, 0)
+enadid$emi_int_viol <- ifelse(enadid$p3_13== 8 & enadid$misma_res == 0, 1, 0)
+
+
+# Conversión a tipo numérico las variables de tipo factor y homologacion de nombre con ENVIPE
+enadid$fac_ele <- as.numeric(as.character(enadid$fac_viv))
+
+# Crear la variable de factor edad_quin con los niveles especificados
+
+# Crear los cortes para definir los niveles de la variable edad_quin
+cortes <- c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 130)
+
+# Crear la variable factor edad_quin
+enadid$edad_quin <- cut(as.numeric(enadid$edad), breaks = cortes, labels = c("pob_00_04", "pob_05_09", 
+                                                                             "pob_10_14", "pob_15_19", "pob_20_24", 
+                                                                             "pob_25_29", "pob_30_34", "pob_35_39", 
+                                                                             "pob_40_44", "pob_45_49", "pob_50_54", 
+                                                                             "pob_55_59", "pob_60_64", "pob_65_mm"), include.lowest = TRUE)
+
+
+enadid_int <- enadid %>% dplyr::select(edad, edad_quin, sexo, upm, upm_dis, est_dis, fac_ele, cve_ent, emi_int_viol)
+
+
+# Conversión a tipo numérico las variables de tipo factor
+enadid_int$sexo <- as.factor(as.numeric(enadid_int$sexo))
+# Preparar ENVIPE
+# Tablas que se usarán para los cálculos de Prevalencia Delictiva, Incidencia Delictiva y Cifra Negra
+envipe <- read.dbf("data/TPer_Vic1.dbf") %>%
+  dplyr::select("ID_VIV", "ID_HOG", "ID_PER", "UPM", "VIV_SEL", "HOGAR", "RESUL_H", "R_SEL", "SEXO", "EDAD", "AREAM", "CVE_ENT", "NOM_ENT", "CVE_MUN", "FAC_ELE", "FAC_HOG",
+                "DOMINIO", "ESTRATO", "EST_DIS", "UPM_DIS", "CVE_ENT", "AP4_11_10") # Tabla Principal de Victimización 1
+
+# Conversión a tipo numérico las variables de tipo factor
+envipe$FAC_ELE <- as.numeric(as.character(envipe$FAC_ELE))
+
+
+# Construcción de la variable de Entidad, se substrae los dos primeros dígitos de la variable UPM
+envipe$ENT <- substr(envipe$UPM,1,2)
+envipe <- envipe %>% clean_names()
+
+#Crear llaves
+
+# Construcción de las variables
+# envipe$emi_int_viol <- ifelse(envipe$ap4_11_10%in%"1",1,0)
+envipe$emi_int_viol <- case_when(envipe$ap4_11_10=="1"~1, TRUE ~ 0)
+
+# Crear los cortes para definir los niveles de la variable edad_quin
+cortes <- c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 130)
+
+# Crear la variable factor edad_quin
+envipe$edad_quin <- cut(as.numeric(envipe$edad), breaks = cortes, labels = c("pob_00_04", "pob_05_09",
+                                                                             "pob_10_14", "pob_15_19", "pob_20_24",
+                                                                             "pob_25_29", "pob_30_34", "pob_35_39",
+                                                                             "pob_40_44", "pob_45_49", "pob_50_54",
+                                                                             "pob_55_59", "pob_60_64", "pob_65_mm"), include.lowest = TRUE)
+
+# Seleccionar variables para integrar
+envipe_int <- envipe %>% dplyr::select(edad, edad_quin, edad, sexo, upm, upm_dis, est_dis, fac_ele, cve_ent, emi_int_viol)
+
+# Conversión a tipo numérico las variables de tipo factor
+envipe_int$upm <- as.character(as.factor(envipe_int$upm))
+envipe_int$upm_dis <- as.character(as.factor(envipe_int$upm_dis))
+envipe_int$est_dis <- as.character(as.factor(envipe_int$est_dis))
+envipe_int$cve_ent <- as.character(as.factor(envipe_int$cve_ent))
+
+## Unir bases
+integrar <- rbind(enadid_int, envipe_int)
+
+# 6. Calibración del ponderador
+# Leer y unir bases de población
+poblacion_municipal <- bind_rows(
+  read_csv("data/data_t5_conapo/base_municipios_final_datos_01.csv", locale = locale(encoding = "latin1")),
+  read_csv("data/data_t5_conapo/base_municipios_final_datos_02.csv", locale = locale(encoding = "latin1"))
+) %>% clean_names()
+
+# Arreglar claves de los municipios
+poblacion_municipal <- poblacion_municipal %>%
+  mutate(entidad = ifelse(nchar(clave_ent) == 1,
+                          paste0("0", clave_ent), clave_ent),
+         clave_2 = ifelse(nchar(clave) == 4,
+                          paste0("0", clave), clave))
+
+
+# Filtrar por año y grupo de edad
+poblacion_municipal$year <- poblacion_municipal$ano
+pob_por_gpos_edad <- poblacion_municipal %>%
+  filter(year == 2017)
+
+# Calcular sumas por grupos
+grupos <- pob_por_gpos_edad %>%
+  group_by(edad_quin) %>%
+  summarise(poblacion = sum(pob))
+
+sexo <- pob_por_gpos_edad %>%
+  group_by(sexo) %>%
+  summarise(poblacion = sum(pob))
+
+cve_ent <- pob_por_gpos_edad %>%
+  group_by(entidad) %>%
+  summarise(poblacion = sum(pob))
+
+total <- pob_por_gpos_edad %>%
+  summarise(poblacion = sum(pob))
+
+
+edad_quin <- grupos[[2]]
+sexo <- sexo[[2]]
+cve_ent <- cve_ent[[2]]
+N <-  total[[1]]
+
+# Paso 2: Crear el diseño muestral
+diseño <- svydesign(
+  ids = ~upm,
+  strata = ~est_dis,
+  weights = ~fac_ele,
+  data = integrar,
+  nest = TRUE
+)
+#options(survey.lonely.psu = "adjust")
+
+calibracion <- calibrate(design = diseño,
+                         formula = ~as.factor(edad_quin) + as.factor(sexo),
+                         calfun = "raking",
+                         population = c("(Intercept)" = N, edad_quin[-1], sexo[-1]))
+
+
+integrar$fac_nuevo=weights(calibracion)
+
+# Paso 3: Crear el NUEVO diseño muestral
+diseño2 <- svydesign(
+  ids = ~upm,
+  strata = ~est_dis,
+  weights = ~fac_nuevo,
+  data = integrar,
+  nest = TRUE
+)
+#options(survey.lonely.psu = "adjust")
+
+# Cálculo del número de personas DFI por violencia
+# Nacional
+n_dfi_viol <- svytotal(~emi_int_viol, diseño2, na.rm = TRUE) 
+# Entidad federativa
+e_dfi_viol <- svyby(~emi_int_viol, by=~cve_ent, diseño2, 
+                    svytotal, na.rm = TRUE) 
+
+# Estimaciones, Error estándar, Coeficiente de variación, Intervalos de confianza
+# Nacional
+est_n_dfi_viol <- n_dfi_viol[[1]]
+se_n_dfi_viol<- SE(n_dfi_viol)
+cv_n_dfi_viol <- cv(n_dfi_viol)*100
+li_n_dfi_viol <- confint(n_dfi_viol,level=0.90)[1,1]
+ls_n_dfi_viol <- confint(n_dfi_viol,level=0.90)[1,2]
+# Entidad federativa
+est_e_dfi_viol<- e_dfi_viol[[2]]
+se_e_dfi_viol <- SE(e_dfi_viol)
+cv_e_dfi_viol <- cv(e_dfi_viol)*100
+li_e_dfi_viol <- confint(e_dfi_viol,level=0.90)[,1]
+ls_e_dfi_viol <- confint(e_dfi_viol,level=0.90)[,2]
+
+
+# Formato #
+Entidades<-c("Estados Unidos Mexicanos", "Aguascalientes", "Baja California", "Baja California Sur", 
+             "Campeche", "Coahuila de Zaragoza", "Colima", "Chiapas", "Chihuahua", "Ciudad de México", 
+             "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Estado de México", 
+             "Michoacán de Ocampo", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", 
+             "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", 
+             "Veracruz de Ignacio de la Llave", "Yucatán", "Zacatecas") 
+
+
+est_dfi_viol <- data.frame(Entidades, est_dfi_viol = round(as.numeric(c(est_n_dfi_viol, est_e_dfi_viol)), 0))
+se_dfi_viol <- data.frame(Entidades, se_dfi_viol = round(as.numeric(c(se_n_dfi_viol, se_e_dfi_viol)), 0))
+cv_dfi_viol <- data.frame(Entidades, cv_dfi_viol = round(as.numeric(c(cv_n_dfi_viol, cv_e_dfi_viol)), 2))
+lim_dfi_viol <- data.frame(Entidades, 
+                           linf_dfi_viol = as.integer(c(li_n_dfi_viol, li_e_dfi_viol)),
+                           lsup_dfi_viol = as.integer(c(ls_n_dfi_viol, ls_e_dfi_viol)))
+
+
+# Elimina los nombres de fila
+row.names(est_dfi_viol) <- row.names(se_dfi_viol) <- row.names(cv_dfi_viol) <- 
+  row.names(lim_dfi_viol) <- NULL
+
+# Exportar salida a un archivo de Excel #
+# Lista de estimaciones
+list_of_datasets <- list("Estimaciones" = est_dfi_viol, 
+                         "Error Estandar" = se_dfi_viol, 
+                         "Coef Variacion" = cv_dfi_viol, 
+                         "Int Confianza" = lim_dfi_viol)
+
+
+write.xlsx(list_of_datasets, 
+           file = paste0("DFI_viol_envipe_enadid_FAC_ELE_", format(Sys.Date(), "%y%m%d"), ".xlsx"))
+
+```
