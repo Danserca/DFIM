@@ -403,6 +403,8 @@ hr.cintillo {
 }
 </style>
 <div style="color: #003057;">
+
+
 <hr style="border: 3px solid#0077C8;" />
 <div id="siglas-y-acrónimos" class="section level1">
 <h1>1. Siglas y acrónimos</h1>
@@ -541,123 +543,6 @@ considerablemente con se aprecia en la Tabla 3. Existen aproximaciones
 nacionales y por entidad federativa, en el marco y fuera del marco del
 del Sistema Nacional de Información Estadística y Geográfica
 (SNIEG).</p>
-<p>El SNIEG aborda el tema del DFI desde, al menos, dos de sus
-subsistemas, desde el Subsistema Nacional de Información de Gobierno,
-Seguridad Pública e Impartición de Justicia y desde el Subsistema de
-Información Nacional de Información Demográfica. En el marco del primer
-subsistema, la ENVIPE proporciona información sobre las personas que se
-cambian de vivienda o lugar de residencia para protegerse de la
-delincuencia. En el marco del segundo, la Encuesta Nacional de la
-Dinámica Demográfica (ENADID) y el Censo 2020 permiten aproximarse al
-DFI.</p>
-<p>Esas fuentes tienen como objetivo recopilar información sobre temas
-similares, como la migración por inseguridad pública, delictiva o
-violencia, pero difieren en metodología de muestreo, diseño de
-cuestionario, periodo de referencia y población objetivo.</p>
-<p>Los métodos de estimación multifuente abordan desafíos específicos
-asociados con la comparación y reconciliación de datos de diferentes
-fuentes, como la alineación de categorías de variables, el manejo de
-valores atípicos y la corrección de sesgos de cobertura. Esto puede
-mejorar la calidad de las estimaciones y proporcionar una base más
-sólida para la toma de decisiones y políticas públicas relacionadas con
-la migración por violencia. Las técnicas de integración se dividen en
-dos grandes tipos: de consolidación y vinculación. Las técnicas de
-consolidación consisten en crear un conjunto unificado de datos, de esta
-manera se consigue un mayor número de observaciones. Las técnicas de
-vinculación, en cambio, se refieren a los procedimientos mediante los
-que dos o más conjuntos de datos se unen a partir de una variable de
-identificación única, llave o clave, de esta manera se consiguen más
-atributos de las observaciones. En ambos casos las variables deben ser
-seleccionadas, transformadas y cargadas (proceso ETL, por sus siglas en
-inglés). A lo largo de este proceso es necesario verificar la coherencia
-y armonización de los conjuntos de datos (Naciones Unidas 2020, l.
-808).</p>
-<p>Es de esperarse que entre fuentes haya diferencias en las
-definiciones de variables, de ahí que a partir de los valores observados
-disponibles es necesario estimar los valores para las variables objetivo
-de acuerdo con la definición deseada, a este paso se le denomina
-alineación de mediciones. Una vez realizadas la consolidación y
-vinculación, es posible implementar diversos métodos de estimación, a
-nivel micro y agregado. Cuando se trata de datos de encuesta se calculan
-las ponderaciones mediante regresión para todas las observaciones del
-nuevo conjunto de datos obtenido a partir de la integración (Naciones
-Unidas 2020). Las ponderaciones originales de cada una de las encuestas
-se ajustan calibrándolas, es decir, la ponderación de regresión se
-calibra sobre estos valores conocidos o estimados previamente.</p>
-</div>
-</div>
-<div class="row-sm-3">
-<img src="imagenes/integraci%C3%B3n_diagrama_ONU_2020.png" /> </a>
-</div>
-<br><br>
-<hr style="border: 3px solid#0077C8;" />
-<div id="metodología" class="section level1">
-<h1>3. Metodología</h1>
-<p>A partir de la integración de datos de distintas fuentes, se siguen
-diversas estrategias empíricas para estimar el número de personas en
-situación de DFI asociado a la delincuencia, inseguridad y violencia.
-Para estimar el número de personas en situación de DFI en México, se
-consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la
-ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se
-crearon variables para identificar a las personas en situación de DFI.
-Los ponderadores de la muestra se calibraron para corregir posibles
-sesgos y asegurar la representatividad de la población objetivo. Se
-empleó el método de estimación Horvitz-Thompson para estimar el número
-de personas en situación de DFI a nivel nacional y por entidad
-federativa. Finalmente, se evaluó la confiabilidad de los resultados a
-partir de la estimación de los coeficientes de variación (CV). Por otra
-parte, se analizaron las macro determinantes de la emigración. Para
-esto, se consideraron las emigraciones por razón de inseguridad
-delictiva y violencia y por razones distintas a esta, tales como las
-emigraciones por razones de trabajo, escuela o familia. Se utilizaron
-datos agregados a nivel municipal del Censo 2020 y de las estadísticas
-vitales. Se hicieron los cálculos para cada municipio y se establecieron
-las variables auxiliares. Se estimaron modelos de regresión.</p>
-<div
-id="calibración-del-ponderador-en-integración-de-la-envipe-2018-y-enadid-2018"
-class="section level2">
-<h2>3.1. Calibración del ponderador en integración de la ENVIPE 2018 y
-ENADID 2018</h2>
-<p>Para estimar el número de personas en situación de DFI atribuido a la
-violencia se emplearon métodos de integración de datos, se calibraron
-los ponderadores, de esta manera, se ajustaron los pesos muestrales para
-que las estimaciones del nuevo conjunto de datos integrado reflejen
-adecuadamente a la población conocida. Esta técnica se informa de las
-características conocidas de la población y de muestreos de base. Las
-primeras se obtuvieron del Censo 2020; para los segundos se consultaron
-y siguieron los marcos conceptuales y diseños muestrales de los
-programas estadísticos utilizados (INEGI 2019c; 2020; 2019a; 2018b;
-2019b) La disposición de una mayor información puede contribuir a
-mejorar la precisión de los estimadores, reduciendo el error muestral y
-los coeficientes de variación.</p>
-<div id="datos" class="section level3">
-<h3>3.1.1. Datos</h3>
-<p>Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus
-similitudes en periodos de levantamiento de información y diseño
-muestral. Con estos datos se llevó a cabo un proceso de preparación,
-transformación y creación de variables de interés para ambas encuestas.
-En el caso de la ENADID 2018 se unieron las tablas que componen su base
-de datos, a partir de las llaves primarias. La base de datos de esta
-encuesta se estructura en 4 tablas. Solo se unieron las tablas con las
-variables de interés. En este caso se unieron la Tabla de hogares
-(THogar) y la tabla de datos sociodemográficos de (TSDem). La primera
-tabla THogar concentra información relativa a los hogares dentro de las
-viviendas seleccionadas para la aplicación de la encuesta,
-específicamente en esta tabla se incluyen la contabilización del número
-de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo
-del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se
-incluye un ponderador FAV_VIV y variables de estratificación. La tabla
-THogar incluye dos variables de identificación única a nivel registro:
-Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene
-las variables de identificación upm, viv_sel, hogar, n_ren que sirven
-para relacionar todas las tablas de la encuesta, así como variables de
-identificación geográfica: la Entidad federativa (ent) y Tamaño de
-localidad (tam_loc). Además, contiene variables de interés como: Sexo,
-Edad, Entidad de residencia en 2017, Causa de migración reciente.</p>
-<div id="procedimiento-de-estimación" class="section level4">
-<h4>3.1.2. Procedimiento de estimación</h4>
-<p>Lectura de la base de datos y selección de las columnas de
-interés</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <caption>
 Comparación de Características de Fuentes de Datos
@@ -818,6 +703,123 @@ Mundial
 </ul></li>
 </ul></li>
 </ul>
+<p>El SNIEG aborda el tema del DFI desde, al menos, dos de sus
+subsistemas, desde el Subsistema Nacional de Información de Gobierno,
+Seguridad Pública e Impartición de Justicia y desde el Subsistema de
+Información Nacional de Información Demográfica. En el marco del primer
+subsistema, la ENVIPE proporciona información sobre las personas que se
+cambian de vivienda o lugar de residencia para protegerse de la
+delincuencia. En el marco del segundo, la Encuesta Nacional de la
+Dinámica Demográfica (ENADID) y el Censo 2020 permiten aproximarse al
+DFI.</p>
+<p>Esas fuentes tienen como objetivo recopilar información sobre temas
+similares, como la migración por inseguridad pública, delictiva o
+violencia, pero difieren en metodología de muestreo, diseño de
+cuestionario, periodo de referencia y población objetivo.</p>
+<p>Los métodos de estimación multifuente abordan desafíos específicos
+asociados con la comparación y reconciliación de datos de diferentes
+fuentes, como la alineación de categorías de variables, el manejo de
+valores atípicos y la corrección de sesgos de cobertura. Esto puede
+mejorar la calidad de las estimaciones y proporcionar una base más
+sólida para la toma de decisiones y políticas públicas relacionadas con
+la migración por violencia. Las técnicas de integración se dividen en
+dos grandes tipos: de consolidación y vinculación. Las técnicas de
+consolidación consisten en crear un conjunto unificado de datos, de esta
+manera se consigue un mayor número de observaciones. Las técnicas de
+vinculación, en cambio, se refieren a los procedimientos mediante los
+que dos o más conjuntos de datos se unen a partir de una variable de
+identificación única, llave o clave, de esta manera se consiguen más
+atributos de las observaciones. En ambos casos las variables deben ser
+seleccionadas, transformadas y cargadas (proceso ETL, por sus siglas en
+inglés). A lo largo de este proceso es necesario verificar la coherencia
+y armonización de los conjuntos de datos (Naciones Unidas 2020, l.
+808).</p>
+<p>Es de esperarse que entre fuentes haya diferencias en las
+definiciones de variables, de ahí que a partir de los valores observados
+disponibles es necesario estimar los valores para las variables objetivo
+de acuerdo con la definición deseada, a este paso se le denomina
+alineación de mediciones. Una vez realizadas la consolidación y
+vinculación, es posible implementar diversos métodos de estimación, a
+nivel micro y agregado. Cuando se trata de datos de encuesta se calculan
+las ponderaciones mediante regresión para todas las observaciones del
+nuevo conjunto de datos obtenido a partir de la integración (Naciones
+Unidas 2020). Las ponderaciones originales de cada una de las encuestas
+se ajustan calibrándolas, es decir, la ponderación de regresión se
+calibra sobre estos valores conocidos o estimados previamente.</p>
+</div>
+<div class="row-sm-3">
+<img src="imagenes/integraci%C3%B3n_diagrama_ONU_2020.png" /> </a>
+</div>
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+</div>
+<div id="metodología" class="section level1">
+<h1>3. Metodología</h1>
+<p>A partir de la integración de datos de distintas fuentes, se siguen
+diversas estrategias empíricas para estimar el número de personas en
+situación de DFI asociado a la delincuencia, inseguridad y violencia.
+Para estimar el número de personas en situación de DFI en México, se
+consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la
+ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se
+crearon variables para identificar a las personas en situación de DFI.
+Los ponderadores de la muestra se calibraron para corregir posibles
+sesgos y asegurar la representatividad de la población objetivo. Se
+empleó el método de estimación Horvitz-Thompson para estimar el número
+de personas en situación de DFI a nivel nacional y por entidad
+federativa. Finalmente, se evaluó la confiabilidad de los resultados a
+partir de la estimación de los coeficientes de variación (CV). Por otra
+parte, se analizaron las macro determinantes de la emigración. Para
+esto, se consideraron las emigraciones por razón de inseguridad
+delictiva y violencia y por razones distintas a esta, tales como las
+emigraciones por razones de trabajo, escuela o familia. Se utilizaron
+datos agregados a nivel municipal del Censo 2020 y de las estadísticas
+vitales. Se hicieron los cálculos para cada municipio y se establecieron
+las variables auxiliares. Se estimaron modelos de regresión.</p>
+<div
+id="calibración-del-ponderador-en-integración-de-la-envipe-2018-y-enadid-2018"
+class="section level2">
+<h2>3.1. Calibración del ponderador en integración de la ENVIPE 2018 y
+ENADID 2018</h2>
+<p>Para estimar el número de personas en situación de DFI atribuido a la
+violencia se emplearon métodos de integración de datos, se calibraron
+los ponderadores, de esta manera, se ajustaron los pesos muestrales para
+que las estimaciones del nuevo conjunto de datos integrado reflejen
+adecuadamente a la población conocida. Esta técnica se informa de las
+características conocidas de la población y de muestreos de base. Las
+primeras se obtuvieron del Censo 2020; para los segundos se consultaron
+y siguieron los marcos conceptuales y diseños muestrales de los
+programas estadísticos utilizados (INEGI 2019c; 2020; 2019a; 2018b;
+2019b) La disposición de una mayor información puede contribuir a
+mejorar la precisión de los estimadores, reduciendo el error muestral y
+los coeficientes de variación.</p>
+<div id="datos" class="section level3">
+<h3>3.1.1. Datos</h3>
+<p>Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus
+similitudes en periodos de levantamiento de información y diseño
+muestral. Con estos datos se llevó a cabo un proceso de preparación,
+transformación y creación de variables de interés para ambas encuestas.
+En el caso de la ENADID 2018 se unieron las tablas que componen su base
+de datos, a partir de las llaves primarias. La base de datos de esta
+encuesta se estructura en 4 tablas. Solo se unieron las tablas con las
+variables de interés. En este caso se unieron la Tabla de hogares
+(THogar) y la tabla de datos sociodemográficos de (TSDem). La primera
+tabla THogar concentra información relativa a los hogares dentro de las
+viviendas seleccionadas para la aplicación de la encuesta,
+específicamente en esta tabla se incluyen la contabilización del número
+de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo
+del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se
+incluye un ponderador FAV_VIV y variables de estratificación. La tabla
+THogar incluye dos variables de identificación única a nivel registro:
+Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene
+las variables de identificación upm, viv_sel, hogar, n_ren que sirven
+para relacionar todas las tablas de la encuesta, así como variables de
+identificación geográfica: la Entidad federativa (ent) y Tamaño de
+localidad (tam_loc). Además, contiene variables de interés como: Sexo,
+Edad, Entidad de residencia en 2017, Causa de migración reciente.</p>
+<div id="procedimiento-de-estimación" class="section level4">
+<h4>3.1.2. Procedimiento de estimación</h4>
+<p>Lectura de la base de datos y selección de las columnas de
+interés</p>
 <p>Una vez que se unieron ambas tablas, se obtuvo un conjunto de datos a
 nivel individual de 385,978 observaciones. A partir de este conjunto se
 creó la variable emi_int_viol para identificar a las personas que
@@ -1021,42 +1023,55 @@ la tasa de DFI se define como:</p>
 \text{ de 2015 a 2019}
 \]</span> <span class="math display">\[
 \mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad
-del periodo } t \text{ a } t+4}
+del periodo } t \text{ a } t+4
 \]</span></p>
 <p>Para explorar más a fondo la variación de la tasa de DFI por
-violencia, el Mapa XXX muestra su distribución geográfica.</p>
-<p>Figura 2. Tasa de personas que cambiaron de lugar de residencia y
+violencia, la Figura 2 muestra su distribución geográfica.</p>
+<div class="row-sm-3">
+<figure style="text-align: center;">
+<figcaption style="margin-bottom: 10px;">
+Figura 2. Tasa de personas que cambiaron de lugar de residencia y
 atribuyeron a la violencia dicho cambio por cada cien mil habitantes,
-2015-2019</p>
-<p>La variable independiente es la violencia, se mide a partir de los
-homicidios dolosos municipales ocurridos entre 2015 y 2019 por cada cien
-mil habitantes (tasa_promedio_hom). A partir del recuento de los
-homicidios dolosos de las estadísticas de mortalidad y de las
-proyecciones de población, se estimaron las tasas brutas de homicidio
-por cada cien mil habitantes. Para corregir la inestabilidad de la
-varianza y, en consecuencia la generación de valores atípicos espurios,
-producto de las diferencias en las poblaciones municipales, se recurrió
-a un enfoque de suavizamiento usando el método empírico bayesiano (EB)
-(Anselin et al. 2023). Este enfoque retoma la información previa de la
-distribución de los homicidios y de la población, binomial y gamma,
-respectivamente, para obtener una nueva estimación ajustada. La tasa
-suavizada se expresa como un promedio ponderado de la tasa bruta, r, y
-la estimación previa, θ. Esta última se estima como una tasa de
-referencia, el promedio estatal. En esencia, la técnica EB consiste en
-calcular un promedio ponderado entre la tasa bruta de cada municipio y
-el promedio estatal, con ponderaciones proporcionales a la población
-subyacente en riesgo. Es decir, los municipios pequeños (es decir, con
-una pequeña población en riesgo) tenderán a que sus tasas se ajusten
-considerablemente, mientras que en los municipios más grandes las tasas
-apenas cambiarán. De manera formal:</p>
-<p>_i^{EB}=w_ir_i+(1-w_i)  En esta expresión , los pesos son: w_i= donde
-P_i es la población del municipio i. En el enfoque bayesiano empírico,
-la media y la varianza ^2 previas son estimadas a partir de los datos.
-La Figura 3 muestra la distribución de esta variable independiente
-suavizada. Se aplicó una transformación adicional: el logaritmo de la
-variable más uno, igual que la transformación realizada en la variable
-dependiente.</p>
-<p>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</p>
+2015-2019
+</figcaption>
+<img src="imagenes/figura2_mapa.png" alt="Mapa de Tasa de Personas">
+</figure>
+</div>
+<p>La tasa suavizada se expresa como un promedio ponderado de la tasa
+bruta, <span class="math inline">\(r\)</span>, y la estimación previa,
+<span class="math inline">\(\theta\)</span>. Esta última se estima como
+una tasa de referencia, el promedio estatal. En esencia, la técnica EB
+consiste en calcular un promedio ponderado entre la tasa bruta de cada
+municipio y el promedio estatal, con ponderaciones proporcionales a la
+población subyacente en riesgo. Es decir, los municipios pequeños (es
+decir, con una pequeña población en riesgo) tenderán a que sus tasas se
+ajusten considerablemente, mientras que en los municipios más grandes
+las tasas apenas cambiarán. De manera formal:</p>
+<p><span class="math display">\[
+\pi_i^{EB} = w_i r_i + \left(1 - w_i\right) \theta
+\]</span></p>
+<p>En esta expresión, los pesos son:</p>
+<p><span class="math display">\[
+w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
+\]</span></p>
+<p>donde <span class="math inline">\(P_i\)</span> es la población del
+municipio <span class="math inline">\(i\)</span>. En el enfoque
+bayesiano empírico, la media <span class="math inline">\(\mu\)</span> y
+la varianza <span class="math inline">\(\sigma^2\)</span> previas son
+estimadas a partir de los datos. La Figura 3 muestra la distribución de
+esta variable independiente suavizada. Se aplicó una transformación
+adicional: el logaritmo de la variable más uno, igual que la
+transformación realizada en la variable dependiente.</p>
+<div class="row-sm-3">
+<figure>
+<figcaption>
+Figura 3. Tasa suavizada promedio de homicidios, 2015-2019
+</figcaption>
+<img src="imagenes/figura3_mapa.png" alt="Mapa de Homicidios">
+</figure>
+</div>
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
 </div>
 </div>
 </div>
@@ -1069,8 +1084,8 @@ Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública
 (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos
 enfocaremos en la calibración de ponderadores y la creación de diseños
 muestrales.</p>
-<div id="entorno-de-trabajo-y-librerías" class="section level2">
-<h2>1. Entorno de trabajo y librerías</h2>
+<div id="entorno-de-trabajo-y-librerías" class="section level3">
+<h3>1. Entorno de trabajo y librerías</h3>
 <p>Primero, cargaremos las librerías necesarias para el análisis:</p>
 <pre class="r"><code>rm(list=ls()); graphics.off(); options(scipen = 999)
 paquetes &lt;- c(
@@ -1081,6 +1096,7 @@ paquetes &lt;- c(
   &quot;knitr&quot;, &quot;kableExtra&quot;, &quot;clipr&quot;
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}</code></pre>
+</div>
 <div id="cargar-y-preparar-datos-de-enadid" class="section level3">
 <h3>2. Cargar y preparar datos de ENADID</h3>
 <p>En esta fase describe la limpieza de los datos y su preparación para
@@ -1530,7 +1546,6 @@ list_of_datasets &lt;- list(&quot;Estimaciones&quot; = est_dfi_viol,
 
 write.xlsx(list_of_datasets, 
            file = paste0(&quot;DFI_viol_envipe_enadid_FAC_ELE_&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;.xlsx&quot;))</code></pre>
-</div>
 </div>
 </div>
 
