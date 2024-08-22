@@ -136,7 +136,7 @@ tabla_datos <- data.frame(
 )
 
 # Crear la tabla
-kable(tabla_datos, align = "c", caption = "Comparación de Características de Fuentes de Datos") %>%
+kable(tabla_datos, align = "c", caption = "<span style='font-size: 20px;'>Comparación de Características de Fuentes de Datos</span>") %>%
   kable_styling(full_width = TRUE, bootstrap_options = c("striped", "hover", "condensed"))
 ```
 
@@ -151,12 +151,15 @@ Las técnicas de integración se dividen en dos grandes tipos: de consolidación
 
 Es de esperarse que entre fuentes haya diferencias en las definiciones de variables, de ahí que a partir de los valores observados disponibles es necesario estimar los valores para las variables objetivo de acuerdo con la definición deseada, a este paso se le denomina alineación de mediciones. Una vez realizadas la consolidación y vinculación, es posible implementar diversos métodos de estimación, a nivel micro y agregado. Cuando se trata de datos de encuesta se calculan las ponderaciones mediante regresión para todas las observaciones del nuevo conjunto de datos obtenido a partir de la integración (Naciones Unidas 2020). Las ponderaciones originales de cada una de las encuestas se ajustan calibrándolas, es decir, la ponderación de regresión se calibra sobre estos valores conocidos o estimados previamente.
 
-</div>
-  <div class="row-sm-3">
-  
+
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
   ![](imagenes/integración_diagrama_ONU_2020.png)
-</a>
-  </div>
+  
+</div>
+
   
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
@@ -172,107 +175,34 @@ Para estimar el número de personas en situación de DFI atribuido a la violenci
 
 ### 3.1.1. Datos  
 Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus similitudes en periodos de levantamiento de información y diseño muestral. Con estos datos se llevó a cabo un proceso de preparación, transformación y creación de variables de interés para ambas encuestas.
+
 En el caso de la ENADID 2018 se unieron las tablas que componen su base de datos, a partir de las llaves primarias. La base de datos de esta encuesta se estructura en 4 tablas. Solo se unieron las tablas con las variables de interés. En este caso se unieron la Tabla de hogares (THogar) y la tabla de datos sociodemográficos de (TSDem). La primera tabla THogar concentra información relativa a los hogares dentro de las viviendas seleccionadas para la aplicación de la encuesta, específicamente en esta tabla se incluyen la contabilización del número de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se incluye un ponderador FAV_VIV y variables de estratificación. La tabla THogar incluye dos variables de identificación única a nivel registro: Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene las variables de identificación upm, viv_sel, hogar, n_ren que sirven para relacionar todas las tablas de la encuesta, así como variables de identificación geográfica: la Entidad federativa (ent) y Tamaño de localidad (tam_loc). Además, contiene variables de interés como: Sexo, Edad, Entidad de residencia en 2017, Causa de migración reciente. 
 
-#### 3.1.2. Procedimiento de estimación
 
-Lectura de la base de datos y selección de las columnas de interés
+### 3.2.1. Procedimiento en R
 
+#### Entorno de trabajo y librerías
 
-Una vez que se unieron ambas tablas, se obtuvo un conjunto de datos a nivel individual de 385,978 observaciones. A partir de este conjunto se creó la variable emi_int_viol para identificar a las personas que experimentaron un cambio de residencia entre la fecha del levantamiento de la información y agosto de 2017 (un año atrás) y atribuyeron el cambio a situaciones de inseguridad pública o violencia. Con fines de validación, se estimó la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2013 según causa de la migración. A partir del método de cálculo utilizado se llegó al mismo resultado que el INEGI publica en los Tabulados. No se pudo validar directamente la cifra de interés, es decir, la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2017 según causa de la migración ya que no es parte de la información que se publica en los Tabulados.     Para fines de calibración, adicionalmente, se creó la variable edad_quin para clasificar a los individuos en grupos quinquenales de edad, tomando como base la variable continua de edad. Para poder unir esta base a la de la ENVIPE, se renombraron las variables de manera que coincidieran. Asimismo, se seleccionaron solo las variables iniciales de interés. 
-La base de datos de la ENVIPE 2021 se integra por 6 tablas, de las cuales solo se necesitaron dos, Tabla de residentes del hogar (TSDem) y Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1). La primera contiene las características sociodemográficas de los integrantes del hogar y sirvió para conocer el número de integrantes de cada hogar. La Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1) contiene información relacionada con la percepción sobre seguridad pública en el ámbito geográfico del informante, las conductas antisociales en su entorno inmediato y los cambios de hábitos por temor a ser víctima de la delincuencia en 2017. A partir de esta Tabla se identificaron los hogares que habían cambiado de vivienda o residencia por temor a la delincuencia entre 2017 y la fecha del levantamiento de la ENVIPE. 
-Al igual que se hizo con la ENADID 2018, se creó la variable emi_int_viol. En este caso, la variable identifica a las personas que declararon haberse cambiado de vivienda o residencia como medida de protección ante la delincuencia, dada a partir de la variable original AP4_11_10. La variable emi_int_viol tomó el valor de 1 cuando AP4_11_10 tomó el valor de “1”, y 0 cuando AP4_11_10 tomó el valor de “0”. Una vez que se obtuvieron las variables necesarias, ambas tablas se unieron mediante el identificador de hogar (ID_HOG) y se seleccionaron solo las 9 variables de interés. Se obtuvo un conjunto de datos a nivel individual de 91,541 observaciones.
-La ENVIPE 2021 cuenta con ocho factores de expansión, FAC_VIV, FAC_HOG, FAC_ELE, FAC_DEL, FAC_VIV_AM, FAC_HOG_AM , FAC_ELE_AM y FAC_DEL_AM. El primero está asociado a la vivienda (FAC_VIV), el segundo corresponde a los hogares (FAC_HOG); el tercero está relacionado con las personas de 18 años y más (FAC_ELE) y el cuarto expande cada delito captado en el módulo sobre victimización (FAC_DEL). Además, debido al interés para obtener estimaciones sobre determinados indicadores de la ENVIPE 2021 en ciudades o áreas metropolitanas, se han añadido el factor vivienda de área metropolitana (FAC_VIV_AM), el factor hogar de área metropolitana (FAC_HOG_AM), el factor de personas elegidas en el área metropolitana (FAC_ELE_AM) y el factor delito del área metropolitana (FAC_DEL_AM). Estos cuatro factores son análogos a los asociados a los hogares, pero ajustados a las 33 áreas metropolitanas que se detallan en la tabla posterior (INEGI 2018a). 
-El factor vivienda (FAC_VIV) es el ponderador que se utiliza para estimar resultados de las preguntas que se refieren a las viviendas y la población en general. El factor hogar (FAC_HOG)  es el ponderador que se utiliza para estimar resultados de las preguntas que se refieren a los hogares y la población en general. El factor de personas elegidas (FAC_ELE) es el ponderador para estimar resultados de las preguntas de percepción de la seguridad pública y la victimización de la población de 18 años y más. El factor delito es el ponderador que se utiliza para estimar resultados de los delitos registrados en el “Módulo de delitos”. Los factores con terminación _AM están ajustados para las 33 áreas metropolitanas (INEGI, 2018a).
-	De acuerdo con el Marco conceptual de la ENVIPE 2018, la prevención y protección ante el delito es uno de los componentes y aspectos conceptuales en las encuestas de victimización. En este componente se incluyen preguntas sobre el tipo de precauciones para protegerse o prevenir el delito. En la ENVIPE 2018 se consideró que el cambio de rutinas es un importante indicador de inseguridad porque es una manifestación real del temor a la delincuencia que incide en la vida de las personas. Una de las medidas de protección que considera es el cambio de vivienda, desde esta perspectiva, el cambio de vivienda sería un proxy de temor al delito, es decir, una medida indirecta de la variable de interés, delincuencia. Las variables proxy son comúnmente utilizadas en estudios empíricos cuando la variable de interés no puede ser observada directamente o cuando los datos disponibles son limitados. Sin embargo, es importante tener en cuenta que una variable proxy no siempre refleja con precisión la variable subyacente que se intenta medir, y su uso conlleva limitaciones y riesgos de sesgos.
-	Considerando lo anterior y como primera aproximación, se buscó determinar el número de hogares que, durante el año 2017, tomaron medidas para protegerse de la delincuencia, como mudarse de vivienda o residencia. La estimación inicial, basada en la pregunta de la encuesta "¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como cambiarse de vivienda o lugar de residencia?", arrojó un total de 315,330 hogares.
-Al tratarse de una pregunta sobre la percepción de la seguridad pública, surge la posibilidad de utilizar el factor de expansión de personas elegidas (FAC_ELE) para realizar estimaciones poblacionales. Este método, sin embargo, no coincide con los resultados publicados en los tabulados oficiales. El estimador Horvitz-Thompson, basado en el FAC_ELE, estima un total de 715 mil 971 personas que tomaron medidas para protegerse de la delincuencia, mientras que los tabulados oficiales reportan un total de un millón 133 mil 041 personas. Asimismo se buscó replicar el método de cálculo del INEGI. Para conseguirlo, el factor de expansión que corresponde a los hogares se multiplicó por el número de integrantes del hogar y así se obtuvo un nuevo factor base de expansión. Este método supone que todas las personas integrantes del hogar cambiaron de vivienda o lugar de residencia por la misma razón y más o menos en las mismas condiciones. Sin embargo, el EGRISS (2023) sugiere que no siempre todos los integrantes de un hogar son personas en situación de DFI, sino que las personas en dicha situación “pueden vivir en campamentos exclusivos o en casas entre la población general, ya sea como parte de otro hogar o como un hogar independiente” (EGRISS 2023c, 16). Adicionalmente, la información sobre actitudes, intenciones de mudarse y poder de toma de decisiones en el hogar puede variar según el género de la persona informante. Para garantizar datos más confiables es recomendable utilizar un protocolo de selección aleatoria de mujeres y hombres encuestados dentro de un hogar muestreado, o entrevistar a más de un miembro de cada hogar (EGRISS 2023c, 16).
-Por lo anterior, se usaron dos factores de expansión base para la ENVIPE, FAC_ELE y FAC_HOGAR multiplicado por el número de integrantes del hogar. A partir de estos pesos base de la ENVIPE 2018 y de los pesos base de la ENADID 2018 se realizó la calibración. Para lograrlo, ambos conjuntos de datos se integraron en uno solo, de manera vertical. Se obtuvo un solo conjunto con 477 mil 519 observaciones y nueve variables. 
+Antes de importar los datos, cargamos las librerías necesarias para el análisis:  
 
-### Raking
-Un método comúnmente utilizado de algoritmos de calibración es el raking (también conocido como ajuste proporcional iterativo) (Deming y Stephan 1940). Este método emplea el algoritmo de Newton-
-Raphson (Deville y Sarndal 1992; Deville, Sarndal, y Sautory 1993). De acuerdo con Deville, Sarndal, y Sautory (1993), este algoritmo ofrece una solución general, eficiente y distinta de la versión clásica W. E. Deming (ajuste proporcional iterativo). La diferencia, consiste en que el primero es una generalización del segundo, busca la convergencia y optimización mediante la minimización de la función de distancia entre los pesos base u originales y los nuevos pesos. Para calcular los nuevos pesos, se resuelven las ecuaciones de calibración.
-El muestreo estratificado junto al ajuste proporcional iterativo, en particular, preserva las ventajas de la estratificación (que puede basarse en estratos geográficos) y de los  recuentos de grupos de edad conocidos (Deville, Sarndal, y Sautory 1993, 1015).
-El Instituto Nacional de Estadísticas y Estudios Económicos (INSEE por sus siglas en francés), agencia nacional de estadística francesa, desde 1940 emplea los métodos raking de calibración para producir ponderaciones para encuestas de hogares. Para esto desarrollaron el programa CALMAR de SAS. 
-En este trabajo, las ponderaciones se crearon con la función raking del paquete survey de R (Lumley 2023), utilizando las distribuciones marginales de las variables de ajuste derivadas de datos de población de CONAPO, se usaron las categorías de los grupos quinquenales de edad y sexo y los pesos (factores de expansión) originales. De acuerdo con INEGI (2019b) los pesos son el inverso de la probabilidad de selección. Sin embargo, al usar dos factores de expansión base para la ENVIPE 2018, se hicieron dos recalibraciones y, por tanto, se obtuvieron dos resultados. Con los nuevos pesos obtenidos mediante la recalibración, se obtuvieron los estimadores Horvitz-Thompson del número de personas en situación de DFI en el país y para cada entidad federativa, junto con sus varianzas, errores y coeficientes de variación. A partir de estos últimos se evaluó la calidad de los resultados. 
-El INEGI categoriza la confiabilidad de las estimaciones con base en los coeficientes de variación asociados (INEGI 2021). Si el coeficiente de variación está entre 0% y 15%, los datos se considera que tiene un alto grado de fiabilidad; si el coeficiente de variación es superior o igual al 15 % e inferior al 30 %, se considera que los datos tienen un grado tolerable de fiabilidad; y si el coeficiente de variación es mayor o igual al 30%, los datos deben ser recibidos con ciertas reservas debido a su baja confiabilidad. De esta forma, la estimación de emigrantes que atribuyen a la inseguridad pública y violencia el cambio de municipio de residencia entre marzo de 2015 y agostos de 2020 en México tuvo un alto nivel de confiabilidad. Respecto a las estimaciones a nivel entidad federativa, 27 entidades tuvieron estimaciones con un grado de confiabilidad tolerable y 5 con un grado de confiabilidad bajo.
-Análisis de las macrodeterminantes de la emigración  
-Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
-La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
-
-
-\[
-\mathrm{TDFI}_i = \left(\frac{\mathrm{DFI}_i}{\mathrm{POB}_i}\right) \times 100,000
-\]
-
-Donde:
-\[
-\mathrm{TDFI}_i : \text{Tasa de DFI (intermunicipal) del municipio } i \text{ de 2015 a 2019 por cada cien mil habitantes}
-\]
-\[
-\mathrm{DFI}_i : \text{Personas en situación de DFI del municipio } i \text{ de 2015 a 2019}
-\]
-\[
-\mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad del periodo } t \text{ a } t+4
-\]
-
-
-Para explorar más a fondo la variación de la tasa de DFI por violencia, la Figura 2 muestra su distribución geográfica. 
-
-<div style="text-align: center;">
-  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
-  ![](imagenes/figura2_mapa.png)
-  
-</div>
-
-
-
-La tasa suavizada se expresa como un promedio ponderado de la tasa bruta, \( r \), y la estimación previa, \( \theta \). Esta última se estima como una tasa de referencia, el promedio estatal. En esencia, la técnica EB consiste en calcular un promedio ponderado entre la tasa bruta de cada municipio y el promedio estatal, con ponderaciones proporcionales a la población subyacente en riesgo. Es decir, los municipios pequeños (es decir, con una pequeña población en riesgo) tenderán a que sus tasas se ajusten considerablemente, mientras que en los municipios más grandes las tasas apenas cambiarán. De manera formal:
-
-\[
-\pi_i^{EB} = w_i r_i + \left(1 - w_i\right) \theta
-\]
-
-En esta expresión, los pesos son:
-
-\[
-w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
-\]
-
-donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano empírico, la media \( \mu \) y la varianza \( \sigma^2 \) previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
-
-
-<div style="text-align: center;">
-  <p><strong>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</strong></p>
-  ![](imagenes/figura3_mapa.png)
-</div>
-  
-<br><br>
-<hr style="border: 3px solid#0077C8;" />
-  
-# Estimación del Desplazamiento Forzado Interno en México
-En este taller, aprenderemos a realizar una estimación del desplazamiento forzado interno (DFI) en México, utilizando datos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos enfocaremos en la calibración de ponderadores y la creación de diseños muestrales.
-
-### 1. Entorno de trabajo y librerías
-Primero, cargaremos las librerías necesarias para el análisis:
+Para realizar análisis de datos de manera eficiente, se utilizaron los siguientes paquetes en R: dplyr es esencial para manipular y transformar los datos de forma ágil, como seleccionar variables, filtrar observaciones y crear nuevas columnas. foreign permite leer archivos DBF, un formato común en bases de datos sociales. survey es fundamental para el análisis de datos provenientes de encuestas complejas, considerando el diseño muestral. janitor facilita la limpieza y organización de los nombres de las columnas, asegurando una mejor legibilidad y consistencia. Finalmente, openxlsx se empleó para exportar los resultados del análisis a archivos de Excel, un formato ampliamente utilizado para compartir y presentar los hallazgos.
 
 ```{r, eval=FALSE}
 rm(list=ls()); graphics.off(); options(scipen = 999)
 paquetes <- c(
-  "class", "pscl", "MASS", "lmtest", "sandwich", "tseries", "raster", "sf", 
-  "rgdal", "ggplot2", "caret", "hot.deck", "broom", "beepr", "foreign", 
-  "readr", "dplyr", "janitor", "survey", "openxlsx", "tidyverse", "date", 
-  "data.table", "questionr", "readxl", "writexl", "PracTools", "haven", 
-  "knitr", "kableExtra", "clipr"
+  "dplyr", "janitor", "survey", "openxlsx", "tidyverse",
+  "data.table", "readxl", "writexl", "PracTools", "haven", 
+  "knitr", "kableExtra"
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
 
-### 2. Cargar y preparar datos de ENADID
+#### Cargar y preparar datos de ENADID 2018
+
 En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 
 Leemos y preparamos los datos de ENADID. Esto incluye la limpieza de variables y la creación de nuevas variables necesarias para el análisis.
 
-Empezamos cargando los datos de la [ENADID](https://www.inegi.org.mx/contenidos/programas/enadid/2018/datosabiertos/conjunto_de_datos_enadid_2018_csv.zip)
+Empezamos cargando los datos de la [ENADID 2018](https://www.inegi.org.mx/contenidos/programas/enadid/2018/datosabiertos/conjunto_de_datos_enadid_2018_csv.zip)
 
 ```{r, eval=FALSE}
 # Cargar ENADID para integración
@@ -286,6 +216,8 @@ enadid <- enadid_tsdem %>% left_join(enadid_thogar) %>% clean_names()
 
 ```
 
+Una vez que se unieron ambas tablas, se obtuvo un conjunto de datos a nivel individual de 385,978 observaciones. A partir de este conjunto se creó la variable emi_int_viol para identificar a las personas que experimentaron un cambio de residencia entre la fecha del levantamiento de la información y agosto de 2017 (un año atrás) y atribuyeron el cambio a situaciones de inseguridad pública o violencia. 
+Con fines de validación, se estimó la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2013 según causa de la migración. A partir del método de cálculo utilizado se llegó al mismo resultado que el INEGI publica en los Tabulados. No se pudo validar directamente la cifra de interés, es decir, la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2017 según causa de la migración ya que no es parte de la información que se publica en los Tabulados.     Para fines de calibración, adicionalmente, se creó la variable edad_quin para clasificar a los individuos en grupos quinquenales de edad, tomando como base la variable continua de edad. Para poder unir esta base a la de la ENVIPE, se renombraron las variables de manera que coincidieran. Asimismo, se seleccionaron solo las variables iniciales de interés. 
 
 ```{r, eval=FALSE}
 # Renombrar y crear variables 
@@ -295,17 +227,18 @@ enadid$p3_19ac <- ifelse(enadid$p3_19ac == "99", NA, enadid$p3_19ac)
 enadid$p3_12ac <- ifelse(enadid$p3_12ac == "99", NA, enadid$p3_12ac)
 enadid$edad <- ifelse(enadid$edad == "999", NA, enadid$edad)
 enadid$edad <- as.numeric(enadid$edad)
-enadid$misma_res_5A <- ifelse(enadid$cve_ent == enadid$p3_19ac, 1, 0)
-enadid$misma_res <- ifelse(enadid$cve_ent == enadid$p3_12ac, 1, 0)
+enadid$misma_res <- ifelse(enadid$cve_ent == enadid$p3_12ac, 1, 0) #identificar a las personas que experimentaron un cambio de residencia entre la fecha del levantamiento de la información y agosto de 2017 (un año atrás) 
 
 # Se considera emigrante por inseguridad y violencia
-enadid$emi_int_viol_5A <- ifelse(enadid$p3_20 == 8 & enadid$misma_res_5A == 0, 1, 0)
-enadid$emi_int_viol <- ifelse(enadid$p3_13== 8 & enadid$misma_res == 0, 1, 0)
+enadid$emi_int_viol <- ifelse(enadid$p3_13== 8 & enadid$misma_res == 0, 1, 0) #Atribuyeron el cambio a situaciones de inseguridad pública o violencia 
 
 
 # Conversión a tipo numérico las variables de tipo factor y homologacion de nombre con ENVIPE
 enadid$fac_ele <- as.numeric(as.character(enadid$fac_viv))
 ```
+
+Creamos una nueva variable, edad_quin, a partir de la variable edad de la ENADID. Esta nueva variable categoriza a los individuos en quinquenios de edad, lo cual es útil para análisis demográficos y sociales y recalibrar.
+
 
 ```{r, eval=FALSE}
 # Crear la variable de factor edad_quin con los niveles especificados
@@ -328,8 +261,32 @@ enadid_int <- enadid %>% dplyr::select(edad, edad_quin, sexo, upm, upm_dis, est_
 enadid_int$sexo <- as.factor(as.numeric(enadid_int$sexo))
 
 ```
-### 3. Preparar datos de ENVIPE
+
+### Cargar y preparar datos de ENVIPE 2018
+
 De manera similar, preparamos los datos de ENVIPE.
+
+
+La base de datos de la ENVIPE 2021 se integra por 6 tablas, de las cuales solo se necesitaron dos, Tabla de residentes del hogar (TSDem) y Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1). La primera contiene las características sociodemográficas de los integrantes del hogar y sirvió para conocer el número de integrantes de cada hogar. La Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1) contiene información relacionada con la percepción sobre seguridad pública en el ámbito geográfico del informante, las conductas antisociales en su entorno inmediato y los cambios de hábitos por temor a ser víctima de la delincuencia en 2017. A partir de esta Tabla se identificaron los hogares que habían cambiado de vivienda o residencia por temor a la delincuencia entre 2017 y la fecha del levantamiento de la ENVIPE. 
+Al igual que se hizo con la ENADID 2018, se creó la variable emi_int_viol. En este caso, la variable identifica a las personas que declararon haberse cambiado de vivienda o residencia como medida de protección ante la delincuencia, dada a partir de la variable original AP4_11_10. La variable emi_int_viol tomó el valor de 1 cuando AP4_11_10 tomó el valor de “1”, y 0 cuando AP4_11_10 tomó el valor de “0”. Una vez que se obtuvieron las variables necesarias, ambas tablas se unieron mediante el identificador de hogar (ID_HOG) y se seleccionaron solo las 9 variables de interés.   
+
+
+Se obtuvo un conjunto de datos a nivel individual de 91,541 observaciones.  
+
+La ENVIPE 2021 cuenta con ocho factores de expansión, FAC_VIV, FAC_HOG, FAC_ELE, FAC_DEL, FAC_VIV_AM, FAC_HOG_AM , FAC_ELE_AM y FAC_DEL_AM. El primero está asociado a la vivienda (FAC_VIV), el segundo corresponde a los hogares (FAC_HOG); el tercero está relacionado con las personas de 18 años y más (FAC_ELE) y el cuarto expande cada delito captado en el módulo sobre victimización (FAC_DEL). Además, debido al interés para obtener estimaciones sobre determinados indicadores de la ENVIPE 2021 en ciudades o áreas metropolitanas, se han añadido el factor vivienda de área metropolitana (FAC_VIV_AM), el factor hogar de área metropolitana (FAC_HOG_AM), el factor de personas elegidas en el área metropolitana (FAC_ELE_AM) y el factor delito del área metropolitana (FAC_DEL_AM). Estos cuatro factores son análogos a los asociados a los hogares, pero ajustados a las 33 áreas metropolitanas que se detallan en la tabla posterior (INEGI 2018a).  
+
+El factor vivienda (FAC_VIV) es el ponderador que se utiliza para estimar resultados de las preguntas que se refieren a las viviendas y la población en general. El factor hogar (FAC_HOG)  es el ponderador que se utiliza para estimar resultados de las preguntas que se refieren a los hogares y la población en general. El factor de personas elegidas (FAC_ELE) es el ponderador para estimar resultados de las preguntas de percepción de la seguridad pública y la victimización de la población de 18 años y más. El factor delito es el ponderador que se utiliza para estimar resultados de los delitos registrados en el “Módulo de delitos”. Los factores con terminación _AM están ajustados para las 33 áreas metropolitanas (INEGI, 2018a).  
+
+De acuerdo con el Marco conceptual de la ENVIPE 2018, la prevención y protección ante el delito es uno de los componentes y aspectos conceptuales en las encuestas de victimización. En este componente se incluyen preguntas sobre el tipo de precauciones para protegerse o prevenir el delito. En la ENVIPE 2018 se consideró que el cambio de rutinas es un importante indicador de inseguridad porque es una manifestación real del temor a la delincuencia que incide en la vida de las personas. Una de las medidas de protección que considera es el cambio de vivienda, desde esta perspectiva, el cambio de vivienda sería un proxy de temor al delito, es decir, una medida indirecta de la variable de interés, delincuencia. Las variables proxy son comúnmente utilizadas en estudios empíricos cuando la variable de interés no puede ser observada directamente o cuando los datos disponibles son limitados. Sin embargo, es importante tener en cuenta que una variable proxy no siempre refleja con precisión la variable subyacente que se intenta medir, y su uso conlleva limitaciones y riesgos de sesgos.  
+	
+	Considerando lo anterior y como primera aproximación, se buscó determinar el número de hogares que, durante el año 2017, tomaron medidas para protegerse de la delincuencia, como mudarse de vivienda o residencia. La estimación inicial, basada en la pregunta de la encuesta "¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como cambiarse de vivienda o lugar de residencia?", arrojó un total de 315,330 hogares.  
+	
+Al tratarse de una pregunta sobre la percepción de la seguridad pública, surge la posibilidad de utilizar el factor de expansión de personas elegidas (FAC_ELE) para realizar estimaciones poblacionales. Este método, sin embargo, no coincide con los resultados publicados en los tabulados oficiales. El estimador Horvitz-Thompson, basado en el FAC_ELE, estima un total de 715 mil 971 personas que tomaron medidas para protegerse de la delincuencia, mientras que los tabulados oficiales reportan un total de un millón 133 mil 041 personas. Asimismo se buscó replicar el método de cálculo del INEGI. Para conseguirlo, el factor de expansión que corresponde a los hogares se multiplicó por el número de integrantes del hogar y así se obtuvo un nuevo factor base de expansión. Este método supone que todas las personas integrantes del hogar cambiaron de vivienda o lugar de residencia por la misma razón y más o menos en las mismas condiciones. Sin embargo, el EGRISS (2023) sugiere que no siempre todos los integrantes de un hogar son personas en situación de DFI, sino que las personas en dicha situación “pueden vivir en campamentos exclusivos o en casas entre la población general, ya sea como parte de otro hogar o como un hogar independiente” (EGRISS 2023c, 16). Adicionalmente, la información sobre actitudes, intenciones de mudarse y poder de toma de decisiones en el hogar puede variar según el género de la persona informante. Para garantizar datos más confiables es recomendable utilizar un protocolo de selección aleatoria de mujeres y hombres encuestados dentro de un hogar muestreado, o entrevistar a más de un miembro de cada hogar (EGRISS 2023c, 16).  
+
+Por lo anterior, se usaron dos factores de expansión base para la ENVIPE, FAC_ELE y FAC_HOGAR multiplicado por el número de integrantes del hogar. A partir de estos pesos base de la ENVIPE 2018 y de los pesos base de la ENADID 2018 se realizó la calibración. Para lograrlo, ambos conjuntos de datos se integraron en uno solo, de manera vertical. Se obtuvo un solo conjunto con 477 mil 519 observaciones y nueve variables. 
+
+
+
 ```{r, eval=FALSE}
 # Preparar ENVIPE
 # Tablas que se usarán para los cálculos de Prevalencia Delictiva, Incidencia Delictiva y Cifra Negra
@@ -366,6 +323,7 @@ envipe <- tpv1 %>%
   clean_names()
 ```
 
+Al igual que ocn la ENADID, creamos una nueva variable, edad_quin, a partir de la variable edad de la ENADID. Esta nueva variable categoriza a los individuos en quinquenios de edad, lo cual es útil para análisis demográficos y sociales y recalibrar.
 
 ```{r, eval=FALSE}
 # Construcción de las variables
@@ -395,12 +353,30 @@ envipe_int$upm_dis <- as.character(as.factor(envipe_int$upm_dis))
 envipe_int$est_dis <- as.character(as.factor(envipe_int$est_dis))
 envipe_int$cve_ent <- as.character(as.factor(envipe_int$cve_ent))
 ```
-### 4. Unir bases de datos
+
 Unimos las bases de datos de ENADID y ENVIPE para la estimación conjunta.
 ```{r, eval=FALSE}
 ## Unir bases
 integrar <- rbind(enadid_int, envipe_int) 
 ```
+
+### Raking
+Un método comúnmente utilizado de algoritmos de calibración es el raking (también conocido como ajuste proporcional iterativo) (Deming y Stephan 1940). Este método emplea el algoritmo de Newton-
+Raphson (Deville y Sarndal 1992; Deville, Sarndal, y Sautory 1993). De acuerdo con Deville, Sarndal, y Sautory (1993), este algoritmo ofrece una solución general, eficiente y distinta de la versión clásica W. E. Deming (ajuste proporcional iterativo). La diferencia, consiste en que el primero es una generalización del segundo, busca la convergencia y optimización mediante la minimización de la función de distancia entre los pesos base u originales y los nuevos pesos. Para calcular los nuevos pesos, se resuelven las ecuaciones de calibración.  
+
+El muestreo estratificado junto al ajuste proporcional iterativo, en particular, preserva las ventajas de la estratificación (que puede basarse en estratos geográficos) y de los  recuentos de grupos de edad conocidos (Deville, Sarndal, y Sautory 1993, 1015).  
+
+El Instituto Nacional de Estadísticas y Estudios Económicos (INSEE por sus siglas en francés), agencia nacional de estadística francesa, desde 1940 emplea los métodos raking de calibración para producir ponderaciones para encuestas de hogares. Para esto desarrollaron el programa CALMAR de SAS.  
+
+En este trabajo, las ponderaciones se crearon con la función raking del paquete survey de R (Lumley 2023), utilizando las distribuciones marginales de las variables de ajuste derivadas de datos de población de CONAPO, se usaron las categorías de los grupos quinquenales de edad y sexo y los pesos (factores de expansión) originales. De acuerdo con INEGI (2019b) los pesos son el inverso de la probabilidad de selección. Sin embargo, al usar dos factores de expansión base para la ENVIPE 2018, se hicieron dos recalibraciones y, por tanto, se obtuvieron dos resultados. Con los nuevos pesos obtenidos mediante la recalibración, se obtuvieron los estimadores Horvitz-Thompson del número de personas en situación de DFI en el país y para cada entidad federativa, junto con sus varianzas, errores y coeficientes de variación. A partir de estos últimos se evaluó la calidad de los resultados.  
+
+El INEGI categoriza la confiabilidad de las estimaciones con base en los coeficientes de variación asociados (INEGI 2021). Si el coeficiente de variación está entre 0% y 15%, los datos se considera que tiene un alto grado de fiabilidad; si el coeficiente de variación es superior o igual al 15 % e inferior al 30 %, se considera que los datos tienen un grado tolerable de fiabilidad; y si el coeficiente de variación es mayor o igual al 30%, los datos deben ser recibidos con ciertas reservas debido a su baja confiabilidad. De esta forma, la estimación de emigrantes que atribuyen a la inseguridad pública y violencia el cambio de municipio de residencia entre marzo de 2015 y agostos de 2020 en México tuvo un alto nivel de confiabilidad. Respecto a las estimaciones a nivel entidad federativa, 27 entidades tuvieron estimaciones con un grado de confiabilidad tolerable y 5 con un grado de confiabilidad bajo.
+
+
+Para ajustar los ponderadores base y obtener los ponderadores finales que reflejen adecuadamente el universo de estudio, calibramos los ponderadores base. Este proceso implica ajustar los ponderadores base, es decir, los calculados a partir de los diseños muestrales de las encuestas. Para lograrlo, se usa información adicional sobre la población total. 
+
+
+
 
 ```{r, eval=FALSE}
 # 6. Calibración del ponderador
@@ -443,7 +419,32 @@ sexo <- sexo[[2]]
 cve_ent <- cve_ent[[2]]
 N <-  total[[1]]
 ```
+Los pasos que se siguen son: 
 
+1. Identificar variables auxiliares para la calibración: seleccionar variables clave de la población total, como distribuciones por edad, género, ubicación geográfica...  
+
+2. Calcular totales de población para variables de calibración: estos totales se obtienen del Censo 2020, también se pueden obtener de otras encuestas. 
+
+Usamos *calibrate*: Esta función ajusta los pesos del diseño muestral para que coincidan con las distribuciones conocidas de ciertas variables en la población total, mejorando así la representatividad de la muestra.  
+
+formula = ~as.factor(edad_quin) + as.factor(sexo): Especifica las variables que se utilizarán para calibrar los pesos. Aquí, edad_quin y sexo son las variables categóricas seleccionadas para la calibración.  
+
+calfun = "raking": Especifica el método de calibración. El método "raking" ajusta iterativamente los pesos para que las margenes de las variables en la muestra coincidan con las margenes conocidas en la población.  
+
+population = c("(Intercept)" = N, edad_quin[-1], sexo[-1]): Define las distribuciones conocidas de las variables en la población total que se utilizan para la calibración. Aquí, N representa el tamaño total de la población, y edad_quin[-1] y sexo[-1] representan las distribuciones de las categorías de edad y sexo (excepto la primera categoría, que se incluye implícitamente).  
+
+Finalmente actualizamos los pesos muestrales. 
+
+
+weights(calibracion): Extrae los pesos calibrados del objeto de calibración.  
+
+
+integrar$fac_nuevo: Almacena los nuevos pesos calibrados en una nueva variable fac_nuevo dentro del conjunto de datos integrar.  
+
+
+Este paso finaliza el proceso de calibración al actualizar los pesos muestrales en el conjunto de datos, lo que permite realizar análisis posteriores utilizando estos pesos ajustados.
+
+La calibración es esencial para corregir posibles sesgos en la muestra, asegurando que las estimaciones sean representativas de la población total. Esto es especialmente relevante cuando se sabe que ciertas variables están sub o sobre-representadas en la muestra.
 ```{r, eval=FALSE}
 # Paso 2: Crear el diseño muestral
 diseño <- svydesign(
@@ -463,6 +464,7 @@ calibracion <- calibrate(design = diseño,
 
 integrar$fac_nuevo=weights(calibracion)
 ```
+Con los nuevos pesos, configuramos el nuevo diseño muestral para estimar el número de PDFI en México. 
 
 ```{r, eval=FALSE}
 # Paso 3: Crear el NUEVO diseño muestral
@@ -534,9 +536,87 @@ list_of_datasets <- list("Estimaciones" = est_dfi_viol,
 ```{r, eval=FALSE}
 write.xlsx(list_of_datasets, 
            file = paste0("DFI_viol_envipe_enadid_FAC_HOG_", format(Sys.Date(), "%y%m%d"), ".xlsx"))
-
+```
 #################################################################################################################################################
 
+
+## Análisis de las macrodeterminantes de la emigración  
+Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
+La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
+
+
+\[
+\mathrm{TDFI}_i = \left(\frac{\mathrm{DFI}_i}{\mathrm{POB}_i}\right) \times 100,000
+\]
+
+Donde:
+\[
+\mathrm{TDFI}_i : \text{Tasa de DFI (intermunicipal) del municipio } i \text{ de 2015 a 2019 por cada cien mil habitantes}
+\]
+\[
+\mathrm{DFI}_i : \text{Personas en situación de DFI del municipio } i \text{ de 2015 a 2019}
+\]
+\[
+\mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad del periodo } t \text{ a } t+4
+\]
+
+<br><br>
+<br><br>
+Para explorar más a fondo la variación de la tasa de DFI por violencia, la Figura 2 muestra su distribución geográfica. 
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
+  ![](imagenes/figura2_mapa.png)
+  
+</div>
+
+
+
+La tasa suavizada se expresa como un promedio ponderado de la tasa bruta, \( r \), y la estimación previa, \( \theta \). Esta última se estima como una tasa de referencia, el promedio estatal. En esencia, la técnica EB consiste en calcular un promedio ponderado entre la tasa bruta de cada municipio y el promedio estatal, con ponderaciones proporcionales a la población subyacente en riesgo. Es decir, los municipios pequeños (es decir, con una pequeña población en riesgo) tenderán a que sus tasas se ajusten considerablemente, mientras que en los municipios más grandes las tasas apenas cambiarán. De manera formal:
+
+\[
+\pi_i^{EB} = w_i r_i + \left(1 - w_i\right) \theta
+\]
+
+En esta expresión, los pesos son:
+
+\[
+w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
+\]
+
+donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano empírico, la media \( \mu \) y la varianza \( \sigma^2 \) previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
+
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</strong></p>
+  ![](imagenes/figura3_mapa.png)
+</div>
+  
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+  
+# Estimación del Desplazamiento Forzado Interno en México
+En este taller, aprenderemos a realizar una estimación del desplazamiento forzado interno (DFI) en México, utilizando datos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos enfocaremos en la calibración de ponderadores y la creación de diseños muestrales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r, eval=FALSE}
 ## B. MÉTODO DE CÁLCULO USANDO FAC_ELE == fac_ele
 
 # rm(list=ls()); graphics.off(); options(scipen = 999)
