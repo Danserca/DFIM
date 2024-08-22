@@ -219,12 +219,12 @@ Donde:
 
 Para explorar más a fondo la variación de la tasa de DFI por violencia, la Figura 2 muestra su distribución geográfica. 
 
-<div class="row-sm-3">
-  <figure style="text-align: center;">
-    <figcaption style="margin-bottom: 10px;">Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</figcaption>
-    <img src="imagenes/figura2_mapa.png" alt="Mapa de Tasa de Personas">
-  </figure>
+<div style="text-align: center;">
+  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
+  ![](imagenes/figura2_mapa.png)
+  
 </div>
+
 
 
 La tasa suavizada se expresa como un promedio ponderado de la tasa bruta, \( r \), y la estimación previa, \( \theta \). Esta última se estima como una tasa de referencia, el promedio estatal. En esencia, la técnica EB consiste en calcular un promedio ponderado entre la tasa bruta de cada municipio y el promedio estatal, con ponderaciones proporcionales a la población subyacente en riesgo. Es decir, los municipios pequeños (es decir, con una pequeña población en riesgo) tenderán a que sus tasas se ajusten considerablemente, mientras que en los municipios más grandes las tasas apenas cambiarán. De manera formal:
@@ -241,15 +241,12 @@ w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
 
 donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano empírico, la media \( \mu \) y la varianza \( \sigma^2 \) previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
 
- 
-<div class="row-sm-3">
-  <figure>
-    <figcaption>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</figcaption>
-    <img src="imagenes/figura3_mapa.png" alt="Mapa de Homicidios">
-  </figure>
+
+<div style="text-align: center;">
+  <p><strong>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</strong></p>
+  ![](imagenes/figura3_mapa.png)
 </div>
-
-
+  
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
   
