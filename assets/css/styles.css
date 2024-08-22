@@ -55,3 +55,16 @@ p {
   padding: 2px 0;
 }
 
+.copy-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10; /* Asegura que el botón esté visible sobre otros elementos */
+}

@@ -1047,6 +1047,9 @@ paquetes &lt;- c(
   &quot;knitr&quot;, &quot;kableExtra&quot;
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}</code></pre>
+<pre><code>function test() {
+   console.log(&quot;This code will have a copy button to right of &quot;);
+}</code></pre>
 <div id="cargar-y-preparar-datos-de-enadid" class="section level3">
 <h3>2. Cargar y preparar datos de ENADID</h3>
 <p>En esta fase describe la limpieza de los datos y su preparación para
@@ -1501,7 +1504,11 @@ write.xlsx(list_of_datasets,
 </div>
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("JavaScript cargado correctamente."); // Esto se debería mostrar en la consola si el JS se carga correctamente.
+  
   document.querySelectorAll("pre").forEach(function(block) {
+    console.log("Bloque de código encontrado:", block); // Esto muestra cada bloque de código encontrado.
+    
     var copyButton = document.createElement("button");
     copyButton.className = "copy-button";
     copyButton.textContent = "Copiar";

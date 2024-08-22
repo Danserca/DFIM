@@ -243,6 +243,12 @@ paquetes <- c(
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
+```
+function test() {
+   console.log("This code will have a copy button to right of ");
+}
+```
+
 
 ### 2. Cargar y preparar datos de ENADID
 En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 

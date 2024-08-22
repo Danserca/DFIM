@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("JavaScript cargado correctamente."); // Esto se debería mostrar en la consola si el JS se carga correctamente.
+  
   document.querySelectorAll("pre").forEach(function(block) {
+    console.log("Bloque de código encontrado:", block); // Esto muestra cada bloque de código encontrado.
+    
     var copyButton = document.createElement("button");
     copyButton.className = "copy-button";
     copyButton.textContent = "Copiar";
