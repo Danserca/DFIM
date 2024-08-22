@@ -37,6 +37,31 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var codeBlocks = document.querySelectorAll("pre code");
+  codeBlocks.forEach(function(block) {
+    var button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M10 1.5v1h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5h2v-1a.5.5 0 0 1 1 0v1h2v-1a.5.5 0 0 1 1 0zM4.5 3v11h7V3h-7zm4-1v1h-3V2h3z"/></svg>';
+
+    button.addEventListener("click", function() {
+      var code = block.innerText;
+      navigator.clipboard.writeText(code).then(function() {
+        button.innerHTML = 'Copied!';
+        setTimeout(function() {
+          button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M10 1.5v1h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5h2v-1a.5.5 0 0 1 1 0v1h2v-1a.5.5 0 0 1 1 0zM4.5 3v11h7V3h-7zm4-1v1h-3V2h3z"/></svg>';
+        }, 2000);
+      });
+    });
+
+    var pre = block.parentNode;
+    pre.style.position = "relative";
+    pre.insertBefore(button, block);
+  });
+});
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -1044,12 +1069,9 @@ paquetes &lt;- c(
   &quot;rgdal&quot;, &quot;ggplot2&quot;, &quot;caret&quot;, &quot;hot.deck&quot;, &quot;broom&quot;, &quot;beepr&quot;, &quot;foreign&quot;, 
   &quot;readr&quot;, &quot;dplyr&quot;, &quot;janitor&quot;, &quot;survey&quot;, &quot;openxlsx&quot;, &quot;tidyverse&quot;, &quot;date&quot;, 
   &quot;data.table&quot;, &quot;questionr&quot;, &quot;readxl&quot;, &quot;writexl&quot;, &quot;PracTools&quot;, &quot;haven&quot;, 
-  &quot;knitr&quot;, &quot;kableExtra&quot;
+  &quot;knitr&quot;, &quot;kableExtra&quot;, &quot;clipr&quot;
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}</code></pre>
-<pre><code>function test() {
-   console.log(&quot;This code will have a copy button to right of &quot;);
-}</code></pre>
 <div id="cargar-y-preparar-datos-de-enadid" class="section level3">
 <h3>2. Cargar y preparar datos de ENADID</h3>
 <p>En esta fase describe la limpieza de los datos y su preparación para
@@ -1503,40 +1525,6 @@ write.xlsx(list_of_datasets,
 </div>
 </div>
 
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("JavaScript cargado correctamente."); // Esto se debería mostrar en la consola si el JS se carga correctamente.
-  
-  document.querySelectorAll("pre").forEach(function(block) {
-    console.log("Bloque de código encontrado:", block); // Esto muestra cada bloque de código encontrado.
-    
-    var copyButton = document.createElement("button");
-    copyButton.className = "copy-button";
-    copyButton.textContent = "Copiar";
-
-    var codeContainer = document.createElement("div");
-    codeContainer.className = "code-container";
-
-    block.parentNode.insertBefore(codeContainer, block);
-    codeContainer.appendChild(block);
-    codeContainer.appendChild(copyButton);
-
-    copyButton.addEventListener("click", function() {
-      var code = block.innerText;
-
-      var tempTextArea = document.createElement("textarea");
-      tempTextArea.value = code;
-      document.body.appendChild(tempTextArea);
-      tempTextArea.select();
-      document.execCommand("copy");
-      document.body.removeChild(tempTextArea);
-
-      copyButton.textContent = "¡Copiado!";
-      setTimeout(function() {
-        copyButton.textContent = "Copiar";
-      }, 2000);
-    });
-  });
-});
 
 
 </div>

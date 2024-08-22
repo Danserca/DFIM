@@ -13,8 +13,7 @@ output:
     theme: spacelab
     css: "assets/css/styles.css"
     includes:
-      after_body: script.js  # Enlace a tu archivo JavaScript
- 
+      in_header: header.html
     #code_folding: hide
 ---
 <style type="text/css">
@@ -47,7 +46,6 @@ hr.cintillo {
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
 <hr style="border: 3px solid#0077C8;" />
-
 
 # 1. Siglas y acrónimos
 
@@ -239,16 +237,10 @@ paquetes <- c(
   "rgdal", "ggplot2", "caret", "hot.deck", "broom", "beepr", "foreign", 
   "readr", "dplyr", "janitor", "survey", "openxlsx", "tidyverse", "date", 
   "data.table", "questionr", "readxl", "writexl", "PracTools", "haven", 
-  "knitr", "kableExtra"
+  "knitr", "kableExtra", "clipr"
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
-```
-function test() {
-   console.log("This code will have a copy button to right of ");
-}
-```
-
 
 ### 2. Cargar y preparar datos de ENADID
 En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 
