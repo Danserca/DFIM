@@ -41,4 +41,17 @@
   color: #ffffff; /* Color del texto en hover/activo */
 }
 
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 48%;
+}
+
+p {
+  margin: 0;
+  padding: 2px 0;
+}
 

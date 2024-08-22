@@ -12,6 +12,9 @@ output:
     toc_depth: 1
     theme: spacelab
     css: "assets/css/styles.css"
+    includes:
+      after_body: script.js  # Enlace a tu archivo JavaScript
+ 
     #code_folding: hide
 ---
 <style type="text/css">
@@ -47,38 +50,49 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 
 # 1. Siglas y acrónimos
-Siglas y Acrónimos  
-ACNUR. Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.  
-AIC. Criterio de Información de Akaike.  
-BIC. Criterio de Información Bayesiano.  
-CCI. Corte Penal Internacional.  
-CEAVE. Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.  
-CENSO 2020. Censo de Población y Vivienda 2020.  
-CMDPDH. Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.  
-CV. Coeficientes de Variación.  
-DFI. Desplazamiento Forzado Interno/Desplazada Forzada Interna.  
-DP2. Índice de intensidad migratoria.  
-ECADEFI-CHIH. Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.  
-EGRISS. Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.  
-ENADID. Encuesta Nacional de la Dinámica Demográfica.  
-ENOE. Encuesta Nacional de Ocupación y Empleo.  
-ENVIPE. Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.  
-HFSSSD. Encuesta de Alta Frecuencia de Sudán del Sur.  
-ICTY. Tribunal Penal Internacional para la ex Yugoslavia.  
-IDMC. Centro de Monitoreo de Desplazamiento Interno.  
-INE. Instituto Nacional de Estadística.  
-INEGI/Instituto. Instituto Nacional de Estadística y Geografía.
-IRIS. Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.  
-IRRS. Recomendaciones Internacionales sobre Estadísticas de Refugiados.  
-JIPS. Joint IDP Profiling Service.  
-ONE. Oficinas nacionales de estadística.  
-PRINCIPIOS RECTORES. Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.  
-SNIEG. Sistema Nacional de Información Estadística y Geográfica.  
-SNIGSPIJ. Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.  
 
-# Integración y reconciliación  
+<div class="two-columns">
+<div class="column">
+<p><strong>ACNUR.</strong> Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.</p>
+<p><strong>AIC.</strong> Criterio de Información de Akaike.</p>
+<p><strong>BIC.</strong> Criterio de Información Bayesiano.</p>
+<p><strong>CCI.</strong> Corte Penal Internacional.</p>
+<p><strong>CEAVE.</strong> Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.</p>
+<p><strong>CENSO 2020.</strong> Censo de Población y Vivienda 2020.</p>
+<p><strong>CMDPDH.</strong> Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.</p>
+<p><strong>CV.</strong> Coeficientes de Variación.</p>
+<p><strong>DFI.</strong> Desplazamiento Forzado Interno/Desplazada Forzada Interna.</p>
+<p><strong>DP2.</strong> Índice de intensidad migratoria.</p>
+<p><strong>ECADEFI-CHIH.</strong> Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.</p>
+<p><strong>EGRISS.</strong> Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.</p>
+<p><strong>ENADID.</strong> Encuesta Nacional de la Dinámica Demográfica.</p>
+<p><strong>ENOE.</strong> Encuesta Nacional de Ocupación y Empleo.</p>
+</div>
 
-El EGRISS reconoce la complejidad de encontrar una única fuente de datos que proporcione una imagen completa y precisa de la población en situación DFI. Ante este desafío, el EGRISS (2023) propone la integración de diversas fuentes de información como estrategia fundamental para mejorar la cobertura, disponibilidad, frecuencia, oportunidad, calidad y precisión de las estadísticas sobre DFI.  
+<div class="column">
+<p><strong>ENVIPE.</strong> Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.</p>
+<p><strong>HFSSSD.</strong> Encuesta de Alta Frecuencia de Sudán del Sur.</p>
+<p><strong>ICTY.</strong> Tribunal Penal Internacional para la ex Yugoslavia.</p>
+<p><strong>IDMC.</strong> Centro de Monitoreo de Desplazamiento Interno.</p>
+<p><strong>INE.</strong> Instituto Nacional de Estadística.</p>
+<p><strong>INEGI/Instituto.</strong> Instituto Nacional de Estadística y Geografía.</p>
+<p><strong>IRIS.</strong> Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.</p>
+<p><strong>IRRS.</strong> Recomendaciones Internacionales sobre Estadísticas de Refugiados.</p>
+<p><strong>JIPS.</strong> Joint IDP Profiling Service.</p>
+<p><strong>ONE.</strong> Oficinas nacionales de estadística.</p>
+<p><strong>PRINCIPIOS RECTORES.</strong> Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.</p>
+<p><strong>SNIEG.</strong> Sistema Nacional de Información Estadística y Geográfica.</p>
+<p><strong>SNIGSPIJ.</strong> Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.</p>
+</div>
+</div>
+
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+# 2. Integración y reconciliación  
+
+El EGRISS reconoce la complejidad de encontrar una única fuente de datos que proporcione una imagen completa y precisa de la población en situación DFI. Ante este desafío, el EGRISS (2023) propone la integración de diversas fuentes de información como estrategia fundamental para mejorar la cobertura, disponibilidad, frecuencia, oportunidad, calidad y precisión de las estadísticas sobre DFI.    
+
 La integración de diferentes fuentes permite aprovechar las fortalezas de cada una y compensar sus posibles limitaciones individuales. Esto facilita la obtención de una visión más amplia y confiable de la situación del DFI, incluyendo a grupos poblacionales específicos que podrían quedar excluidos de una sola fuente. Además, estas técnicas racionalizan las tareas de las Oficinas Nacionales de Estadística (ONE) al enriquecer la información recopilada para producir estadísticas sin aumentar costos ni la carga de respuesta de los informantes (Naciones Unidas, 2020).  
 
 La integración de fuentes puede ofrecer una imagen más completa del fenómeno, sobre todo en casos donde una encuesta tiene cobertura amplia pero información limitada sobre variables de DFI, y otra tiene cobertura limitada pero información más detallada sobre estas variables. La integración de datos es especialmente útil cuando ninguna de las fuentes cubre por completo ni de manera precisa a una población determinada, cuando hay diferentes estimaciones para el mismo fenómeno, como es el caso de las estadísticas sobre DFI en México, donde ninguna cifra ni estimación coincide, sino que, por el contrario, difieren considerablemente con se aprecia en la Tabla 3. Existen aproximaciones nacionales y por entidad federativa, en el marco y fuera del marco del del Sistema Nacional de Información Estadística y Geográfica (SNIEG).  
@@ -90,34 +104,37 @@ Esas fuentes tienen como objetivo recopilar información sobre temas similares, 
 
 
 
-
 Los métodos de estimación multifuente abordan desafíos específicos asociados con la comparación y reconciliación de datos de diferentes fuentes, como la alineación de categorías de variables, el manejo de valores atípicos y la corrección de sesgos de cobertura. Esto puede mejorar la calidad de las estimaciones y proporcionar una base más sólida para la toma de decisiones y políticas públicas relacionadas con la migración por violencia.
 Las técnicas de integración se dividen en dos grandes tipos: de consolidación y vinculación. Las técnicas de consolidación consisten en crear un conjunto unificado de datos, de esta manera se consigue un mayor número de observaciones. Las técnicas de vinculación, en cambio, se refieren a los procedimientos mediante los que dos o más conjuntos de datos se unen a partir de una variable de identificación única, llave o clave, de esta manera se consiguen más atributos de las observaciones. En ambos casos las variables deben ser seleccionadas, transformadas y cargadas (proceso ETL, por sus siglas en inglés). A lo largo de este proceso es necesario verificar la coherencia y armonización de los conjuntos de datos (Naciones Unidas 2020, l. 808).  
+
 Es de esperarse que entre fuentes haya diferencias en las definiciones de variables, de ahí que a partir de los valores observados disponibles es necesario estimar los valores para las variables objetivo de acuerdo con la definición deseada, a este paso se le denomina alineación de mediciones. Una vez realizadas la consolidación y vinculación, es posible implementar diversos métodos de estimación, a nivel micro y agregado. Cuando se trata de datos de encuesta se calculan las ponderaciones mediante regresión para todas las observaciones del nuevo conjunto de datos obtenido a partir de la integración (Naciones Unidas 2020). Las ponderaciones originales de cada una de las encuestas se ajustan calibrándolas, es decir, la ponderación de regresión se calibra sobre estos valores conocidos o estimados previamente.
 
 </div>
   <div class="row-sm-3">
   
   ![](imagenes/integración_diagrama_ONU_2020.png)
-
-
-
 </a>
   </div>
   
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
 
-# Metodología  
+# 3. Metodología  
 
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
 Por otra parte, se analizaron las macro determinantes de la emigración. Para esto, se consideraron las emigraciones por razón de inseguridad delictiva y violencia y por razones distintas a esta, tales como las emigraciones por razones de trabajo, escuela o familia. Se utilizaron datos agregados a nivel municipal del Censo 2020 y de las estadísticas vitales. Se hicieron los cálculos para cada municipio y se establecieron las variables auxiliares. Se estimaron modelos de regresión.
 
-## Calibración del ponderador en integración de la ENVIPE 2018 y ENADID 2018   
+## 3.1. Calibración del ponderador en integración de la ENVIPE 2018 y ENADID 2018   
 
 Para estimar el número de personas en situación de DFI atribuido a la violencia se emplearon métodos de integración de datos, se calibraron los ponderadores, de esta manera, se ajustaron los pesos muestrales para que las estimaciones del nuevo conjunto de datos integrado reflejen adecuadamente a la población conocida. Esta técnica se informa de las características conocidas de la población y de muestreos de base. Las primeras se obtuvieron del Censo 2020; para los segundos se consultaron y siguieron los marcos conceptuales y diseños muestrales de los programas estadísticos utilizados (INEGI 2019c; 2020; 2019a; 2018b; 2019b) La disposición de una mayor información puede contribuir a mejorar la precisión de los estimadores, reduciendo el error muestral y los coeficientes de variación.  
 
-### Datos  
+### 3.1.1. Datos  
 Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus similitudes en periodos de levantamiento de información y diseño muestral. Con estos datos se llevó a cabo un proceso de preparación, transformación y creación de variables de interés para ambas encuestas.
 En el caso de la ENADID 2018 se unieron las tablas que componen su base de datos, a partir de las llaves primarias. La base de datos de esta encuesta se estructura en 4 tablas. Solo se unieron las tablas con las variables de interés. En este caso se unieron la Tabla de hogares (THogar) y la tabla de datos sociodemográficos de (TSDem). La primera tabla THogar concentra información relativa a los hogares dentro de las viviendas seleccionadas para la aplicación de la encuesta, específicamente en esta tabla se incluyen la contabilización del número de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se incluye un ponderador FAV_VIV y variables de estratificación. La tabla THogar incluye dos variables de identificación única a nivel registro: Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene las variables de identificación upm, viv_sel, hogar, n_ren que sirven para relacionar todas las tablas de la encuesta, así como variables de identificación geográfica: la Entidad federativa (ent) y Tamaño de localidad (tam_loc). Además, contiene variables de interés como: Sexo, Edad, Entidad de residencia en 2017, Causa de migración reciente. 
+
+#### 3.1.2. Procedimiento de estimación
+
+Lectura de la base de datos y selección de las columnas de interés
 
 
 ```{r, echo=FALSE, message=FALSE}
@@ -163,6 +180,7 @@ tabla_datos <- data.frame(
 kable(tabla_datos, align = "c", caption = "Comparación de Características de Fuentes de Datos") %>%
   kable_styling(full_width = TRUE, bootstrap_options = c("striped", "hover", "condensed"))
 ```
+
 
 Una vez que se unieron ambas tablas, se obtuvo un conjunto de datos a nivel individual de 385,978 observaciones. A partir de este conjunto se creó la variable emi_int_viol para identificar a las personas que experimentaron un cambio de residencia entre la fecha del levantamiento de la información y agosto de 2017 (un año atrás) y atribuyeron el cambio a situaciones de inseguridad pública o violencia. Con fines de validación, se estimó la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2013 según causa de la migración. A partir del método de cálculo utilizado se llegó al mismo resultado que el INEGI publica en los Tabulados. No se pudo validar directamente la cifra de interés, es decir, la población de 5 años y más de edad migrante interna, por entidad federativa de residencia en agosto de 2017 según causa de la migración ya que no es parte de la información que se publica en los Tabulados.     Para fines de calibración, adicionalmente, se creó la variable edad_quin para clasificar a los individuos en grupos quinquenales de edad, tomando como base la variable continua de edad. Para poder unir esta base a la de la ENVIPE, se renombraron las variables de manera que coincidieran. Asimismo, se seleccionaron solo las variables iniciales de interés. 
 La base de datos de la ENVIPE 2021 se integra por 6 tablas, de las cuales solo se necesitaron dos, Tabla de residentes del hogar (TSDem) y Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1). La primera contiene las características sociodemográficas de los integrantes del hogar y sirvió para conocer el número de integrantes de cada hogar. La Tabla de percepción sobre seguridad y desempeño institucional (TPer_Vic1) contiene información relacionada con la percepción sobre seguridad pública en el ámbito geográfico del informante, las conductas antisociales en su entorno inmediato y los cambios de hábitos por temor a ser víctima de la delincuencia en 2017. A partir de esta Tabla se identificaron los hogares que habían cambiado de vivienda o residencia por temor a la delincuencia entre 2017 y la fecha del levantamiento de la ENVIPE. 
@@ -215,35 +233,22 @@ En este taller, aprenderemos a realizar una estimación del desplazamiento forza
 Primero, cargaremos las librerías necesarias para el análisis:
 
 ```{r, eval=FALSE}
-library(class)
-library(pscl)
-library(MASS)
-library(lmtest)
-library(sandwich)
-library(tseries)
-library(raster)
-library(sf)
-library(rgdal)
-library(ggplot2)
-library(caret)
-library(hot.deck)
-library(broom)
-library(beepr)
-library(foreign)
-library(readr)
-library(dplyr)
-library(janitor)
-library(survey)
-library(openxlsx)
-
-#---------------------- 0. Entorno de trabajo y librerías -----
 rm(list=ls()); graphics.off(); options(scipen = 999)
-paquetes=c("tidyverse", "date", "data.table", "questionr", "readxl", "writexl", "openxlsx", "foreign", "survey", "PracTools", "haven","knitr","kableExtra")
+paquetes <- c(
+  "class", "pscl", "MASS", "lmtest", "sandwich", "tseries", "raster", "sf", 
+  "rgdal", "ggplot2", "caret", "hot.deck", "broom", "beepr", "foreign", 
+  "readr", "dplyr", "janitor", "survey", "openxlsx", "tidyverse", "date", 
+  "data.table", "questionr", "readxl", "writexl", "PracTools", "haven", 
+  "knitr", "kableExtra"
+)
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
+
 ### 2. Cargar y preparar datos de ENADID
 En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 
 Leemos y preparamos los datos de ENADID. Esto incluye la limpieza de variables y la creación de nuevas variables necesarias para el análisis.
+
+Empezamos cargando los datos de la [ENADID](https://www.inegi.org.mx/contenidos/programas/enadid/2018/datosabiertos/conjunto_de_datos_enadid_2018_csv.zip)
 
 ```{r, eval=FALSE}
 # Cargar ENADID para integración
