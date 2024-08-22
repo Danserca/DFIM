@@ -992,7 +992,13 @@ ser observada directamente o cuando los datos disponibles son limitados.
 Sin embargo, es importante tener en cuenta que una variable proxy no
 siempre refleja con precisión la variable subyacente que se intenta
 medir, y su uso conlleva limitaciones y riesgos de sesgos.</p>
-<pre><code>Considerando lo anterior y como primera aproximación, se buscó determinar el número de hogares que, durante el año 2017, tomaron medidas para protegerse de la delincuencia, como mudarse de vivienda o residencia. La estimación inicial, basada en la pregunta de la encuesta &quot;¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como cambiarse de vivienda o lugar de residencia?&quot;, arrojó un total de 315,330 hogares.  </code></pre>
+<p>Considerando lo anterior y como primera aproximación, se buscó
+determinar el número de hogares que, durante el año 2017, tomaron
+medidas para protegerse de la delincuencia, como mudarse de vivienda o
+residencia. La estimación inicial, basada en la pregunta de la encuesta
+“¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se
+realizó algún tipo de medida como cambiarse de vivienda o lugar de
+residencia?”, arrojó un total de 315,330 hogares.</p>
 <p>Al tratarse de una pregunta sobre la percepción de la seguridad
 pública, surge la posibilidad de utilizar el factor de expansión de
 personas elegidas (FAC_ELE) para realizar estimaciones poblacionales.
@@ -1246,6 +1252,8 @@ diseño2 &lt;- svydesign(
   nest = TRUE
 )
 #options(survey.lonely.psu = &quot;adjust&quot;)</code></pre>
+<p>Y procedemos a obtener las estimaciones a nivel nacional y
+estatal.</p>
 <pre class="r"><code># Cálculo del número de personas DFI por violencia
 # Nacional
 n_dfi_viol &lt;- svytotal(~emi_int_viol, diseño2, na.rm = TRUE) 
@@ -1293,12 +1301,18 @@ row.names(est_dfi_viol) &lt;- row.names(se_dfi_viol) &lt;- row.names(cv_dfi_viol
 list_of_datasets &lt;- list(&quot;Estimaciones&quot; = est_dfi_viol, 
                          &quot;Error Estandar&quot; = se_dfi_viol, 
                          &quot;Coef Variacion&quot; = cv_dfi_viol, 
-                         &quot;Int Confianza&quot; = lim_dfi_viol)</code></pre>
-<pre class="r"><code>write.xlsx(list_of_datasets, 
+                         &quot;Int Confianza&quot; = lim_dfi_viol)
+
+write.xlsx(list_of_datasets, 
            file = paste0(&quot;DFI_viol_envipe_enadid_FAC_HOG_&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;.xlsx&quot;))</code></pre>
-<div id="section" class="section level145">
-<p class="heading"></p>
-</div>
+<p>Una alternativa al método anterior de cálculo es usar solo el factor
+de expansión de la persona entrevistada <em>FAC_ELE</em>, en ambas
+encuestas. En lugar de usar FAC_HOG y multiplicarlo por los integrantes
+del hogar, como se hace con la ENVIPE. Es importante discutir e indagar
+más acerca de la probabilidad de que en efecto los desplazamientos
+forzados en su mayoría ocurran en familia. La revisión de la literatura
+no arrojó información ni se encontró recomenDación que aplique a este
+caso.</p>
 </div>
 </div>
 <div id="análisis-de-las-macrodeterminantes-de-la-emigración"

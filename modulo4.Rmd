@@ -279,7 +279,7 @@ El factor vivienda (FAC_VIV) es el ponderador que se utiliza para estimar result
 
 De acuerdo con el Marco conceptual de la ENVIPE 2018, la prevención y protección ante el delito es uno de los componentes y aspectos conceptuales en las encuestas de victimización. En este componente se incluyen preguntas sobre el tipo de precauciones para protegerse o prevenir el delito. En la ENVIPE 2018 se consideró que el cambio de rutinas es un importante indicador de inseguridad porque es una manifestación real del temor a la delincuencia que incide en la vida de las personas. Una de las medidas de protección que considera es el cambio de vivienda, desde esta perspectiva, el cambio de vivienda sería un proxy de temor al delito, es decir, una medida indirecta de la variable de interés, delincuencia. Las variables proxy son comúnmente utilizadas en estudios empíricos cuando la variable de interés no puede ser observada directamente o cuando los datos disponibles son limitados. Sin embargo, es importante tener en cuenta que una variable proxy no siempre refleja con precisión la variable subyacente que se intenta medir, y su uso conlleva limitaciones y riesgos de sesgos.  
 	
-	Considerando lo anterior y como primera aproximación, se buscó determinar el número de hogares que, durante el año 2017, tomaron medidas para protegerse de la delincuencia, como mudarse de vivienda o residencia. La estimación inicial, basada en la pregunta de la encuesta "¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como cambiarse de vivienda o lugar de residencia?", arrojó un total de 315,330 hogares.  
+Considerando lo anterior y como primera aproximación, se buscó determinar el número de hogares que, durante el año 2017, tomaron medidas para protegerse de la delincuencia, como mudarse de vivienda o residencia. La estimación inicial, basada en la pregunta de la encuesta "¿Durante 2017, para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como cambiarse de vivienda o lugar de residencia?", arrojó un total de 315,330 hogares.  
 	
 Al tratarse de una pregunta sobre la percepción de la seguridad pública, surge la posibilidad de utilizar el factor de expansión de personas elegidas (FAC_ELE) para realizar estimaciones poblacionales. Este método, sin embargo, no coincide con los resultados publicados en los tabulados oficiales. El estimador Horvitz-Thompson, basado en el FAC_ELE, estima un total de 715 mil 971 personas que tomaron medidas para protegerse de la delincuencia, mientras que los tabulados oficiales reportan un total de un millón 133 mil 041 personas. Asimismo se buscó replicar el método de cálculo del INEGI. Para conseguirlo, el factor de expansión que corresponde a los hogares se multiplicó por el número de integrantes del hogar y así se obtuvo un nuevo factor base de expansión. Este método supone que todas las personas integrantes del hogar cambiaron de vivienda o lugar de residencia por la misma razón y más o menos en las mismas condiciones. Sin embargo, el EGRISS (2023) sugiere que no siempre todos los integrantes de un hogar son personas en situación de DFI, sino que las personas en dicha situación “pueden vivir en campamentos exclusivos o en casas entre la población general, ya sea como parte de otro hogar o como un hogar independiente” (EGRISS 2023c, 16). Adicionalmente, la información sobre actitudes, intenciones de mudarse y poder de toma de decisiones en el hogar puede variar según el género de la persona informante. Para garantizar datos más confiables es recomendable utilizar un protocolo de selección aleatoria de mujeres y hombres encuestados dentro de un hogar muestreado, o entrevistar a más de un miembro de cada hogar (EGRISS 2023c, 16).  
 
@@ -478,7 +478,7 @@ diseño2 <- svydesign(
 #options(survey.lonely.psu = "adjust")
 ```
 
-
+Y procedemos a obtener las estimaciones a nivel nacional y estatal. 
 ```{r, eval=FALSE}
 # Cálculo del número de personas DFI por violencia
 # Nacional
@@ -529,15 +529,13 @@ list_of_datasets <- list("Estimaciones" = est_dfi_viol,
                          "Coef Variacion" = cv_dfi_viol, 
                          "Int Confianza" = lim_dfi_viol)
 
-```
-
-
-
-```{r, eval=FALSE}
 write.xlsx(list_of_datasets, 
            file = paste0("DFI_viol_envipe_enadid_FAC_HOG_", format(Sys.Date(), "%y%m%d"), ".xlsx"))
+
 ```
-#################################################################################################################################################
+
+Una alternativa al método anterior de cálculo es usar solo el factor de expansión de la persona entrevistada *FAC_ELE*, en ambas encuestas. En lugar de usar FAC_HOG y multiplicarlo por los integrantes del hogar, como se hace con la ENVIPE. Es importante discutir e indagar más acerca de la probabilidad de que en efecto los desplazamientos forzados en su mayoría ocurran en familia. La revisión de la literatura no arrojó información ni se encontró recomenDación que aplique a este caso.  
+
 
 
 ## Análisis de las macrodeterminantes de la emigración  
