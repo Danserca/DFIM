@@ -201,12 +201,23 @@ Análisis de las macrodeterminantes de la emigración
 Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
 La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
 
-\mathrm{TDF}\mathrm{I}_\mathrm{i}=(\mathrm{DF}Ii/POBi)×100,000 
 
-Donde: 
-\mathrm{TDF}\mathrm{I}_\mathrm{i} : Tasa de DFI (intermunicipal) del municipio i de 2015 a 2019 por cada cien mil habitantes
-\mathrm{DF}\mathrm{I}_\mathrm{i} : Personas en situación de DFI del municipio i de 2015 a 2019
-\mathrm{PO}\mathrm{B}_\mathrm{i} : Población total del municipio i a mitad del periodo t a t+4
+\[
+\mathrm{TDFI}_i = \left(\frac{\mathrm{DFI}_i}{\mathrm{POB}_i}\right) \times 100,000
+\]
+
+Donde:
+\[
+\mathrm{TDFI}_i : \text{Tasa de DFI (intermunicipal) del municipio } i \text{ de 2015 a 2019 por cada cien mil habitantes}
+\]
+\[
+\mathrm{DFI}_i : \text{Personas en situación de DFI del municipio } i \text{ de 2015 a 2019}
+\]
+\[
+\mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad del periodo } t \text{ a } t+4}
+\]
+
+
 Para explorar más a fondo la variación de la tasa de DFI por violencia, el Mapa XXX muestra su distribución geográfica. 
 
 Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019
