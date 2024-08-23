@@ -853,18 +853,29 @@ El conglomerado 2, aunque compuesto por solo 11 municipios, presenta el promedio
 
 Se consideraron como modelos base los de regresión lineal con mínimos cuadrados (OLS) y mínimos cuadrados robustos (RLM). La especificación del modelo es la siguiente:
 
+---
+title: "Modelo de Tasa de DFI"
+output: html_document
+---
+
+## Ecuación del Modelo
+
+La tasa de personas en situación de desplazamiento forzado interno (DFI) por cada cien mil habitantes se modela utilizando la siguiente ecuación:
+
+
 \[
-\text{tasa\_dfi}_i = \beta_0 + \beta_1 \cdot \text{tasa\_promedio\_hom}_i + \beta_2 \cdot (\text{tasa\_promedio\_hom}_i)^2 + \beta_3 \cdot \text{salario\_mun\_mediano}_i + \beta_4 \cdot \text{presion\_demo}_i + \beta_5 \cdot \log(\text{pob\_promedio}_i) + \beta_6 \cdot \text{cluster}_i + \epsilon_i
+\mathrm{tasa\_dfi}_\mathrm{i} = \beta_0 + \beta_1 \cdot \mathrm{tasa\_promedio\_hom}_\mathrm{i} + \beta_2 \cdot \left(\mathrm{tasa\_promedio\_hom}_\mathrm{i}\right)^2 + \beta_3 \cdot \mathrm{salario\_mun\_mediano}_\mathrm{i} \\
++ \beta_4 \cdot \mathrm{presion\_demo}_\mathrm{i} + \beta_5 \cdot \log\left(\mathrm{pob\_promedio}_\mathrm{i}\right) + \beta_6 \cdot \mathrm{cluster}_\mathrm{i} + \epsilon_i
 \]
 
 Donde:
 
-- \( \beta_0, \beta_1, \dots, \beta_6 \) son los coeficientes que se estiman en el modelo para cada una de las variables independientes.
-- \( \epsilon_i \) es el término de error.
-- \( \text{tasa\_dfi}_i \) es la tasa de personas en situación de DFI por cada cien mil habitantes.
-- \( \log(\text{pob\_promedio}_i) \) es el logaritmo natural de la población promedio para la observación \( i \).
+- \(\beta_0, \beta_1, \dots, \beta_6\) son los coeficientes que se estiman en el modelo para cada una de las variables independientes.
+- \(\epsilon_i\) es el término de error, que captura la variabilidad no explicada por las variables independientes en el modelo.
+- \(\mathrm{tasa\_dfi}_\mathrm{i}\) es la tasa de personas en situación de DFI por cada cien mil habitantes.
+- \(\log(\mathrm{pob\_promedio}_\mathrm{i})\) es el logaritmo natural de la población promedio para la observación \(i\).
 
-Incluye el término cuadrático de tasa_promedio_hom^2.
+Incluye también el término cuadrático \(\left(\mathrm{tasa\_promedio\_hom}_\mathrm{i}\right)^2\) para capturar posibles efectos no lineales de la violencia en la tasa de DFI.
 
 
 Se busca explicar la tasa de personas en situación de DFI por cada cien mil habitantes a través de una combinación de variables socioeconómicas, demográficas y contextuales, mientras se manejan posibles valores atípicos, relaciones no lineales y lineales. De acuerdo con la literatura, la violencia puede alentar ciertos comportamientos humanos como el DFI solo hasta cierto punto. Sin embargo, más allá de un nivel crítico de violencia, esos comportamientos pueden empezar a decrecer.   
@@ -917,57 +928,57 @@ Para medir el grado de multicolinealidad se calculó el índice de condición (I
 
 ### Entorno de trabajo y librerías
 
-Aquí te dejo una descripción de cada paquete utilizado en tu script, explicando brevemente para qué se utiliza en el análisis de datos y procesamiento:
+Aquí te dejo una descripción de cada paquete utilizado en tu script, explicando brevemente para qué se utiliza en el análisis de datos y procesamiento:  
 
-class: Este paquete proporciona funciones para la clasificación, como el algoritmo K-nearest neighbors (KNN). Es útil para realizar tareas de clasificación y análisis de patrones.
+class: Este paquete proporciona funciones para la clasificación, como el algoritmo K-nearest neighbors (KNN). Es útil para realizar tareas de clasificación y análisis de patrones.  
+ 
+pscl: Proporciona herramientas para el análisis de datos de ciencia política y sociales, incluyendo modelos de regresión para datos dispersos (como modelos de ceros inflados y binomiales negativos).  
 
-pscl: Proporciona herramientas para el análisis de datos de ciencia política y sociales, incluyendo modelos de regresión para datos dispersos (como modelos de ceros inflados y binomiales negativos).
+MASS: Incluye funciones y conjuntos de datos para análisis estadístico, como la estimación de modelos lineales robustos (rlm) y otras técnicas avanzadas de modelado.  
 
-MASS: Incluye funciones y conjuntos de datos para análisis estadístico, como la estimación de modelos lineales robustos (rlm) y otras técnicas avanzadas de modelado.
+lmtest: Contiene herramientas para realizar pruebas de hipótesis sobre modelos lineales, como la prueba de Breusch-Pagan para heterocedasticidad.  
 
-lmtest: Contiene herramientas para realizar pruebas de hipótesis sobre modelos lineales, como la prueba de Breusch-Pagan para heterocedasticidad.
+sandwich: Ofrece estimadores robustos de la matriz de varianza-covarianza para modelos lineales, utilizados para ajustar modelos cuando las suposiciones de homocedasticidad no se cumplen.  
 
-sandwich: Ofrece estimadores robustos de la matriz de varianza-covarianza para modelos lineales, utilizados para ajustar modelos cuando las suposiciones de homocedasticidad no se cumplen.
+raster: Este paquete es útil para el análisis de datos espaciales rasterizados. Se utiliza en estudios de datos geográficos para la manipulación y análisis de mapas y superficies.  
 
-raster: Este paquete es útil para el análisis de datos espaciales rasterizados. Se utiliza en estudios de datos geográficos para la manipulación y análisis de mapas y superficies.
+sf: Proporciona una estructura de datos para representar objetos espaciales simples, que es compatible con el estándar Simple Features. Es esencial para manejar datos espaciales y realizar análisis geoespaciales.  
 
-sf: Proporciona una estructura de datos para representar objetos espaciales simples, que es compatible con el estándar Simple Features. Es esencial para manejar datos espaciales y realizar análisis geoespaciales.
+rgdal: Ofrece interfaces para la lectura y escritura de datos geoespaciales en varios formatos, incluyendo shapefiles. Es fundamental en la integración de datos geográficos.  
 
-rgdal: Ofrece interfaces para la lectura y escritura de datos geoespaciales en varios formatos, incluyendo shapefiles. Es fundamental en la integración de datos geográficos.
+ggplot2: Es uno de los paquetes más populares para la visualización de datos en R. Facilita la creación de gráficos complejos de forma intuitiva y altamente personalizable.  
 
-ggplot2: Es uno de los paquetes más populares para la visualización de datos en R. Facilita la creación de gráficos complejos de forma intuitiva y altamente personalizable.
+caret: Herramienta integral para la clasificación y regresión en R, que incluye funciones para la preprocesamiento de datos, ajuste de modelos y validación cruzada.  
 
-caret: Herramienta integral para la clasificación y regresión en R, que incluye funciones para la preprocesamiento de datos, ajuste de modelos y validación cruzada.
+broom: Convierte modelos estadísticos en data frames ordenados, lo que facilita la manipulación y visualización de los resultados de los modelos.  
 
-broom: Convierte modelos estadísticos en data frames ordenados, lo que facilita la manipulación y visualización de los resultados de los modelos.
+foreign: Proporciona funciones para leer y escribir datos en varios formatos de software estadístico como SPSS, SAS, y Stata, facilitando el intercambio de datos entre diferentes programas.  
 
-foreign: Proporciona funciones para leer y escribir datos en varios formatos de software estadístico como SPSS, SAS, y Stata, facilitando el intercambio de datos entre diferentes programas.
+readr: Parte del tidyverse, este paquete proporciona funciones para leer datos de archivos de texto de manera rápida y fácil, como CSV o TSV.  
 
-readr: Parte del tidyverse, este paquete proporciona funciones para leer datos de archivos de texto de manera rápida y fácil, como CSV o TSV.
+dplyr: Es un paquete esencial del tidyverse para la manipulación de datos, ofreciendo verbos para filtrar, seleccionar, mutar y agrupar datos de manera eficiente.  
 
-dplyr: Es un paquete esencial del tidyverse para la manipulación de datos, ofreciendo verbos para filtrar, seleccionar, mutar y agrupar datos de manera eficiente.
-
-janitor: Ofrece herramientas para limpiar y examinar datos, como la normalización de nombres de columnas y la creación de tablas de contingencia.
-
-survey: Proporciona herramientas para el análisis de encuestas complejas, incluyendo el cálculo de estimadores, errores estándar y pruebas de hipótesis con diseños muestrales complejos.
+janitor: Ofrece herramientas para limpiar y examinar datos, como la normalización de nombres de columnas y la creación de tablas de contingencia.  
+ 
+survey: Proporciona herramientas para el análisis de encuestas complejas, incluyendo el cálculo de estimadores, errores estándar y pruebas de hipótesis con diseños muestrales complejos.  
 
 tidyverse: Un metapaquete que incluye ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, y forcats, cubriendo la mayoría de las necesidades de análisis de datos desde la importación hasta la visualización.
 
 
-data.table: Es una extensión de data.frame que ofrece herramientas para la manipulación de grandes conjuntos de datos de manera rápida y eficiente.
+data.table: Es una extensión de data.frame que ofrece herramientas para la manipulación de grandes conjuntos de datos de manera rápida y eficiente.  
 
-questionr: Herramientas útiles para la investigación en ciencias sociales, incluyendo funciones para el análisis de cuestionarios y encuestas.
+questionr: Herramientas útiles para la investigación en ciencias sociales, incluyendo funciones para el análisis de cuestionarios y encuestas.  
 
-readxl: Parte del tidyverse, este paquete permite leer datos desde archivos Excel (.xls y .xlsx) de forma rápida y sin necesidad de depender de Java.
+readxl: Parte del tidyverse, este paquete permite leer datos desde archivos Excel (.xls y .xlsx) de forma rápida y sin necesidad de depender de Java.  
 
-writexl: Facilita la exportación de datos a archivos Excel (.xlsx) de manera simple y sin necesidad de dependencias externas como Java.
+writexl: Facilita la exportación de datos a archivos Excel (.xlsx) de manera simple y sin necesidad de dependencias externas como Java.  
 
 
-haven: Permite importar y exportar archivos de datos de SPSS, Stata y SAS, facilitando el trabajo con datos provenientes de estos programas en R.
+haven: Permite importar y exportar archivos de datos de SPSS, Stata y SAS, facilitando el trabajo con datos provenientes de estos programas en R.  
 
-knitr: Se utiliza para generar reportes dinámicos en R, convirtiendo código R y texto en documentos HTML, PDF, y más.
+knitr: Se utiliza para generar reportes dinámicos en R, convirtiendo código R y texto en documentos HTML, PDF, y más.  
 
-kableExtra: Extiende la funcionalidad de knitr::kable permitiendo la creación de tablas altamente personalizables en HTML y PDF, ideal para la presentación de resultados.
+kableExtra: Extiende la funcionalidad de knitr::kable permitiendo la creación de tablas altamente personalizables en HTML y PDF, ideal para la presentación de resultados.  
 
 
 ```{r, eval=FALSE}
@@ -995,6 +1006,531 @@ for (paquete in paquetes) {
 }
 
 ```
+
+2. Carga y Procesamiento de Datos   
+2.1 Población Migrante por Municipio   
+Primero, cargamos los datos de población de 5 años y más migrante por municipio, entidad federativa o país de residencia en marzo de 2015 y sexo según causa de la migración entre marzo de 2015 y marzo de 2020
+
+```{r, eval=FALSE}
+# Leer el archivo Excel y limpiar los nombres de las columnas
+emigrantes_t <- read_excel("data_lmd/LM 2462.xlsx", skip = 3) %>% 
+  clean_names()
+
+# Cambiar los nombres de las columnas 
+colnames(emigrantes_t) <- c("nom_ent_cve", "nom_mun_cve", "sexo", "poblacion_total",
+                            "buscar_trabajo", "cambio_u_oferta_de_trabajo", 
+                            "reunirse_con_la_familia", "se_caso_o_unio", "estudiar", 
+                            "por_violencia", "por_desastres", "lo_deportaron", "otra_causa",
+                            "no_especificado") 
+
+# Filtrar los datos y seleccionar solo las filas donde 'sexo' es "Total"
+emigrantes_t <- emigrantes_t %>% 
+  filter(sexo == "Total" & nom_mun_cve != "Total" & nom_mun_cve != "Municipio no especificado")
+
+# Crear las columnas 'ent' y 'mun' utilizando substr
+emigrantes_t$ent <- substr(emigrantes_t$nom_ent_cve, 1, 3)
+emigrantes_t$mun <- substr(emigrantes_t$nom_mun_cve, 1, 3)
+
+# Eliminar solo un cero al inicio de 'ent'
+emigrantes_t$ent <- ifelse(substr(emigrantes_t$ent, 1, 1) == "0", substr(emigrantes_t$ent, 2, nchar(emigrantes_t$ent)), emigrantes_t$ent)
+
+# Crear la columna 'nom_mun'
+emigrantes_t$nom_mun <- substr(emigrantes_t$nom_mun_cve, 5, nchar(emigrantes_t$nom_mun_cve))
+
+# Crear la variable caracter 'municipios' que combina 'ent' y 'mun' La función trimws() se utiliza para eliminar cualquier espacio en blanco adicional alrededor del contenido de la columna mun
+emigrantes_t$id_mun <- paste0(emigrantes_t$ent, trimws(emigrantes_t$mun))
+
+# Mostrar el resultado
+print(emigrantes_t)
+
+
+```
+En este paso, se limpian y organizan los datos de población migrante, y se preparan para su posterior análisis.    
+
+2.2 Tasas de Homicidios por Municipio     
+Se carga otro conjunto de datos que contiene las tasas de homicidios por cada cien mil habitantes en municipios mexicanos, para el período 2015-2017.    
+```{r, eval=FALSE}
+# Leer el archivo Excel y limpiar los nombres de las columnas
+# Seleccionar las columnas necesarias
+tasas_homicidios <- read_excel("Tasas homicidios.xlsx", sheet = "Datos") %>% 
+  clean_names() %>% 
+  dplyr::select(id_mun, ent_nom, mun_nom, tm15_17)
+
+```
+2.3 Marco Geoestadístico 2018   
+Aquí, cargamos y procesamos el marco geoestadístico, que es esencial para asociar datos espaciales a los municipios y entidades de México.  
+```{r, eval=FALSE}
+# Leer los shapefiles para municipios y entidades
+marco_geoest <- st_read("MG_2020_Integrado/00mun.shp") %>% 
+  clean_names() %>% 
+  rename(id_mun = cvegeo)
+
+marco_geoest_ent <- st_read("MG_2020_Integrado/00ent.shp") %>% 
+  clean_names()
+
+
+```
+
+2.4 Censo 2020   
+Se cargan datos socioeconómicos del Censo 2020 y se procesan para el análisis. Se incluye información sobre empleo, educación, y salarios.  
+```{r, eval=FALSE}
+# Leer datos del Censo 2020
+ca_censo_2020 <- read_csv("dfi_tasa_hom_itam.csv") %>%
+  mutate(municipios = as.numeric(municipios)) %>%
+  transmute(
+    id_mun = sprintf("%05d", municipios),
+    nom_ent.y,
+    nom_mun,
+    ent = as.character(ent),
+    empleo,
+    educacion,
+    salario_mun_mediano,
+    salario,
+    presion_demo
+  )
+
+```
+2.5 Coeficiente de Gini e Índice de Marginación  
+Se descarga y procesa la información sobre el coeficiente de Gini e índice de marginación municipal para el año 2015.  
+```{r, eval=FALSE}
+# Descargar y procesar datos del coeficiente de Gini
+nombres <- c("clave_ent", "entidad", "id_mun", "nom_mun", "coef_de_gini", "ingreso_ratio") 
+url_gini <- "https://www.coneval.org.mx/Medicion/MP/Documents/Cohesion_social/Indicadores_cohesion_social_municipio_Mexico_2010-2020.zip"
+
+# Descargar y descomprimir el archivo ZIP
+temp_zip_gini <- tempfile()
+download.file(url_gini, temp_zip_gini)
+unzip(temp_zip_gini, exdir = "temp_folder_gini")
+
+# Leer el archivo Excel
+archivo_gini <- list.files("temp_folder_gini", pattern = ".xlsx", full.names = TRUE)
+gini <- read_excel(archivo_gini,sheet = "2015", range = "B11:G2467", col_names = nombres)
+
+# Convertir variables numericas
+gini <- mutate_at(gini, vars(coef_de_gini:ingreso_ratio), as.numeric)
+
+
+```
+2. Carga y Procesamiento de Datos  
+2.1 Establecer Causas de Defunción por Homicidio  
+Primero, definimos un vector que contiene los códigos CIE-10 correspondientes a causas de defunción por homicidio.  
+ 
+```{r, eval=FALSE}
+
+# Establecer causas de defunción por homicidio de acuerdo con CIE-10 X85-Y09
+causa_defunciones <- c("X85", "X86", "X87", "X88", "X89", "X90", "X91", "X92", 
+                       "X93", "X94", "X95", "X96", "X97", "X98", "X99", "Y00", 
+                       "Y01", "Y03", "Y04", "Y05", "Y06", "Y07", "Y08", "Y09")
+2.2 Cargar y Procesar Datos de Defunciones
+Se cargan los datos de defunciones desde 2015 hasta 2019. Los datos se filtran para incluir solo las defunciones que corresponden a homicidios según los códigos definidos.
+
+```{r, eval=FALSE}
+Copiar código
+# Crear una lista para almacenar los datos de defunciones por año
+defunciones_list <- list()
+
+# Crear una secuencia de años desde 2015 hasta 2019
+years <- 2015:2019
+
+# Iterar sobre los años
+for (year in years) {
+  # Definir el nombre del archivo DBF para el año actual
+  file_name <- file.path("data_t8_defunciones", paste0("defunciones_base_datos_", year, "/", "DEFUN", year %% 100, ".DBF"))
+  
+  # Leer y procesar el archivo DBF
+  defunciones <- read.dbf(file_name) %>%
+    clean_names() %>%
+    mutate(causa_defun = as.character(causa_def)) %>%
+    filter(substr(causa_defun, 1, 3) %in% causa_defunciones)
+  
+  # Almacenar los datos en la lista
+  defunciones_list[[as.character(year)]] <- defunciones
+}
+
+# Combinar todos los datos en un único marco de datos si es necesario
+defunciones_combinada <- bind_rows(defunciones_list)
+
+```
+2.3 Generar Variables y Agrupar Datos   
+Después de combinar los datos de defunciones, se generan nuevas variables y se agrupan los datos según la entidad y el municipio de registro, así como por año.   
+
+```{r, eval=FALSE}
+# Generar variables
+defunciones_combinada <- defunciones_combinada %>%
+  mutate(
+    causa = substring(causa_defun, 1, 3),
+    id_mun = paste0(ent_regis, mun_regis)) %>%
+  dplyr::select(-causa_defun)  # Eliminar columna causa_defun si ya no es necesaria
+
+# Agrupar defunciones por homicidio por año de registro, entidad y municipio de ocurrencia
+hom_mun_quiquenal <- defunciones_combinada %>%
+  group_by(id_mun, ent_regis, mun_regis) %>% 
+  summarise(hom15_20 = n()) 
+
+# Agrupar defunciones por homicidio por año de registro, entidad y municipio de ocurrencia
+homicidio_anuales <- defunciones_combinada %>%
+  group_by(id_mun, ent_regis, mun_regis, anio_regis) %>%
+  summarise(homicidios = n())
+
+```
+2.4 Carga de Otros Datos: Índice de Marginación e Intensidad Migratoria   
+Cargamos y procesamos datos adicionales como el índice de marginación y la intensidad migratoria para complementar el análisis.   
+
+```{r, eval=FALSE}
+
+# Índice de marginación normalizado 2015 (carencias poblacionales) por localidad, municipio y entidad
+url_imm <- "http://www.conapo.gob.mx/work/models/CONAPO/Marginacion/Datos_Abiertos/Municipio/IMM_DP2_2015.xlsx"
+
+# Descargar y leer el archivo Excel
+archivo_imm <- tempfile()
+download.file(url_imm, archivo_imm, mode = "wb")
+imm <- read_xlsx(archivo_imm, sheet = "IMM_2015") %>% 
+  clean_names() %>% 
+  rename(id_mun = cve_mun)
+
+# Intensidad migratoria municipal. Fuente CONAPO
+iaim_2020 <- read_csv("https://conapo.segob.gob.mx/work/models/CONAPO/IIM/iim_base2020m.csv")
+iaim_2020 <- iaim_2020  %>% 
+  clean_names() %>% 
+  mutate(id_mun = ifelse(nchar(cve_geo) == 4, paste0("0", cve_geo), cve_geo))
+
+```
+
+
+2.5 Procesamiento de Datos de Población   
+Se cargan y procesan los datos de población por grupos de edad, necesarios para calcular tasas y realizar otros análisis.  
+
+```{r, eval=FALSE}
+# Leer y unir bases de población
+poblacion_municipal <- bind_rows(
+  read_csv("data_t5_conapo/base_municipios_final_datos_01.csv", locale = locale(encoding = "latin1")),
+  read_csv("data_t5_conapo/base_municipios_final_datos_02.csv", locale = locale(encoding = "latin1"))
+) %>% clean_names() %>% 
+  rename(anio = ano)
+
+# Arreglar claves de los municipios
+poblacion_municipal <- poblacion_municipal %>% 
+  mutate(entidad = ifelse(nchar(clave_ent) == 1, paste0("0", clave_ent), clave_ent),
+         id_mun = ifelse(nchar(clave) == 4, paste0("0", clave), clave))
+
+# Filtrar por año y grupo de edad
+pob_5_y_mas_mun_2017 <- poblacion_municipal %>%
+  filter(anio == 2017, edad_quin != "pobm_00_04")%>%
+  group_by(id_mun) %>%
+  summarise(poblacion = sum(pob))
+
+```
+
+Más grupos de edad...
+2.6 Cálculo de Tasas Promedio de Homicidio  
+Se calculan las tasas promedio de homicidio por cada 100,000 habitantes utilizando los datos de población y defunciones.  
+
+```{r, eval=FALSE}
+# Calcular la tasa de homicidios por cada 100,000 habitantes
+tasas <- pob_anual %>%
+  left_join(homicidio_anuales, by = c("id_mun", "anio"="anio_regis")) %>%
+  dplyr::select(-ends_with(".x")) %>%
+  dplyr::select(-ends_with("regis")) %>% 
+  rename_with(~ stringr::str_remove(.x, pattern = ".y"), ends_with(".y")) %>%
+  mutate(
+    tasa_hom_100mil = round((homicidios / poblacion_anual) * 100000, 1),
+    ent_regis = substr(id_mun, 1, 2)
+  )
+
+# Calcular tasas promedio suavizadas usando el método de Bayes Empírico
+tasas_por_edo <- tasas  %>%
+  group_by(ent_regis, anio) %>%
+  mutate(
+    mu = sum(homicidios) / sum(poblacion_anual),
+    O_i = homicidios,
+    P_i = poblacion_anual,
+    n = n(),
+    r_i = homicidios / poblacion_anual,
+    variance = var(homicidios / poblacion_anual)
+  ) %>%
+  mutate(
+    w_i = variance / (variance + mu / P_i),
+    eb_bayes = w_i * r_i + (1 - w_i) * mu
+  )
+
+# Resumir tasas suavizadas por municipio
+prome_hom_rate <-  tasas_por_edo %>% 
+  group_by(id_mun) %>% 
+  summarise(tasa_hom_suav = (mean(eb_bayes) * 10^5))
+```
+
+
+2.7 Integración de Datos y Proyección Geográfica  
+Se integran los diferentes conjuntos de datos en un único marco de datos y se transforman a la proyección geográfica correcta.
+
+```{r, eval=FALSE}
+
+# Definir una función para realizar la unión y limpiar los nombres de columnas
+unir_y_limpiar <- function(datos, datos_nuevos, sufijo) {
+  left_join(datos, datos_nuevos, by = "id_mun") %>%
+    dplyr::select(-ends_with(".x")) %>%
+    rename_with(~ stringr::str_remove(.x, pattern = ".y"), ends_with(".y")) 
+}
+
+# Unir los datos y limpiar nombres de columnas utilizando la función definida
+datos_integrados <- marco_geoest %>%
+  unir_y_limpiar(tasas_homicidios, sufijo = ".tasa_hom_b") %>%
+  unir_y_limpiar(emigrantes_t, sufijo = ".emigrantes_t") %>%
+  unir_y_limpiar(ca_censo_2020, sufijo = ".censo_2020") %>%
+  unir_y_limpiar(gini, sufijo = ".gini") %>%
+  unir_y_limpiar(imm, sufijo = ".imm") %>%
+  unir_y_limpiar(iaim_2020, sufijo = ".iaim_2020") %>%
+  unir_y_limpiar(pob_5_y_mas_mun_2017, sufijo = ".pob_5_y_mas_2017") %>%
+  unir_y_limpiar(pob_14_25_2017, sufijo = ".pob_14_25_2017") %>%
+  unir_y_limpiar(pob_45_64_2017, sufijo = ".pob_45_64_2017") %>%
+  unir_y_limpiar(tasas_promedio, sufijo = ".tasas_promedio")
+
+# Proyección cónica conforme de Lambert para México ITRF2008 (EPSG:6362)
+datos_integrados <- st_transform(datos_integrados, crs = "+init=epsg:6362")
+
+```
+3. Análisis de Datos   
+3.1 Análisis Descriptivo por Cluster  
+Realizamos un análisis descriptivo de los datos agrupados por clusters, utilizando estadísticas resumidas.
+
+```{r, eval=FALSE}
+# Crear un subset del dataframe con las variables especificadas
+variables_interes <- c("tasa_dfi", "tasa_promedio_hom", "tasa_prom_cuadrado", "salario_mun_mediano", "presion_demo", "ln_pob", "cluster")
+
+# Subset del dataframe con las variables de interés
+dfi_subset <- data_mun15[, variables_interes]
+
+# Eliminar la columna de geometría
+dfi_no_geom <- st_set_geometry(dfi_subset, NULL)
+
+# Crear el resumen descriptivo agrupado por 'cluster' con estadísticas adicionales
+summary_table <- dfi_no_geom %>%
+  tbl_summary(
+    by = cluster, # Agrupar por la variable 'cluster'
+    type = list(
+      where(is.numeric) ~ "continuous",
+      where(is.factor) ~ "categorical"
+    ),
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd}), {min} - {max}",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    )
+  ) %>% 
+  add_overall()
+
+# Convertir a flextable
+summary_flextable <- summary_table %>%
+  as_flex_table()
+
+# Agregar el título y subtítulo usando flextable
+summary_flextable <- flextable::add_header(summary_flextable,
+                                           top = TRUE, 
+                                           values = c("Resumen Estadístico por Cluster"),
+                                           colspan = ncol(summary_flextable))
+
+# Guardar en archivo Word
+flextable::save_as_docx(summary_flextable, path = "RESULTADOS_OK/summary_table_240620.docx")
+
+```
+
+1. Cálculo de los 5 Vecinos Más Cercanos
+Primero, se calculan los 5 vecinos más cercanos para cada municipio, basados en las coordenadas de sus centroides.
+
+```{r, eval=FALSE}
+Copiar código
+# Extraer geometría y centroides de los municipios
+mexico.geom <- st_geometry(data_mun15)
+mexico.coords <- st_centroid(mexico.geom) 
+
+# Calcular los 5 vecinos más cercanos
+mex5_nb <- knn2nb(knearneigh(mexico.coords, k = 5))
+
+# Graficar los vecinos más cercanos
+plot(mexico.geom, main = "k = 5", reset = FALSE)
+plot(mex5_nb, mexico.coords, add = TRUE, col = 2, lwd = 1.5)
+
+```
+
+
+2. Construcción de la Matriz Espacial
+Luego, se construye una matriz espacial basada en los 5 vecinos más cercanos, la cual es esencial para los análisis de autocorrelación espacial.
+
+```{r, eval=FALSE}
+# Crear la matriz espacial basada en los vecinos
+mex5_vecinos <- knn2nb(knearneigh(mexico.coords, k = 5))
+listw_5 <- nb2listw(mex5_vecinos, style = "W", zero.policy = TRUE)
+```
+
+
+3. Modelado Estadístico
+3.1 Preparación de Datos para el Modelado
+Se añade una columna de pesos basada en la inversa de la población, y se definen dos fórmulas para los modelos de regresión.
+
+```{r, eval=FALSE}
+# Crear la columna 'peso' como la inversa de 'Población'
+data_mun15$peso <- 1 / data_mun15$poblacion
+
+# Definir las fórmulas para los modelos
+formula_1 <- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob)
+formula_2 <- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster)
+
+```
+3.2 Construcción de Modelos
+Se construyen varios modelos de regresión: OLS, Mínimos Cuadrados Robustos, Autorregresivo Espacial, Mínimos Cuadrados Generalizados, Ponderado y Aditivo Generalizado.
+
+```{r, eval=FALSE}
+
+# Modelos
+lm_model_2 <- lm(formula_2, data = data_mun15)
+rlm_model_2 <- rlm(formula_2, data = data_mun15)
+sar_model_2 <- errorsarlm(formula_2, data = data_mun15, listw = listw_5)
+gls_model_2 <- gls(formula_1, data = data_mun15, weights = varIdent(form = ~ 1 | factor(cluster)))
+weighted_model_2 <- lm(formula_2, data = data_mun15, weights = peso)
+gam_model_2 <- gam(tasa_dfi ~ s(tasa_promedio_hom) + s(tasa_prom_cuadrado) +
+                   s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + factor(cluster),
+                   data = data_mun15)
+```
+
+3.3 Evaluación de los Modelos
+Se define una función para calcular las métricas y pruebas estadísticas de cada modelo, como el AIC, BIC, y pruebas de Breusch-Pagan y Jarque-Bera. También se calcula el índice de Moran si se proporcionan datos espaciales.
+
+```{r, eval=FALSE}
+
+# Función para obtener métricas y pruebas
+model_metrics <- function(model, model_name, listw = NULL) {
+  model_summary <- summary(model)
+  
+  if (inherits(model, "gls")) {
+    coefficients <- as.data.frame(coef(model_summary))
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = Value, `[std.error]` = Std.Error, p.value = `p-value`)
+  } else if (inherits(model, "gam")) {
+    coefficients <- summary(model)$s.table
+    coefficients <- as.data.frame(coefficients)
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = edf, `[std.error]` = Ref.df, p.value = `p-value`)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  } else {
+    coefficients <- tidy(model)
+    coefficients <- coefficients %>%
+      rename(`[std.error]` = std.error)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  }
+  
+  # AIC y BIC
+  aic_value <- AIC(model)
+  bic_value <- BIC(model)
+  
+  # Breusch-Pagan test
+  if (inherits(model, c("lm", "rlm"))) {
+    bp_test <- bptest(model)
+    bp_stat <- bp_test$statistic
+    bp_pvalue <- bp_test$p.value
+  } else {
+    bp_stat <- NA
+    bp_pvalue <- NA
+  }
+  
+  # Jarque-Bera test
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    jb_test <- jarque.bera.test(residuals(model))
+    jb_stat <- jb_test$statistic
+    jb_pvalue <- jb_test$p.value
+  } else {
+    jb_stat <- NA
+    jb_pvalue <- NA
+  }
+  
+  # Prueba de multicolinealidad (VIF)
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    vif_values <- vif(model)
+    vif_df <- as.data.frame(vif_values)
+    vif_df$term <- rownames(vif_df)
+    rownames(vif_df) <- NULL
+    colnames(vif_df)[1] <- "vif"
+  } else {
+    vif_df <- data.frame(term = NA, vif = NA)
+  }
+  
+  # Índice de Moran si se proporciona una estructura espacial
+  if (!is.null(listw)) {
+    moran_test <- moran.test(residuals(model), listw)
+    moran_i <- moran_test$estimate[1]
+    moran_p <- moran_test$p.value
+  } else {
+    moran_i <- NA
+    moran_p <- NA
+  }
+  
+  results <- list(
+    model_name = model_name,
+    coefficients = coefficients,
+    aic = aic_value,
+    bic = bic_value,
+    bp_stat = bp_stat,
+    bp_pvalue = bp_pvalue,
+    jb_stat = jb_stat,
+    jb_pvalue = jb_pvalue,
+    moran_i = moran_i,
+    moran_p = moran_p,
+    vif = vif_df
+  )
+  
+  return(results)
+}
+```
+
+
+```{r, eval=FALSE}
+
+```
+
+
+
+```{r, eval=FALSE}
+
+```
+
+
+
+
+
+```{r, eval=FALSE}
+
+```
+
+
+
+```{r, eval=FALSE}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

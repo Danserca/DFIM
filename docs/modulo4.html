@@ -11,7 +11,7 @@
 
 
 
-<title>Módulo 4</title>
+<title>Modelo de Tasa de DFI</title>
 
 <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -373,7 +373,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Módulo 4</h1>
+<h1 class="title toc-ignore">Modelo de Tasa de DFI</h1>
 <h3 class="subtitle">Metodología</h3>
 
 </div>
@@ -1680,13 +1680,20 @@ los modelos de regresión</strong>
 <p>Se consideraron como modelos base los de regresión lineal con mínimos
 cuadrados (OLS) y mínimos cuadrados robustos (RLM). La especificación
 del modelo es la siguiente:</p>
+</div>
+<div id="ecuación-del-modelo" class="section level2">
+<h2>Ecuación del Modelo</h2>
+<p>La tasa de personas en situación de desplazamiento forzado interno
+(DFI) por cada cien mil habitantes se modela utilizando la siguiente
+ecuación:</p>
 <p><span class="math display">\[
-\text{tasa\_dfi}_i = \beta_0 + \beta_1 \cdot
-\text{tasa\_promedio\_hom}_i + \beta_2 \cdot
-(\text{tasa\_promedio\_hom}_i)^2 + \beta_3 \cdot
-\text{salario\_mun\_mediano}_i + \beta_4 \cdot \text{presion\_demo}_i +
-\beta_5 \cdot \log(\text{pob\_promedio}_i) + \beta_6 \cdot
-\text{cluster}_i + \epsilon_i
+\mathrm{tasa\_dfi}_\mathrm{i} = \beta_0 + \beta_1 \cdot
+\mathrm{tasa\_promedio\_hom}_\mathrm{i} + \beta_2 \cdot
+\left(\mathrm{tasa\_promedio\_hom}_\mathrm{i}\right)^2 + \beta_3 \cdot
+\mathrm{salario\_mun\_mediano}_\mathrm{i} \\
++ \beta_4 \cdot \mathrm{presion\_demo}_\mathrm{i} + \beta_5 \cdot
+\log\left(\mathrm{pob\_promedio}_\mathrm{i}\right) + \beta_6 \cdot
+\mathrm{cluster}_\mathrm{i} + \epsilon_i
 \]</span></p>
 <p>Donde:</p>
 <ul>
@@ -1694,14 +1701,20 @@ del modelo es la siguiente:</p>
 \beta_6\)</span> son los coeficientes que se estiman en el modelo para
 cada una de las variables independientes.</li>
 <li><span class="math inline">\(\epsilon_i\)</span> es el término de
-error.</li>
-<li><span class="math inline">\(\text{tasa\_dfi}_i\)</span> es la tasa
-de personas en situación de DFI por cada cien mil habitantes.</li>
-<li><span class="math inline">\(\log(\text{pob\_promedio}_i)\)</span> es
-el logaritmo natural de la población promedio para la observación <span
-class="math inline">\(i\)</span>.</li>
+error, que captura la variabilidad no explicada por las variables
+independientes en el modelo.</li>
+<li><span class="math inline">\(\mathrm{tasa\_dfi}_\mathrm{i}\)</span>
+es la tasa de personas en situación de DFI por cada cien mil
+habitantes.</li>
+<li><span
+class="math inline">\(\log(\mathrm{pob\_promedio}_\mathrm{i})\)</span>
+es el logaritmo natural de la población promedio para la observación
+<span class="math inline">\(i\)</span>.</li>
 </ul>
-<p>Incluye el término cuadrático de tasa_promedio_hom^2.</p>
+<p>Incluye también el término cuadrático <span
+class="math inline">\(\left(\mathrm{tasa\_promedio\_hom}_\mathrm{i}\right)^2\)</span>
+para capturar posibles efectos no lineales de la violencia en la tasa de
+DFI.</p>
 <p>Se busca explicar la tasa de personas en situación de DFI por cada
 cien mil habitantes a través de una combinación de variables
 socioeconómicas, demográficas y contextuales, mientras se manejan
@@ -1932,6 +1945,439 @@ for (paquete in paquetes) {
     install.packages(paquete)
   }
   library(paquete, character.only = TRUE)
+}</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Carga y Procesamiento de Datos<br />
+2.1 Población Migrante por Municipio<br />
+Primero, cargamos los datos de población de 5 años y más migrante por
+municipio, entidad federativa o país de residencia en marzo de 2015 y
+sexo según causa de la migración entre marzo de 2015 y marzo de
+2020</li>
+</ol>
+<pre class="r"><code># Leer el archivo Excel y limpiar los nombres de las columnas
+emigrantes_t &lt;- read_excel(&quot;data_lmd/LM 2462.xlsx&quot;, skip = 3) %&gt;% 
+  clean_names()
+
+# Cambiar los nombres de las columnas 
+colnames(emigrantes_t) &lt;- c(&quot;nom_ent_cve&quot;, &quot;nom_mun_cve&quot;, &quot;sexo&quot;, &quot;poblacion_total&quot;,
+                            &quot;buscar_trabajo&quot;, &quot;cambio_u_oferta_de_trabajo&quot;, 
+                            &quot;reunirse_con_la_familia&quot;, &quot;se_caso_o_unio&quot;, &quot;estudiar&quot;, 
+                            &quot;por_violencia&quot;, &quot;por_desastres&quot;, &quot;lo_deportaron&quot;, &quot;otra_causa&quot;,
+                            &quot;no_especificado&quot;) 
+
+# Filtrar los datos y seleccionar solo las filas donde &#39;sexo&#39; es &quot;Total&quot;
+emigrantes_t &lt;- emigrantes_t %&gt;% 
+  filter(sexo == &quot;Total&quot; &amp; nom_mun_cve != &quot;Total&quot; &amp; nom_mun_cve != &quot;Municipio no especificado&quot;)
+
+# Crear las columnas &#39;ent&#39; y &#39;mun&#39; utilizando substr
+emigrantes_t$ent &lt;- substr(emigrantes_t$nom_ent_cve, 1, 3)
+emigrantes_t$mun &lt;- substr(emigrantes_t$nom_mun_cve, 1, 3)
+
+# Eliminar solo un cero al inicio de &#39;ent&#39;
+emigrantes_t$ent &lt;- ifelse(substr(emigrantes_t$ent, 1, 1) == &quot;0&quot;, substr(emigrantes_t$ent, 2, nchar(emigrantes_t$ent)), emigrantes_t$ent)
+
+# Crear la columna &#39;nom_mun&#39;
+emigrantes_t$nom_mun &lt;- substr(emigrantes_t$nom_mun_cve, 5, nchar(emigrantes_t$nom_mun_cve))
+
+# Crear la variable caracter &#39;municipios&#39; que combina &#39;ent&#39; y &#39;mun&#39; La función trimws() se utiliza para eliminar cualquier espacio en blanco adicional alrededor del contenido de la columna mun
+emigrantes_t$id_mun &lt;- paste0(emigrantes_t$ent, trimws(emigrantes_t$mun))
+
+# Mostrar el resultado
+print(emigrantes_t)</code></pre>
+<p>En este paso, se limpian y organizan los datos de población migrante,
+y se preparan para su posterior análisis.</p>
+<p>2.2 Tasas de Homicidios por Municipio<br />
+Se carga otro conjunto de datos que contiene las tasas de homicidios por
+cada cien mil habitantes en municipios mexicanos, para el período
+2015-2017.</p>
+<pre class="r"><code># Leer el archivo Excel y limpiar los nombres de las columnas
+# Seleccionar las columnas necesarias
+tasas_homicidios &lt;- read_excel(&quot;Tasas homicidios.xlsx&quot;, sheet = &quot;Datos&quot;) %&gt;% 
+  clean_names() %&gt;% 
+  dplyr::select(id_mun, ent_nom, mun_nom, tm15_17)</code></pre>
+<p>2.3 Marco Geoestadístico 2018<br />
+Aquí, cargamos y procesamos el marco geoestadístico, que es esencial
+para asociar datos espaciales a los municipios y entidades de
+México.</p>
+<pre class="r"><code># Leer los shapefiles para municipios y entidades
+marco_geoest &lt;- st_read(&quot;MG_2020_Integrado/00mun.shp&quot;) %&gt;% 
+  clean_names() %&gt;% 
+  rename(id_mun = cvegeo)
+
+marco_geoest_ent &lt;- st_read(&quot;MG_2020_Integrado/00ent.shp&quot;) %&gt;% 
+  clean_names()</code></pre>
+<p>2.4 Censo 2020<br />
+Se cargan datos socioeconómicos del Censo 2020 y se procesan para el
+análisis. Se incluye información sobre empleo, educación, y
+salarios.</p>
+<pre class="r"><code># Leer datos del Censo 2020
+ca_censo_2020 &lt;- read_csv(&quot;dfi_tasa_hom_itam.csv&quot;) %&gt;%
+  mutate(municipios = as.numeric(municipios)) %&gt;%
+  transmute(
+    id_mun = sprintf(&quot;%05d&quot;, municipios),
+    nom_ent.y,
+    nom_mun,
+    ent = as.character(ent),
+    empleo,
+    educacion,
+    salario_mun_mediano,
+    salario,
+    presion_demo
+  )</code></pre>
+<p>2.5 Coeficiente de Gini e Índice de Marginación<br />
+Se descarga y procesa la información sobre el coeficiente de Gini e
+índice de marginación municipal para el año 2015.</p>
+<pre class="r"><code># Descargar y procesar datos del coeficiente de Gini
+nombres &lt;- c(&quot;clave_ent&quot;, &quot;entidad&quot;, &quot;id_mun&quot;, &quot;nom_mun&quot;, &quot;coef_de_gini&quot;, &quot;ingreso_ratio&quot;) 
+url_gini &lt;- &quot;https://www.coneval.org.mx/Medicion/MP/Documents/Cohesion_social/Indicadores_cohesion_social_municipio_Mexico_2010-2020.zip&quot;
+
+# Descargar y descomprimir el archivo ZIP
+temp_zip_gini &lt;- tempfile()
+download.file(url_gini, temp_zip_gini)
+unzip(temp_zip_gini, exdir = &quot;temp_folder_gini&quot;)
+
+# Leer el archivo Excel
+archivo_gini &lt;- list.files(&quot;temp_folder_gini&quot;, pattern = &quot;.xlsx&quot;, full.names = TRUE)
+gini &lt;- read_excel(archivo_gini,sheet = &quot;2015&quot;, range = &quot;B11:G2467&quot;, col_names = nombres)
+
+# Convertir variables numericas
+gini &lt;- mutate_at(gini, vars(coef_de_gini:ingreso_ratio), as.numeric)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Carga y Procesamiento de Datos<br />
+2.1 Establecer Causas de Defunción por Homicidio<br />
+Primero, definimos un vector que contiene los códigos CIE-10
+correspondientes a causas de defunción por homicidio.</li>
+</ol>
+<pre class="r"><code># Establecer causas de defunción por homicidio de acuerdo con CIE-10 X85-Y09
+causa_defunciones &lt;- c(&quot;X85&quot;, &quot;X86&quot;, &quot;X87&quot;, &quot;X88&quot;, &quot;X89&quot;, &quot;X90&quot;, &quot;X91&quot;, &quot;X92&quot;, 
+                       &quot;X93&quot;, &quot;X94&quot;, &quot;X95&quot;, &quot;X96&quot;, &quot;X97&quot;, &quot;X98&quot;, &quot;X99&quot;, &quot;Y00&quot;, 
+                       &quot;Y01&quot;, &quot;Y03&quot;, &quot;Y04&quot;, &quot;Y05&quot;, &quot;Y06&quot;, &quot;Y07&quot;, &quot;Y08&quot;, &quot;Y09&quot;)
+2.2 Cargar y Procesar Datos de Defunciones
+Se cargan los datos de defunciones desde 2015 hasta 2019. Los datos se filtran para incluir solo las defunciones que corresponden a homicidios según los códigos definidos.</code></pre>
+<pre class="r"><code>Copiar código
+# Crear una lista para almacenar los datos de defunciones por año
+defunciones_list &lt;- list()
+
+# Crear una secuencia de años desde 2015 hasta 2019
+years &lt;- 2015:2019
+
+# Iterar sobre los años
+for (year in years) {
+  # Definir el nombre del archivo DBF para el año actual
+  file_name &lt;- file.path(&quot;data_t8_defunciones&quot;, paste0(&quot;defunciones_base_datos_&quot;, year, &quot;/&quot;, &quot;DEFUN&quot;, year %% 100, &quot;.DBF&quot;))
+  
+  # Leer y procesar el archivo DBF
+  defunciones &lt;- read.dbf(file_name) %&gt;%
+    clean_names() %&gt;%
+    mutate(causa_defun = as.character(causa_def)) %&gt;%
+    filter(substr(causa_defun, 1, 3) %in% causa_defunciones)
+  
+  # Almacenar los datos en la lista
+  defunciones_list[[as.character(year)]] &lt;- defunciones
+}
+
+# Combinar todos los datos en un único marco de datos si es necesario
+defunciones_combinada &lt;- bind_rows(defunciones_list)</code></pre>
+<p>2.3 Generar Variables y Agrupar Datos<br />
+Después de combinar los datos de defunciones, se generan nuevas
+variables y se agrupan los datos según la entidad y el municipio de
+registro, así como por año.</p>
+<pre class="r"><code># Generar variables
+defunciones_combinada &lt;- defunciones_combinada %&gt;%
+  mutate(
+    causa = substring(causa_defun, 1, 3),
+    id_mun = paste0(ent_regis, mun_regis)) %&gt;%
+  dplyr::select(-causa_defun)  # Eliminar columna causa_defun si ya no es necesaria
+
+# Agrupar defunciones por homicidio por año de registro, entidad y municipio de ocurrencia
+hom_mun_quiquenal &lt;- defunciones_combinada %&gt;%
+  group_by(id_mun, ent_regis, mun_regis) %&gt;% 
+  summarise(hom15_20 = n()) 
+
+# Agrupar defunciones por homicidio por año de registro, entidad y municipio de ocurrencia
+homicidio_anuales &lt;- defunciones_combinada %&gt;%
+  group_by(id_mun, ent_regis, mun_regis, anio_regis) %&gt;%
+  summarise(homicidios = n())</code></pre>
+<p>2.4 Carga de Otros Datos: Índice de Marginación e Intensidad
+Migratoria<br />
+Cargamos y procesamos datos adicionales como el índice de marginación y
+la intensidad migratoria para complementar el análisis.</p>
+<pre class="r"><code># Índice de marginación normalizado 2015 (carencias poblacionales) por localidad, municipio y entidad
+url_imm &lt;- &quot;http://www.conapo.gob.mx/work/models/CONAPO/Marginacion/Datos_Abiertos/Municipio/IMM_DP2_2015.xlsx&quot;
+
+# Descargar y leer el archivo Excel
+archivo_imm &lt;- tempfile()
+download.file(url_imm, archivo_imm, mode = &quot;wb&quot;)
+imm &lt;- read_xlsx(archivo_imm, sheet = &quot;IMM_2015&quot;) %&gt;% 
+  clean_names() %&gt;% 
+  rename(id_mun = cve_mun)
+
+# Intensidad migratoria municipal. Fuente CONAPO
+iaim_2020 &lt;- read_csv(&quot;https://conapo.segob.gob.mx/work/models/CONAPO/IIM/iim_base2020m.csv&quot;)
+iaim_2020 &lt;- iaim_2020  %&gt;% 
+  clean_names() %&gt;% 
+  mutate(id_mun = ifelse(nchar(cve_geo) == 4, paste0(&quot;0&quot;, cve_geo), cve_geo))</code></pre>
+<p>2.5 Procesamiento de Datos de Población<br />
+Se cargan y procesan los datos de población por grupos de edad,
+necesarios para calcular tasas y realizar otros análisis.</p>
+<pre class="r"><code># Leer y unir bases de población
+poblacion_municipal &lt;- bind_rows(
+  read_csv(&quot;data_t5_conapo/base_municipios_final_datos_01.csv&quot;, locale = locale(encoding = &quot;latin1&quot;)),
+  read_csv(&quot;data_t5_conapo/base_municipios_final_datos_02.csv&quot;, locale = locale(encoding = &quot;latin1&quot;))
+) %&gt;% clean_names() %&gt;% 
+  rename(anio = ano)
+
+# Arreglar claves de los municipios
+poblacion_municipal &lt;- poblacion_municipal %&gt;% 
+  mutate(entidad = ifelse(nchar(clave_ent) == 1, paste0(&quot;0&quot;, clave_ent), clave_ent),
+         id_mun = ifelse(nchar(clave) == 4, paste0(&quot;0&quot;, clave), clave))
+
+# Filtrar por año y grupo de edad
+pob_5_y_mas_mun_2017 &lt;- poblacion_municipal %&gt;%
+  filter(anio == 2017, edad_quin != &quot;pobm_00_04&quot;)%&gt;%
+  group_by(id_mun) %&gt;%
+  summarise(poblacion = sum(pob))</code></pre>
+<p>Más grupos de edad… 2.6 Cálculo de Tasas Promedio de Homicidio<br />
+Se calculan las tasas promedio de homicidio por cada 100,000 habitantes
+utilizando los datos de población y defunciones.</p>
+<pre class="r"><code># Calcular la tasa de homicidios por cada 100,000 habitantes
+tasas &lt;- pob_anual %&gt;%
+  left_join(homicidio_anuales, by = c(&quot;id_mun&quot;, &quot;anio&quot;=&quot;anio_regis&quot;)) %&gt;%
+  dplyr::select(-ends_with(&quot;.x&quot;)) %&gt;%
+  dplyr::select(-ends_with(&quot;regis&quot;)) %&gt;% 
+  rename_with(~ stringr::str_remove(.x, pattern = &quot;.y&quot;), ends_with(&quot;.y&quot;)) %&gt;%
+  mutate(
+    tasa_hom_100mil = round((homicidios / poblacion_anual) * 100000, 1),
+    ent_regis = substr(id_mun, 1, 2)
+  )
+
+# Calcular tasas promedio suavizadas usando el método de Bayes Empírico
+tasas_por_edo &lt;- tasas  %&gt;%
+  group_by(ent_regis, anio) %&gt;%
+  mutate(
+    mu = sum(homicidios) / sum(poblacion_anual),
+    O_i = homicidios,
+    P_i = poblacion_anual,
+    n = n(),
+    r_i = homicidios / poblacion_anual,
+    variance = var(homicidios / poblacion_anual)
+  ) %&gt;%
+  mutate(
+    w_i = variance / (variance + mu / P_i),
+    eb_bayes = w_i * r_i + (1 - w_i) * mu
+  )
+
+# Resumir tasas suavizadas por municipio
+prome_hom_rate &lt;-  tasas_por_edo %&gt;% 
+  group_by(id_mun) %&gt;% 
+  summarise(tasa_hom_suav = (mean(eb_bayes) * 10^5))</code></pre>
+<p>2.7 Integración de Datos y Proyección Geográfica<br />
+Se integran los diferentes conjuntos de datos en un único marco de datos
+y se transforman a la proyección geográfica correcta.</p>
+<pre class="r"><code># Definir una función para realizar la unión y limpiar los nombres de columnas
+unir_y_limpiar &lt;- function(datos, datos_nuevos, sufijo) {
+  left_join(datos, datos_nuevos, by = &quot;id_mun&quot;) %&gt;%
+    dplyr::select(-ends_with(&quot;.x&quot;)) %&gt;%
+    rename_with(~ stringr::str_remove(.x, pattern = &quot;.y&quot;), ends_with(&quot;.y&quot;)) 
+}
+
+# Unir los datos y limpiar nombres de columnas utilizando la función definida
+datos_integrados &lt;- marco_geoest %&gt;%
+  unir_y_limpiar(tasas_homicidios, sufijo = &quot;.tasa_hom_b&quot;) %&gt;%
+  unir_y_limpiar(emigrantes_t, sufijo = &quot;.emigrantes_t&quot;) %&gt;%
+  unir_y_limpiar(ca_censo_2020, sufijo = &quot;.censo_2020&quot;) %&gt;%
+  unir_y_limpiar(gini, sufijo = &quot;.gini&quot;) %&gt;%
+  unir_y_limpiar(imm, sufijo = &quot;.imm&quot;) %&gt;%
+  unir_y_limpiar(iaim_2020, sufijo = &quot;.iaim_2020&quot;) %&gt;%
+  unir_y_limpiar(pob_5_y_mas_mun_2017, sufijo = &quot;.pob_5_y_mas_2017&quot;) %&gt;%
+  unir_y_limpiar(pob_14_25_2017, sufijo = &quot;.pob_14_25_2017&quot;) %&gt;%
+  unir_y_limpiar(pob_45_64_2017, sufijo = &quot;.pob_45_64_2017&quot;) %&gt;%
+  unir_y_limpiar(tasas_promedio, sufijo = &quot;.tasas_promedio&quot;)
+
+# Proyección cónica conforme de Lambert para México ITRF2008 (EPSG:6362)
+datos_integrados &lt;- st_transform(datos_integrados, crs = &quot;+init=epsg:6362&quot;)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Análisis de Datos<br />
+3.1 Análisis Descriptivo por Cluster<br />
+Realizamos un análisis descriptivo de los datos agrupados por clusters,
+utilizando estadísticas resumidas.</li>
+</ol>
+<pre class="r"><code># Crear un subset del dataframe con las variables especificadas
+variables_interes &lt;- c(&quot;tasa_dfi&quot;, &quot;tasa_promedio_hom&quot;, &quot;tasa_prom_cuadrado&quot;, &quot;salario_mun_mediano&quot;, &quot;presion_demo&quot;, &quot;ln_pob&quot;, &quot;cluster&quot;)
+
+# Subset del dataframe con las variables de interés
+dfi_subset &lt;- data_mun15[, variables_interes]
+
+# Eliminar la columna de geometría
+dfi_no_geom &lt;- st_set_geometry(dfi_subset, NULL)
+
+# Crear el resumen descriptivo agrupado por &#39;cluster&#39; con estadísticas adicionales
+summary_table &lt;- dfi_no_geom %&gt;%
+  tbl_summary(
+    by = cluster, # Agrupar por la variable &#39;cluster&#39;
+    type = list(
+      where(is.numeric) ~ &quot;continuous&quot;,
+      where(is.factor) ~ &quot;categorical&quot;
+    ),
+    statistic = list(
+      all_continuous() ~ &quot;{mean} ({sd}), {min} - {max}&quot;,
+      all_categorical() ~ &quot;{n} / {N} ({p}%)&quot;
+    )
+  ) %&gt;% 
+  add_overall()
+
+# Convertir a flextable
+summary_flextable &lt;- summary_table %&gt;%
+  as_flex_table()
+
+# Agregar el título y subtítulo usando flextable
+summary_flextable &lt;- flextable::add_header(summary_flextable,
+                                           top = TRUE, 
+                                           values = c(&quot;Resumen Estadístico por Cluster&quot;),
+                                           colspan = ncol(summary_flextable))
+
+# Guardar en archivo Word
+flextable::save_as_docx(summary_flextable, path = &quot;RESULTADOS_OK/summary_table_240620.docx&quot;)</code></pre>
+<ol style="list-style-type: decimal">
+<li>Cálculo de los 5 Vecinos Más Cercanos Primero, se calculan los 5
+vecinos más cercanos para cada municipio, basados en las coordenadas de
+sus centroides.</li>
+</ol>
+<pre class="r"><code>Copiar código
+# Extraer geometría y centroides de los municipios
+mexico.geom &lt;- st_geometry(data_mun15)
+mexico.coords &lt;- st_centroid(mexico.geom) 
+
+# Calcular los 5 vecinos más cercanos
+mex5_nb &lt;- knn2nb(knearneigh(mexico.coords, k = 5))
+
+# Graficar los vecinos más cercanos
+plot(mexico.geom, main = &quot;k = 5&quot;, reset = FALSE)
+plot(mex5_nb, mexico.coords, add = TRUE, col = 2, lwd = 1.5)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Construcción de la Matriz Espacial Luego, se construye una matriz
+espacial basada en los 5 vecinos más cercanos, la cual es esencial para
+los análisis de autocorrelación espacial.</li>
+</ol>
+<pre class="r"><code># Crear la matriz espacial basada en los vecinos
+mex5_vecinos &lt;- knn2nb(knearneigh(mexico.coords, k = 5))
+listw_5 &lt;- nb2listw(mex5_vecinos, style = &quot;W&quot;, zero.policy = TRUE)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Modelado Estadístico 3.1 Preparación de Datos para el Modelado Se
+añade una columna de pesos basada en la inversa de la población, y se
+definen dos fórmulas para los modelos de regresión.</li>
+</ol>
+<pre class="r"><code># Crear la columna &#39;peso&#39; como la inversa de &#39;Población&#39;
+data_mun15$peso &lt;- 1 / data_mun15$poblacion
+
+# Definir las fórmulas para los modelos
+formula_1 &lt;- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob)
+formula_2 &lt;- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster)</code></pre>
+<p>3.2 Construcción de Modelos Se construyen varios modelos de
+regresión: OLS, Mínimos Cuadrados Robustos, Autorregresivo Espacial,
+Mínimos Cuadrados Generalizados, Ponderado y Aditivo Generalizado.</p>
+<pre class="r"><code># Modelos
+lm_model_2 &lt;- lm(formula_2, data = data_mun15)
+rlm_model_2 &lt;- rlm(formula_2, data = data_mun15)
+sar_model_2 &lt;- errorsarlm(formula_2, data = data_mun15, listw = listw_5)
+gls_model_2 &lt;- gls(formula_1, data = data_mun15, weights = varIdent(form = ~ 1 | factor(cluster)))
+weighted_model_2 &lt;- lm(formula_2, data = data_mun15, weights = peso)
+gam_model_2 &lt;- gam(tasa_dfi ~ s(tasa_promedio_hom) + s(tasa_prom_cuadrado) +
+                   s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + factor(cluster),
+                   data = data_mun15)</code></pre>
+<p>3.3 Evaluación de los Modelos Se define una función para calcular las
+métricas y pruebas estadísticas de cada modelo, como el AIC, BIC, y
+pruebas de Breusch-Pagan y Jarque-Bera. También se calcula el índice de
+Moran si se proporcionan datos espaciales.</p>
+<pre class="r"><code># Función para obtener métricas y pruebas
+model_metrics &lt;- function(model, model_name, listw = NULL) {
+  model_summary &lt;- summary(model)
+  
+  if (inherits(model, &quot;gls&quot;)) {
+    coefficients &lt;- as.data.frame(coef(model_summary))
+    coefficients$term &lt;- rownames(coefficients)
+    rownames(coefficients) &lt;- NULL
+    coefficients &lt;- coefficients %&gt;%
+      rename(estimate = Value, `[std.error]` = Std.Error, p.value = `p-value`)
+  } else if (inherits(model, &quot;gam&quot;)) {
+    coefficients &lt;- summary(model)$s.table
+    coefficients &lt;- as.data.frame(coefficients)
+    coefficients$term &lt;- rownames(coefficients)
+    rownames(coefficients) &lt;- NULL
+    coefficients &lt;- coefficients %&gt;%
+      rename(estimate = edf, `[std.error]` = Ref.df, p.value = `p-value`)
+    if (!&quot;p.value&quot; %in% names(coefficients)) {
+      coefficients$p.value &lt;- NA
+    }
+  } else {
+    coefficients &lt;- tidy(model)
+    coefficients &lt;- coefficients %&gt;%
+      rename(`[std.error]` = std.error)
+    if (!&quot;p.value&quot; %in% names(coefficients)) {
+      coefficients$p.value &lt;- NA
+    }
+  }
+  
+  # AIC y BIC
+  aic_value &lt;- AIC(model)
+  bic_value &lt;- BIC(model)
+  
+  # Breusch-Pagan test
+  if (inherits(model, c(&quot;lm&quot;, &quot;rlm&quot;))) {
+    bp_test &lt;- bptest(model)
+    bp_stat &lt;- bp_test$statistic
+    bp_pvalue &lt;- bp_test$p.value
+  } else {
+    bp_stat &lt;- NA
+    bp_pvalue &lt;- NA
+  }
+  
+  # Jarque-Bera test
+  if (inherits(model, c(&quot;lm&quot;, &quot;rlm&quot;, &quot;gls&quot;))) {
+    jb_test &lt;- jarque.bera.test(residuals(model))
+    jb_stat &lt;- jb_test$statistic
+    jb_pvalue &lt;- jb_test$p.value
+  } else {
+    jb_stat &lt;- NA
+    jb_pvalue &lt;- NA
+  }
+  
+  # Prueba de multicolinealidad (VIF)
+  if (inherits(model, c(&quot;lm&quot;, &quot;rlm&quot;, &quot;gls&quot;))) {
+    vif_values &lt;- vif(model)
+    vif_df &lt;- as.data.frame(vif_values)
+    vif_df$term &lt;- rownames(vif_df)
+    rownames(vif_df) &lt;- NULL
+    colnames(vif_df)[1] &lt;- &quot;vif&quot;
+  } else {
+    vif_df &lt;- data.frame(term = NA, vif = NA)
+  }
+  
+  # Índice de Moran si se proporciona una estructura espacial
+  if (!is.null(listw)) {
+    moran_test &lt;- moran.test(residuals(model), listw)
+    moran_i &lt;- moran_test$estimate[1]
+    moran_p &lt;- moran_test$p.value
+  } else {
+    moran_i &lt;- NA
+    moran_p &lt;- NA
+  }
+  
+  results &lt;- list(
+    model_name = model_name,
+    coefficients = coefficients,
+    aic = aic_value,
+    bic = bic_value,
+    bp_stat = bp_stat,
+    bp_pvalue = bp_pvalue,
+    jb_stat = jb_stat,
+    jb_pvalue = jb_pvalue,
+    moran_i = moran_i,
+    moran_p = moran_p,
+    vif = vif_df
+  )
+  
+  return(results)
 }</code></pre>
 </div>
 </div>
