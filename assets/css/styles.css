@@ -1,49 +1,73 @@
+/* Mantener la configuración original de la navbar */
 .navbar {
-  background-color: #0077C8 !important; /* Cambia este valor para ajustar el color del cintillo */
-  border-color: #0077C8 !important; /* Opcional: cambia también el color del borde si es necesario */
-  background-image: none !important; /* Elimina cualquier imagen de fondo */
-   height: 65px;
+  background-color: #0077C8 !important; 
+  border-color: #0077C8 !important; 
+  background-image: none !important; 
+  height: 65px;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #FFFFFF !important;  /* Cambia este valor al color deseado */
-  font-weight: bold !important; /* Hace que las letras estén en negritas */
+  color: #FFFFFF !important; 
+  font-weight: bold !important; 
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #0077C8; /* Cambia este valor al color deseado cuando el mouse está encima */
-  font-weight: bold; /* Mantiene las letras en negritas al hacer hover o focus */
+  color: #0077C8;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
-  color: #FFFFFF; /* Cambia este valor al color del texto del logotipo de la navbar */
-  font-weight: bold; /* Hace que el texto del logotipo esté en negritas */
+  color: #FFFFFF; 
+  font-weight: bold;
 }
 
-/* Fondo del navbar cuando está en el estado colapsado */
 .navbar-collapse {
-  background-color: #0077C8; /* Color de fondo del menú desplegable */
+  background-color: #0077C8;
 }
 
-/* Estilos adicionales para los enlaces del menú desplegable */
 .navbar-nav > li > a {
-  color: #ffffff; /* Color del texto en el menú desplegable */
+  color: #ffffff;
   font-weight: bold;
   padding: 10px 15px;
 }
 
-/* Opcional: Cambiar color de fondo cuando el enlace está en hover o activo */
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > .active > a {
-  background-color: #005a9c; /* Color de fondo en hover/activo */
-  color: #ffffff; /* Color del texto en hover/activo */
+  background-color: #005a9c;
+  color: #ffffff;
 }
 
+/* Ajustes para evitar el espacio en blanco y scroll innecesario */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+body {
+  min-height: 100vh;
+  display: block;
+  overflow-y: scroll;
+}
+
+main {
+  margin-bottom: 0;
+}
+
+footer {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #0077C8;
+}
+
+/* Resto del contenido */
 .two-columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -54,11 +78,6 @@ p {
   margin: 0;
   padding: 2px 0;
 }
-
-body {
-  line-height: 1.5;
-}
-
 
 .copy-button {
   position: absolute;
@@ -75,4 +94,3 @@ body {
 .copy-button:hover {
   color: #0056b3;
 }
-

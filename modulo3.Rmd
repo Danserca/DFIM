@@ -130,7 +130,7 @@ La independencia de una agencia estadística es fundamental para producir datos 
 Consulta los criterios para garantizar la independencia de las agencias estadísticas.
 
 
-# Lección 6. Recursos
+# Lección 5. Recursos
 
 [Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m3.pdf)
 
