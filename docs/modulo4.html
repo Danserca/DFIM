@@ -1624,15 +1624,317 @@ transformación realizada en la variable dependiente.</p>
 <hr style="border: 3px solid#0077C8;" />
 </div>
 </div>
-<div id="estimación-del-desplazamiento-forzado-interno-en-méxico"
-class="section level1">
-<h1>Estimación del Desplazamiento Forzado Interno en México</h1>
-<p>En este taller, aprenderemos a realizar una estimación del
-desplazamiento forzado interno (DFI) en México, utilizando datos de la
-Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública
-(ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos
-enfocaremos en la calibración de ponderadores y la creación de diseños
-muestrales.</p>
+<div id="variables" class="section level1">
+<h1>Variables</h1>
+<p>Con base en la literatura, inicialmente se consideraron ocho
+variables de control: 1. Nivel de desempleo (empleo): porcentaje de
+población desocupada (estimador Horvitz-Thompson a partir de datos del
+cuestionario ampliado del Censo 2020). 2. Coeficiente de Gini
+(coef_de_gini): coeficiente de gini, una medida de la desigualdad de
+ingresos (Coneval). 3. Índice de intensidad migratoria (iim_dp2): valor
+del índice de intensidad migratoria (DP2). Medida sintética que informa,
+de forma integral, el fenómeno migratorio entre México-Estados Unidos
+(Conapo). 4. Mediana del salario per cápita municipal
+(salario_mun_mediano): mediana del salario en el municipio (estimador
+Horvitz-Thompson a partir de datos del cuestionario ampliado del Censo
+2020). 5. Presión demográfica (presion_demo): relación de la población
+de 15 a 24 años, entre la población de 45 a 64 años por 100
+(Proyecciones de la Población, 2010-2030, CONAPO). 6. Educación
+(educación): nivel de educación, que podría estar representado por el
+promedio de años de escolaridad, tasas de alfabetización, etc. 7. Grado
+de marginación (gim_2020): grado de marginación es una variable ordinal
+con cinco niveles posibles, la cual es construida con el método Dalenius
+y Hodges (1959 citado en COPLADET et al., 2020) a partir del índice de
+marginación. 8. Urbanización (urbanización): indica si el municipio es
+igual o mayor a 15 mil habitantes.</p>
+<p>Dado que los valores atípicos podían influir en los resultados, se
+optó por un análisis de conglomerados k-medias (kmeans) para agrupar los
+municipios según sus características sociodemográficas cuantitativas. Se
+estableció una semilla aleatoria y se definió un número de cuatro
+conglomerados (k = 4) para garantizar la reproducibilidad del análisis
+(k = 4). La Tabla 4 presenta las estadísticas descriptivas generales y
+por conglomerado, revelando diferencias significativas entre los grupos
+de municipios. Al controlar por el tamaño de la población, los
+conglomerados 2 y 3 muestran tasas de homicidio similares, pero difieren
+en la cantidad de personas en situación de desplazamiento forzado
+interno (DFI).</p>
+<p>El conglomerado 2, aunque compuesto por solo 11 municipios, presenta
+el promedio más alto de DFI (316), superando incluso al conglomerado 4,
+que a pesar de tener en promedio el doble de homicidios por cada cien
+mil habitantes, ocupa el segundo lugar en DFI. Además, el conglomerado 2
+registra el salario municipal mediano más alto, lo que sugiere una
+posible asociación entre el DFI, la violencia y los recursos
+económicos.</p>
+<br><br>
+<div style="text-align: center;">
+<p>
+<strong>Tabla 4. Estadísticas descriptivas de las variables usadas en
+los modelos de regresión</strong>
+</p>
+<p><img src="imagenes/tabla4.png" /></p>
+</div>
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+<div id="modelos-base-ols-y-rlm" class="section level2">
+<h2>Modelos Base: OLS y RLM</h2>
+<p>Se consideraron como modelos base los de regresión lineal con mínimos
+cuadrados (OLS) y mínimos cuadrados robustos (RLM). La especificación
+del modelo es la siguiente:</p>
+<p><span class="math display">\[
+\text{tasa\_dfi}_i = \beta_0 + \beta_1 \cdot
+\text{tasa\_promedio\_hom}_i + \beta_2 \cdot
+(\text{tasa\_promedio\_hom}_i)^2 + \beta_3 \cdot
+\text{salario\_mun\_mediano}_i + \beta_4 \cdot \text{presion\_demo}_i +
+\beta_5 \cdot \log(\text{pob\_promedio}_i) + \beta_6 \cdot
+\text{cluster}_i + \epsilon_i
+\]</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\beta_0, \beta_1, \dots,
+\beta_6\)</span> son los coeficientes que se estiman en el modelo para
+cada una de las variables independientes.</li>
+<li><span class="math inline">\(\epsilon_i\)</span> es el término de
+error.</li>
+<li><span class="math inline">\(\text{tasa\_dfi}_i\)</span> es la tasa
+de personas en situación de DFI por cada cien mil habitantes.</li>
+<li><span class="math inline">\(\log(\text{pob\_promedio}_i)\)</span> es
+el logaritmo natural de la población promedio para la observación <span
+class="math inline">\(i\)</span>.</li>
+</ul>
+<p>Incluye el término cuadrático de tasa_promedio_hom^2.</p>
+<p>Se busca explicar la tasa de personas en situación de DFI por cada
+cien mil habitantes a través de una combinación de variables
+socioeconómicas, demográficas y contextuales, mientras se manejan
+posibles valores atípicos, relaciones no lineales y lineales. De acuerdo
+con la literatura, la violencia puede alentar ciertos comportamientos
+humanos como el DFI solo hasta cierto punto. Sin embargo, más allá de un
+nivel crítico de violencia, esos comportamientos pueden empezar a
+decrecer.</p>
+<p>El modelo de regresión lineal robusto se ajustó usando la función rlm
+del paquete MASS de R. La función rlm es particularmente útil cuando los
+datos contienen valores atípicos que podrían influir
+desproporcionadamente en los estimadores de mínimos cuadrados ordinarios
+(ols) (Wooldridge 2015). De esta manera, se obtienen estimaciones más
+fiables cuando la suposición de normalidad de los errores no se cumple.
+También se estimó un modelo lineal ponderado, a cada observación,
+municipio, se le asignó un peso con base en el tamaño de la población
+quinquenal promedio. Los pesos se calcularon como la inversa de la
+población (1 / población), lo cual da más peso a las observaciones con
+menor población. Esta aproximación puede ser útil para estabilizar la
+varianza de los errores, pero no para capturar bien la relación entre
+las variables. Esto último es posible sobre todo si las observaciones
+con menor población no representan adecuadamente la variabilidad total
+en la variable dependiente.</p>
+</div>
+<div id="modelos-espaciales" class="section level2">
+<h2>Modelos espaciales</h2>
+<p>Para lidiar con los problemas de correlación espacial y de
+especificación del modelo debido a la falta de datos a nivel municipal,
+se estimaron modelos espaciales de regresión, en particular se estimaron
+modelos de “error espacial”, también conocidos como modelos de “media
+móvil espacial” (errorsarlm). Estos modelos incorporan la dependencia
+espacial en los residuales. Ante la presencia de estos errores, los
+coeficientes de los ajustes de modelos ols son insesgados pero
+ineficientes. Es decir, aunque el tamaño y el signo del coeficiente son
+asintóticamente correctos, los errores estándar presentan subestimación.
+El modelo considerado es de estimación de máxima verosimilitud de
+modelos de error autorregresivos simultáneos espaciales de la forma:</p>
+<p>El modelo de autocorrelación espacial se especifica como:</p>
+<p><span class="math display">\[
+y = X\beta + u, \quad u = \lambda Wu + \epsilon
+\]</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(y\)</span> es la variable de respuesta
+tomada en su forma logarítmica en cada una de las <span
+class="math inline">\(N\)</span> posiciones.</li>
+<li><span class="math inline">\(X\)</span> es la matriz de variables
+independientes.</li>
+<li><span class="math inline">\(\beta\)</span> es el vector de
+coeficientes a estimar.</li>
+<li><span class="math inline">\(u\)</span> es el vector de errores
+espaciales.</li>
+<li><span class="math inline">\(\lambda\)</span> es el parámetro de
+autocorrelación espacial.</li>
+<li><span class="math inline">\(W\)</span> es la matriz de pesos
+espaciales.</li>
+<li><span class="math inline">\(\epsilon\)</span> es el vector de
+errores aleatorios.</li>
+</ul>
+<p>La matriz de pesos espaciales (Spatial Weights Matrix, 𝑊) tiene como
+propósito definir las relaciones espaciales entre las observaciones que
+indica la proximidad entre los municipios. Para los modelos espaciales
+primero se construyó la matriz W. Para ello se usó el archivo shape . Se
+extrajeron las coordenadas del centro de cada municipio. A partir de la
+proyección cónica conforme de Lambert para México ITRF2008 se
+encontraron las distancias euclidianas entre cada uno de los centros
+municipales y sus k (5) vecinos más cercanos. Finalmente, se en esta
+lista de vecinos se convirtió en una matriz de pesos espaciales
+normalizada mediante la función nb2listw con el argumento style = “W”,
+lo que asegura que la suma de los pesos de cada fila sea igual a uno.
+Esta normalización es crucial para mantener una influencia total
+constante de los vecinos para cada municipio, permitiendo comparaciones
+justas y equilibradas en el análisis espacial.</p>
+<p>Los modelos errorsarlm son una herramienta poderosa para el análisis
+de datos espaciales, permitiendo capturar y modelar la autocorrelación
+espacial en los errores y proporcionando así inferencias más precisas y
+robustas, sobre todo cuando las covariables y el residual están
+autocorrelacionados (Pebesma y Bivand 2023). La literatura aún no ha
+resuelto la cuestión de cómo informar los resultados del modelo, ya que
+cada covariable ahora está representada por tres impactos. Cuando se
+incluyen covariables espacialmente rezagadas, dos coeficientes se
+reemplazan por tres impactos (Pebesma y Bivand 2023).</p>
+<p>Otros modelos</p>
+<p>Ante la heterocedasticidad y la anormalidad observada, también se
+optó por modelos de mínimos cuadrados generalizados (gls) y modelos
+aditivos generalizados (gam). Los primeros son más flexibles que los
+modelos ols en cuanto a las suposiciones sobre los errores, ya que
+admiten la presencia de heterocedasticidad y autocorrelación en estos.
+En este caso se buscó modelar la heterocedasticidad, especificando que
+la varianza de los errores es diferente para cada clúster. Los segundos
+permiten capturar relaciones no lineales, para ello se especifican
+funciones suaves para las covariables.</p>
+<p>Modelos con medidas alternativas de violencia</p>
+<p>En la literatura no existe consenso respecto a la transformación de
+variables como estrategia para lidiar con heterocedasticidad y
+anormalidad (Clark 2019). Algunos trabajos sugieren que estos problemas
+se pueden tratar a partir de la transformación de las variables
+dependientes e independientes o de la eliminación de valores
+atípicos.</p>
+<p>Sin embargo, otros estudios señalan que, si bien transformar las
+variables puede mejorar ciertos aspectos del modelo, esto se logra a
+costa de empeorar otros, tales como la validez externa del modelo o la
+interpretación de los resultados.</p>
+<p>En ese mismo sentido, se argumenta que los valores considerados
+atípicos podrían indicar que el modelo no captura adecuadamente el
+proceso de generación de datos, y por tanto, eliminarlos sería
+inadecuado. En suma, Clark (2019) sugiere utilizar modelos que se
+adapten mejor a la complejidad del fenómeno, en lugar de manipular los
+datos para ajustarlos a modelos simplificados. De ahí que en este
+trabajo se estimaron modelos gam y gls. Por otro lado, pese a esta falta
+de consenso en la literatura, se exploraron modelos con variables
+suavizadas y logarítmicas, con el objetivo de aportar evidencia sobre el
+efecto no lineal de la violencia en el DFI y distinguirlo de problemas
+atribuibles a errores de medición. Se verificaron los supuestos
+estadísticos de los modelos. Para verificar si los residuos se
+distribuyen normalmente, se realizaron histogramas y gráficos
+cuantil-cuantil (Q-Q), también se realizaron las pruebas analíticas de
+Jarque-Bera. Para verificar el supuesto de homocedasticidad de los
+residuales se consideraron las pruebas de Breusch-Pagan; para las
+pruebas de normalidad y homocedasticidad, se espera obtener p-valores
+superiores a 0.05, que muestran que se puede rechazar la hipótesis nula
+de normalidad y homocedasticidad. Ante la no normalidad y
+heterocedasticidad se calcularon modelos cuadrados robustos. Esto ayuda
+a obtener estimaciones más precisas y confiables de los coeficientes de
+regresión y sus intervalos de confianza en tales situaciones.
+Adicionalmente se podrían obtener estimaciones con errores robustos a la
+heterocedasticidad.</p>
+<p>Para medir el grado de multicolinealidad se calculó el índice de
+condición (IC) de la matriz de variables auxiliares finales, valores de
+IC menores a 30 se consideran una prueba de multicolinealidad moderada,
+lo que garantiza una estimación eficiente de los parámetros de ajuste.
+Además, se analizaron los diagramas de dispersión obtenidos de las
+estimaciones frente a residuos.</p>
+<div id="entorno-de-trabajo-y-librerías-1" class="section level3">
+<h3>Entorno de trabajo y librerías</h3>
+<p>Aquí te dejo una descripción de cada paquete utilizado en tu script,
+explicando brevemente para qué se utiliza en el análisis de datos y
+procesamiento:</p>
+<p>class: Este paquete proporciona funciones para la clasificación, como
+el algoritmo K-nearest neighbors (KNN). Es útil para realizar tareas de
+clasificación y análisis de patrones.</p>
+<p>pscl: Proporciona herramientas para el análisis de datos de ciencia
+política y sociales, incluyendo modelos de regresión para datos
+dispersos (como modelos de ceros inflados y binomiales negativos).</p>
+<p>MASS: Incluye funciones y conjuntos de datos para análisis
+estadístico, como la estimación de modelos lineales robustos (rlm) y
+otras técnicas avanzadas de modelado.</p>
+<p>lmtest: Contiene herramientas para realizar pruebas de hipótesis
+sobre modelos lineales, como la prueba de Breusch-Pagan para
+heterocedasticidad.</p>
+<p>sandwich: Ofrece estimadores robustos de la matriz de
+varianza-covarianza para modelos lineales, utilizados para ajustar
+modelos cuando las suposiciones de homocedasticidad no se cumplen.</p>
+<p>raster: Este paquete es útil para el análisis de datos espaciales
+rasterizados. Se utiliza en estudios de datos geográficos para la
+manipulación y análisis de mapas y superficies.</p>
+<p>sf: Proporciona una estructura de datos para representar objetos
+espaciales simples, que es compatible con el estándar Simple Features.
+Es esencial para manejar datos espaciales y realizar análisis
+geoespaciales.</p>
+<p>rgdal: Ofrece interfaces para la lectura y escritura de datos
+geoespaciales en varios formatos, incluyendo shapefiles. Es fundamental
+en la integración de datos geográficos.</p>
+<p>ggplot2: Es uno de los paquetes más populares para la visualización
+de datos en R. Facilita la creación de gráficos complejos de forma
+intuitiva y altamente personalizable.</p>
+<p>caret: Herramienta integral para la clasificación y regresión en R,
+que incluye funciones para la preprocesamiento de datos, ajuste de
+modelos y validación cruzada.</p>
+<p>broom: Convierte modelos estadísticos en data frames ordenados, lo
+que facilita la manipulación y visualización de los resultados de los
+modelos.</p>
+<p>foreign: Proporciona funciones para leer y escribir datos en varios
+formatos de software estadístico como SPSS, SAS, y Stata, facilitando el
+intercambio de datos entre diferentes programas.</p>
+<p>readr: Parte del tidyverse, este paquete proporciona funciones para
+leer datos de archivos de texto de manera rápida y fácil, como CSV o
+TSV.</p>
+<p>dplyr: Es un paquete esencial del tidyverse para la manipulación de
+datos, ofreciendo verbos para filtrar, seleccionar, mutar y agrupar
+datos de manera eficiente.</p>
+<p>janitor: Ofrece herramientas para limpiar y examinar datos, como la
+normalización de nombres de columnas y la creación de tablas de
+contingencia.</p>
+<p>survey: Proporciona herramientas para el análisis de encuestas
+complejas, incluyendo el cálculo de estimadores, errores estándar y
+pruebas de hipótesis con diseños muestrales complejos.</p>
+<p>tidyverse: Un metapaquete que incluye ggplot2, dplyr, tidyr, readr,
+purrr, tibble, stringr, y forcats, cubriendo la mayoría de las
+necesidades de análisis de datos desde la importación hasta la
+visualización.</p>
+<p>data.table: Es una extensión de data.frame que ofrece herramientas
+para la manipulación de grandes conjuntos de datos de manera rápida y
+eficiente.</p>
+<p>questionr: Herramientas útiles para la investigación en ciencias
+sociales, incluyendo funciones para el análisis de cuestionarios y
+encuestas.</p>
+<p>readxl: Parte del tidyverse, este paquete permite leer datos desde
+archivos Excel (.xls y .xlsx) de forma rápida y sin necesidad de
+depender de Java.</p>
+<p>writexl: Facilita la exportación de datos a archivos Excel (.xlsx) de
+manera simple y sin necesidad de dependencias externas como Java.</p>
+<p>haven: Permite importar y exportar archivos de datos de SPSS, Stata y
+SAS, facilitando el trabajo con datos provenientes de estos programas en
+R.</p>
+<p>knitr: Se utiliza para generar reportes dinámicos en R, convirtiendo
+código R y texto en documentos HTML, PDF, y más.</p>
+<p>kableExtra: Extiende la funcionalidad de knitr::kable permitiendo la
+creación de tablas altamente personalizables en HTML y PDF, ideal para
+la presentación de resultados.</p>
+<pre class="r"><code># Limpiar el entorno de trabajo
+rm(list = ls())
+graphics.off()
+options(scipen = 999)
+
+# Lista de paquetes necesarios
+paquetes &lt;- c(
+  &quot;class&quot;, &quot;pscl&quot;, &quot;MASS&quot;, &quot;lmtest&quot;, &quot;sandwich&quot;, &quot;tseries&quot;, &quot;raster&quot;, 
+  &quot;sf&quot;, &quot;rgdal&quot;, &quot;ggplot2&quot;, &quot;caret&quot;, &quot;hot.deck&quot;, &quot;broom&quot;, &quot;beepr&quot;, 
+  &quot;foreign&quot;, &quot;readr&quot;, &quot;dplyr&quot;, &quot;janitor&quot;, &quot;survey&quot;, &quot;openxlsx&quot;, 
+  &quot;tidyverse&quot;, &quot;date&quot;, &quot;data.table&quot;, &quot;questionr&quot;, &quot;readxl&quot;, &quot;writexl&quot;, 
+  &quot;PracTools&quot;, &quot;haven&quot;, &quot;knitr&quot;, &quot;kableExtra&quot;
+)
+
+# Instalar y cargar paquetes
+for (paquete in paquetes) {
+  if (!require(paquete, character.only = TRUE)) {
+    install.packages(paquete)
+  }
+  library(paquete, character.only = TRUE)
+}</code></pre>
+</div>
+</div>
 </div>
 
 
