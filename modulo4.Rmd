@@ -51,38 +51,39 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 <div class="two-columns">
 <div class="column">
-<p><strong>ACNUR.</strong> Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.</p>
-<p><strong>AIC.</strong> Criterio de Información de Akaike.</p>
-<p><strong>BIC.</strong> Criterio de Información Bayesiano.</p>
-<p><strong>CCI.</strong> Corte Penal Internacional.</p>
-<p><strong>CEAVE.</strong> Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.</p>
-<p><strong>CENSO 2020.</strong> Censo de Población y Vivienda 2020.</p>
-<p><strong>CMDPDH.</strong> Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.</p>
-<p><strong>CV.</strong> Coeficientes de Variación.</p>
-<p><strong>DFI.</strong> Desplazamiento Forzado Interno/Desplazada Forzada Interna.</p>
-<p><strong>DP2.</strong> Índice de intensidad migratoria.</p>
-<p><strong>ECADEFI-CHIH.</strong> Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.</p>
-<p><strong>EGRISS.</strong> Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.</p>
-<p><strong>ENADID.</strong> Encuesta Nacional de la Dinámica Demográfica.</p>
-<p><strong>ENOE.</strong> Encuesta Nacional de Ocupación y Empleo.</p>
+<p><strong><b>ACNUR.</b></strong> Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados.</p>
+<p><strong><b>AIC.</b></strong> Criterio de Información de Akaike.</p>
+<p><strong><b>BIC.</b></strong> Criterio de Información Bayesiano.</p>
+<p><strong><b>CCI.</b></strong> Corte Penal Internacional.</p>
+<p><strong><b>CEAVE.</b></strong> Comisión Ejecutiva de Atención a Víctimas del Estado de Chihuahua.</p>
+<p><strong><b>CENSO 2020.</b></strong> Censo de Población y Vivienda 2020.</p>
+<p><strong><b>CMDPDH.</b></strong> Comisión Mexicana de Defensa y Promoción de los Derechos Humanos.</p>
+<p><strong><b>CV.</b></strong> Coeficientes de Variación.</p>
+<p><strong><b>DFI.</b></strong> Desplazamiento Forzado Interno/Desplazada Forzada Interna.</p>
+<p><strong><b>DP2.</b></strong> Índice de intensidad migratoria.</p>
+<p><strong><b>ECADEFI-CHIH.</b></strong> Encuesta para Caracterizar a la Población en Situación de Desplazamiento Forzado Interno en el Estado de Chihuahua.</p>
+<p><strong><b>EGRISS.</b></strong> Grupo de Expertos en Estadísticas sobre Refugiados Desplazados Internos y Apátridas.</p>
+<p><strong><b>ENADID.</b></strong> Encuesta Nacional de la Dinámica Demográfica.</p>
+<p><strong><b>ENOE.</b></strong> Encuesta Nacional de Ocupación y Empleo.</p>
 </div>
 
 <div class="column">
-<p><strong>ENVIPE.</strong> Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.</p>
-<p><strong>HFSSSD.</strong> Encuesta de Alta Frecuencia de Sudán del Sur.</p>
-<p><strong>ICTY.</strong> Tribunal Penal Internacional para la ex Yugoslavia.</p>
-<p><strong>IDMC.</strong> Centro de Monitoreo de Desplazamiento Interno.</p>
-<p><strong>INE.</strong> Instituto Nacional de Estadística.</p>
-<p><strong>INEGI/Instituto.</strong> Instituto Nacional de Estadística y Geografía.</p>
-<p><strong>IRIS.</strong> Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.</p>
-<p><strong>IRRS.</strong> Recomendaciones Internacionales sobre Estadísticas de Refugiados.</p>
-<p><strong>JIPS.</strong> Joint IDP Profiling Service.</p>
-<p><strong>ONE.</strong> Oficinas nacionales de estadística.</p>
-<p><strong>PRINCIPIOS RECTORES.</strong> Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.</p>
-<p><strong>SNIEG.</strong> Sistema Nacional de Información Estadística y Geográfica.</p>
-<p><strong>SNIGSPIJ.</strong> Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.</p>
+<p><strong><b>ENVIPE.</b></strong> Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública.</p>
+<p><strong><b>HFSSSD.</b></strong> Encuesta de Alta Frecuencia de Sudán del Sur.</p>
+<p><strong><b>ICTY.</b></strong> Tribunal Penal Internacional para la ex Yugoslavia.</p>
+<p><strong><b>IDMC.</b></strong> Centro de Monitoreo de Desplazamiento Interno.</p>
+<p><strong><b>INE.</b></strong> Instituto Nacional de Estadística.</p>
+<p><strong><b>INEGI/Instituto.</b></strong> Instituto Nacional de Estadística y Geografía.</p>
+<p><strong><b>IRIS.</b></strong> Recomendaciones Internacionales sobre Estadísticas de Personas Desplazadas Internamente.</p>
+<p><strong><b>IRRS.</b></strong> Recomendaciones Internacionales sobre Estadísticas de Refugiados.</p>
+<p><strong><b>JIPS.</b></strong> Joint IDP Profiling Service.</p>
+<p><strong><b>ONE.</b></strong> Oficinas nacionales de estadística.</p>
+<p><strong><b>PRINCIPIOS RECTORES.</b></strong> Principios Rectores de los Desplazamientos Internos de la Organización de las Naciones Unidas.</p>
+<p><strong><b>SNIEG.</b></strong> Sistema Nacional de Información Estadística y Geográfica.</p>
+<p><strong><b>SNIGSPIJ.</b></strong> Subsistema Nacional de Información sobre Gobierno Seguridad Pública e Impartición de Justicia.</p>
 </div>
 </div>
+
 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
@@ -164,7 +165,10 @@ Es de esperarse que entre fuentes haya diferencias en las definiciones de variab
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
-# 3. Procedimiento 
+# 3. Estimación a partir de integración de ENADID (2018) y ENVIPE (2018)
+
+### [**Descarga el protecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
+<br><br>
 
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
 
@@ -761,9 +765,14 @@ write.xlsx(list_of_datasets,
 
 ```
 
+<br><br>
+<br><br>
 
+# 4. Análisis de las macrodeterminantes de la emigración  
 
-## Análisis de las macrodeterminantes de la emigración  
+### [**Descarga el protecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
+<br><br>
+
 Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
 La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
 
@@ -819,7 +828,7 @@ donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
   
-# Variables
+### Variables
 
 Con base en la literatura, inicialmente se consideraron ocho variables de control: 
 1.	Nivel de desempleo (empleo): porcentaje de población desocupada (estimador Horvitz-Thompson a partir de datos del cuestionario ampliado del Censo 2020).
@@ -983,27 +992,29 @@ kableExtra: Extiende la funcionalidad de knitr::kable permitiendo la creación d
 
 ```{r, eval=FALSE}
 
-# Limpiar el entorno de trabajo
+# Clear environment and setup options
 rm(list = ls())
 graphics.off()
-options(scipen = 999)
+options(warn = -1, scipen = 9999)
+Sys.setlocale("LC_ALL", "es_ES.UTF-8")
 
-# Lista de paquetes necesarios
-paquetes <- c(
-  "class", "pscl", "MASS", "lmtest", "sandwich", "tseries", "raster", 
-  "sf", "rgdal", "ggplot2", "caret", "hot.deck", "broom", "beepr", 
-  "foreign", "readr", "dplyr", "janitor", "survey", "openxlsx", 
-  "tidyverse", "date", "data.table", "questionr", "readxl", "writexl", 
-  "PracTools", "haven", "knitr", "kableExtra"
+# Load and install necessary packages
+required_packages <- c(
+  "AER", "beepr", "brms", "broom", "caret", "class", "classInt", "dplyr",
+  "fitdistrplus", "flextable", "foreign", "ggplot2", "gt", "gtsummary",
+  "gridExtra", "kableExtra", "knitr", "janitor", "lmtest", "lme4", "mctest", "MASS", "mgcv", 
+  "nlme", "openxlsx", "pscl", "raster", "readr", "readxl", "rgdal", 
+  "robustbase", "rsample", "sandwich", "sf", "skimr", "spatialreg", 
+  "spdep", "tseries", "tidyr", "sjPlot"
 )
 
-# Instalar y cargar paquetes
-for (paquete in paquetes) {
-  if (!require(paquete, character.only = TRUE)) {
-    install.packages(paquete)
-  }
-  library(paquete, character.only = TRUE)
-}
+# Install any missing packages and load all
+new_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
+if(length(new_packages)) install.packages(new_packages)
+lapply(required_packages, library, character.only = TRUE)
+
+# Set default ggplot2 theme
+theme_set(theme_void())
 
 ```
 
@@ -1043,12 +1054,13 @@ emigrantes_t$id_mun <- paste0(emigrantes_t$ent, trimws(emigrantes_t$mun))
 # Mostrar el resultado
 print(emigrantes_t)
 
-
 ```
-En este paso, se limpian y organizan los datos de población migrante, y se preparan para su posterior análisis.    
 
-2.2 Tasas de Homicidios por Municipio     
-Se carga otro conjunto de datos que contiene las tasas de homicidios por cada cien mil habitantes en municipios mexicanos, para el período 2015-2017.    
+
+2.2. Variable independiente. Solicitud: CAS-198910-X3H1D7 CRM:0874324. Tasa (bayesianos empíricos) municipal de homicidios por cada cien mil habitantes 2015-2017
+# Leer el archivo Excel y limpiar los nombres de las columnas
+# Seleccionar las columnas necesarias
+
 ```{r, eval=FALSE}
 # Leer el archivo Excel y limpiar los nombres de las columnas
 # Seleccionar las columnas necesarias
@@ -1057,6 +1069,7 @@ tasas_homicidios <- read_excel("Tasas homicidios.xlsx", sheet = "Datos") %>%
   dplyr::select(id_mun, ent_nom, mun_nom, tm15_17)
 
 ```
+
 2.3 Marco Geoestadístico 2018   
 Aquí, cargamos y procesamos el marco geoestadístico, que es esencial para asociar datos espaciales a los municipios y entidades de México.  
 ```{r, eval=FALSE}
@@ -1067,7 +1080,6 @@ marco_geoest <- st_read("MG_2020_Integrado/00mun.shp") %>%
 
 marco_geoest_ent <- st_read("MG_2020_Integrado/00ent.shp") %>% 
   clean_names()
-
 
 ```
 
@@ -1090,11 +1102,13 @@ ca_censo_2020 <- read_csv("dfi_tasa_hom_itam.csv") %>%
   )
 
 ```
+
 2.5 Coeficiente de Gini e Índice de Marginación  
 Se descarga y procesa la información sobre el coeficiente de Gini e índice de marginación municipal para el año 2015.  
 ```{r, eval=FALSE}
 # Descargar y procesar datos del coeficiente de Gini
 nombres <- c("clave_ent", "entidad", "id_mun", "nom_mun", "coef_de_gini", "ingreso_ratio") 
+# Definir la URL del archivo ZIP
 url_gini <- "https://www.coneval.org.mx/Medicion/MP/Documents/Cohesion_social/Indicadores_cohesion_social_municipio_Mexico_2010-2020.zip"
 
 # Descargar y descomprimir el archivo ZIP
@@ -1109,10 +1123,9 @@ gini <- read_excel(archivo_gini,sheet = "2015", range = "B11:G2467", col_names =
 # Convertir variables numericas
 gini <- mutate_at(gini, vars(coef_de_gini:ingreso_ratio), as.numeric)
 
-
 ```
-2. Carga y Procesamiento de Datos  
-2.1 Establecer Causas de Defunción por Homicidio  
+
+2.6 Establecer Causas de Defunción por Homicidio  
 Primero, definimos un vector que contiene los códigos CIE-10 correspondientes a causas de defunción por homicidio.  
  
 ```{r, eval=FALSE}
@@ -1151,7 +1164,6 @@ for (year in years) {
 defunciones_combinada <- bind_rows(defunciones_list)
 
 ```
-2.3 Generar Variables y Agrupar Datos   
 Después de combinar los datos de defunciones, se generan nuevas variables y se agrupan los datos según la entidad y el municipio de registro, así como por año.   
 
 ```{r, eval=FALSE}
@@ -1173,31 +1185,33 @@ homicidio_anuales <- defunciones_combinada %>%
   summarise(homicidios = n())
 
 ```
-2.4 Carga de Otros Datos: Índice de Marginación e Intensidad Migratoria   
+2.7 Carga de Otros Datos: Índice de Marginación e Intensidad Migratoria   
 Cargamos y procesamos datos adicionales como el índice de marginación y la intensidad migratoria para complementar el análisis.   
 
 ```{r, eval=FALSE}
-
-# Índice de marginación normalizado 2015 (carencias poblacionales) por localidad, municipio y entidad
 url_imm <- "http://www.conapo.gob.mx/work/models/CONAPO/Marginacion/Datos_Abiertos/Municipio/IMM_DP2_2015.xlsx"
 
-# Descargar y leer el archivo Excel
+
+# Descarga el archivo y guárdalo localmente
 archivo_imm <- tempfile()
 download.file(url_imm, archivo_imm, mode = "wb")
-imm <- read_xlsx(archivo_imm, sheet = "IMM_2015") %>% 
+
+# Leer el archivo Excel
+imm <- readxl::read_xlsx(archivo_imm, sheet = "IMM_2015") %>% 
   clean_names() %>% 
   rename(id_mun = cve_mun)
 
-# Intensidad migratoria municipal. Fuente CONAPO
+
+# 2.8. Intensidad migratoria municipal. Fuente CONAPO: https://www.datos.gob.mx/busca/dataset/indice-absoluto-de-intensidad-migratoria-mexico--estados-unidos-2000--2010
 iaim_2020 <- read_csv("https://conapo.segob.gob.mx/work/models/CONAPO/IIM/iim_base2020m.csv")
 iaim_2020 <- iaim_2020  %>% 
   clean_names() %>% 
-  mutate(id_mun = ifelse(nchar(cve_geo) == 4, paste0("0", cve_geo), cve_geo))
+  mutate(id_mun = ifelse(nchar(cve_geo) == 4,
+                         paste0("0", cve_geo), cve_geo))
 
 ```
 
-
-2.5 Procesamiento de Datos de Población   
+2.8 Procesamiento de Datos de Población   
 Se cargan y procesan los datos de población por grupos de edad, necesarios para calcular tasas y realizar otros análisis.  
 
 ```{r, eval=FALSE}
@@ -1210,8 +1224,10 @@ poblacion_municipal <- bind_rows(
 
 # Arreglar claves de los municipios
 poblacion_municipal <- poblacion_municipal %>% 
-  mutate(entidad = ifelse(nchar(clave_ent) == 1, paste0("0", clave_ent), clave_ent),
-         id_mun = ifelse(nchar(clave) == 4, paste0("0", clave), clave))
+  mutate(entidad = ifelse(nchar(clave_ent) == 1,
+                          paste0("0", clave_ent), clave_ent),
+         id_mun = ifelse(nchar(clave) == 4,
+                         paste0("0", clave), clave))
 
 # Filtrar por año y grupo de edad
 pob_5_y_mas_mun_2017 <- poblacion_municipal %>%
@@ -1219,10 +1235,23 @@ pob_5_y_mas_mun_2017 <- poblacion_municipal %>%
   group_by(id_mun) %>%
   summarise(poblacion = sum(pob))
 
+pob_14_25_2017 <- poblacion_municipal %>%
+  filter(anio == 2017 & (edad_quin == "pobm_15_19" | edad_quin == "pobm_20_24")) %>%
+  group_by(id_mun) %>%
+  summarise(pob15_24 = sum(pob))
+
+pob_45_64_2017 <- poblacion_municipal %>%
+  filter(anio == 2017 & (edad_quin == "pobm_45_49" | edad_quin == "pobm_50_54" | edad_quin == "pobm_55_59" | edad_quin == "pobm_60_64")) %>%
+  group_by(id_mun) %>%
+  summarise(pob45_64 = sum(pob))
+
+pob_anual <- poblacion_municipal %>%
+  filter(anio > 2014 & anio < 2020)%>%
+  group_by(id_mun, anio) %>%
+  summarise(poblacion_anual = sum(pob))
 ```
 
-Más grupos de edad...
-2.6 Cálculo de Tasas Promedio de Homicidio  
+2.9 Cálculo de Tasas Promedio de Homicidio  
 Se calculan las tasas promedio de homicidio por cada 100,000 habitantes utilizando los datos de población y defunciones.  
 
 ```{r, eval=FALSE}
@@ -1231,36 +1260,61 @@ tasas <- pob_anual %>%
   left_join(homicidio_anuales, by = c("id_mun", "anio"="anio_regis")) %>%
   dplyr::select(-ends_with(".x")) %>%
   dplyr::select(-ends_with("regis")) %>% 
-  rename_with(~ stringr::str_remove(.x, pattern = ".y"), ends_with(".y")) %>%
+  rename_with(~ stringr::str_remove(.x, pattern = ".y"), ends_with(".y"))
+
+# Imputar ceros en lugar de NA en la columna 'homicidios' en minúsculas
+tasas$homicidios <- ifelse(is.na(tasas$homicidios), 0, tasas$homicidios)
+
+# Calcular la tasa de homicidios por cada 100,000 habitantes
+tasas <- tasas %>%
   mutate(
-    tasa_hom_100mil = round((homicidios / poblacion_anual) * 100000, 1),
-    ent_regis = substr(id_mun, 1, 2)
+    tasa_hom_100mil = round((homicidios / poblacion_anual) * 100000, 1),  # Calcular la tasa y redondear a 1 decimal
+    ent_regis = substr(id_mun, 1, 2)  # Extraer los dos primeros caracteres de id_mun y asignar a ent_regis
   )
 
-# Calcular tasas promedio suavizadas usando el método de Bayes Empírico
+
+##### Calcular tasas promedio suavizadas
+# Agrupar los datos por entidad y año
+
+# Calcular todos los parámetros necesarios para la fórmula de varianza
 tasas_por_edo <- tasas  %>%
   group_by(ent_regis, anio) %>%
   mutate(
-    mu = sum(homicidios) / sum(poblacion_anual),
-    O_i = homicidios,
-    P_i = poblacion_anual,
-    n = n(),
-    r_i = homicidios / poblacion_anual,
-    variance = var(homicidios / poblacion_anual)
+    mu = sum(homicidios) / sum(poblacion_anual),  # Estimación 'mu' para el estado/condado
+    O_i = homicidios,                             # Valor 'O_i' (total de casos)
+    P_i = poblacion_anual,                         # Valor 'P_i' (total de población)
+    n = n(),                                       # Número de observaciones (total de registros)
+    r_i = homicidios / poblacion_anual,            # Estimación 'r_i' para cada observación
+    variance = var(homicidios / poblacion_anual)  # Varianza de 'r_i'
   ) %>%
   mutate(
-    w_i = variance / (variance + mu / P_i),
-    eb_bayes = w_i * r_i + (1 - w_i) * mu
+    w_i = variance / (variance + mu / P_i),         # Ponderación 'w_i'
+    eb_bayes = w_i * r_i + (1 - w_i) * mu           # Estimación 'eb_bayes' final
   )
 
-# Resumir tasas suavizadas por municipio
 prome_hom_rate <-  tasas_por_edo %>% 
   group_by(id_mun) %>% 
-  summarise(tasa_hom_suav = (mean(eb_bayes) * 10^5))
+  summarise(tasa_hom_suav=(mean(eb_bayes)*10^5))
+
+# Calcular tasa promedio
+tasas_promedio <- tasas %>% 
+  group_by(id_mun) %>% 
+  summarise(homicidios = round(sum(as.numeric(homicidios), na.rm = TRUE), 1),
+            pob_promedio = round(mean(poblacion_anual), 1),
+            tasa_promedio_hom = round(mean(tasa_hom_100mil, na.rm = TRUE), 1))
+# th_suvizadas= round(mean(th_prom_suav, na.rm = TRUE), 1 )*10^5)
+# tasa_prom_predic=mean(predicciones, na.rm = TRUE),
+# tasa_prom_est=mean(estimaciones, na.rm = TRUE))
+tasas_promedio <- tasas_promedio %>% 
+  left_join(prome_hom_rate)
+# # Imputar 0 en las variables 'tasa_prom_predic' y 'tasa_prom_estimada' si 'homicidios' es igual a 0
+# Actualizar tasa_hom_suav basado en la condición de homicidios
+tasas_promedio$th_prom_suav <- ifelse(tasas_promedio$homicidios == 0, 0, tasas_promedio$tasa_hom_suav)
+# tasas_promedio$th_prom_suav <- ifelse(tasas_promedio$homicidios == 0, 0, tasas_promedio$tasa_hom_suav)
 ```
 
 
-2.7 Integración de Datos y Proyección Geográfica  
+2.10 Integración de Datos y Proyección Geográfica  
 Se integran los diferentes conjuntos de datos en un único marco de datos y se transforman a la proyección geográfica correcta.
 
 ```{r, eval=FALSE}
@@ -1289,11 +1343,154 @@ datos_integrados <- marco_geoest %>%
 datos_integrados <- st_transform(datos_integrados, crs = "+init=epsg:6362")
 
 ```
+
+2.11 Limpieza del ambiente
+```{r, eval=FALSE}
+# Limpiar ambiente
+rm(ca_censo_2020,
+   defunciones,
+   defunciones_combinada,
+   defunciones_list,
+   emigrantes_t,
+   gini,
+   hom_mun_quiquenal,
+   homicidio_anuales,
+   iaim_2010,
+   imm,
+   modelo,
+   pob_14_25_2017,
+   pob_45_64_2017,
+   pob_5_y_mas_mun_2017,
+   pob_anual,
+   poblacion_municipal,
+   tasas,
+   tasas_homicidios,
+   tasas_promedio,
+   archivo_gini,
+   archivo_imm,
+   causa_defunciones,
+   file_name,
+   i,
+   nombres,
+   paquetes,
+   temp_zip_gini,
+   url_gini,
+   url_imm,
+   year,
+   years,
+   unir_y_limpiar
+)
+
+# Quitar municipios no establecidos antes de 2015
+data_mun15 <- datos_integrados %>%
+  filter(!is.na(ent_nom) & !is.na(ent)) %>%
+  dplyr::select(-c(ingreso_ratio, sexo, clave_ent, entidad, sbasc, ovsde, ovsee, ovsae,
+                   ovpt, vhac, pl_5000, po2sm, ent, mun, nom_mun, viv_rem, viv_circ, viv_ret, lugar)) %>%
+  mutate(tasa_dfi = (as.numeric(por_violencia) / pob_promedio) * 100000)
+```
+
+2.12 Cálculo de tasas: El código calcula diferentes tasas relacionadas con la población, la migración, el empleo, la familia, el matrimonio, y la educación. Todas estas tasas se calculan en base a un denominador común (pob_promedio) y se multiplican por 100,000 para estandarizarlas por cada 100,000 personas.  
+
+**tasa_migracion:** Calcula la tasa de migración. Es la proporción de la población total (poblacion_total) en relación con la población promedio (pob_promedio), multiplicada por 100,000.
+
+**tasa_trabajo_b:** Calcula la tasa de personas que buscan trabajo. Es la proporción de la cantidad de personas que buscan trabajo (buscar_trabajo) en relación con la población promedio, multiplicada por 100,000.
+
+**tasa_trabajo_o:** Calcula la tasa de personas que cambian o buscan una nueva oferta de trabajo. Es la proporción de personas que cambiaron o buscaron una nueva oferta de trabajo (cambio_u_oferta_de_trabajo) en relación con la población promedio, multiplicada por 100,000.
+
+**tasa_familia:** Calcula la tasa de personas que se reunieron con su familia. Es la proporción de personas que se reunieron con la familia (reunirse_con_la_familia) en relación con la población promedio, multiplicada por 100,000.
+
+**tasa_caso:** Calcula la tasa de personas que se casaron o unieron. Es la proporción de personas que se casaron o unieron (se_caso_o_unio) en relación con la población promedio, multiplicada por 100,000.
+
+**tasa_estudiar:** Calcula la tasa de personas que migraron para estudiar. Es la proporción de personas que migraron para estudiar (estudiar) en relación con la población promedio, multiplicada por 100,000.
+
+**as.numeric:** Esta función se usa para asegurar que las columnas utilizadas en los cálculos sean de tipo numérico. Si alguna de estas columnas es de tipo carácter, `as.numeric` las convierte a números antes de realizar las operaciones.
+
+
+En resumen, creamos nuevas variables (tasas) en el data frame data_mun15, las cuales representan tasas s por cada 100,000 personas para diferentes motivos de migración.
+
+```{r, eval=FALSE}
+data_mun15 <-  data_mun15  %>%
+  mutate(tasa_migracion = (as.numeric(poblacion_total) / pob_promedio) * 100000,
+         tasa_trabajo_b = (as.numeric(buscar_trabajo) / pob_promedio) * 100000,
+         tasa_trabajo_o = (as.numeric(cambio_u_oferta_de_trabajo) / pob_promedio) * 100000,
+         tasa_familia = (as.numeric(reunirse_con_la_familia) / pob_promedio) * 100000,
+         tasa_caso = (as.numeric(se_caso_o_unio) / pob_promedio) * 100000, 
+         tasa_estudiar = (as.numeric(estudiar) / pob_promedio) * 100000)
+```
+
 3. Análisis de Datos   
 3.1 Análisis Descriptivo por Cluster  
 Realizamos un análisis descriptivo de los datos agrupados por clusters, utilizando estadísticas resumidas.
 
 ```{r, eval=FALSE}
+
+# Análisis
+
+# Este código primero completa los valores perdidos en ciertas columnas con la mediana de los datos.
+# Luego, selecciona las columnas numéricas, aplica el algoritmo k-means para identificar los clusters,
+# agrega la variable de cluster al dataframe y calcula las coordenadas de los centroides de las geometrías.
+# Finalmente, crea variables adicionales cuadrando algunas de las existentes.
+# Calcular medianas de las variables con valores perdidos y completarlos
+mediana_empleo <- median(data_mun15$empleo, na.rm = TRUE)
+mediana_gini <- median(data_mun15$coef_de_gini, na.rm = TRUE)
+mediana_iim_dp2 <- median(data_mun15$iim_dp2, na.rm = TRUE)
+
+data_mun15$empleo[is.na(data_mun15$empleo)] <- mediana_empleo
+data_mun15$coef_de_gini[is.na(data_mun15$coef_de_gini)] <- mediana_gini
+data_mun15$iim_dp2[is.na(data_mun15$iim_dp2)] <- mediana_gini
+
+# Seleccionar solo las columnas numéricas
+datos_numericos <- data_mun15 %>%
+  st_drop_geometry() %>%
+  select_if(is.numeric)
+
+# Convertir datos a una matriz
+datos_numericos_matrix <- as.matrix(datos_numericos)
+
+# Aplicar k-means para identificar los clusters
+set.seed(123)
+k <- 4
+modelo_clusterizacion <- kmeans(datos_numericos_matrix, centers = k)
+
+# Agregar la variable de cluster al dataframe
+data_mun15$cluster <- as.factor(modelo_clusterizacion$cluster)
+
+# Calcular los centroides de las geometrías y agregar coordenadas al dataframe
+centroides <- st_centroid(data_mun15$geometry)
+data_mun15$lon <- st_coordinates(centroides)[, 1]
+data_mun15$lat <- st_coordinates(centroides)[, 2]
+
+# Crear variables adicionales
+data_mun15$tm15_17_cuadrado <- data_mun15$tm15_17^2
+data_mun15$tasa_prom_cuadrado <- data_mun15$tasa_promedio_hom^2
+data_mun15$tasa_suav_2 <-data_mun15$tasa_hom_suav^2
+data_mun15$ln_pob <- log(data_mun15$pob_promedio)
+# Aproximación A: Añadir 1 para evitar log(0)
+data_mun15$log_tasa_dfi <- log(data_mun15$tasa_dfi + 1)
+data_mun15$log_th <- log(data_mun15$tasa_promedio_hom + 1)
+
+# Hacer mapas
+#source("code4/mapas_smooth_rate_hom.R")
+
+# Funciones útiles para interpretar y escribir resultados de los análisis
+# Función para agregar estrellas de significancia
+add_significance_stars <- function(p_value) {
+  if (p_value < 0.001) {
+    return("***")
+  } else if (p_value < 0.01) {
+    return("**")
+  } else if (p_value < 0.05) {
+    return("*")
+  } else {
+    return("")
+  }
+}
+
+# Función para redondear y formatear los valores
+format_value <- function(value) {
+  return(format(round(value, 3), nsmall = 3))
+}
+
 # Crear un subset del dataframe con las variables especificadas
 variables_interes <- c("tasa_dfi", "tasa_promedio_hom", "tasa_prom_cuadrado", "salario_mun_mediano", "presion_demo", "ln_pob", "cluster")
 
@@ -1329,30 +1526,40 @@ summary_flextable <- flextable::add_header(summary_flextable,
                                            colspan = ncol(summary_flextable))
 
 # Guardar en archivo Word
-flextable::save_as_docx(summary_flextable, path = "RESULTADOS_OK/summary_table_240620.docx")
+flextable::save_as_docx(summary_flextable, path = "Resultados/summary_table_240620.docx")
 
 ```
 
-1. Cálculo de los 5 Vecinos Más Cercanos
+3.2 Cálculo de los 5 Vecinos Más Cercanos
 Primero, se calculan los 5 vecinos más cercanos para cada municipio, basados en las coordenadas de sus centroides.
 
 ```{r, eval=FALSE}
-Copiar código
 # Extraer geometría y centroides de los municipios
+# Paso 2: Calcular los 5 vecinos más cercanos
 mexico.geom <- st_geometry(data_mun15)
 mexico.coords <- st_centroid(mexico.geom) 
+mex5_nb = knn2nb(knearneigh(mexico.coords, k = 5))
 
-# Calcular los 5 vecinos más cercanos
-mex5_nb <- knn2nb(knearneigh(mexico.coords, k = 5))
 
-# Graficar los vecinos más cercanos
-plot(mexico.geom, main = "k = 5", reset = FALSE)
-plot(mex5_nb, mexico.coords, add = TRUE, col = 2, lwd = 1.5)
+# Abrir un dispositivo gráfico para guardar el plot en un archivo PNG
+png("Resultados/vecinos_mas_cercanos.png", width = 800, height = 600)
+
+# Crear el plot
+plot(mexico.geom, 
+     main = "k = 5",
+     reset = FALSE)
+
+plot(mex5_nb, mexico.coords, 
+     add = TRUE, 
+     col = 2, 
+     lwd = 1.5)
+
+# Cerrar el dispositivo gráfico
+dev.off()
 
 ```
 
-
-2. Construcción de la Matriz Espacial
+3.3 Construcción de la Matriz Espacial
 Luego, se construye una matriz espacial basada en los 5 vecinos más cercanos, la cual es esencial para los análisis de autocorrelación espacial.
 
 ```{r, eval=FALSE}
@@ -1375,31 +1582,36 @@ formula_1 <- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + sala
 formula_2 <- as.formula(tasa_dfi ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster)
 
 ```
-3.2 Construcción de Modelos
+3.2 Construcción de Modelos con efecto no lineal de la violencia sobre el DFI
 Se construyen varios modelos de regresión: OLS, Mínimos Cuadrados Robustos, Autorregresivo Espacial, Mínimos Cuadrados Generalizados, Ponderado y Aditivo Generalizado.
 
 ```{r, eval=FALSE}
 
 # Modelos
+# Modelos
 lm_model_2 <- lm(formula_2, data = data_mun15)
 rlm_model_2 <- rlm(formula_2, data = data_mun15)
 sar_model_2 <- errorsarlm(formula_2, data = data_mun15, listw = listw_5)
-gls_model_2 <- gls(formula_1, data = data_mun15, weights = varIdent(form = ~ 1 | factor(cluster)))
-weighted_model_2 <- lm(formula_2, data = data_mun15, weights = peso)
-gam_model_2 <- gam(tasa_dfi ~ s(tasa_promedio_hom) + s(tasa_prom_cuadrado) +
-                   s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + factor(cluster),
+gls_model_2 <- gls(formula_1,
+                   data = data_mun15,
+                   weights = varIdent(form = ~ 1 | factor(cluster)))
+weighted_model_2 <- lm(formula_2,
+                       data = data_mun15, weights = peso)
+gam_model_2 <- gam(tasa_dfi ~ s(tasa_promedio_hom) +   s(tasa_prom_cuadrado) +
+                     s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + factor(cluster),
                    data = data_mun15)
 ```
 
-3.3 Evaluación de los Modelos
-Se define una función para calcular las métricas y pruebas estadísticas de cada modelo, como el AIC, BIC, y pruebas de Breusch-Pagan y Jarque-Bera. También se calcula el índice de Moran si se proporcionan datos espaciales.
+3.2.1 Evaluación de los Modelos no lineales
+Para conocer las bondades de ajuste de los modelos y probar si cumplen con los supuestos, Se define una función, la cual calcula el AIC, BIC, pruebas de Breusch-Pagan y Jarque-Bera. También se calcula el índice de Moran si se proporcionan datos espaciales.
 
 ```{r, eval=FALSE}
-
 # Función para obtener métricas y pruebas
 model_metrics <- function(model, model_name, listw = NULL) {
+  # Summary del modelo
   model_summary <- summary(model)
   
+  # Coeficientes y p-values
   if (inherits(model, "gls")) {
     coefficients <- as.data.frame(coef(model_summary))
     coefficients$term <- rownames(coefficients)
@@ -1470,6 +1682,7 @@ model_metrics <- function(model, model_name, listw = NULL) {
     moran_p <- NA
   }
   
+  # Consolidar resultados en una lista
   results <- list(
     model_name = model_name,
     coefficients = coefficients,
@@ -1486,37 +1699,1522 @@ model_metrics <- function(model, model_name, listw = NULL) {
   
   return(results)
 }
+
 ```
+Se aplica la función a cada modelo y de consolidan los resultados en una tabla para exportar en formato .csv y .docx
+
+```{r, eval=FALSE}
+# Obtener métricas para cada modelo
+lm_results <- model_metrics(lm_model_2, "Linear Model (lm)")
+rlm_results <- model_metrics(rlm_model_2, "Robust Linear Model (rlm)")
+sar_results <- model_metrics(sar_model_2, "Spatial Autoregressive Model (sar)", listw_5)
+gls_results <- model_metrics(gls_model_2, "Generalized Least Squares (gls)")
+weighted_results <- model_metrics(weighted_model_2, "Weighted Linear Model (lm)")
+gam_results <- model_metrics(gam_model_2, "Generalized Additive Model (gam)")
+
+# Crear una tabla consolidada
+consolidate_results <- function(results_list) {
+  consolidated <- bind_rows(lapply(results_list, function(result) {
+    result$coefficients %>%
+      mutate(model = result$model_name,
+             aic = result$aic,
+             bic = result$bic,
+             bp_stat = result$bp_stat,
+             bp_pvalue = result$bp_pvalue,
+             jb_stat = result$jb_stat,
+             jb_pvalue = result$jb_pvalue,
+             moran_i = result$moran_i,
+             moran_p = result$moran_p) %>%
+      dplyr::select(model, term, estimate, `[std.error]`, p.value, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p)
+  }))
+  
+  # Añadir VIF
+  vif_df <- bind_rows(lapply(results_list, function(result) {
+    if (!is.na(result$vif$term[1])) {
+      result$vif %>%
+        mutate(model = result$model_name) %>%
+        dplyr::select(model, term, vif)
+    } else {
+      data.frame(model = result$model_name, term = NA, vif = NA)
+    }
+  }))
+  
+  consolidated <- left_join(consolidated, vif_df, by = c("model", "term"))
+  
+  return(consolidated)
+}
+
+# Consolidar todos los resultados
+all_results <- consolidate_results(list(lm_results, rlm_results, sar_results, gls_results, weighted_results, gam_results))
+
+# Definir una función para agregar estrellas de significancia
+add_significance_stars <- function(p_value) {
+  if (is.na(p_value)) {
+    return("")
+  } else if (p_value < 0.001) {
+    return("***")
+  } else if (p_value < 0.01) {
+    return("**")
+  } else if (p_value < 0.05) {
+    return("*")
+  } else if (p_value < 0.1) {
+    return(".")
+  } else {
+    return("")
+  }
+}
+
+# Agregar estrellas de significancia
+all_results <- all_results %>%
+  mutate(significance = sapply(p.value, add_significance_stars))
+
+# Renombrar "term" como "Variable" y poner std.error entre corchetes
+colnames(all_results)[colnames(all_results) == "term"] <- "Variable"
+colnames(all_results)[colnames(all_results) == "std.error"] <- "[std.error]"
+
+# Concatenar "std.error" a "estimate" y asignarlo a "Coeficiente"
+all_results$estimate <- round(all_results$estimate,5)
+all_results$'[std.error]' <- round(all_results$'[std.error]',5)
+all_results <- all_results %>%
+  mutate(Coeficiente = paste0(estimate, " [", `[std.error]`, "]", significance))
+
+# Eliminar columnas innecesarias
+resultados_completos <- all_results %>%
+  dplyr::select(-estimate, -`[std.error]`, -p.value, -significance)
+
+
+# Crear df1
+df1 <- resultados_completos %>% 
+  dplyr::select(model, Variable, Coeficiente) %>%
+  pivot_wider(names_from = model, values_from = Coeficiente)
+
+
+df2 <- resultados_completos %>% 
+  dplyr::select(model, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p) %>%
+  distinct() %>%
+  pivot_longer(cols = -model, names_to = "Variable", values_to = "value") %>%
+  pivot_wider(names_from = model, values_from = value)
+
+
+# Unir df1_long y df2 por la columna 'model'
+combined_df <- rbind(df1, df2)
+
+
+# Guardar la tabla de resultados transpuesta en un archivo CSV
+write.csv(combined_df, "Resultados/model_comparison_results_transposed.csv", row.names = FALSE)
+
+library(knitr)
+library(kableExtra)
+library(officer)
+library(flextable)
+
+# Unir df1 y df2 por la columna 'model'
+combined_df <- rbind(df1, df2)
+
+# Crear la tabla kable
+kable_table <- combined_df %>%
+  kable(format = "html", booktabs = TRUE) %>%
+  kable_styling(full_width = FALSE, position = "center")
+
+# Convertir la tabla kable a flextable
+flex_table <- combined_df %>%
+  regulartable() %>%
+  set_table_properties(width = .5, layout = "autofit")
+
+# Crear un documento Word y añadir la tabla flextable
+doc <- read_docx() %>%
+  body_add_flextable(flex_table)
+
+# Obtener la fecha actual en formato YYYYMMDD
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Crear el nombre del archivo incluyendo la fecha
+file_name <- paste0("Resultados/modelos_old_gam_sam_", current_date, ".docx")
+
+# Guardar el documento Word
+print(doc, target = file_name)
+```
+3.3 Modelos con efecto lineal de la violencia sobre el DFI
+
+Se repite el procedimiento de arriba excluyendo la tasa de homicidios al cuadrado. 
+
+```{r, eval=FALSE}
+## MODELOS CON EFECTO LINEAL DE VIOLENCIA SOBRE DFI
+
+# Construccion de matriz espacial 
+mexico.geom <- st_geometry(data_mun15)
+mexico.coords <- st_centroid(mexico.geom) 
+mex5_vecinos = knn2nb(knearneigh(mexico.coords, k = 5))
+listw_5 <- nb2listw(mex5_vecinos, style = "W", zero.policy = TRUE)
+
+# Crear la columna 'peso' como la inversa de 'Población'
+data_mun15$peso <- 1 / data_mun15$poblacion
+
+# Fórmulas para modelos
+formula_1 <- as.formula(tasa_dfi ~ tasa_promedio_hom  + salario_mun_mediano + presion_demo + ln_pob)
+formula_2 <- as.formula(tasa_dfi ~ tasa_promedio_hom  + salario_mun_mediano + presion_demo + ln_pob + cluster)
+
+# Modelos
+lm_model_2 <- lm(formula_2, data = data_mun15)
+rlm_model_2 <- rlm(formula_2, data = data_mun15)
+sar_model_2 <- errorsarlm(formula_2, data = data_mun15, listw = listw_5)
+gls_model_2 <- gls(formula_1,
+                   data = data_mun15,
+                   weights = varIdent(form = ~ 1 | cluster))
+weighted_model_2 <- lm(formula_2,
+                       data = data_mun15, weights = peso)
+gam_model_2 <- gam(tasa_dfi ~ s(tasa_promedio_hom) + 
+                     s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + cluster,
+                   data = data_mun15)
+
+
+# Función para obtener métricas y pruebas
+model_metrics <- function(model, model_name, listw = NULL) {
+  # Summary del modelo
+  model_summary <- summary(model)
+  
+  # Coeficientes y p-values
+  if (inherits(model, "gls")) {
+    coefficients <- as.data.frame(coef(model_summary))
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = Value, `[std.error]` = Std.Error, p.value = `p-value`)
+  } else if (inherits(model, "gam")) {
+    coefficients <- summary(model)$s.table
+    coefficients <- as.data.frame(coefficients)
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = edf, `[std.error]` = Ref.df, p.value = `p-value`)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  } else {
+    coefficients <- tidy(model)
+    coefficients <- coefficients %>%
+      rename(`[std.error]` = std.error)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  }
+  
+  # AIC y BIC
+  aic_value <- AIC(model)
+  bic_value <- BIC(model)
+  
+  # Breusch-Pagan test
+  if (inherits(model, c("lm", "rlm"))) {
+    bp_test <- bptest(model)
+    bp_stat <- bp_test$statistic
+    bp_pvalue <- bp_test$p.value
+  } else {
+    bp_stat <- NA
+    bp_pvalue <- NA
+  }
+  
+  # Jarque-Bera test
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    jb_test <- jarque.bera.test(residuals(model))
+    jb_stat <- jb_test$statistic
+    jb_pvalue <- jb_test$p.value
+  } else {
+    jb_stat <- NA
+    jb_pvalue <- NA
+  }
+  
+  # Prueba de multicolinealidad (VIF)
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    vif_values <- vif(model)
+    vif_df <- as.data.frame(vif_values)
+    vif_df$term <- rownames(vif_df)
+    rownames(vif_df) <- NULL
+    colnames(vif_df)[1] <- "vif"
+  } else {
+    vif_df <- data.frame(term = NA, vif = NA)
+  }
+  
+  # Índice de Moran si se proporciona una estructura espacial
+  if (!is.null(listw)) {
+    moran_test <- moran.test(residuals(model), listw)
+    moran_i <- moran_test$estimate[1]
+    moran_p <- moran_test$p.value
+  } else {
+    moran_i <- NA
+    moran_p <- NA
+  }
+  
+  # Consolidar resultados en una lista
+  results <- list(
+    model_name = model_name,
+    coefficients = coefficients,
+    aic = aic_value,
+    bic = bic_value,
+    bp_stat = bp_stat,
+    bp_pvalue = bp_pvalue,
+    jb_stat = jb_stat,
+    jb_pvalue = jb_pvalue,
+    moran_i = moran_i,
+    moran_p = moran_p,
+    vif = vif_df
+  )
+  
+  return(results)
+}
+
+# Obtener métricas para cada modelo
+lm_results <- model_metrics(lm_model_2, "Linear Model (lm)")
+rlm_results <- model_metrics(rlm_model_2, "Robust Linear Model (rlm)")
+sar_results <- model_metrics(sar_model_2, "Spatial Autoregressive Model (sar)", listw_5)
+gls_results <- model_metrics(gls_model_2, "Generalized Least Squares (gls)")
+weighted_results <- model_metrics(weighted_model_2, "Weighted Linear Model (lm)")
+gam_results <- model_metrics(gam_model_2, "Generalized Additive Model (gam)")
+
+# Crear una tabla consolidada
+consolidate_results <- function(results_list) {
+  consolidated <- bind_rows(lapply(results_list, function(result) {
+    result$coefficients %>%
+      mutate(model = result$model_name,
+             aic = result$aic,
+             bic = result$bic,
+             bp_stat = result$bp_stat,
+             bp_pvalue = result$bp_pvalue,
+             jb_stat = result$jb_stat,
+             jb_pvalue = result$jb_pvalue,
+             moran_i = result$moran_i,
+             moran_p = result$moran_p) %>%
+      dplyr::select(model, term, estimate, `[std.error]`, p.value, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p)
+  }))
+  
+  # Añadir VIF
+  vif_df <- bind_rows(lapply(results_list, function(result) {
+    if (!is.na(result$vif$term[1])) {
+      result$vif %>%
+        mutate(model = result$model_name) %>%
+        dplyr::select(model, term, vif)
+    } else {
+      data.frame(model = result$model_name, term = NA, vif = NA)
+    }
+  }))
+  
+  consolidated <- left_join(consolidated, vif_df, by = c("model", "term"))
+  
+  return(consolidated)
+}
+
+# Consolidar todos los resultados
+all_results <- consolidate_results(list(lm_results, rlm_results, sar_results, gls_results, weighted_results, gam_results))
+
+# Definir una función para agregar estrellas de significancia
+add_significance_stars <- function(p_value) {
+  if (is.na(p_value)) {
+    return("")
+  } else if (p_value < 0.001) {
+    return("***")
+  } else if (p_value < 0.01) {
+    return("**")
+  } else if (p_value < 0.05) {
+    return("*")
+  } else if (p_value < 0.1) {
+    return(".")
+  } else {
+    return("")
+  }
+}
+
+# Agregar estrellas de significancia
+all_results <- all_results %>%
+  mutate(significance = sapply(p.value, add_significance_stars))
+
+# Renombrar "term" como "Variable" y poner std.error entre corchetes
+colnames(all_results)[colnames(all_results) == "term"] <- "Variable"
+colnames(all_results)[colnames(all_results) == "std.error"] <- "[std.error]"
+
+# Concatenar "std.error" a "estimate" y asignarlo a "Coeficiente"
+all_results$estimate <- round(all_results$estimate,5)
+all_results$'[std.error]' <- round(all_results$'[std.error]',5)
+all_results <- all_results %>%
+  mutate(Coeficiente = paste0(estimate, " [", `[std.error]`, "]", significance))
+
+# Eliminar columnas innecesarias
+resultados_completos <- all_results %>%
+  dplyr::select(-estimate, -`[std.error]`, -p.value, -significance)
+
+
+# Crear df1
+df1_2 <- resultados_completos %>% 
+  dplyr::select(model, Variable, Coeficiente) %>%
+  pivot_wider(names_from = model, values_from = Coeficiente)
+
+
+df2_2 <- resultados_completos %>% 
+  dplyr::select(model, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p) %>%
+  distinct() %>%
+  pivot_longer(cols = -model, names_to = "Variable", values_to = "value") %>%
+  pivot_wider(names_from = model, values_from = value)
+
+
+# Unir df1_long y df2 por la columna 'model'
+combined_df2 <- rbind(df1, df2)
+
+# # # Guardar la tabla de resultados transpuesta en un archivo CSV
+write.csv(combined_df2, "Resultados/model_comparison_results_transposed_LINEAL.csv", row.names = FALSE)
+
+# Crear la tabla kable
+kable_table2 <- combined_df2 %>%
+  kable(format = "html", booktabs = TRUE) %>%
+  kable_styling(full_width = FALSE, position = "center")
+
+# Convertir la tabla kable a flextable
+flex_table2 <- combined_df2 %>%
+  regulartable() %>%
+  set_table_properties(width = .5, layout = "autofit")
+
+# Crear un documento Word y añadir la tabla flextable
+doc2 <- read_docx() %>%
+  body_add_flextable(flex_table2)
+
+# Obtener la fecha actual en formato YYYYMMDD
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Crear el nombre del archivo incluyendo la fecha
+file_name2 <- paste0("Resultados/modelos_old_gam_sam_LINEAL", current_date, ".docx")
+
+# Guardar el documento Word
+print(doc2, target = file_name2)
+
+
+# DIAGNÓSTICO DE MODELOS
+# Definir la función para generar gráficos de diagnóstico
+generate_diagnostic_plots <- function(model, model_name) {
+  # Obtener valores ajustados
+  fitted_values <- fitted(model)
+  
+  # Obtener residuos estandarizados del modelo
+  residuals_std <- scale(residuals(model))
+  #residuals_norm <- residuals(model, type="n")
+  
+  # Histograma de los residuos
+  hist(residuals_std, main = paste("Histograma de Residuos (", model_name, ")", sep = ""), 
+       xlab = "Residuos Estandarizados", breaks = 30)
+  
+  # QQ Plot de los residuos
+  qqnorm(residuals_std, main = paste("QQ Plot de Residuos (", model_name, ")", sep = ""),
+         xlab = "Observados", ylab = "Valores esperados", pch = 20, col = "black")
+  qqline(residuals_std, col = "red")
+  
+  # Gráfico de Valores Ajustados vs Residuos
+  plot(fitted_values, residuals_std, main = paste("Ajustados vs Residuos Estandarizados (", model_name, ")", sep = ""),
+       xlab = "Valores Ajustados", ylab = "Residuos Estandarizados", pch = 20, col = "black")
+  abline(h = 0, col = "red", lty = 2)
+}
+
+# Guardar todas las gráficas en un solo archivo PNG
+png("diagnostic_plots_all_models.png", width = 2400, height = 3200)
+
+# Configurar la disposición de los gráficos
+par(mfrow = c(3, 3))  # Suponiendo 5 modelos y 3 gráficos por modelo
+
+# Generar gráficos para cada modelo
+generate_diagnostic_plots(lm_model_2, "LM")
+generate_diagnostic_plots(weighted_model_2, "Weighted")
+generate_diagnostic_plots(rlm_model_2, "RLM")
+
+# Guardar todas las gráficas en un solo archivo PNG
+png("Resultados/graficas_diagnostico/diagnostic_plots_LM_models.png", width = 2400, height = 3200)
+dev.off()
+# Configurar la disposición de los gráficos
+dev.new()
+par(mfrow = c(2, 3))  # Suponiendo 5 modelos y 3 gráficos por modelo
+generate_diagnostic_plots(sar_model_2, "SAR")
+generate_diagnostic_plots(gls_model_2, "GLS")
+# Guardar todas las gráficas en un solo archivo PNG
+png("Resultados/graficas_diagnostico/diagnostic_plots_SAR_models.png", width = 2400, height = 3200)
+
+# Cerrar el dispositivo gráfico
+dev.off()
+
+
+```
+
+3.2.1 Efectos marginales de la violencia sobre el DFI    
+
+Este código nos permite visualizar el efecto de la tasa promedio de homicidios sobre la tasa DFI, tomando en cuenta los diferentes agrupamientos en tus datos.  
+
+Se crea una secuencia de valores para tasa_promedio_hom que va de 0 a 1500 en incrementos de 50. Esta secuencia se utilizará para predecir la tasa DFI en diferentes niveles de la tasa promedio de homicidios.
+DataFrame vacío (pred_data):  
+
+Se inicializa un DataFrame vacío donde se almacenarán las predicciones para cada combinación de agrupamiento (cluster) y valores de tasa_promedio_hom.  
+Bucle sobre los niveles de agrupamiento (cluster):  
+
+Se itera sobre cada nivel de cluster en el conjunto de datos data_mun15.
+Para cada cluster, se calcula un nuevo DataFrame que contiene las predicciones para la tasa DFI, basado en la media de las demás variables (salario_mun_mediano, presion_demo, ln_pob) dentro de ese cluster.
+Predicciones e intervalos de confianza (predict):  
+
+Se utilizan las secuencias generadas para predecir los valores de tasa_dfi utilizando el modelo rlm_model_2.
+Se calculan y almacenan los valores predichos junto con los intervalos de confianza.
+Concatenar las predicciones (rbind):  
+
+Se agregan las predicciones para cada cluster al DataFrame principal pred_data.
+Visualización del resultado (ggplot2):  
+ 
+Se utiliza ggplot2 para crear un gráfico de líneas con barras de error, que muestra cómo la tasa_promedio_hom afecta la tasa_dfi predicha, con diferentes colores para cada agrupamiento (cluster).  
+
+El gráfico incluye barras de error que representan los intervalos de confianza de las predicciones.
 
 
 ```{r, eval=FALSE}
+# Crear una secuencia de valores de tasa_promedio_hom de 0 a 1500 en incrementos de 50
+tasa_promedio_hom_seq <- seq(0, 1500, by = 50)
+
+# Inicializar un DataFrame vacío para almacenar las predicciones
+pred_data <- data.frame()
+
+# Iterar sobre cada agrupamiento (cluster) para calcular los promedios y predicciones
+for (cluster_level in levels(data_mun15$cluster)) {
+  cluster_data <- data_mun15[data_mun15$cluster == cluster_level, ]
+  
+  # Crear un nuevo DataFrame para las predicciones por agrupamiento
+  new_data_cluster <- data.frame(
+    tasa_promedio_hom = tasa_promedio_hom_seq,
+    tasa_prom_cuadrado = tasa_promedio_hom_seq^2, # Cuadrado de la secuencia
+    salario_mun_mediano = mean(cluster_data$salario_mun_mediano),
+    presion_demo = mean(cluster_data$presion_demo),
+    ln_pob = mean(cluster_data$ln_pob),
+    cluster = factor(cluster_level, levels = levels(data_mun15$cluster))
+  )
+  
+  # Calcular las predicciones y los intervalos de confianza para este agrupamiento
+  predictions <- predict(rlm_model_2, newdata = new_data_cluster, interval = "confidence")
+  
+  # Agregar las predicciones y los intervalos de confianza al DataFrame
+  new_data_cluster$predicted_tasa_dfi <- predictions[, "fit"]
+  new_data_cluster$lower <- predictions[, "lwr"]
+  new_data_cluster$upper <- predictions[, "upr"]
+  
+  # Agregar las predicciones al DataFrame principal
+  pred_data <- rbind(pred_data, new_data_cluster)
+}
+
+# Verificar el DataFrame resultante
+head(pred_data)
+
+# Crear el gráfico con ggplot2 usando geom_errorbar
+ggplot(pred_data, aes(x = tasa_promedio_hom, y = predicted_tasa_dfi, color = cluster)) +
+  geom_line(size = 1) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 10, position = position_dodge(0.1)) +
+  labs(title = "Efecto lineal de la Tasa Promedio de Homicidios sobre la Tasa DFI por Agrupamiento",
+       x = "Tasa Promedio de Homicidios",
+       y = "Tasa DFI Predicha") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  scale_color_discrete(name = "Agrupamiento")
+```
+
+3.4. Modelos sar con medida alternativa de violencia
+ajusta tres modelos espaciales autoregresivos (SAR) utilizando diferentes medidas de violencia (logaritmo de la tasa de homicidios y una tasa suavizada) como variables predictoras, junto con otras variables socioeconómicas y demográficas.
+
+sar_model_log_1: Ajusta un modelo SAR donde la variable dependiente es la tasa de desplazamiento forzado interno (tasa_dfi), y una de las variables predictoras clave es el logaritmo de la tasa de homicidios (log_th).
+
+sar_model_log_2: Similar al primer modelo, pero utilizando una versión suavizada de la tasa de homicidios (th_prom_suav) en lugar del logaritmo.
+
+sar_model_log_3: En este modelo, la variable dependiente es el logaritmo de la tasa de desplazamiento forzado interno (log_tasa_dfi), y la variable predictora es nuevamente el logaritmo de la tasa de homicidios (log_th).
+
+2. Obtención de valores ajustados y residuos:
+Valores ajustados (fitted_values): Se calculan los valores ajustados para cada uno de los tres modelos, que representan las tasas de desplazamiento forzado interno predichas por los modelos.
+
+Residuos (residuals): Se calculan los residuos en la escala logarítmica para cada modelo. Los residuos son la diferencia entre los valores observados y los valores ajustados por el modelo. Estos residuos pueden transformarse de nuevo a la escala original si fuera necesario.
+
+3. Errores y RMSE:
+Errores (errors): Se calculan los errores como la diferencia entre los valores observados y los valores ajustados. Esto proporciona una medida de qué tan bien el modelo se ajusta a los datos observados.
+
+RMSE (Root Mean Squared Error): Es una medida de la magnitud de los errores del modelo. Un RMSE más bajo indica un mejor ajuste del modelo a los datos.
+
+4. Estadísticas y pruebas de diagnóstico:
+R²: Se calcula el coeficiente de determinación (R²) para cada modelo, que mide la proporción de la varianza total de la variable dependiente que es explicada por el modelo.
+
+AIC y BIC: Se calculan los criterios de información de Akaike (AIC) y Bayesiano (BIC) para cada modelo. Estos criterios se utilizan para comparar modelos, donde un valor más bajo indica un mejor ajuste penalizando la complejidad del modelo.
+
+Pruebas de Breusch-Pagan (bp_test): Se realizan para detectar heterocedasticidad en los modelos, es decir, si la varianza de los residuos es constante o no.
+
+Pruebas de Jarque-Bera (jb_test): Se realizan para evaluar la normalidad de los residuos de los modelos.
+
+Índice de Moran (moran_test): Se calcula para evaluar la autocorrelación espacial en los residuos. Un valor significativo indica la presencia de autocorrelación espacial, lo que sugiere que el modelo puede no haber capturado toda la estructura espacial en los datos.
+
+Pruebas de Kolmogorov-Smirnov (ks_test): Se utilizan para comparar la distribución de los residuos con una distribución normal.
+
+5. Resumen y Exportación de Resultados:
+Creación de tablas resumen: Se combinan los resultados de las pruebas de diagnóstico y las estadísticas de los modelos en un único DataFrame.
+
+Exportación: Los resultados se exportan a un archivo CSV y un archivo Word con tablas bien formateadas.
+
+Este código permite evaluar cómo diferentes medidas de violencia y enfoques de modelado afectan la capacidad de los modelos SAR para predecir la tasa de desplazamiento forzado interno. Se realiza una evaluación exhaustiva del ajuste del modelo y la calidad de los residuos, lo que proporciona una visión integral de la robustez y validez de los modelos propuestos.
+
+```{r, eval=FALSE}
+## MODELOS SAR CON MEDIDA ALTERNATIVA DE VIOLENCIA
+# Ajuste de lo smodelos SAR
+sar_model_log_1 <- errorsarlm(tasa_dfi ~ log_th + coef_de_gini +
+                                salario_mun_mediano + presion_demo + ln_pob + cluster,
+                              data = data_mun15, listw = listw_5)
+
+sar_model_log_2 <- errorsarlm(tasa_dfi ~ th_prom_suav + coef_de_gini +
+                                salario_mun_mediano + presion_demo + ln_pob + cluster,
+                              data = data_mun15, listw = listw_5)
+
+sar_model_log_3 <- errorsarlm(log_tasa_dfi ~ log_th + coef_de_gini +
+                                salario_mun_mediano + presion_demo + ln_pob + cluster,
+                              data = data_mun15, listw = listw_5)
+
+### Resúmenes de los modelos y pruebas diagnóstico
+
+# Obtener los valores ajustados de ambos modelos
+fitted_values_sar_1 <- fitted(sar_model_log_1)
+fitted_values_sar_2 <- fitted(sar_model_log_2)
+fitted_values_sar_3 <- fitted(sar_model_log_3)
+
+# Obtener los residuos en la escala logarítmica
+residuals_sar_1_log <- residuals(sar_model_log_1)
+residuals_sar_2_log <- residuals(sar_model_log_2)
+residuals_sar_3_log <- residuals(sar_model_log_3)
+
+# Transformar los residuos de vuelta a la escala original
+# Nota: La transformación inversa correcta para los residuos logarítmicos es exp(residuales) - 1
+# Esta transformación es consistente con la transformación de los valores ajustados.
+
+# # Residuos transformados 
+# residuals_sar_1 <- exp(residuals_sar_1_log) - 1
+# residuals_sar_2 <- exp(residuals_sar_2_log) - 1
+# residuals_sar_3 <- exp(residuals_sar_3_log) - 1
+
+# Calcular los errores de ambos modelos
+errors_sar_1 <- data_mun15$tasa_dfi - fitted_values_sar_1
+errors_sar_2 <- data_mun15$tasa_dfi - fitted_values_sar_2
+errors_sar_3 <- data_mun15$log_tasa_dfi - fitted_values_sar_3
+
+# Calcular el RMSE para ambos modelos
+RMSE_sar_1 <- sqrt(mean(errors_sar_1^2))
+RMSE_sar_2 <- sqrt(mean(errors_sar_2^2))
+RMSE_sar_3 <- sqrt(mean(errors_sar_3^2))
+# print(paste("RMSE del modelo SAR Logarítmico (Aproximación A):", RMSE_log_1))
+
+# Lista de modelos
+modelos_esp <- list(sar_model_log_1, sar_model_log_2, sar_model_log_3)
+
+# Resúmenes de los modelos
+summary_mod_esp <- lapply(modelos_esp, summary)
+
+# Inicializar una lista para almacenar los R^2
+r_squared_list <- list()
+
+# Iterar sobre cada modelo para calcular el R^2
+for (i in 1:length(modelos_esp)) {
+  modelo <- modelos_esp[[i]]  # Corregir la lista de modelos
+  
+  # Valores observados y valores ajustados
+  valores_observados <- modelo$y
+  valores_ajustados <- fitted(modelo)
+  
+  # Suma de los cuadrados totales (SST)
+  sst <- sum((valores_observados - mean(valores_observados))^2)
+  
+  # Suma de los cuadrados residuales (SSR)
+  ssr <- sum(residuals(modelo)^2)
+  
+  # R^2
+  r_squared <- 1 - (ssr / sst)
+  
+  # Almacenar el R^2 en la lista
+  r_squared_list[[i]] <- r_squared
+}
+
+# Convertir la lista a un vector
+r_squared_vector <- unlist(r_squared_list)
+
+# Imprimir los resultados
+print(r_squared_vector)
+
+
+# AIC y BIC
+aic_mod_esp <- sapply(modelos_esp, AIC)
+bic_mod_esp <- sapply(modelos_esp, BIC)
+
+# Aplicar la prueba de Breusch-Pagan a cada modelo
+bp_test_mod_esp <- lapply(modelos_esp, function(mod) bptest.Sarlm(mod))
+
+# Prueba Jarque-Bera para normalidad de los residuos
+jb_test_mod_esp <- lapply(modelos_esp, function(mod) jarque.bera.test(residuals(mod)))
+
+# Indice de Moran
+moran_test_mod_esp <- lapply(modelos_esp, function(mod) moran.test(residuals(mod), listw = listw_5))
+
+# Test de Kolmogorov-Smirnov para verificar la distribución de los residuos
+ks_test_mod_esp <- lapply(modelos_esp, function(mod) ks.test(residuals(mod), "pnorm"))
+
+# Calcular el número de observaciones para cada modelo
+num_observations_esp <- sapply(modelos_esp, function(mod) length(residuals(mod)))
+
+# Crear dataframe con los resultados
+resultados_tests_esp <- data.frame(
+  Modelo = paste0("Mod_SAR", 1:3),
+  AIC = aic_mod_esp,
+  BIC = bic_mod_esp,
+  JB_p_value = sapply(jb_test_mod_esp, function(jb_test) jb_test$p.value),
+  KS_p_value = sapply(ks_test_mod_esp, function(ks_test) ks_test$p.value),
+  BP_p_value = sapply(bp_test_mod_esp, function(test) test$p.value),
+  MoranIndex = sapply(moran_test_mod_esp, function(moran_test) moran_test$p.value),
+  Num_Observaciones = num_observations_esp,
+  R2 = r_squared_vector,
+  #Condition_Index = c(condition_number_model_1, condition_number_model_2),
+  RMSE = c(RMSE_sar_1, RMSE_sar_2, RMSE_sar_3)
+)
+
+print(resultados_tests_esp)
+
+# Agregar R2 a las otras métricas de valoración del modelo
+resultados_tests_esp$R2 <- r_squared_vector
+
+# # Agregar los valores de Condition_Number al dataframe resultados_tests_esp
+# resultados_tests_esp$Condition_Index <- c(condition_number_model_1, condition_number_model_2)
+
+# Transponer el dataframe y asignar nombres de columnas
+resultados_transpuesto_esp <- t(resultados_tests_esp)
+colnames(resultados_transpuesto_esp) <- resultados_transpuesto_esp[1, ]
+resultados_transpuesto_esp <- as.data.frame(resultados_transpuesto_esp[-1, ])
+resultados_transpuesto_esp$Variable <- rownames(resultados_transpuesto_esp)
+
+#Función para agregar estrellas de significancia
+add_significance_stars <- function(summary_df) {
+  summary_df$significance <- cut(summary_df$p.value, breaks = c(-Inf, 0.001, 0.01, 0.05, Inf), labels = c("***", "**", "*", ""), include.lowest = TRUE)
+  return(summary_df)
+}
+
+# Obtén los resúmenes de los modelos y agrega estrellas de significancia
+resumen_m1 <- add_significance_stars(tidy(summary(sar_model_log_1)))
+resumen_m2 <- add_significance_stars(tidy(summary(sar_model_log_2)))
+resumen_m3 <- add_significance_stars(tidy(summary(sar_model_log_3)))
+
+# Agrega los nombres de los modelos como una nueva columna
+resumen_m1$modelo <- "Mod_SAR1"
+resumen_m2$modelo <- "Mod_SAR2"
+resumen_m3$modelo <- "Mod_SAR3"
+
+# Combina los resúmenes en una sola tabla
+resultados_completos <- rbind(resumen_m1, resumen_m2, resumen_m3)
+
+# Redondear todos los valores a 3 decimales y pegar "significance" a "estimate"
+resultados_completos$estimate <- round(resultados_completos$estimate, 5)
+resultados_completos$std.error <- round(resultados_completos$std.error, 8)
+resultados_completos$significance <- as.character(resultados_completos$significance)
+resultados_completos$estimate <- paste0(resultados_completos$estimate, resultados_completos$significance)
+
+# Renombrar "term" como "Variable" y poner std.error entre corchetes
+colnames(resultados_completos)[colnames(resultados_completos) == "term"] <- "Variable"
+colnames(resultados_completos)[colnames(resultados_completos) == "std.error"] <- "[std.error]"
+
+# # Eliminar las columnas p.value y std.error cuando modelo == m1 o m2
+# resultados_completos <- resultados_completos %>%
+#   filter(!(modelo == "m1" & grepl("Mod_SAR1", Variable)) & !(modelo == "m2" & grepl("Mod_SAR2", Variable)))
+
+# Concatenar "std.error" a "estimate" y asignarlo a "Coeficiente"
+resultados_completos$Coeficiente <- paste0(resultados_completos$estimate, " [", resultados_completos$`[std.error]`, "]", sep = "\n")
+
+# Eliminar columnas innecesarias
+resultados_completos <- resultados_completos %>%
+  dplyr::select(-estimate, -`[std.error]`, -p.value, -statistic, -significance)
+
+# Recodificar los nombres de la variable modelo
+# resultados_completos$modelo <- recode(resultados_completos$modelo, "m1"="Mod_SAR1", "m2"="Mod_SAR2")
+
+
+# Pivotar los datos para que cada columna corresponda a una de las dos categorías de modelo y los valores sean tomados de Coeficiente
+resultados_pivot <- resultados_completos %>%
+  pivot_wider(names_from = modelo, values_from = Coeficiente)
+
+# Verificar el resultado
+head(resultados_pivot)
+
+tabla_mod_sar_log <- rbind(resultados_pivot, resultados_transpuesto_esp)
+
+#Escribir el dataframe en un archivo CSV
+write.csv(tabla_mod_sar_log, "Resultados/tabla_modelos_sar_log2_2.csv", row.names = TRUE, fileEncoding = "latin1")
+
+
+# Crear una tabla flextable a partir del dataframe
+ft <- flextable(tabla_mod_sar_log)
+
+# Personaliza la tabla (opcional)
+ft <- ft %>%
+  set_header_labels(values = colnames(tabla_mod_sar_log)) %>% # Asegura que los nombres de las columnas sean correctos
+  theme_vanilla() %>% 
+  autofit()
+
+# Obtener la fecha actual en formato YYYYMMDD
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Crear el nombre del archivo incluyendo la fecha
+file_name3 <- paste0("Resultados/tabla_modelos_sar_log_", current_date, ".docx")
+
+# Crear un documento Word y añadir la tabla
+doc3 <- read_docx() %>%
+  body_add_flextable(ft)
+
+# Guardar el documento Word con el nombre dinámico
+print(doc3, target = file_name3)
 
 ```
 
+Diagnostico de los modelos
+
+```{r, eval=FALSE}
+# Visualización de los Residuos
+#dev.new()
+par(mfrow = c(3, 2))
+
+# Guardar el primer conjunto de gráficos en un archivo PNG
+png("Resultados/graficas_diagnostico/sar_residuos_histogramas_qqplots_240528.png", width = 1200, height = 800)
+
+# Histograma de los residuos del primer modelo
+hist(residuals(sar_model_log_1), main = "Histograma de Residuos (SAR No lineal)", xlab = "Residuos Log", breaks = 30)
+
+# QQ Plot de los residuos del primer modelo
+qqnorm(residuals(sar_model_log_1), main = "QQ Plot de Residuos (SAR No lineal)")
+qqline(residuals(sar_model_log_1), col = "red")
+
+# Histograma de los residuos del segundo modelo
+hist(residuals(sar_model_log_2), main = "Histograma de Residuos (SAR Log-log)", xlab = "Residuos Log", breaks = 30)
+
+# QQ Plot de los residuos del segundo modelo
+qqnorm(residuals(sar_model_log_2), main = "QQ Plot de Residuos (SAR Log-log)")
+qqline(residuals(sar_model_log_2), col = "red")
+
+# Histograma de los residuos del segundo modelo
+hist(residuals(sar_model_log_3), main = "Histograma de Residuos (SAR Log-log Smooth)", xlab = "Residuos Log", breaks = 30)
+
+# QQ Plot de los residuos del segundo modelo
+qqnorm(residuals(sar_model_log_3), main = "QQ Plot de Residuos (SAR Log-log Smooth)")
+qqline(residuals(sar_model_log_3), col = "red")
+
+
+# Cerrar el dispositivo gráfico
+dev.off()
+
+
+# Establecer la ruta de salida
+# pathOutput <- "/00_DFI/Resultados/"
+
+
+# Mapa de residuos
+#dev.new()
+par(mfrow = c(2, 3))
+
+# Guardar segundo conjunto de gráficos en un archivo PNG
+#png("residuos_sar_mapa_240528_2.png", width = 1200, height = 800)
+# Valores Ajustados vs Observados
+plot(fitted_values_sar_1, data_mun15$tasa_dfi, main = "Valores Ajustados vs Observados (SAR - No lineal)",
+     xlab = "Valores Observados", ylab = "Valores Ajustados")
+abline(0, 1, col = "red", lty = 2)
+
+plot(fitted_values_sar_2, data_mun15$tasa_dfi, main = "Valores Ajustados vs Observados (SAR - Log-log))",
+     xlab = "Valores Observados", ylab = "Valores Ajustados")
+abline(0, 1, col = "red", lty = 2)
+
+plot(fitted_values_sar_3, data_mun15$tasa_dfi, main = "Valores Ajustados vs Observados (SAR - Log -log smooth)",
+     xlab = "Valores Observados", ylab = "Valores Ajustados")
+abline(0, 1, col = "red", lty = 2)
+```
+
+3.5 Modelos SAR para Variables de Migración y Empleo   
+
+Se realiza un análisis exhaustivo de cómo diferentes variables relacionadas con la migración y el empleo pueden ser modeladas utilizando un enfoque SAR, que considera la autocorrelación espacial entre observaciones. Se evalúan múltiples modelos con criterios estadísticos rigurosos (como AIC, BIC, y R²) y pruebas de diagnóstico (como Breusch-Pagan, Jarque-Bera, y Moran's I), proporcionando una visión completa de la adecuación y robustez de los modelos propuestos. Los residuos del modelo se visualizan para identificar posibles problemas con la normalidad o patrones espaciales no capturados, lo que es crucial para asegurar la validez de los resultados.
 
 
 ```{r, eval=FALSE}
+# Ajuste de los modelos SAR
+sar_model_log_1 <- errorsarlm(tasa_migracion ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster, data = data_mun15, listw = listw_5)
+
+sar_model_log_2 <- errorsarlm(tasa_trabajo_b ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster, data = data_mun15, listw = listw_5)
+
+sar_model_log_3 <- errorsarlm(tasa_familia ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster, data = data_mun15, listw = listw_5)
+
+sar_model_log_4 <- errorsarlm(tasa_caso ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster, data = data_mun15, listw = listw_5)
+
+sar_model_log_5 <- errorsarlm(tasa_estudiar ~ tasa_promedio_hom + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster, data = data_mun15, listw = listw_5)
+
+
+# Lista de modelos
+modelos_esp <- list(sar_model_log_1, sar_model_log_2, sar_model_log_3, sar_model_log_4, sar_model_log_5)
+
+# Resúmenes de los modelos
+summary_mod_esp <- lapply(modelos_esp, summary)
+
+# Inicializar una lista para almacenar los R^2
+r_squared_list <- list()
+
+# Iterar sobre cada modelo para calcular el R^2
+for (i in 1:length(modelos_esp)) {
+  modelo <- modelos_esp[[i]]
+  valores_observados <- modelo$y
+  valores_ajustados <- fitted(modelo)
+  sst <- sum((valores_observados - mean(valores_observados))^2)
+  ssr <- sum(residuals(modelo)^2)
+  r_squared <- 1 - (ssr / sst)
+  r_squared_list[[i]] <- r_squared
+}
+
+# Convertir la lista a un vector
+r_squared_vector <- unlist(r_squared_list)
+
+# Calcular AIC y BIC
+aic_mod_esp <- sapply(modelos_esp, AIC)
+bic_mod_esp <- sapply(modelos_esp, BIC)
+
+# Aplicar la prueba de Breusch-Pagan a cada modelo
+library(lmtest)
+bp_test_mod_esp <- lapply(modelos_esp, function(mod) bptest.Sarlm(mod))
+
+# Prueba Jarque-Bera para normalidad de los residuos
+library(tseries)
+jb_test_mod_esp <- lapply(modelos_esp, function(mod) jarque.bera.test(residuals(mod)))
+
+# Índice de Moran
+library(spdep)
+moran_test_mod_esp <- lapply(modelos_esp, function(mod) moran.test(residuals(mod), listw = listw_5))
+
+# Test de Kolmogorov-Smirnov para verificar la distribución de los residuos
+ks_test_mod_esp <- lapply(modelos_esp, function(mod) ks.test(residuals(mod), "pnorm"))
+
+# Calcular el número de observaciones para cada modelo
+num_observations_esp <- sapply(modelos_esp, function(mod) length(residuals(mod)))
+
+# Crear dataframe con los resultados
+resultados_tests_esp <- data.frame(
+  Modelo = paste0("Mod_SAR", 1:5),
+  AIC = aic_mod_esp,
+  BIC = bic_mod_esp,
+  JB_p_value = sapply(jb_test_mod_esp, function(jb_test) jb_test$p.value),
+  KS_p_value = sapply(ks_test_mod_esp, function(ks_test) ks_test$p.value),
+  BP_p_value = sapply(bp_test_mod_esp, function(test) test$p.value),
+  MoranIndex = sapply(moran_test_mod_esp, function(moran_test) moran_test$p.value),
+  Num_Observaciones = num_observations_esp,
+  R2 = r_squared_vector
+)
+
+print(resultados_tests_esp)
+
+
+# Agregar R2 a las otras métricas de valoración del modelo
+resultados_tests_esp$R2 <- r_squared_vector
+
+# # Agregar los valores de Condition_Number al dataframe resultados_tests_esp
+# resultados_tests_esp$Condition_Index <- c(condition_number_model_1, condition_number_model_2)
+
+# Transponer el dataframe y asignar nombres de columnas
+resultados_transpuesto_esp <- t(resultados_tests_esp)
+colnames(resultados_transpuesto_esp) <- resultados_transpuesto_esp[1, ]
+resultados_transpuesto_esp <- as.data.frame(resultados_transpuesto_esp[-1, ])
+resultados_transpuesto_esp$Variable <- rownames(resultados_transpuesto_esp)
+
+# Función para obtener el resumen del modelo y agregar estrellas de significancia
+get_model_summary <- function(model, model_name) {
+  summary_df <- tidy(summary(model))
+  summary_df$significance <- cut(summary_df$p.value, breaks = c(-Inf, 0.001, 0.01, 0.05, Inf), labels = c("***", "**", "*", ""), include.lowest = TRUE)
+  summary_df$modelo <- model_name
+  return(summary_df)
+}
+
+# Lista de modelos y nombres
+modelos <- list(sar_model_log_1, sar_model_log_2, sar_model_log_3, sar_model_log_4, sar_model_log_5)
+modelos_nombres <- c("Mod_SAR1", "Mod_SAR2", "Mod_SAR3", "Mod_SAR4", "Mod_SAR5")
+
+# Obtener los resúmenes de los modelos y agregar estrellas de significancia
+resumenes <- lapply(seq_along(modelos), function(i) {
+  get_model_summary(modelos[[i]], modelos_nombres[i])
+})
+
+# Combinar los resúmenes en una sola tabla
+resultados_completos <- do.call(rbind, resumenes)
+
+# Redondear todos los valores a 3 decimales y pegar "significance" a "estimate"
+resultados_completos$estimate <- round(resultados_completos$estimate, 5)
+resultados_completos$std.error <- round(resultados_completos$std.error, 8)
+resultados_completos$significance <- as.character(resultados_completos$significance)
+resultados_completos$estimate <- paste0(resultados_completos$estimate, resultados_completos$significance)
+
+# Renombrar "term" como "Variable" y poner std.error entre corchetes
+colnames(resultados_completos)[colnames(resultados_completos) == "term"] <- "Variable"
+colnames(resultados_completos)[colnames(resultados_completos) == "std.error"] <- "[std.error]"
+
+# Concatenar "std.error" a "estimate" y asignarlo a "Coeficiente"
+resultados_completos$Coeficiente <- paste0(resultados_completos$estimate, " [", resultados_completos$`[std.error]`, "]", sep = "\n")
+
+# Eliminar columnas innecesarias
+resultados_completos <- resultados_completos %>%
+  dplyr::select(-estimate, -`[std.error]`, -p.value, -statistic, -significance)
+
+# Pivotar los datos para que cada columna corresponda a una de las dos categorías de modelo y los valores sean tomados de Coeficiente
+resultados_pivot <- resultados_completos %>%
+  pivot_wider(names_from = modelo, values_from = Coeficiente)
+
+# Verificar el resultado
+head(resultados_pivot)
+
+tabla_mod_sar_log <- rbind(resultados_pivot, resultados_transpuesto_esp)
+
+# Escribir el dataframe en un archivo CSV
+write.csv(tabla_mod_sar_log, "Resultados/tabla_modelos_sar_emigraciones.csv", row.names = FALSE)
+
+
+# Crear la tabla flextable a partir del dataframe
+ft4 <- flextable(tabla_mod_sar_log)
+
+# Personalizar la tabla (opcional)
+ft4 <- ft4 %>%
+  set_header_labels(values = colnames(tabla_mod_sar_log)) %>% # Asegura que los nombres de las columnas sean correctos
+  theme_vanilla() %>% 
+  autofit()
+
+# Obtener la fecha actual en formato YYYYMMDD
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Crear el nombre del archivo incluyendo la fecha
+file_name4 <- paste0("Resultados/tabla_modelos_sar_emigraciones_", current_date, ".docx")
+
+# Crear un documento Word y añadir la tabla
+doc4 <- read_docx() %>%
+  body_add_flextable(ft4)
+
+# Guardar el documento Word con el nombre dinámico
+print(doc4, target = file_name4)
+
+# Visualización de los Residuos
+par(mfrow = c(5, 2))
+
+# Histograma y QQ Plot de los residuos para cada modelo
+for (i in 1:length(modelos_esp)) {
+  model <- modelos_esp[[i]]
+  hist(residuals(model), main = paste("Histograma de Residuos (Modelo", i, ")"), xlab = "Residuos", breaks = 30)
+  qqnorm(residuals(model), main = paste("QQ Plot de Residuos (Modelo", i, ")"))
+  qqline(residuals(model), col = "red")
+}
+
+
 
 ```
 
 
+3.6 Modelo sin municipios atípicos 
 
+Se realiza un análisis robusto de los modelos espaciales autoregresivos (SAR) ajustados a los datos, con un enfoque en la identificación y tratamiento de observaciones atípicas a través del cálculo de distancias robustas de Mahalanobis. Luego de eliminar estas observaciones atípicas, se ajustan y evalúan varios modelos estadísticos. Las métricas obtenidas, como AIC, BIC, R², y pruebas de diagnóstico como Breusch-Pagan y Moran's I, permiten una evaluación completa de la calidad y adecuación de los modelos. Finalmente, los resultados se exportan de manera ordenada para su posterior análisis.
+
+
+3.6.1 Cálculo de Distancias Robustas de Mahalanobis:
+Se calculan los residuos del modelo SAR (sar_model_2). Estos residuos representan las diferencias entre los valores observados y los valores predichos por el modelo.  
+
+Distancias robustas de Mahalanobis: Utilizando los residuos del modelo, se calculan las distancias robustas de Mahalanobis. Estas distancias se utilizan para identificar observaciones atípicas, teniendo en cuenta la correlación entre las variables.
+
+Asignación de distancias al conjunto de datos: Las distancias calculadas se asignan a una nueva columna en el conjunto de datos data_mun15, llamada distancia_maha_robusta.
+
+3.6.2. Ajuste de Distribuciones a las Distancias Robustas:
+Ajuste de diferentes distribuciones (fitdist, fitdistr): Se ajustan varias distribuciones a las distancias robustas de Mahalanobis, incluyendo la distribución normal, gamma, cauchy, chi-cuadrado, t de Student, log-normal y Weibull.
+
+Evaluación de los ajustes: Aunque parte de la evaluación se comenta, el código sugiere que se calculan los criterios de información AIC y BIC para cada distribución ajustada, con el fin de comparar qué distribución se ajusta mejor a las distancias robustas.
+
+Ajuste y uso de la distribución log-normal: Se selecciona la distribución log-normal para continuar con el análisis. Se calculan los valores p utilizando esta distribución, que permiten evaluar la significancia de las distancias calculadas.  
+
+3.6.3. Identificación y Filtrado de Municipios Atípicos:  
+Filtrado de municipios atípicos: Se identifican municipios atípicos basados en los valores p calculados previamente. Los municipios con valores p por debajo de 0.025 o por encima de 0.975 son considerados atípicos.
+
+Creación de un nuevo conjunto de datos sin atípicos: Se elimina del conjunto de datos original (data_mun15) aquellos municipios que fueron identificados como atípicos, generando un nuevo conjunto de datos (data_mun15_sin_atipicos) para análisis posteriores.
+
+3.6.4. Ajuste de Modelos sin Observaciones Atípicas:
+Construcción de la matriz espacial: Se reconstruye la matriz espacial (listw_5_s_out) para los datos sin observaciones atípicas, necesaria para ajustar modelos espaciales.
+
+Ajuste de varios modelos: Se ajustan varios tipos de modelos sobre los datos sin observaciones atípicas, incluyendo:
+
+Modelo lineal (lm_model_2): Un modelo de regresión lineal.  
+Modelo robusto (rlm_model_2): Un modelo de regresión lineal robusto a outliers.  
+Modelo autoregresivo espacial (sar_model_2): Un modelo SAR que tiene en cuenta la autocorrelación espacial.  
+Modelo de mínimos cuadrados generalizados (gls_model_2): Un modelo GLS que permite heterocedasticidad.  
+Modelo aditivo generalizado (gam_model_2): Un GAM que permite relaciones no lineales entre las variables.  
+
+3.6.5. Evaluación de los Modelos:  
+Métricas y pruebas: Se utiliza una función model_metrics para calcular varias métricas y pruebas de diagnóstico para cada modelo, incluyendo:  
+AIC y BIC: Criterios de información para evaluar la calidad del ajuste del modelo.  
+Prueba de Breusch-Pagan: Para detectar heterocedasticidad.  
+Prueba de Jarque-Bera: Para evaluar la normalidad de los residuos.  
+Índice de Moran: Para detectar autocorrelación espacial en los residuos.  
+VIF: Factor de inflación de la varianza para evaluar la multicolinealidad.  
+
+
+3.6.6. Consolidación y Exportación de Resultados:  
+Consolidación de resultados: Los resultados de las pruebas y métricas se consolidan en un único data frame, que se transforma para ser exportado y analizado.  
+
+Exportación a CSV y Word: Los resultados se exportan a un archivo CSV y se formatean en una tabla en un documento Word, lo que facilita su presentación y análisis.  
 
 
 ```{r, eval=FALSE}
+### Distancias robustas de Mahalanobis
 
+# Calcular los residuos del modelo robusto
+residuales_sar_2 <- residuals(sar_model_2)
+
+# Convertir los residuos en un vector
+residuales_sar_2_vector <- as.vector(residuales_sar_2)
+
+mcd <- covMcd(residuales_sar_2_vector)
+distancias_robustas <- sqrt((residuales_sar_2_vector - mcd$center)^2 / mcd$cov)
+
+# Asignar las distancias robustas a las filas completas
+data_mun15$distancia_maha_robusta[1:length(distancias_robustas)] <- distancias_robustas
+
+
+
+# Paso 2: Ajustar diferentes distribuciones a las distancias robustas
+ajuste_normal <- fitdist(distancias_robustas, "norm")
+ajuste_normal <- fitdist(distancias_robustas, "norm")
+ajuste_gamma <- fitdistr(distancias_robustas, "gamma")
+ajuste_cauchy <- fitdistr(distancias_robustas, "cauchy")
+ajuste_chisq <- fitdist(distancias_robustas, "chisq", start = list(df = 2))
+ajuste_student_t <- fitdist(distancias_robustas, "t", start = list(df = 2))
+ajuste_lognormal <- fitdist(distancias_robustas, "lnorm")
+ajuste_weibull <- fitdistr(distancias_robustas, "weibull")
+
+# Lista de ajustes
+ajustes <- list(
+  Normal = ajuste_normal,
+  Gamma = ajuste_gamma,
+  Cauchy = ajuste_cauchy,
+  ChiSquare = ajuste_chisq,
+  StudentT = ajuste_student_t,
+  LogNormal = ajuste_lognormal,
+  Weibull = ajuste_weibull
+)
+
+# # Paso 3: Evaluar los ajustes
+# 
+# # Pruebas Gráficas
+# par(mfrow = c(3, 3))
+# for (nombre in names(ajustes)) {
+#   plot(ajustes[[nombre]], main = paste("Ajuste", nombre))
+# }
+# 
+# # Pruebas de Ajuste de Máxima Verosimilitud
+# aic_values <- sapply(ajustes, function(x) x$aic)
+# bic_values <- sapply(ajustes, function(x) x$bic)
+# 
+# # Mostrar los valores AIC y BIC
+# print(aic_values)
+# print(bic_values)
+
+
+# Ajustar la distribución de Weibull a las distancias robustas
+ajuste_lognormal <- fitdist(distancias_robustas, "lnorm")
+
+# Supongamos que ya tienes las distancias robustas y has ajustado la distribución log-normal
+
+# Definir los parámetros de la distribución log-normal a partir del ajuste
+shape <- ajuste_lognormal$estimate["meanlog"]
+scale <- ajuste_lognormal$estimate["sdlog"]
+
+# Calcular los valores p utilizando la distribución log-normal
+p_values <- plnorm(distancias_robustas, meanlog = shape, sdlog = scale, lower.tail = FALSE)
+
+
+# Calcular los p-valores para las distancias robustas
+# Utilizar la distribución log-normal para calcular los p-valores
+p_values <- plnorm(distancias_robustas, lower.tail = FALSE)
+
+p_values <- plnorm(distancias_robustas, shape, scale, lower.tail = FALSE)
+
+# Añadir los p-valores al dataframe
+data_mun15$p_values_lnorm <- NA
+data_mun15$p_values_lnorm[1:length(p_values)] <- p_values
+
+
+# Definir los límites superior e inferior para los p-valores
+limite_inferior <- 0.025
+limite_superior <- 0.975
+
+# Filtrar los municipios atípicos
+municipios_atipicos <- data_mun15[data_mun15$p_values_lnorm  < limite_inferior | data_mun15$p_values_lnorm  > limite_superior, ]
+
+# Ver los municipios atípicos
+head(municipios_atipicos)
+
+# Crear un nuevo dataframe sin los municipios atípicos
+data_mun15_sin_atipicos <- data_mun15[!(data_mun15$p_values_lnorm < limite_inferior | data_mun15$p_values_lnorm > limite_superior), ]
+
+
+### MODELOS SIN ATIPICOS
+
+# Construccion de matriz espacial 
+mexico.geom <- st_geometry(data_mun15_sin_atipicos)
+mexico.coords <- st_centroid(mexico.geom) 
+mex5_vecinos = knn2nb(knearneigh(mexico.coords, k = 5))
+listw_5_s_out <- nb2listw(mex5_vecinos, style = "W", zero.policy = TRUE)
+
+# Crear la columna 'peso' como la inversa de 'Población'
+data_mun15_sin_atipicos$peso <- 1 / data_mun15_sin_atipicos$poblacion
+
+# Fórmulas para modelos
+formula_1 <- as.formula(tasa_dfi ~ tasa_promedio_hom  + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob)
+formula_2 <- as.formula(tasa_dfi ~ tasa_promedio_hom  + tasa_prom_cuadrado + salario_mun_mediano + presion_demo + ln_pob + cluster)
+
+
+# Fórmulas para modelos
+formula_1 <- as.formula(tasa_dfi ~ tasa_promedio_hom   + salario_mun_mediano + presion_demo + ln_pob)
+formula_2 <- as.formula(tasa_dfi ~ tasa_promedio_hom   + salario_mun_mediano + presion_demo + ln_pob + cluster)
+
+# Modelos
+lm_model_2 <- lm(formula_2, data = data_mun15_sin_atipicos)
+rlm_model_2 <- rlm(formula_2, data = data_mun15_sin_atipicos)
+sar_model_2 <- errorsarlm(formula_2, data = data_mun15_sin_atipicos, listw = listw_5_s_out)
+gls_model_2 <- gls(formula_1,
+                   data = data_mun15_sin_atipicos,
+                   weights = varIdent(form = ~ 1 | cluster))
+weighted_model_2 <- lm(formula_2,
+                       data = data_mun15_sin_atipicos, weights = peso)
+gam_model_2 <- gam(tasa_dfi ~ s(tasa_promedio_hom) + s(tasa_prom_cuadrado) +
+                     s(salario_mun_mediano) + s(presion_demo) + s(ln_pob) + cluster,
+                   data = data_mun15_sin_atipicos)
+
+
+# Función para obtener métricas y pruebas
+model_metrics <- function(model, model_name, listw = NULL) {
+  # Summary del modelo
+  model_summary <- summary(model)
+  
+  # Coeficientes y p-values
+  if (inherits(model, "gls")) {
+    coefficients <- as.data.frame(coef(model_summary))
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = Value, `[std.error]` = Std.Error, p.value = `p-value`)
+  } else if (inherits(model, "gam")) {
+    coefficients <- summary(model)$s.table
+    coefficients <- as.data.frame(coefficients)
+    coefficients$term <- rownames(coefficients)
+    rownames(coefficients) <- NULL
+    coefficients <- coefficients %>%
+      rename(estimate = edf, `[std.error]` = Ref.df, p.value = `p-value`)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  } else {
+    coefficients <- tidy(model)
+    coefficients <- coefficients %>%
+      rename(`[std.error]` = std.error)
+    if (!"p.value" %in% names(coefficients)) {
+      coefficients$p.value <- NA
+    }
+  }
+  
+  # AIC y BIC
+  aic_value <- AIC(model)
+  bic_value <- BIC(model)
+  
+  # Breusch-Pagan test
+  if (inherits(model, c("lm", "rlm"))) {
+    bp_test <- bptest(model)
+    bp_stat <- bp_test$statistic
+    bp_pvalue <- bp_test$p.value
+  } else {
+    bp_stat <- NA
+    bp_pvalue <- NA
+  }
+  
+  # Jarque-Bera test
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    jb_test <- jarque.bera.test(residuals(model))
+    jb_stat <- jb_test$statistic
+    jb_pvalue <- jb_test$p.value
+  } else {
+    jb_stat <- NA
+    jb_pvalue <- NA
+  }
+  
+  # Prueba de multicolinealidad (VIF)
+  if (inherits(model, c("lm", "rlm", "gls"))) {
+    vif_values <- vif(model)
+    vif_df <- as.data.frame(vif_values)
+    vif_df$term <- rownames(vif_df)
+    rownames(vif_df) <- NULL
+    colnames(vif_df)[1] <- "vif"
+  } else {
+    vif_df <- data.frame(term = NA, vif = NA)
+  }
+  
+  # Índice de Moran si se proporciona una estructura espacial
+  if (!is.null(listw)) {
+    moran_test <- moran.test(residuals(model), listw)
+    moran_i <- moran_test$estimate[1]
+    moran_p <- moran_test$p.value
+  } else {
+    moran_i <- NA
+    moran_p <- NA
+  }
+  
+  # Consolidar resultados en una lista
+  results <- list(
+    model_name = model_name,
+    coefficients = coefficients,
+    aic = aic_value,
+    bic = bic_value,
+    bp_stat = bp_stat,
+    bp_pvalue = bp_pvalue,
+    jb_stat = jb_stat,
+    jb_pvalue = jb_pvalue,
+    moran_i = moran_i,
+    moran_p = moran_p,
+    vif = vif_df
+  )
+  
+  return(results)
+}
+
+# Obtener métricas para cada modelo
+lm_results <- model_metrics(lm_model_2, "Linear Model (lm)")
+rlm_results <- model_metrics(rlm_model_2, "Robust Linear Model (rlm)")
+sar_results <- model_metrics(sar_model_2, "Spatial Autoregressive Model (sar)", listw_5_s_out)
+gls_results <- model_metrics(gls_model_2, "Generalized Least Squares (gls)")
+weighted_results <- model_metrics(weighted_model_2, "Weighted Linear Model (lm)")
+gam_results <- model_metrics(gam_model_2, "Generalized Additive Model (gam)")
+
+# Crear una tabla consolidada
+consolidate_results <- function(results_list) {
+  consolidated <- bind_rows(lapply(results_list, function(result) {
+    result$coefficients %>%
+      mutate(model = result$model_name,
+             aic = result$aic,
+             bic = result$bic,
+             bp_stat = result$bp_stat,
+             bp_pvalue = result$bp_pvalue,
+             jb_stat = result$jb_stat,
+             jb_pvalue = result$jb_pvalue,
+             moran_i = result$moran_i,
+             moran_p = result$moran_p) %>%
+      dplyr::select(model, term, estimate, `[std.error]`, p.value, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p)
+  }))
+  
+  # Añadir VIF
+  vif_df <- bind_rows(lapply(results_list, function(result) {
+    if (!is.na(result$vif$term[1])) {
+      result$vif %>%
+        mutate(model = result$model_name) %>%
+        dplyr::select(model, term, vif)
+    } else {
+      data.frame(model = result$model_name, term = NA, vif = NA)
+    }
+  }))
+  
+  consolidated <- left_join(consolidated, vif_df, by = c("model", "term"))
+  
+  return(consolidated)
+}
+
+# Consolidar todos los resultados
+all_results <- consolidate_results(list(lm_results, rlm_results, sar_results, gls_results, weighted_results, gam_results))
+
+# Definir una función para agregar estrellas de significancia
+add_significance_stars <- function(p_value) {
+  if (is.na(p_value)) {
+    return("")
+  } else if (p_value < 0.001) {
+    return("***")
+  } else if (p_value < 0.01) {
+    return("**")
+  } else if (p_value < 0.05) {
+    return("*")
+  } else if (p_value < 0.1) {
+    return(".")
+  } else {
+    return("")
+  }
+}
+
+# Agregar estrellas de significancia
+all_results <- all_results %>%
+  mutate(significance = sapply(p.value, add_significance_stars))
+
+# Renombrar "term" como "Variable" y poner std.error entre corchetes
+colnames(all_results)[colnames(all_results) == "term"] <- "Variable"
+colnames(all_results)[colnames(all_results) == "std.error"] <- "[std.error]"
+
+# Concatenar "std.error" a "estimate" y asignarlo a "Coeficiente"
+all_results$estimate <- round(all_results$estimate,5)
+all_results$'[std.error]' <- round(all_results$'[std.error]',5)
+all_results <- all_results %>%
+  mutate(Coeficiente = paste0(estimate, " [", `[std.error]`, "]", significance))
+
+# Eliminar columnas innecesarias
+resultados_completos <- all_results %>%
+  dplyr::select(-estimate, -`[std.error]`, -p.value, -significance)
+
+
+# Crear df1
+df1 <- resultados_completos %>% 
+  dplyr::select(model, Variable, Coeficiente) %>%
+  pivot_wider(names_from = model, values_from = Coeficiente)
+
+
+df2 <- resultados_completos %>% 
+  dplyr::select(model, aic, bic, bp_stat, bp_pvalue, jb_stat, jb_pvalue, moran_i, moran_p) %>%
+  distinct() %>%
+  pivot_longer(cols = -model, names_to = "Variable", values_to = "value") %>%
+  pivot_wider(names_from = model, values_from = value)
+
+
+# Unir df1_long y df2 por la columna 'model'
+combined_df6 <- rbind(df1, df2)
+
+# # Guardar la tabla de resultados transpuesta en un archivo CSV
+write.csv(combined_df6, "Resultados/DE_SAR_modelos_results_3_CUADRATICOS_SIN_OUTLIERS.csv", row.names = FALSE)
+
+# Crear la tabla flextable a partir del dataframe
+ft6 <- flextable(combined_df6)
+
+# Personalizar la tabla (opcional)
+ft6 <- ft6 %>%
+  set_header_labels(values = colnames(combined_df6)) %>% # Asegura que los nombres de las columnas sean correctos
+  theme_vanilla() %>% 
+  autofit()
+
+# Obtener la fecha actual en formato YYYYMMDD
+current_date <- format(Sys.Date(), "%Y%m%d")
+
+# Crear el nombre del archivo incluyendo la fecha
+file_name6 <- paste0("Resultados/DE_SAR_modelos_results_3_CUADRATICOS_SIN_OUTLIERS_", current_date, ".docx")
+
+# Crear un documento Word y añadir la tabla
+doc6 <- read_docx() %>%
+  body_add_flextable(ft6)
+
+# Guardar el documento Word con el nombre dinámico
+print(doc6, target = file_name6)
 ```
 
+4. Análisis de Colinealidad y Multicolinealidad:  
 
+
+eigprop(mod=lm_model_2), eigprop(mod=rlm_model_2), eigprop(mod=weighted_model_2):
+Propiedades de los valores propios (eigprop): Estas líneas calculan las propiedades de los valores propios de las matrices de diseño de los modelos lineales (lm_model_2), robusto (rlm_model_2), y ponderado (weighted_model_2). Los valores propios proporcionan información sobre la colinealidad en los modelos. Un pequeño valor propio indica posible colinealidad, lo que sugiere que algunas variables pueden estar altamente correlacionadas.  
+
+mctest(mod=lm_model_2), mctest(mod=rlm_model_2), mctest(mod=weighted_model_2):  
+Prueba de multicolinealidad (mctest): Estas pruebas evalúan la presencia de multicolinealidad en los modelos. La multicolinealidad ocurre cuando dos o más variables independientes en un modelo están altamente correlacionadas, lo que puede hacer que sea difícil estimar los coeficientes del modelo con precisión.
+2. Evaluación del Modelo SAR:
+Cálculo de residuos (residuals_sar_2): Se calculan los residuos del modelo SAR (sar_model_2). Estos residuos representan la diferencia entre los valores observados y los predichos por el modelo.
+
+Cálculo del RMSE (RMSE_sar_2): El RMSE (Root Mean Squared Error) se calcula para evaluar el error promedio de predicción del modelo. Un valor más bajo de RMSE indica un mejor ajuste del modelo a los datos.  
+
+Cálculo del R² (r_squared): El coeficiente de determinación R² se calcula para el modelo SAR, midiendo la proporción de la varianza total explicada por el modelo. Un valor de R² más cercano a 1 indica un modelo que explica mejor la variabilidad de los datos.  
+
+3. Prueba de Breusch-Pagan para Heterocedasticidad:
+Prueba de Breusch-Pagan (bp_test): Esta prueba evalúa la heterocedasticidad en los residuos del modelo. La heterocedasticidad ocurre cuando la varianza de los residuos no es constante a lo largo de los valores de las variables independientes, lo que puede violar los supuestos de los modelos de regresión lineal.  
+  
+Cálculo de residuos en un modelo GLS (residuos_gls): Se calculan los residuos del modelo de mínimos cuadrados generalizados (gls_model_2) usando el tipo de residuos "pearson", que son residuos estandarizados. Estos residuos se utilizan para realizar la prueba de Breusch-Pagan.    
+
+Modelo auxiliar (modelo_aux): Se define un modelo auxiliar en el que los residuos cuadrados del modelo GLS se regresan sobre las variables independientes. Este modelo auxiliar es necesario para calcular las estadísticas de la prueba de Breusch-Pagan.    
+
+Resultados del test de Breusch-Pagan (bp_test): Finalmente, se realiza y se muestran los resultados del test de Breusch-Pagan. Un p-valor bajo indicaría la presencia de heterocedasticidad en el modelo.  
+
+4. Evaluación Global del Modelo SAR y GLS:  
+Validación y diagnóstico del modelo SAR (sar_model_2): Se calcula el R² y el RMSE para el modelo SAR para verificar su capacidad de predicción y ajuste a los datos.  
+
+Pruebas de diagnóstico para modelos GLS y SAR: Las pruebas adicionales, como el test de Breusch-Pagan, permiten diagnosticar problemas potenciales en el modelo, como heterocedasticidad, que pueden afectar la validez de las inferencias hechas a partir del modelo.  
+
+Conclusión:  
+Este código realiza un análisis detallado de varios modelos de regresión, incluyendo modelos lineales, robustos y ponderados, así como un modelo espacial autoregresivo (SAR). Se abordan aspectos críticos como la colinealidad entre las variables explicativas y la heterocedasticidad de los residuos. Las métricas de rendimiento, como el RMSE y el R², junto con pruebas de diagnóstico como Breusch-Pagan, permiten evaluar la adecuación y calidad de los modelos ajustados. La comprensión y corrección de estos problemas son esenciales para garantizar la validez y fiabilidad de los resultados obtenidos a partir de los modelos.
 
 ```{r, eval=FALSE}
 
+eigprop(mod =lm_model_2)
+eigprop(mod= rlm_model_2)
+eigprop(mod= weighted_model_2)
+mctest(mod=lm_model_2)
+mctest(mod=rlm_model_2)
+mctest(mod=weighted_model_2)
+###############################################################################################
+# Obtener los residuos del modelo SAR
+residuals_sar_2 <- residuals(sar_model_2)
+
+# Calcular los errores del modelo SAR
+errors_sar_2 <- data_mun15$tasa_dfi - fitted(sar_model_2)
+RMSE_sar_2 <- sqrt(mean(errors_sar_2^2))
+
+# Calcular el R^2
+valores_observados <- sar_model_2$y
+valores_ajustados <- fitted(sar_model_2)
+
+# Suma de los cuadrados totales (SST)
+sst <- sum((valores_observados - mean(valores_observados))^2)
+
+# Suma de los cuadrados residuales (SSR)
+ssr <- sum(residuals(sar_model_2)^2)
+
+# R^2
+r_squared <- 1 - (ssr / sst)
+
+# Mostrar los resultados
+print(paste("RMSE (sar_model_2):", RMSE_sar_2))
+print(paste("R^2 (sar_model_2):", r_squared))
+
+
+### BREUCH PAGAN 
+
+eigprop(mod =lm_model_2)
+eigprop(mod= rlm_model_2)
+eigprop(mod= weighted_model_2
+)
+# Obtener los valores ajustados de ambos modelos
+fitted_values_sar_2 <- fitted(sar_model_2)
+
+
+# Obtener los residuos en la escala logarítmica
+residuals_sar_2 <- residuals(sar_model_2)
+
+# Calcular los errores de ambos modelos
+errors_sar_2 <- data_mun15$tasa_dfi - fitted_values_sar_2
+
+# Calcular el RMSE para ambos modelos
+RMSE_sar_1 <- sqrt(mean(errors_sar_1^2))
+RMSE_sar_2 <- sqrt(mean(errors_sar_2^2))
+RMSE_sar_3 <- sqrt(mean(errors_sar_3^2))
+# print(paste("RMSE del modelo SAR Logarítmico (Aproximación A):", RMSE_log_1))
+
+# Modelo SAR
+modelo <- sar_model_2
+
+# Valores observados y valores ajustados
+valores_observados <- modelo$y
+valores_ajustados <- fitted(modelo)
+
+# Suma de los cuadrados totales (SST)
+sst <- sum((valores_observados - mean(valores_observados))^2)
+
+# Suma de los cuadrados residuales (SSR)
+ssr <- sum(residuals(modelo)^2)
+
+# R^2
+r_squared <- 1 - (ssr / sst)
+
+# Mostrar el valor de R^2
+r_squared
+
+
+# Calcular los residuos del modelo GLS
+residuos_gls <- residuals(gls_model_2, type = "pearson")
+
+# Definir el modelo auxiliar para el test de Breusch-Pagan
+# Este modelo auxiliar es una regresión de los residuos cuadrados sobre las variables independientes
+modelo_aux <- lm(residuos_gls^2 ~ tasa_promedio_hom + tasa_prom_cuadrado  + salario_mun_mediano + presion_demo + ln_pob + factor(cluster), data = data_mun15_sin_atipicos)
+
+# Obtener los estadísticos del test de Breusch-Pagan
+bp_test <- bptest(modelo_aux)
+
+# Mostrar los resultados del test de Breusch-Pagan
+print(bp_test)
 ```
-
-
-
-
-
 
 
 
