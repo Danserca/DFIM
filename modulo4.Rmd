@@ -164,9 +164,12 @@ Es de esperarse que entre fuentes haya diferencias en las definiciones de variab
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
-# 3. Metodología  
+# 3. Procedimiento 
 
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
+
+Por defecto, las funciones como svymean y svytotal en el paquete survey utilizan el estimador de Horvitz-Thompson, siempre que los pesos se hayan definido correctamente en svydesign. Esto se basa en la teoría muestral de que el peso es el inverso de la probabilidad de selección, lo cual es el principio del estimador Horvitz-Thompson.
+
 Por otra parte, se analizaron las macro determinantes de la emigración. Para esto, se consideraron las emigraciones por razón de inseguridad delictiva y violencia y por razones distintas a esta, tales como las emigraciones por razones de trabajo, escuela o familia. Se utilizaron datos agregados a nivel municipal del Censo 2020 y de las estadísticas vitales. Se hicieron los cálculos para cada municipio y se establecieron las variables auxiliares. Se estimaron modelos de regresión.
 
 ## 3.1. Calibración del ponderador en integración de la ENVIPE 2018 y ENADID 2018   
@@ -179,9 +182,7 @@ Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus similitudes en perio
 En el caso de la ENADID 2018 se unieron las tablas que componen su base de datos, a partir de las llaves primarias. La base de datos de esta encuesta se estructura en 4 tablas. Solo se unieron las tablas con las variables de interés. En este caso se unieron la Tabla de hogares (THogar) y la tabla de datos sociodemográficos de (TSDem). La primera tabla THogar concentra información relativa a los hogares dentro de las viviendas seleccionadas para la aplicación de la encuesta, específicamente en esta tabla se incluyen la contabilización del número de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se incluye un ponderador FAV_VIV y variables de estratificación. La tabla THogar incluye dos variables de identificación única a nivel registro: Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene las variables de identificación upm, viv_sel, hogar, n_ren que sirven para relacionar todas las tablas de la encuesta, así como variables de identificación geográfica: la Entidad federativa (ent) y Tamaño de localidad (tam_loc). Además, contiene variables de interés como: Sexo, Edad, Entidad de residencia en 2017, Causa de migración reciente. 
 
 
-### 3.2.1. Procedimiento en R
-
-#### Entorno de trabajo y librerías
+### Entorno de trabajo y librerías
 
 Antes de importar los datos, cargamos las librerías necesarias para el análisis:  
 
@@ -197,7 +198,7 @@ paquetes <- c(
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
 
-#### Cargar y preparar datos de ENADID 2018
+### Cargar y preparar datos de ENADID 2018
 
 En esta fase describe la limpieza de los datos y su preparación para el análisis. Está formada por subprocesos que verifican, limpian y transforman los datos de entrada, de modo que puedan analizarse. 
 Leemos y preparamos los datos de ENADID. Esto incluye la limpieza de variables y la creación de nuevas variables necesarias para el análisis.
@@ -538,81 +539,7 @@ Una alternativa al método anterior de cálculo es usar solo el factor de expans
 
 
 
-## Análisis de las macrodeterminantes de la emigración  
-Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
-La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
-
-
-\[
-\mathrm{TDFI}_i = \left(\frac{\mathrm{DFI}_i}{\mathrm{POB}_i}\right) \times 100,000
-\]
-
-Donde:
-\[
-\mathrm{TDFI}_i : \text{Tasa de DFI (intermunicipal) del municipio } i \text{ de 2015 a 2019 por cada cien mil habitantes}
-\]
-\[
-\mathrm{DFI}_i : \text{Personas en situación de DFI del municipio } i \text{ de 2015 a 2019}
-\]
-\[
-\mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad del periodo } t \text{ a } t+4
-\]
-
 <br><br>
-<br><br>
-Para explorar más a fondo la variación de la tasa de DFI por violencia, la Figura 2 muestra su distribución geográfica. 
-<br><br>
-<br><br>
-<div style="text-align: center;">
-  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
-  ![](imagenes/figura2_mapa.png)
-  
-</div>
-
-
-
-La tasa suavizada se expresa como un promedio ponderado de la tasa bruta, \( r \), y la estimación previa, \( \theta \). Esta última se estima como una tasa de referencia, el promedio estatal. En esencia, la técnica EB consiste en calcular un promedio ponderado entre la tasa bruta de cada municipio y el promedio estatal, con ponderaciones proporcionales a la población subyacente en riesgo. Es decir, los municipios pequeños (es decir, con una pequeña población en riesgo) tenderán a que sus tasas se ajusten considerablemente, mientras que en los municipios más grandes las tasas apenas cambiarán. De manera formal:
-
-\[
-\pi_i^{EB} = w_i r_i + \left(1 - w_i\right) \theta
-\]
-
-En esta expresión, los pesos son:
-
-\[
-w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
-\]
-
-donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano empírico, la media \( \mu \) y la varianza \( \sigma^2 \) previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
-
-<br><br>
-<div style="text-align: center;">
-  <p><strong>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</strong></p>
-  ![](imagenes/figura3_mapa.png)
-</div>
-  
-<br><br>
-<hr style="border: 3px solid#0077C8;" />
-  
-# Estimación del Desplazamiento Forzado Interno en México
-En este taller, aprenderemos a realizar una estimación del desplazamiento forzado interno (DFI) en México, utilizando datos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos enfocaremos en la calibración de ponderadores y la creación de diseños muestrales.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```{r, eval=FALSE}
 ## B. MÉTODO DE CÁLCULO USANDO FAC_ELE == fac_ele
@@ -833,3 +760,83 @@ write.xlsx(list_of_datasets,
            file = paste0("DFI_viol_envipe_enadid_FAC_ELE_", format(Sys.Date(), "%y%m%d"), ".xlsx"))
 
 ```
+
+
+
+## Análisis de las macrodeterminantes de la emigración  
+Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
+La variable dependiente es la tasa de personas que cambiaron de lugar de residencia y atribuyeron la violencia como causa principal de dicho cambio, por cada cien mil habitantes, durante el período 2015-2019 (tasa_dfi). Solo se consideraron los municipios al inicio del quinquenio. Para lidiar con la heteroscedasticidad y anormalidad, esta variable se transformó en su versión logarítmica más uno (log plus one) . Considerando que entre 2015 y 2019 en más de la mitad de los municipios del país no hubo un solo homicidio doloso y el logaritmo de cero no está definido, se agregó una pequeña constante (como 1). A esto se le suele denominar transformación "log más uno".  La estimación se realizó a partir de la pregunta de lugar de residencia cinco años atrás, la tasa de DFI se define como:
+
+
+\[
+\mathrm{TDFI}_i = \left(\frac{\mathrm{DFI}_i}{\mathrm{POB}_i}\right) \times 100,000
+\]
+
+Donde:
+\[
+\mathrm{TDFI}_i : \text{Tasa de DFI (intermunicipal) del municipio } i \text{ de 2015 a 2019 por cada cien mil habitantes}
+\]
+\[
+\mathrm{DFI}_i : \text{Personas en situación de DFI del municipio } i \text{ de 2015 a 2019}
+\]
+\[
+\mathrm{POB}_i : \text{Población total del municipio } i \text{ a mitad del periodo } t \text{ a } t+4
+\]
+
+<br><br>
+<br><br>
+Para explorar más a fondo la variación de la tasa de DFI por violencia, la Figura 2 muestra su distribución geográfica. 
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 2. Tasa de personas que cambiaron de lugar de residencia y atribuyeron a la violencia dicho cambio por cada cien mil habitantes, 2015-2019</strong></p>
+  ![](imagenes/figura2_mapa.png)
+  
+</div>
+
+
+
+La tasa suavizada se expresa como un promedio ponderado de la tasa bruta, \( r \), y la estimación previa, \( \theta \). Esta última se estima como una tasa de referencia, el promedio estatal. En esencia, la técnica EB consiste en calcular un promedio ponderado entre la tasa bruta de cada municipio y el promedio estatal, con ponderaciones proporcionales a la población subyacente en riesgo. Es decir, los municipios pequeños (es decir, con una pequeña población en riesgo) tenderán a que sus tasas se ajusten considerablemente, mientras que en los municipios más grandes las tasas apenas cambiarán. De manera formal:
+
+\[
+\pi_i^{EB} = w_i r_i + \left(1 - w_i\right) \theta
+\]
+
+En esta expresión, los pesos son:
+
+\[
+w_i = \frac{\sigma^2}{\sigma^2 + \frac{\mu}{P_i}}
+\]
+
+donde \( P_i \) es la población del municipio \( i \). En el enfoque bayesiano empírico, la media \( \mu \) y la varianza \( \sigma^2 \) previas son estimadas a partir de los datos. La Figura 3 muestra la distribución de esta variable independiente suavizada. Se aplicó una transformación adicional: el logaritmo de la variable más uno, igual que la transformación realizada en la variable dependiente.
+
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 3. Tasa suavizada promedio de homicidios, 2015-2019</strong></p>
+  ![](imagenes/figura3_mapa.png)
+</div>
+  
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+  
+# Estimación del Desplazamiento Forzado Interno en México
+En este taller, aprenderemos a realizar una estimación del desplazamiento forzado interno (DFI) en México, utilizando datos de la Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) y la Encuesta Nacional de la Dinámica Demográfica (ENADID). Nos enfocaremos en la calibración de ponderadores y la creación de diseños muestrales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
