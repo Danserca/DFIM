@@ -11,7 +11,7 @@
 
 
 
-<title>Módulo 3</title>
+<title>Módulo 5</title>
 
 <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -35,6 +35,31 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var codeBlocks = document.querySelectorAll("pre code");
+  codeBlocks.forEach(function(block) {
+    var button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M10 1.5v1h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5h2v-1a.5.5 0 0 1 1 0v1h2v-1a.5.5 0 0 1 1 0zM4.5 3v11h7V3h-7zm4-1v1h-3V2h3z"/></svg>';
+
+    button.addEventListener("click", function() {
+      var code = block.innerText;
+      navigator.clipboard.writeText(code).then(function() {
+        button.innerHTML = 'Copiado!';
+        setTimeout(function() {
+          button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M10 1.5v1h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5h2v-1a.5.5 0 0 1 1 0v1h2v-1a.5.5 0 0 1 1 0zM4.5 3v11h7V3h-7zm4-1v1h-3V2h3z"/></svg>';
+        }, 2000);
+      });
+    });
+
+    var pre = block.parentNode;
+    pre.style.position = "relative";
+    pre.insertBefore(button, block);
+  });
+});
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -349,8 +374,8 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Módulo 3</h1>
-<h3 class="subtitle">Fuentes de datos y análisis</h3>
+<h1 class="title toc-ignore">Módulo 5</h1>
+<h3 class="subtitle">Resultados</h3>
 
 </div>
 
@@ -379,133 +404,77 @@ hr.cintillo {
 }
 </style>
 <div style="color: #003057;">
+
+
 <hr style="border: 3px solid#0077C8;" />
-<div id="lección-1.-recomendaciones-para-censos" class="section level1">
-<h1>Lección 1. Recomendaciones para <strong>censos</strong></h1>
-<p>Recomendaciones para mejorar el uso de los <em>censos</em> para
-recopilar datos sobre desplazados internos.</p>
-<p>Basándose en los Principios y recomendaciones de las Naciones Unidas
-para los censos de población y vivienda, el IRIS recomienda añadir
-preguntas específicas para captar mejor la información sobre el
-desplazamiento interno.</p>
-</div>
-</div>
-<div class="row-sm-3">
-<p><img src="imagenes/recomendaciones.png" /></p>
-</a>
-</div>
-<p style="text-align:right; font-size: 12px; color: #706F6F;">
-Fuente: Naciones Unidas, IRIS
+<div
+id="principales-resultados-de-la-integración-de-datos-de-enadid-2018-y-envipe-2018"
+class="section level1">
+<h1>1. Principales resultados de la integración de datos de ENADID 2018
+y ENVIPE 2018</h1>
+<p>Tras integrar y calibrar los datos de la ENVIPE 2018 y ENADID 2018,
+utilizando dos factores de expansión base solo para los datos de la
+ENVIPE 2018, los resultados obtenidos se compararon con las estimaciones
+basadas en la ENVIPE 2018 y ENADID 2018 sin ningún proceso de
+integración o calibración, y con los datos del Censo 2020. La cifra de
+DFI resultante de la integración y calibración asciende a 580,993
+personas, casi el doble de la cifra del Censo 2020. La Figura 5 y la
+Tabla 5 presentan estadísticas descriptivas de las estimaciones de
+personas en situación de DFI y sus coeficientes de variación (CV) a
+nivel nacional. Los CV obtenidos a partir de los datos integrados son
+menores que los de la ENVIPE 2018 y ENADID 2018 por separado, indicando
+una mayor precisión en las estimaciones al utilizar el método de cálculo
+del INEGI, que multiplica el factor de expansión para hogares por el
+número de integrantes del hogar.</p>
+<br><br> <br><br>
+<div style="text-align: center;">
+<p>
+<strong>Figura 1. “Estimaciones de DFI en México según diversas fuentes
+integradas y no integradas”,</strong>
 </p>
-<br><br>
-<hr style="border: 3px solid#0077C8;" />
-<div id="lección-2.-recomendaciones-para-encuestas"
-class="section level1">
-<h1>Lección 2. Recomendaciones para <strong>encuestas</strong></h1>
-<iframe src="recomendaciones_encuestas.html" style="width: 800px; height: 600px; border: none;">
-</iframe>
-<br><br>
-<hr style="border: 3px solid#0077C8;" />
+<p><img src="imagenes/grafica_estimaciones_dfi2.png" /></p>
 </div>
-<div id="lección-3.-recomendaciones-para-registros-administrativos"
-class="section level1">
-<h1>Lección 3. Recomendaciones para <strong>registros
-administrativos</strong></h1>
-<p>Para los desplazados internos (IDPs), el IRIS recomienda que:</p>
-<ol style="list-style-type: decimal">
-<li>Los registros de población general deberían ser diseñados o
-modificados para incluir e identificar a los IDPs.</li>
-<li>Se debe maximizar el número de bases de datos administrativas en las
-que se puedan identificar a los IDPs, ya sea incluyendo una variable
-específica o autorizando la vinculación entre diferentes bases de datos
-a una base de datos central que identifique a los IDPs con fines
-estadísticos.</li>
-<li>Los titulares de registros entre varios actores nacionales e
-internacionales deberían usar terminología, definiciones,
-clasificaciones y convenciones de denominación de variables
-comunes.</li>
-<li>Los datos derivados de los registros de IDPs deberían utilizarse
-para estadísticas en cumplimiento con la legislación relacionada con la
-privacidad y la protección de datos, y deben cumplir con las mejores
-prácticas de intercambio de datos.</li>
-</ol>
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+<br><br> <br><br>
+<div style="text-align: center;">
+<p>
+<strong>Figura 2. “Estimaciones de DFI en México según diversas fuentes
+integradas y no integradas”,</strong>
+</p>
+<p><img src="imagenes/grafica_coeficientes_variacion2.png" /></p>
+</div>
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 </div>
-<div id="lección-4.-recomendaciones-para-fuentes-de-datos-alternativas"
-class="section level1">
-<h1>Lección 4. Recomendaciones para <strong>fuentes de datos
-alternativas</strong></h1>
-<p>Las fuentes de datos alternativas, como los macrodatos y las técnicas
-relacionadas, como la integración de datos, también pueden presentar
-oportunidades importantes para mejorar la calidad de las estadísticas
-sobre desplazados internos.</p>
-<p>Los datos recopilados de diferentes fuentes servirán para distintos
-propósitos y tendrán sus propias limitaciones y lagunas. Cuando sea
-posible combinar datos de diferentes fuentes, los datos integrados
-pueden ofrecer un panorama más completo.</p>
-<p>Por lo general, los datos administrativos se pueden combinar con
-datos de encuestas, o se pueden combinar dos o más fuentes
-administrativas. El método de integración aplicado depende del entorno
-de datos específico que prevalezca en un país determinado. Donde existen
-los Números de Identificación Personal (PINs), este proceso puede
-facilitarse más fácilmente.</p>
-<p>En general, dos métodos principales de integración de datos son
-relevantes para las estadísticas de desplazamiento forzado, a
-saber:<br />
-<strong>1. la vinculación de registros y</strong><br />
-<strong>2. la concordancia estadística.</strong></p>
-<p>Las siguientes son las recomendaciones clave de los Principios de la
-ONU que rigen las actividades estadísticas internacionales.</p>
-<div id="recomendaciones-clave" class="section level3">
-<h3>Recomendaciones Clave:</h3>
-<ol style="list-style-type: decimal">
-<li><p>Adoptar un marco de aseguramiento de la calidad para la
-organización.</p></li>
-<li><p>Esforzarse continuamente por mejorar la calidad y transparencia
-de las estadísticas mediante la introducción de innovaciones
-metodológicas y de sistemas.</p></li>
-<li><p>Mejorar la competencia profesional del personal alentándolos a
-asistir a cursos de capacitación, publicar artículos científicos y
-participar en seminarios y conferencias.</p></li>
-<li><p>Documentar y publicar los conceptos, definiciones,
-clasificaciones y metadatos utilizados por la organización.</p></li>
-<li><p>Documentar cómo los datos son recopilados, procesados y
-difundidos por la organización (incluyendo información sobre los
-mecanismos de edición aplicados a los datos de los países y los métodos
-de agregación para calcular estimaciones regionales y
-globales).</p></li>
-<li><p>Dar crédito, en la difusión de estadísticas internacionales, a la
-fuente original y utilizar los estándares de cita acordados al
-reutilizar estadísticas originalmente recopiladas por otros.</p></li>
-</ol>
+<div id="principales-resultados-de-los-modelos" class="section level1">
+<h1>2. Principales resultados de los modelos</h1>
+<p>Se encontró una relación no lineal entre la tasa promedio de
+homicidios y la tasa de personas que declararon haber migrado a causa de
+la violencia, sugiriendo un punto de inflexión a medida que la tasa
+aumenta. Esto sugiere que políticas de seguridad enfocadas en reducir
+los homicidios podrían tener efectos distintos en diferentes
+contextos.</p>
+<p>La influencia positiva consistente de la población sugiere que el
+tamaño de la comunidad es un factor determinante en los resultados. Por
+otro lado, la variabilidad en el intercepto indica que factores no
+observados o específicos de cada modelo pueden jugar un papel importante
+en la explicación de la variación residual.</p>
+<p>La inclusión de Lambda en el modelo SEM resalta la importancia de
+considerar la estructura espacial de los datos. Esto tiene implicaciones
+importantes para la interpretación de los resultados y sugiere que
+modelos que no capturan esta dependencia pueden generar estimaciones
+sesgadas.</p>
+<br><br> <br><br>
+<div style="text-align: center;">
+<p>
+<strong>Figura 3. “Resultados del efecto no lineal de la violencia sobre
+el DFI, a partir de distintos modelos de regresión”,</strong>
+</p>
+<p><img src="imagenes/coefplot_modelos_mejorado.png" /></p>
 </div>
-<div id="independencia-de-las-agencias-estadísticas"
-class="section level3">
-<h3>Independencia de las Agencias Estadísticas</h3>
-<p>La independencia de una agencia estadística es fundamental para
-producir datos creíbles y estadísticas oficiales. Esto es
-particularmente importante para los datos sobre refugiados, desplazados
-internos (IDP) y apatridia, dada su sensibilidad política.</p>
-<p>Consulta los criterios para garantizar la independencia de las
-agencias estadísticas.</p>
-</div>
-</div>
-<div id="lección-5.-recursos" class="section level1">
-<h1>Lección 5. Recursos</h1>
-<p><a
-href="https://github.com/Danserca/DFIM/blob/master/docs/recursos_m3.pdf">Descargar
-Recursos PDF</a></p>
-<p><br><br></p>
+<br><br>
 <hr style="border: 3px solid#0077C8;" />
-</div>
-<div id="qué-sigue" class="section level1">
-<h1>¿Qué sigue?</h1>
-<p>➡️ Módulo 4. Metodología</p>
-<p><br><br> <br><br> <strong>Has llegado al final de este módulo.
-Esperamos que lo hayas disfrutado y te haya ayudado a comprender mejor
-las ventajas y desventajas de las diferentes fuentes de
-datos.</strong></p>
 </div>
 
 

@@ -1,0 +1,103 @@
+---
+title: "Módulo 5"
+subtitle: "Resultados"
+# author: "Dra. Daniela Serrano Campos"
+# date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    theme: spacelab
+    css: "assets/css/styles.css"
+    includes:
+      in_header: header.html
+    #code_folding: hide
+---
+<style type="text/css">
+.navbar {
+  background-color: #0077C8 !important; /* Cambia este valor para ajustar el color del cintillo */
+  border-color: #0077C8 !important; /* Opcional: cambia también el color del borde si es necesario */
+}
+
+
+TOC {
+  color: #0077C8; 
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #003057;
+    background-color: #0077C8;
+    border-color: #0077C8;
+}
+
+hr.cintillo {
+  border: 3px solid #0077C8; /* Color y grosor del cintillo */
+  margin: 20px 0; /* Espaciado arriba y abajo del cintillo */
+}
+</style>
+
+<div style="color: #003057;">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+<hr style="border: 3px solid#0077C8;" />
+
+# 1. Principales resultados de la integración de datos de ENADID 2018 y ENVIPE 2018
+
+
+Tras integrar y calibrar los datos de la ENVIPE 2018 y ENADID 2018, utilizando dos factores de expansión base solo para los datos de la ENVIPE 2018, los resultados obtenidos se compararon con las estimaciones basadas en la ENVIPE 2018 y ENADID 2018 sin ningún proceso de integración o calibración, y con los datos del Censo 2020. La cifra de DFI resultante de la integración y calibración asciende a 580,993 personas, casi el doble de la cifra del Censo 2020.
+La Figura 5 y la Tabla 5 presentan estadísticas descriptivas de las estimaciones de personas en situación de DFI y sus coeficientes de variación (CV) a nivel nacional. Los CV obtenidos a partir de los datos integrados son menores que los de la ENVIPE 2018 y ENADID 2018 por separado, indicando una mayor precisión en las estimaciones al utilizar el método de cálculo del INEGI, que multiplica el factor de expansión para hogares por el número de integrantes del hogar.
+
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 1. "Estimaciones de DFI en México según diversas fuentes integradas y no integradas",</strong></p>
+  ![](imagenes/grafica_estimaciones_dfi2.png) 
+  
+</div>
+
+  
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 2. "Estimaciones de DFI en México según diversas fuentes integradas y no integradas",</strong></p>
+  ![](imagenes/grafica_coeficientes_variacion2.png) 
+  
+</div>
+
+  
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+
+# 2. Principales resultados de los modelos
+
+
+Se encontró una relación no lineal entre la tasa promedio de homicidios y la tasa de personas que declararon haber migrado a causa de la violencia, sugiriendo un punto de inflexión a medida que la tasa aumenta. Esto sugiere que políticas de seguridad enfocadas en reducir los homicidios podrían tener efectos distintos en diferentes contextos.
+
+La influencia positiva consistente de la población sugiere que el tamaño de la comunidad es un factor determinante en los resultados. Por otro lado, la variabilidad en el intercepto indica que factores no observados o específicos de cada modelo pueden jugar un papel importante en la explicación de la variación residual.
+
+La inclusión de Lambda en el modelo SEM resalta la importancia de considerar la estructura espacial de los datos. Esto tiene implicaciones importantes para la interpretación de los resultados y sugiere que modelos que no capturan esta dependencia pueden generar estimaciones sesgadas.
+
+
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 3. "Resultados del efecto no lineal de la violencia sobre el DFI, a partir de distintos modelos de regresión",</strong></p>
+  ![](imagenes/coefplot_modelos_mejorado.png) 
+  
+</div>
+
+  
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
