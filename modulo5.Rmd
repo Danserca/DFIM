@@ -44,6 +44,8 @@ hr.cintillo {
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+library(kableExtra)
+library(dplyr)
 ```
 <hr style="border: 3px solid#0077C8;" />
 
@@ -93,7 +95,7 @@ La inclusión de Lambda en el modelo SEM resalta la importancia de considerar la
 <br><br>
 <div style="text-align: center;">
   <p><strong>Figura 3. "Resultados del efecto no lineal de la violencia sobre el DFI, a partir de distintos modelos de regresión (con variables de control)",</strong></p>
-  ![](imagenes/coefplot_modelos_cuadratico_facet.png) 
+  ![](imagenes/coefplot_modelos_cuadratico_facet_controles.png) 
   
 </div>
 
@@ -102,12 +104,59 @@ La inclusión de Lambda en el modelo SEM resalta la importancia de considerar la
 <hr style="border: 3px solid#0077C8;" />
 
 
+```{r, echo=FALSE}
+
+# Crear el dataframe con los datos
+tabla_efecto_cuadratico <- data.frame(
+  Variable = c("(Intercepto)", "tasa_promedio_hom", "tasa_prom_cuadrado", 
+               "salario_mun_mediano", "presion_demo", "ln_pob", 
+               "factor(cluster)2", "factor(cluster)3", "factor(cluster)4", "lambda", "aic", "bic", 
+               "bp_stat", "bp_pvalue", "jb_stat", "jb_pvalue", "moran_i", "moran_p", "indice de condicion"),
+  `Modelo Lineal (OLS)` = c("-12.80041 [23.05144]", "1.09896*** [0.15108]", "-0.00051*** [0.00008]", 
+                            "0.0034. [0.0019]", "-0.36665*** [0.10476]", "11.52312*** [2.77471]", 
+                            "152.27207** [48.08874]", "68.99103*** [15.56738]", "82.98724** [26.14819]", "NA", 
+                            "31698.83803", "31756.90092", "14.21724308", "0.076275852", "367775.2295", "0", "NA", "NA", "21.77"),
+  `Modelo Lineal Robusto (RLM)` = c("-50.22812*** [7.77789]", "0.76124*** [0.05098]", "-0.00035*** [0.00003]", 
+                                    "0.00352*** [0.00064]", "-0.16677*** [0.03535]", "10.23642*** [0.93623]", 
+                                    "106.4918*** [16.22583]", "39.84091*** [5.25266]", "54.70832*** [8.82277]", "NA", 
+                                    "31828.04858", "31886.11147", "14.21724308", "0.076275852", "359061.7597", "0", "NA", "NA", "21.77"),
+  `Modelo Lineal Ponderado (WLM)` = c("-3.09726 [18.20422]", "1.50851*** [0.32374]", "-0.0007*** [0.00016]", 
+                                      "0.008*** [0.00179]", "-0.01534 [0.11152]", "4.24538 [3.00555]", 
+                                      "174.73194 [889.2882]", "62.91522 [92.7205]", "98.22413 [300.39051]", "NA", 
+                                      "34665.08692", "34723.14982", "0.013807732", "1", "355806.6715", "0", "NA", "NA", "21.77"),
+  `Modelo de Errores Espaciales (SEM)` = c("55.66853. [28.46245]", "0.56376*** [0.13328]", "-0.00027*** [0.00007]", 
+                                           "0.00109 [0.00229]", "-0.23352. [0.12074]", "4.12048 [3.03994]", 
+                                           "117.50333** [43.29778]", "69.69731*** [13.86591]", "86.99591*** [23.61548]", "0.58241*** [0.02134]", 
+                                           "31150.77524", "31214.64442", "7.1917", "0.5161", "493931", "0", "-0.010337535", "0.799148798", "21.77"),
+  `Mínimos Cuadrados Generalizados (GLS)` = c("-42.12217* [20.82881]", "1.44722*** [0.1661]", "-0.00068*** [0.00008]", 
+                                              "0.004* [0.00186]", "-0.34873*** [0.10103]", "14.31234*** [2.47511]", 
+                                              "NA", "NA", "NA", "NA", 
+                                              "31682.4174", "31740.45583", "1.7036", "0.9888", "340855.8264", "0", "NA", "NA", "21.77"),
+  `Modelo Aditivo Generalizado (GAM)` = c("80.507*** [4.254]", "4.5336*** [5.43214]", "0.99853** [0.99846]", 
+                                          "1* [1]", "1** [1]", "8.33468*** [8.88202]", 
+                                          "104.381 [123.148]", "40.533 [32.806]", "-1.525 [65.761]", "NA", 
+                                          "31621.99198", "31743.15075", "14.21724308", "0.076275852", "376380.7126", "0", "NA", "NA", "21.77")
+)
+
+# Crear la tabla con kableExtra
+tabla_efecto_cuadratico %>%
+  kbl(caption = "Tabla 8. Efecto cuadrático de la violencia y DFI en México, 2015-2019", 
+      booktabs = TRUE, 
+      linesep = "") %>%
+  kable_styling(full_width = FALSE, font_size = 12) %>%
+  column_spec(1, bold = TRUE) %>%
+  add_header_above(c(" " = 1, "Modelos" = 6)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  footnote(general = "Errores estándar entre paréntesis. Significancia estadística: *p < 0.1, **p < 0.05, ***p < 0.01")
+
+```
+
 
 <br><br>
 <br><br>
 <div style="text-align: center;">
   <p><strong>Figura 4. "Resultados del efecto no lineal de la violencia sobre el DFI, a partir de distintos modelos de regresión",</strong></p>
-  ![](imagenes/coefplot_modelos_cuadratico.png) 
+  ![](imagenes/coefplot_modelos_cuadratico_facet_SIN_controles.png) 
   
 </div>
 
@@ -126,5 +175,41 @@ La inclusión de Lambda en el modelo SEM resalta la importancia de considerar la
   
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
+<br><br>
+<br><br>
+
+# 3. Diagnóstico de los modelos no lineales
 
 
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 6. "Diagnóstico visual de modelos no lineales de DFI",</strong></p>
+  ![](imagenes/diagnostico_modelos_combinado.png) 
+  
+</div>
+
+  
+<br><br>
+
+  <p><strong>Figura 7. "Diagnóstico visual de modelos no lineales de DFI (continuación)",</strong></p>
+  ![](imagenes/diagnostico_modelos_combinado_SAR_GLS.png) 
+  
+</div>
+
+  
+<br><br>
+
+</div>
+
+  
+<br><br>
+<br><br>
+<div style="text-align: center;">
+  <p><strong>Figura 8. "Diagnóstico visual de modelos no lineales de emigraciones na atribuidas a la violencia",</strong></p>
+  ![](imagenes/diagnostico_modelos_emigraciones.png) 
+  
+</div>
+
+  
+<br><br>

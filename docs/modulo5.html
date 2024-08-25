@@ -35,6 +35,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   var codeBlocks = document.querySelectorAll("pre code");
@@ -404,8 +406,6 @@ hr.cintillo {
 }
 </style>
 <div style="color: #003057;">
-
-
 <hr style="border: 3px solid#0077C8;" />
 <div
 id="principales-resultados-de-la-integración-de-datos-de-enadid-2018-y-envipe-2018"
@@ -472,17 +472,511 @@ sesgadas.</p>
 el DFI, a partir de distintos modelos de regresión (con variables de
 control)”,</strong>
 </p>
-<p><img src="imagenes/coefplot_modelos_cuadratico_facet.png" /></p>
+<p><img
+src="imagenes/coefplot_modelos_cuadratico_facet_controles.png" /></p>
 </div>
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
+<table class="table table table-striped table-hover table-condensed table-responsive" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption style="font-size: initial !important;">
+Tabla 8. Efecto cuadrático de la violencia y DFI en México, 2015-2019
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Modelos
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Modelo.Lineal..OLS.
+</th>
+<th style="text-align:left;">
+Modelo.Lineal.Robusto..RLM.
+</th>
+<th style="text-align:left;">
+Modelo.Lineal.Ponderado..WLM.
+</th>
+<th style="text-align:left;">
+Modelo.de.Errores.Espaciales..SEM.
+</th>
+<th style="text-align:left;">
+Mínimos.Cuadrados.Generalizados..GLS.
+</th>
+<th style="text-align:left;">
+Modelo.Aditivo.Generalizado..GAM.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+(Intercepto)
+</td>
+<td style="text-align:left;">
+-12.80041 [23.05144]
+</td>
+<td style="text-align:left;">
+-50.22812*** [7.77789]
+</td>
+<td style="text-align:left;">
+-3.09726 [18.20422]
+</td>
+<td style="text-align:left;">
+55.66853. [28.46245]
+</td>
+<td style="text-align:left;">
+-42.12217* [20.82881]
+</td>
+<td style="text-align:left;">
+80.507*** [4.254]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+tasa_promedio_hom
+</td>
+<td style="text-align:left;">
+1.09896*** [0.15108]
+</td>
+<td style="text-align:left;">
+0.76124*** [0.05098]
+</td>
+<td style="text-align:left;">
+1.50851*** [0.32374]
+</td>
+<td style="text-align:left;">
+0.56376*** [0.13328]
+</td>
+<td style="text-align:left;">
+1.44722*** [0.1661]
+</td>
+<td style="text-align:left;">
+4.5336*** [5.43214]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+tasa_prom_cuadrado
+</td>
+<td style="text-align:left;">
+-0.00051*** [0.00008]
+</td>
+<td style="text-align:left;">
+-0.00035*** [0.00003]
+</td>
+<td style="text-align:left;">
+-0.0007*** [0.00016]
+</td>
+<td style="text-align:left;">
+-0.00027*** [0.00007]
+</td>
+<td style="text-align:left;">
+-0.00068*** [0.00008]
+</td>
+<td style="text-align:left;">
+0.99853** [0.99846]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+salario_mun_mediano
+</td>
+<td style="text-align:left;">
+0.0034. [0.0019]
+</td>
+<td style="text-align:left;">
+0.00352*** [0.00064]
+</td>
+<td style="text-align:left;">
+0.008*** [0.00179]
+</td>
+<td style="text-align:left;">
+0.00109 [0.00229]
+</td>
+<td style="text-align:left;">
+0.004* [0.00186]
+</td>
+<td style="text-align:left;">
+1* [1]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+presion_demo
+</td>
+<td style="text-align:left;">
+-0.36665*** [0.10476]
+</td>
+<td style="text-align:left;">
+-0.16677*** [0.03535]
+</td>
+<td style="text-align:left;">
+-0.01534 [0.11152]
+</td>
+<td style="text-align:left;">
+-0.23352. [0.12074]
+</td>
+<td style="text-align:left;">
+-0.34873*** [0.10103]
+</td>
+<td style="text-align:left;">
+1** [1]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+ln_pob
+</td>
+<td style="text-align:left;">
+11.52312*** [2.77471]
+</td>
+<td style="text-align:left;">
+10.23642*** [0.93623]
+</td>
+<td style="text-align:left;">
+4.24538 [3.00555]
+</td>
+<td style="text-align:left;">
+4.12048 [3.03994]
+</td>
+<td style="text-align:left;">
+14.31234*** [2.47511]
+</td>
+<td style="text-align:left;">
+8.33468*** [8.88202]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+factor(cluster)2
+</td>
+<td style="text-align:left;">
+152.27207** [48.08874]
+</td>
+<td style="text-align:left;">
+106.4918*** [16.22583]
+</td>
+<td style="text-align:left;">
+174.73194 [889.2882]
+</td>
+<td style="text-align:left;">
+117.50333** [43.29778]
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+104.381 [123.148]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+factor(cluster)3
+</td>
+<td style="text-align:left;">
+68.99103*** [15.56738]
+</td>
+<td style="text-align:left;">
+39.84091*** [5.25266]
+</td>
+<td style="text-align:left;">
+62.91522 [92.7205]
+</td>
+<td style="text-align:left;">
+69.69731*** [13.86591]
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+40.533 [32.806]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+factor(cluster)4
+</td>
+<td style="text-align:left;">
+82.98724** [26.14819]
+</td>
+<td style="text-align:left;">
+54.70832*** [8.82277]
+</td>
+<td style="text-align:left;">
+98.22413 [300.39051]
+</td>
+<td style="text-align:left;">
+86.99591*** [23.61548]
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+-1.525 [65.761]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+lambda
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.58241*** [0.02134]
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+aic
+</td>
+<td style="text-align:left;">
+31698.83803
+</td>
+<td style="text-align:left;">
+31828.04858
+</td>
+<td style="text-align:left;">
+34665.08692
+</td>
+<td style="text-align:left;">
+31150.77524
+</td>
+<td style="text-align:left;">
+31682.4174
+</td>
+<td style="text-align:left;">
+31621.99198
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+bic
+</td>
+<td style="text-align:left;">
+31756.90092
+</td>
+<td style="text-align:left;">
+31886.11147
+</td>
+<td style="text-align:left;">
+34723.14982
+</td>
+<td style="text-align:left;">
+31214.64442
+</td>
+<td style="text-align:left;">
+31740.45583
+</td>
+<td style="text-align:left;">
+31743.15075
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+bp_stat
+</td>
+<td style="text-align:left;">
+14.21724308
+</td>
+<td style="text-align:left;">
+14.21724308
+</td>
+<td style="text-align:left;">
+0.013807732
+</td>
+<td style="text-align:left;">
+7.1917
+</td>
+<td style="text-align:left;">
+1.7036
+</td>
+<td style="text-align:left;">
+14.21724308
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+bp_pvalue
+</td>
+<td style="text-align:left;">
+0.076275852
+</td>
+<td style="text-align:left;">
+0.076275852
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0.5161
+</td>
+<td style="text-align:left;">
+0.9888
+</td>
+<td style="text-align:left;">
+0.076275852
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+jb_stat
+</td>
+<td style="text-align:left;">
+367775.2295
+</td>
+<td style="text-align:left;">
+359061.7597
+</td>
+<td style="text-align:left;">
+355806.6715
+</td>
+<td style="text-align:left;">
+493931
+</td>
+<td style="text-align:left;">
+340855.8264
+</td>
+<td style="text-align:left;">
+376380.7126
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+jb_pvalue
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+moran_i
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+-0.010337535
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+moran_p
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.799148798
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+indice de condicion
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+<td style="text-align:left;">
+21.77
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Errores estándar entre paréntesis. Significancia
+estadística: <em>p &lt; 0.1, <strong>p &lt; 0.05, </strong></em>p &lt;
+0.01
+</td>
+</tr>
+</tfoot>
+</table>
 <br><br> <br><br>
 <div style="text-align: center;">
 <p>
 <strong>Figura 4. “Resultados del efecto no lineal de la violencia sobre
 el DFI, a partir de distintos modelos de regresión”,</strong>
 </p>
-<p><img src="imagenes/coefplot_modelos_cuadratico.png" /></p>
+<p><img
+src="imagenes/coefplot_modelos_cuadratico_facet_SIN_controles.png" /></p>
 </div>
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
@@ -496,7 +990,37 @@ a causas distintas a la violencia”,</strong>
 </div>
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
+<p><br><br> <br><br></p>
 </div>
+<div id="diagnóstico-de-los-modelos-no-lineales" class="section level1">
+<h1>3. Diagnóstico de los modelos no lineales</h1>
+<br><br> <br><br>
+<div style="text-align: center;">
+<p>
+<strong>Figura 6. “Diagnóstico visual de modelos no lineales de
+DFI”,</strong>
+</p>
+<p><img src="imagenes/diagnostico_modelos_combinado.png" /></p>
+</div>
+<p><br><br></p>
+<p>
+<strong>Figura 7. “Diagnóstico visual de modelos no lineales de DFI
+(continuación)”,</strong>
+</p>
+<p><img src="imagenes/diagnostico_modelos_combinado_SAR_GLS.png" /></p>
+</div>
+</div>
+<p><br><br></p>
+</div>
+<br><br> <br><br>
+<div style="text-align: center;">
+<p>
+<strong>Figura 8. “Diagnóstico visual de modelos no lineales de
+emigraciones na atribuidas a la violencia”,</strong>
+</p>
+<p><img src="imagenes/diagnostico_modelos_emigraciones.png" /></p>
+</div>
+<p><br><br></p>
 
 
 
