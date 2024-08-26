@@ -167,7 +167,7 @@ Es de esperarse que entre fuentes haya diferencias en las definiciones de variab
 
 # 3. Estimación a partir de integración de ENADID (2018) y ENVIPE (2018)
 
-### [**Descarga el proyecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
+### [**Descarga el proyecto aquí**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
 <br><br>
 
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
@@ -810,7 +810,7 @@ write.xlsx(list_of_datasets,
 
 # 4. Análisis de las macrodeterminantes de la emigración  
 
-### [**Descarga el proyecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
+### [**Descarga el proyecto aquí**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
 <br><br>
 
 Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
