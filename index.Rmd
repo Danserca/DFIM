@@ -88,33 +88,40 @@ Al finalizar el taller, los participantes serán capaces de diseñar encuestas y
 1. Bienvenida e Introducción
 
 1.1. Presentación de objetivos del taller.  
-1.2. Importancia del Desplazamiento Forzado Interno (DFI) en México.  
-1.2. Relevancia del DFI para la Dirección General de Estadísticas sobre Gobierno, Seguridad Pública e Impartición de Justicia (DGEGSPJ).  
+1.2. Importancia de las estadísticas del Desplazamiento Forzado Interno (DFI) en México.  
 
-2. Marco Conceptual del DFI  
+2. Definición de Desplazamiento Forzado Interno.  
 
-2.1. Definición y componentes del DFI según el proyecto.  
-2.2. Causas del DFI en México: violencia, delincuencia y otros factores.  
-2.3. Desafíos en la medición del DFI.  
+2.1. Bienvenida.  
+2.2. Importancia de las estadísticas de calidad de Desplazamiento Forzado Interno.  
+2.3. ¿Quiénes son las personas desplazadas internas?  
+2.4. Principales fuentes de datos.   
+2.5. El papel de las Oficinas Nacionales de Estadística (ONE) en la coordinación.  
+2.6. Recursos
 
-3. Metodología Utilizada en el Proyecto  
+3. Fuentes de datos y análisis.  
+3.1. Recomendaciones para censos.  
+3.2. Recomendaciones para encuestas.   
+3.3. Recomendaciones para registros administrativos.  
+3.3. Recursos. 
 
-3.1. Integración de fuentes de datos: ENVIPE 2018, ENADID 2018 y Censo 2020.  
-3.2. Proceso de calibración de ponderadores para asegurar la representatividad.  
-3.3. Uso de modelos de regresión para estimar el número de personas en situación de DFI.  
-3.4. Análisis de las macrodeterminantes de la emigración.  
 
-4. Resultados del Estudio  
+4. Metodología Utilizada en el Proyecto  
 
-4.1. Estimaciones del número de personas en situación de DFI por violencia en México.  
-4.2. Análisis espacial y temporal de los datos: patrones de desplazamiento a nivel estatal y nacional.  
-4.3. Comparación entre diferentes métodos de estimación y su precisión.  
+4.1. Siglas y acrónimos.    
+4.2. Integración de fuentes de datos: ENVIPE 2018, ENADID 2018 y Censo 2020.  
+4.2. Estimación: proceso de calibración de ponderadores para asegurar la representatividad.  
+4.4. Análisis de las macrodeterminantes de la emigración. Uso de modelos de regresión.  
 
-5. Discusión de Resultados y Conclusiones  
+5. Resultados y limitaciones 
 
-5.1. Interpretación de los hallazgos principales.  
-5.2. Implicaciones para la política pública y recomendaciones para futuras mediciones.  
-5.3. Consideraciones sobre la alineación con las recomendaciones internacionales (EGRISS).  
+5.1. Principales resultados de la integración de datos de ENADID 2018 y ENVIPE 2018.   
+5.2. Principales resultados de los modelos.    
+5.3. Diagnóstico de los modelos efecto no lineal.     
+5.4. Resumen de resultados y futuras consideraciones.   
+5.5. Recomendaciones.   
+
+
 
 # **Dirigido a:**
 

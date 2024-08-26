@@ -1,0 +1,108 @@
+---
+title: "resultados"
+# subtitle: "¿Quiénes son?"
+# author: "Daniela Serrano Campos,<br>*investigadora I*"
+# institute: "DGAI"
+# date: "10/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - rladies
+      - rladies-fonts
+      - custom-inegi.css #CSS personalizado
+      # - inegi_fonts.css
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+class: middle, inverse, center
+
+.pull-center[
+
+# Principales resultados
+]
+
+.left[
+
+### Integración y recalibración ENADID 2018 Y ENVIPE 2018 sugiere que:
+
+###**1. Situación en México (2018)**:
+   ##- En 2018, había **446,620 personas en situación de DFI** atribuida a la violencia (CV 5.19).
+
+]
+---
+
+class: middle, center
+
+.pull-center[
+
+# Principales resultados
+]
+
+.left[
+
+## Modelos:
+
+**2. Efecto de la violencia sobre el DFI**:
+   - La violencia muestra un **efecto no lineal sobre el DFI**.
+   - Los resultados son **robustos** a través de diferentes modelos:
+     - Modelos espaciales y ponderados.
+     - Uso de variables de control y medidas alternativas de violencia.
+
+**3. Modelos excluyendo valores atípicos**:
+   - Los modelos de **Regresión Lineal Ponderada** y **Mínimos Cuadrados Generalizados** que excluyen valores atípicos también muestran resultados consistentes.
+
+**4. Efecto de la violencia en emigraciones no atribuidas a esta causa**:
+   - La violencia muestra un **efecto no lineal sobre emigraciones atribuidas a causas distintas a la violencia**
+   - Sin embargo, los resultados son **no robustos** y requieren más indagación. 
+
+]
+---
+
+
+class: middle, center, inverse
+
+.pull-center[
+
+# Consideraciones Futuras
+]
+
+.left[
+
+1. Considerar otros delitos además del homicidio, como **secuestro** y **extorsión**.
+2. Incorporar **medidas subjetivas** como la percepción de inseguridad.
+3. Validar internamente las estimaciones y buscar **validación externa**
+4. La **gran dispersión de datos** y los **valores atípicos** sugieren la necesidad de análisis más profundos.
+5. Las pruebas gráficas también sugieren la necesidad de **seguir indagando** en esta relación, ya que **podrían existir valores atípicos** o factores adicionales que influyan en la relación observada (sesgos de variables omitidas).
+
+]
+
+
+
+
+
+

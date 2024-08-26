@@ -1,6 +1,6 @@
 ---
 title: "Módulo 5"
-subtitle: "Resultados"
+subtitle: "Resultados y limitaciones"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -140,7 +140,7 @@ tabla_efecto_cuadratico <- data.frame(
 
 # Crear la tabla con kableExtra
 tabla_efecto_cuadratico %>%
-  kbl(caption = "Tabla 8. Efecto cuadrático de la violencia y DFI en México, 2015-2019", 
+  kbl(caption = "Tabla 8. Efecto cuadrático de la violencia en el DFI en México", 
       booktabs = TRUE, 
       linesep = "") %>%
   kable_styling(full_width = FALSE, font_size = 12) %>%
@@ -180,8 +180,6 @@ tabla_efecto_cuadratico %>%
 
 # 3. Diagnóstico de los modelos no lineales
 
-
-<br><br>
 <br><br>
 <div style="text-align: center;">
   <p><strong>Figura 6. "Diagnóstico visual de modelos no lineales de DFI",</strong></p>
@@ -189,27 +187,39 @@ tabla_efecto_cuadratico %>%
   
 </div>
 
-  
+<br><br>  
 <br><br>
-
+<div style="text-align: center;">
   <p><strong>Figura 7. "Diagnóstico visual de modelos no lineales de DFI (continuación)",</strong></p>
-  ![](imagenes/diagnostico_modelos_combinado_SAR_GLS.png) 
+  ![](imagenes/diagnostico_modelos_combinado_SAR_GLS.png)
   
-</div>
-
-  
-<br><br>
 
 </div>
 
-  
-<br><br>
 <br><br>
 <div style="text-align: center;">
   <p><strong>Figura 8. "Diagnóstico visual de modelos no lineales de emigraciones na atribuidas a la violencia",</strong></p>
   ![](imagenes/diagnostico_modelos_emigraciones.png) 
   
+  
 </div>
 
   
 <br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+# 4. Resumen de resultados y futuras consideraciones 
+
+<iframe src="resultados.html" style="width: 800px; height: 600px; border: none;"></iframe>
+
+<br><br>
+<hr style="border: 3px solid#0077C8;" />
+
+
+# 5. Recomendaciones
+
+
+<iframe src="recomendaciones_finales.html" style="width: 800px; height: 600px; border: none;"></iframe>
+
+<br><br>
+<hr style="border: 3px solid#0077C8;" />

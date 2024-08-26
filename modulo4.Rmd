@@ -167,7 +167,7 @@ Es de esperarse que entre fuentes haya diferencias en las definiciones de variab
 
 # 3. Estimación a partir de integración de ENADID (2018) y ENVIPE (2018)
 
-### [**Descarga el protecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
+### [**Descarga el proyecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
 <br><br>
 
 A partir de la integración de datos de distintas fuentes, se siguen diversas estrategias empíricas para estimar el número de personas en situación de DFI asociado a la delincuencia, inseguridad y violencia. Para estimar el número de personas en situación de DFI en México, se consolidaron y armonizaron los conjuntos de datos de la ENVIPE 2018 y la ENADID 2018. Basándose en las definiciones del EGRISS (2020, 2023), se crearon variables para identificar a las personas en situación de DFI. Los ponderadores de la muestra se calibraron para corregir posibles sesgos y asegurar la representatividad de la población objetivo. Se empleó el método de estimación Horvitz-Thompson para estimar el número de personas en situación de DFI a nivel nacional y por entidad federativa. Finalmente, se evaluó la confiabilidad de los resultados a partir de la estimación de los coeficientes de variación (CV). 
@@ -185,6 +185,46 @@ Se usaron datos de la ENVIPE 2018 y la ENADID 2018, por sus similitudes en perio
 
 En el caso de la ENADID 2018 se unieron las tablas que componen su base de datos, a partir de las llaves primarias. La base de datos de esta encuesta se estructura en 4 tablas. Solo se unieron las tablas con las variables de interés. En este caso se unieron la Tabla de hogares (THogar) y la tabla de datos sociodemográficos de (TSDem). La primera tabla THogar concentra información relativa a los hogares dentro de las viviendas seleccionadas para la aplicación de la encuesta, específicamente en esta tabla se incluyen la contabilización del número de integrantes del hogar, de identificación, UPM, VIV_SEL, y consecutivo del hogar; variables de Identificación Geográfica, ENT y TAM_LOC. Se incluye un ponderador FAV_VIV y variables de estratificación. La tabla THogar incluye dos variables de identificación única a nivel registro: Llave de vivienda y Llave de hogar. La segunda tabla, TSDem, contiene las variables de identificación upm, viv_sel, hogar, n_ren que sirven para relacionar todas las tablas de la encuesta, así como variables de identificación geográfica: la Entidad federativa (ent) y Tamaño de localidad (tam_loc). Además, contiene variables de interés como: Sexo, Edad, Entidad de residencia en 2017, Causa de migración reciente. 
 
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+
+# Crear la tabla con los datos
+tabla_dfi <- data.frame(
+  Instrumento  = c("Censo Nacional de Población y Vivienda 2020 (Censo 2020)",
+                             "Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE)",
+                             "Encuesta Nacional de la Dinámica Demográfica (ENADID)",
+                             "Encuesta Nacional de Ocupación y Empleo (ENOE)",
+                             "Encuesta para Caracterizar a la Población en situación de Desplazamiento Forzado Interno en el Estado de Chihuahua (ECADEFI - CHIH)",
+                             "IDMC",
+                             "Recomendaciones EGRISS"),
+  Años = c("2020", "2011-2021", "2014 y 2018", "2005-2021", "2021", "2009-2023", "2023"),
+  Pregunta = c("¿En qué municipio (alcaldía) vivía (NOMBRE) en marzo de 2015? ¿Por qué (NOMBRE) dejó de vivir en (MUNICIPIO O ALCALDÍA O PAÍS)?",
+               "Durante (AÑO), para protegerse de la delincuencia, ¿en este hogar se realizó algún tipo de medida como... cambiarse de vivienda o lugar de residencia?",
+               "Hace un año, en agosto de 2017, ¿en qué estado de la República Mexicana o país vivía (NOMBRE)? ¿Por qué (NOMBRE) dejó de vivir en (ENTIDAD O PAÍS...?",
+               "¿En qué municipio (alcaldía) vivía ... hace un año? ¿Cuál es el motivo principal por el que se fue? ...Inseguridad pública",
+               "De enero de 2008 a la fecha, ¿algún integrante de esta (su) vivienda, incluido(a) usted, tuvo que cambiar de vivienda?",
+               "Seguimiento de los desplazamientos por eventos para analizar y producir estimaciones basadas en la ubicación, fecha del incidente, desencadenantes, causas y duración.",
+               "P1. Mientras vivía en [país de la encuesta], ¿[usted/NOMBRE] alguna vez tuvo que huir de su hogar? P2. ¿Cuál es la razón principal por la que [usted/NOMBRE] tuvo que huir de casa?"),
+  'Categorias de respuesta' = c("Por inseguridad delictiva o violencia",
+                           "Delincuencia",
+                           "Por inseguridad pública o violencia",
+                           "Inseguridad pública",
+                           "Por enterarse o ser testigo de delitos en el entorno como robo, asalto, extorsión, homicidios, etcétera",
+                           "N/A",
+                           "Razones de seguridad, conflictos armados y violencia generalizada"),
+  stringsAsFactors = FALSE
+)
+
+# Crear la tabla utilizando kableExtra
+tabla_dfi %>%
+  kbl(caption = "Tabla 2. Aproximaciones nacionales al DFI", align = "l") %>%
+  kable_styling(full_width = TRUE, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  add_footnote(c("Fuente: elaboración propia con datos de INEGI, EGRISS e IDMC."))
+
+```
 
 ### Entorno de trabajo y librerías
 
@@ -770,7 +810,7 @@ write.xlsx(list_of_datasets,
 
 # 4. Análisis de las macrodeterminantes de la emigración  
 
-### [**Descarga el protecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
+### [**Descarga el proyecto apretando sobre este texto**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
 <br><br>
 
 Para estimar la tasa de personas que, en relación con la violencia, cambiaron de municipio de residencia (por cada cien mil habitantes) se configuraron las variables independiente y de control y se ajustaron diversos modelos de regresión, lineal utilizando mínimos cuadrados ordinarios (ols), rlm, errores espaciales, mínimos cuadrados generalizados (gls), lineal ponderado y aditivo generalizado (gam). Se puso a prueba un efecto no lineal de la violencia sobre el DFI. Adicionalmente, se transformaron las variables dependiente e independiente en logarítmicas y se suavizó la tasa promedio quinquenal de homicidios municipales. La selección del modelo óptimo se basó en pruebas de supuestos y criterios de información como el AIC (Criterio de Información de Akaike) y BIC (Criterio de Información Bayesiano).
@@ -862,10 +902,6 @@ El conglomerado 2, aunque compuesto por solo 11 municipios, presenta el promedio
 
 Se consideraron como modelos base los de regresión lineal con mínimos cuadrados (OLS) y mínimos cuadrados robustos (RLM). La especificación del modelo es la siguiente:
 
----
-title: "Modelo de Tasa de DFI"
-output: html_document
----
 
 ## Ecuación del Modelo
 
