@@ -1,0 +1,9 @@
+/* Cambia el color del texto del menú a púrpura */
+.navbar .navbar-nav > li > a {
+    color: purple;
+}
+
+/* Cambia el color del texto del menú al pasar el ratón */
+.navbar .navbar-nav > li > a:hover {
+    color: darkviolet;
+}

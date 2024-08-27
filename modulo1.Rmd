@@ -48,7 +48,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 # Lección 1. Bienvenida al módulo
 
-Este módulo sirve como introducción al curso de e-learning de seis partes sobre las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS).
+Este módulo sirve como introducción al curso de e-learning de cinco partes sobre las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS).
 Después de completar este módulo, podrás:
 
 - Comprender la importancia de las estadísticas nacionales sobre desplazados.
@@ -61,7 +61,7 @@ Después de completar este módulo, podrás:
 
 Te tomará aproximadamente 1 hora y 15 minutos completar este módulo.
 
-Para comenzar, haz clic en el botón de Iniciar Módulo en la parte superior o selecciona una lección a continuación.
+Para comenzar, haz clic en el botón de Módulo en la parte superior.
 
 <!-- Dentro del módulo, puedes navegar seleccionando una lección del menú a la izquierda o usando los enlaces de Lección Anterior/Siguiente Lección arriba y abajo de cada lección. -->
 <br><br>
