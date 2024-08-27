@@ -86,9 +86,9 @@ class: middle, center
 ##  **Enfoques para determinar la causalidad:**
 ### Ambas:
 - **Ventajas:**
-  - Combina lo mejor de ambos mundos, ofreciendo una visión más completa y matizada del fenómeno. Permite identificar las discrepancias entre la percepción y la realidad, y explorar los factores que influyen en estas diferencias.
+  - Se complementan, ofreciendo una visión más completa y matizada del fenómeno. Permite identificar las discrepancias entre la percepción y los hechos de victimización, y explorar los factores que influyen en estas diferencias.
 - **Limitaciones:**
-  - Requiere un diseño de investigación más complejo y costoso, y puede ser más difícil de analizar e interpretar los resultados.
+  - Requiere un diseño de investigación más complejo y costoso.
 ]
 ---
 class: middle, center, inverse
@@ -110,12 +110,27 @@ class: middle, center, inverse
 **2. Sobremuestreo de Municipios con Historial de DFI**:
    - Focalizar en municipios con historial de DFI asociado a la violencia para mejorar la representatividad y eficiencia del estudio.
 
+]
+---
+class: middle, center, inverse
+
+.pull-center[
+
+# Recomendaciones para la Producción de Estadísticas de DFI
+]
+
+.left[
 **3. Impacto y Variabilidad**:
    - Reconocer que el impacto de la violencia en el DFI varía según el tipo de municipio.
    - La **gran dispersión de datos** y los **valores atípicos** sugieren la necesidad de análisis más profundos.
 
 **4. Orientación para Futuros Estudios**:
-   - Utilizar estos hallazgos y sugerencias como **guía** para mejorar el diseño muestral y conceptual en futuros proyectos sobre DFI.
+   - Utilizar estos hallazgos y sugerencias como **guía** para mejorar el diseño muestral y conceptual en futuros proyectos sobre DFI.  
+   
+**5. Coordinación**:  
+   - Elaborar planes de trabajo conjuntos y establecer grupos de trabajo técnicos para mejorar las estadísticas sobre refugiados y desplazados internos.     
+   - Formación de órganos de gobernanza técnica a nivel nacional para fortalecer las estadísticas sobre refugiados.    
+   - Priorización de las estadísticas sobre desplazados internos en los sistemas nacionales de estadísticas.  
 ]
 
 
