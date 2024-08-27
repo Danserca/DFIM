@@ -237,7 +237,7 @@ rm(list=ls()); graphics.off(); options(scipen = 999)
 paquetes <- c(
   "dplyr", "janitor", "survey", "openxlsx", "tidyverse",
   "data.table", "readxl", "writexl", "PracTools", "haven", 
-  "knitr", "kableExtra"
+  "knitr", "kableExtra", "equatiomatic"
 )
 for (i in paquetes) {if (!require(i, character.only = TRUE)) {install.packages(i);library(i, character.only = TRUE)} else {library(i, character.only = TRUE)}}
 ```
