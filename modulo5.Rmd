@@ -230,7 +230,7 @@ tabla_efecto_cuadratico %>%
 ### [**Descarga el reporte aquí**](https://365inegi-my.sharepoint.com/:b:/g/personal/daniela_serrano_inegi_org_mx/Ee_0cUnwC4lFoSn2DtAgUEEBHCvWvU6bHE9CNIeNG1VT5w?e=ZTxs4a)
 <br><br>
 
-# **6. Contacto**
+# **Contacto**
 
 Gracias por haber tomado este taller. Para cualquier duda o comentario acerca de este, del reporte o de la investigación puedes escribir a Daniela Serrano Campos, daniela.serrano@inegi.org.mx
 

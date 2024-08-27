@@ -1,6 +1,6 @@
 ---
 title: "Módulo 3"
-subtitle: "Fuentes de datos y análisis"
+subtitle: "Recomendaciones por tipo de fuente"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 1. Recomendaciones para **censos** 
+# Lección 1. **Censos** 
 
 
 Recomendaciones para mejorar el uso de los *censos* para recopilar datos sobre desplazados internos.
@@ -71,7 +71,7 @@ Basándose en los Principios y recomendaciones de las Naciones Unidas para los c
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
-# Lección 2. Recomendaciones para **encuestas** 
+# Lección 2. **Encuestas** 
 
 <iframe src="recomendaciones_encuestas.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
@@ -80,7 +80,7 @@ Basándose en los Principios y recomendaciones de las Naciones Unidas para los c
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 3. Recomendaciones para **registros administrativos** 
+# Lección 3. **Registros administrativos** 
 
 
 Para los desplazados internos (IDPs), el IRIS recomienda que:
@@ -95,7 +95,7 @@ Para los desplazados internos (IDPs), el IRIS recomienda que:
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 4. Recomendaciones para **fuentes de datos alternativas** 
+# Lección 4. **Fuentes de datos alternativas** 
 
 Las fuentes de datos alternativas, como los macrodatos y las técnicas relacionadas, como la integración de datos, también pueden presentar oportunidades importantes para mejorar la calidad de las estadísticas sobre desplazados internos.  
 
@@ -130,7 +130,7 @@ La independencia de una agencia estadística es fundamental para producir datos 
 Consulta los criterios para garantizar la independencia de las agencias estadísticas.
 
 
-# Lección 5. Recursos
+# Recursos
 
 [Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m3.pdf)
 

@@ -1,6 +1,6 @@
 ---
 title: "Módulo 2"
-subtitle: "Estadísticas de Desplazamiento Forzado Interno"
+subtitle: "Principios rectores y recomendaciones internacionales"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 1. Marco legal y político
+# Lección 1. Antecedentes
 
 <iframe src="marco_legal_pol_dfi.html" style="width: 800px; height: 600px; border: none;"></iframe>
 
@@ -91,7 +91,7 @@ Es decir, que se integraron.
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 3. Población total y flujo de PDFI  
+# Lección 3. Variables y tabulados
 
 3.1. Población total de PDFI  
 
@@ -105,7 +105,7 @@ Un flujo es una medida del cambio en la población a lo largo de un período de 
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 4. Definición de soluciones duraderas
+## Soluciones duraderas
 
 Existen dos enfoques estadísticos para medir el progreso hacia soluciones duraderas para los desplazados internos, inspirados en la definición de soluciones duraderas del Marco del IASC y los criterios asociados, a saber:  
 1. La medida del progreso hacia las soluciones duraderas.  
@@ -181,7 +181,7 @@ De acuerdo con el Marco sobre soluciones duraderas para los desplazados internos
 IRIS propone una medida de progreso para monitorear la situación de desplazamiento en un país a lo largo del tiempo e identificar los avances logrados hacia soluciones duraderas. Propone un análisis comparativo de los desplazados internos con la población general o un subconjunto de la población general que vive en la misma área geográfica, en relación con los ocho criterios descritos en el marco de soluciones duraderas del IASC (SIAP 2024).
 
 
-# Lección 5. Variables y tabulados  
+## Variables clasificatorias básicas
 
 El IRIS describe una lista recomendada de variables clasificatorias básicas, estadísticas y tabulaciones que deben producir las autoridades estadísticas nacionales:
 
@@ -224,7 +224,7 @@ En resumen, se recomienda que los siguientes grupos de variables y estadísticas
 
 Una lista de todas las variables está disponible en [IRIS](https://egrisstats.org/wp-content/uploads/IRIS_SPANISH-VERSION.pdf) (se abre en una nueva pestaña), Capítulo 5.
 
-# Lección 6. Recursos
+# Recursos
 
 [Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m2.pdf)
 

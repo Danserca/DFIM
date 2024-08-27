@@ -1,6 +1,6 @@
 ---
 title: "Módulo 1"
-subtitle: "Definición de Desplazamiento Forzado Interno"
+subtitle: "Introducción"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Lección 1. Bienvenida al módulo
+# Bienvenida al módulo
 
 Este módulo sirve como introducción al curso de e-learning de cinco partes sobre las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS).
 Después de completar este módulo, podrás:
@@ -67,7 +67,7 @@ Para comenzar, haz clic en el botón de Módulo en la parte superior.
 <br><br>
 
 <hr style="border: 3px solid#0077C8;" />
-# Lección 2. Importancia de las estadísticas de calidad de Desplazamiento Forzado Interno
+# Lección 1. Importancia de las estadísticas de Desplazamiento Forzado Interno
 
 El desplazamiento forzado es un fenómeno persistente que plantea desafíos humanitarios importantes. 
 
@@ -79,7 +79,7 @@ Los datos también son necesarios para mejorar el uso de los recursos y las capa
 <br><br>
 
 <hr style="border: 3px solid#0077C8;" />
-# Lección 3. ¿Quiénes son las personas desplazadas internas?
+# Lección 2. Definición
 
 Mira la presentación a continuación para obtener más información.
 
@@ -92,7 +92,7 @@ Mira la presentación a continuación para obtener más información.
 
 <hr style="border: 3px solid#0077C8;" />
 
-# Lección 4. Principales fuentes de datos 
+# Lección 3. Fuentes de datos 
 
 Las IRIS presentan cuatro fuentes de datos principales que pueden utilizarse para producir estadísticas oficiales sobre personas en situación de desplazamiento forzado interno.
 
@@ -105,7 +105,7 @@ Cada fuente de datos tiene sus propias ventajas y limitaciones. Las IRIS contemp
 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
-# Lección 5. El papel de las Oficinas Nacionales de Estadística (ONE) en la coordinación 
+# Lección 4. Papel de las Oficinas Nacionales de Estadística (ONE)
 
 Las ONE desempeñan un papel crucial en la coordinación para garantizar que se apliquen los estándares de datos y se mantenga la calidad.
 
@@ -118,7 +118,7 @@ Las ONE desempeñan un papel crucial en la coordinación para garantizar que se 
 <br><br>
 
 <hr style="border: 3px solid#0077C8;" />
-# Lección 6. Recursos
+# Recursos
 
 ##[Descargar Recursos PDF](https://github.com/Danserca/DFIM/blob/master/docs/recursos_m1.pdf)
 

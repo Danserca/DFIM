@@ -1,6 +1,6 @@
 ---
 title: "Módulo 4"
-subtitle: "Metodología"
+subtitle: "Aproximaciones para el caso de México"
 # author: "Dra. Daniela Serrano Campos"
 # date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
@@ -47,7 +47,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
 <hr style="border: 3px solid#0077C8;" />
 
-# 1. Siglas y acrónimos
+# Siglas y acrónimos
 
 <div class="two-columns">
 <div class="column">
@@ -88,7 +88,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
-# 2. Integración y reconciliación  
+# 1. Integración y reconciliación  
 
 El EGRISS reconoce la complejidad de encontrar una única fuente de datos que proporcione una imagen completa y precisa de la población en situación DFI. Ante este desafío, el EGRISS (2023) propone la integración de diversas fuentes de información como estrategia fundamental para mejorar la cobertura, disponibilidad, frecuencia, oportunidad, calidad y precisión de las estadísticas sobre DFI.    
 
@@ -165,7 +165,7 @@ Es de esperarse que entre fuentes haya diferencias en las definiciones de variab
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
 
-# 3. Estimación a partir de integración de ENADID (2018) y ENVIPE (2018)
+# 2. Estimación a partir de integración de ENADID (2018) y ENVIPE (2018)
 
 ### [**Descarga el proyecto aquí**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EkfBlBSyLU5Jp3PURUpAJfwBMzCnl9w3Ci2eZlAES3pCfQ?e=1m6shK)
 <br><br>
@@ -331,7 +331,6 @@ Al tratarse de una pregunta sobre la percepción de la seguridad pública, surge
 Por lo anterior, se usaron dos factores de expansión base para la ENVIPE, FAC_ELE y FAC_HOGAR multiplicado por el número de integrantes del hogar. A partir de estos pesos base de la ENVIPE 2018 y de los pesos base de la ENADID 2018 se realizó la calibración. Para lograrlo, ambos conjuntos de datos se integraron en uno solo, de manera vertical. Se obtuvo un solo conjunto con 477 mil 519 observaciones y nueve variables. 
 
 
-
 ```{r, eval=FALSE}
 # Preparar ENVIPE
 # Tablas que se usarán para los cálculos de Prevalencia Delictiva, Incidencia Delictiva y Cifra Negra
@@ -419,8 +418,6 @@ El INEGI categoriza la confiabilidad de las estimaciones con base en los coefici
 
 
 Para ajustar los ponderadores base y obtener los ponderadores finales que reflejen adecuadamente el universo de estudio, calibramos los ponderadores base. Este proceso implica ajustar los ponderadores base, es decir, los calculados a partir de los diseños muestrales de las encuestas. Para lograrlo, se usa información adicional sobre la población total. 
-
-
 
 
 ```{r, eval=FALSE}
@@ -808,7 +805,7 @@ write.xlsx(list_of_datasets,
 <br><br>
 <br><br>
 
-# 4. Análisis de las macrodeterminantes de la emigración  
+# 3. Análisis de las macrodeterminantes de la emigración  
 
 ### [**Descarga el proyecto aquí**](https://365inegi-my.sharepoint.com/:f:/g/personal/daniela_serrano_inegi_org_mx/EtKMm3U_wytAomc0hgaK1lABZL_QDCfHtujJNV0TAn0pAw?e=uDUnLg)
 <br><br>
@@ -2736,8 +2733,6 @@ for (i in 1:length(modelos_esp)) {
 
 
 ```
-
-
 3.6 Modelo sin municipios atípicos 
 
 Se realiza un análisis robusto de los modelos espaciales autoregresivos (SAR) ajustados a los datos, con un enfoque en la identificación y tratamiento de observaciones atípicas a través del cálculo de distancias robustas de Mahalanobis. Luego de eliminar estas observaciones atípicas, se ajustan y evalúan varios modelos estadísticos. Las métricas obtenidas, como AIC, BIC, R², y pruebas de diagnóstico como Breusch-Pagan y Moran's I, permiten una evaluación completa de la calidad y adecuación de los modelos. Finalmente, los resultados se exportan de manera ordenada para su posterior análisis.
