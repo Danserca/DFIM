@@ -3251,3 +3251,7 @@ bp_test <- bptest(modelo_aux)
 # Mostrar los resultados del test de Breusch-Pagan
 print(bp_test)
 ```
+
+
+
+

@@ -223,3 +223,15 @@ tabla_efecto_cuadratico %>%
 
 <br><br>
 <hr style="border: 3px solid#0077C8;" />
+
+
+
+# Descarga el reporte final del proyecto 
+### [**Descarga el reporte aquí**](https://365inegi-my.sharepoint.com/:b:/g/personal/daniela_serrano_inegi_org_mx/Ee_0cUnwC4lFoSn2DtAgUEEBHCvWvU6bHE9CNIeNG1VT5w?e=ZTxs4a)
+<br><br>
+
+# **6. Contacto**
+
+Gracias por haber tomado este taller. Para cualquier duda o comentario acerca de este, del reporte o de la investigación puedes escribir a Daniela Serrano Campos, daniela.serrano@inegi.org.mx
+
+
