@@ -993,16 +993,20 @@ IDMC.
 <p>Antes de importar los datos, cargamos las librerías necesarias para
 el análisis:</p>
 <p>Para realizar análisis de datos de manera eficiente, se utilizaron
-los siguientes paquetes en R: dplyr es esencial para manipular y
-transformar los datos de forma ágil, como seleccionar variables, filtrar
-observaciones y crear nuevas columnas. foreign permite leer archivos
-DBF, un formato común en bases de datos sociales. survey es fundamental
-para el análisis de datos provenientes de encuestas complejas,
-considerando el diseño muestral. janitor facilita la limpieza y
-organización de los nombres de las columnas, asegurando una mejor
-legibilidad y consistencia. Finalmente, openxlsx se empleó para exportar
-los resultados del análisis a archivos de Excel, un formato ampliamente
-utilizado para compartir y presentar los hallazgos.</p>
+los siguientes paquetes en R:<br />
+<code>dplyr</code>: es esencial para manipular y transformar los datos
+de forma ágil, como seleccionar variables, filtrar observaciones y crear
+nuevas columnas.<br />
+<code>foreign</code>: permite leer archivos DBF, un formato común en
+bases de datos sociales.<br />
+<code>survey</code>: es fundamental para el análisis de datos
+provenientes de encuestas complejas, considerando el diseño
+muestral.<br />
+<code>janitor</code>: facilita la limpieza y organización de los nombres
+de las columnas, asegurando una mejor legibilidad y consistencia.<br />
+<code>openxlsx</code>: se empleó para exportar los resultados del
+análisis a archivos de Excel, un formato ampliamente utilizado para
+compartir y presentar los hallazgos.</p>
 <pre class="r"><code>rm(list=ls()); graphics.off(); options(scipen = 999)
 paquetes &lt;- c(
   &quot;dplyr&quot;, &quot;janitor&quot;, &quot;survey&quot;, &quot;openxlsx&quot;, &quot;tidyverse&quot;,

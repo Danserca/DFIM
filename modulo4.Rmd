@@ -230,7 +230,12 @@ tabla_dfi %>%
 
 Antes de importar los datos, cargamos las librerías necesarias para el análisis:  
 
-Para realizar análisis de datos de manera eficiente, se utilizaron los siguientes paquetes en R: dplyr es esencial para manipular y transformar los datos de forma ágil, como seleccionar variables, filtrar observaciones y crear nuevas columnas. foreign permite leer archivos DBF, un formato común en bases de datos sociales. survey es fundamental para el análisis de datos provenientes de encuestas complejas, considerando el diseño muestral. janitor facilita la limpieza y organización de los nombres de las columnas, asegurando una mejor legibilidad y consistencia. Finalmente, openxlsx se empleó para exportar los resultados del análisis a archivos de Excel, un formato ampliamente utilizado para compartir y presentar los hallazgos.
+Para realizar análisis de datos de manera eficiente, se utilizaron los siguientes paquetes en R:   
+`dplyr`: es esencial para manipular y transformar los datos de forma ágil, como seleccionar variables, filtrar observaciones y crear nuevas columnas.  
+`foreign`: permite leer archivos DBF, un formato común en bases de datos sociales.    
+`survey`: es fundamental para el análisis de datos provenientes de encuestas complejas, considerando el diseño muestral.   
+`janitor`: facilita la limpieza y organización de los nombres de las columnas, asegurando una mejor legibilidad y consistencia.   
+`openxlsx`: se empleó para exportar los resultados del análisis a archivos de Excel, un formato ampliamente utilizado para compartir y presentar los hallazgos.
 
 ```{r, eval=FALSE}
 rm(list=ls()); graphics.off(); options(scipen = 999)
