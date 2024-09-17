@@ -1,0 +1,17 @@
+image: r-base:latest
+
+pages:
+  script:
+    # Actualizar sistema e instalar dependencias
+    - apt-get update -qq && apt-get install -y --no-install-recommends libxml2-dev
+    # Instalar RMarkdown
+    - R -e 'install.packages("rmarkdown")'
+    # Renderizar el sitio usando RMarkdown
+    - R -e 'rmarkdown::render_site()'
+    # Mover el contenido generado a 'public'
+    - mv docs/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # O 'master', según tu rama principal
