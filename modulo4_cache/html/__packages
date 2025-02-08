@@ -8,6 +8,7 @@ purrr
 dplyr
 stringr
 forcats
+lubridate
 datos
 emo
 xaringanExtra
