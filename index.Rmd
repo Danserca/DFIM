@@ -40,7 +40,7 @@ output:
 </p>
 
 
-# **BIENVENIDA AL TALLER**
+# **BIENVENIDAs TODAS AL TALLER**
 
 Hola colegas:
 
@@ -152,9 +152,3 @@ Equipo de cómputo con conexión a internet.
 # **Modalidad:**
 
 Autocapacitación.
-
-
-
-
-
-

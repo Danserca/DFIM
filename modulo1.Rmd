@@ -87,7 +87,9 @@ Mira la presentación a continuación para obtener más información.
 
 <hr class="cintillo"/>
 
-<iframe src="https://danielasercampos.shinyapps.io/quiz_prueba/" style="width: 800px; height: 800px; border: none;"></iframe>
+<iframe src="https://danielasercampos.shinyapps.io/quiz_prueba/" 
+style="width: 800px; height: 800px; border: none;"
+ sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 <br><br>
 
 <hr style="border: 3px solid#0077C8;" />
@@ -109,7 +111,8 @@ Cada fuente de datos tiene sus propias ventajas y limitaciones. Las IRIS contemp
 
 Las ONE desempeñan un papel crucial en la coordinación para garantizar que se apliquen los estándares de datos y se mantenga la calidad.
 
-<iframe src="fuentes_iris.html" style="width: 800px; height: 600px; border: none;"></iframe>
+<iframe src="fuentes_iris.html" style="width: 800px; height: 600px; border: none;"
+ sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 
 <hr class="cintillo"/>
