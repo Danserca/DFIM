@@ -19,7 +19,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      ratio: "4:3"
+      ratio: "5:3"
 ---
 
 ```{r setup, include = FALSE}
@@ -57,13 +57,10 @@ class: center, inverse
 
 .pull-left[
 .left[
-
 ## General 
-
 1. Los sistemas estadísticos nacionales difieren en cuanto al nivel de centralización. En muchos países, las unidades estadísticas de los ministerios competentes recopilan, analizan y difunden datos pertinentes a su área de responsabilidad.  
 2. Las ONE tienen un papel clave en la coordinación del sistema estadístico nacional al garantizar que se apliquen los estándares internacionales vigentes, asegurando así la calidad.   
 3. La comparabilidad internacional depende de la calidad de las estadísticas.
-
 
 ]
 ]
