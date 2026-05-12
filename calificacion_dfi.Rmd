@@ -25,7 +25,7 @@ output:
 ```{r setup, include = FALSE}
 #install.packages("remotes")
 #remotes::install_github("mitchelloharawild/icons")
-devtools::install_github("hadley/emo")
+#devtools::install_github("hadley/emo")
 library(knitr)                              # paquete que trae funciones utiles para R Markdown
 library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
 library(datos)                              # paquete que viene con datos populares traducidos al español :)

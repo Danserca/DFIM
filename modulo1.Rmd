@@ -46,7 +46,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 <hr style="border: 3px solid#0077C8;" />
 
 
-# Bienvenida al módulo
+# Este es el primer módulo
 
 Este módulo sirve como introducción al curso de e-learning de cinco partes sobre las Recomendaciones Internacionales sobre Estadísticas de Desplazados Internos (IRIS).
 Después de completar este módulo, podrás:
