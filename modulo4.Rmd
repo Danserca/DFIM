@@ -43,7 +43,7 @@ hr.cintillo {
 <div style="color: #003057;">
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = FALSE)
 ```
 <hr style="border: 3px solid#0077C8;" />
 
